@@ -1,0 +1,3 @@
+[submodule "profiles/cm_starterkit_easy"]
+	path = profiles/cm_starterkit_easy
+	url = http://git.drupal.org/project/cm_starterkit_easy.git
