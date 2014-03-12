@@ -153,8 +153,9 @@ settings[sticky_footer]            = 0
 
 ; Setting breakpoints for Picture module
 breakpoints[mobile] = (min-width: 0px)
-breakpoints[narrow] = (min-width: 48.25em)
-breakpoints[wide] = (min-width: 60em)
+breakpoints[narrow] = (max-width: 320px)
+breakpoints[medium] = (max-width: 800px)
+breakpoints[wide] = (max-width: 1000px)
 breakpoints[tv] = only screen and (min-width: 3456px)
 
 ; Information added by Drupal.org packaging script on 2014-02-27
