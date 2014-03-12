@@ -113,13 +113,18 @@ h1 {
 .wrapper {
   &.header {
     background-color: $greyer;
+    box-shadow: inset 0px -5px 6px #CCC;
+    -moz-box-shadow: inset 0px -5px 6px #CCC;
+    -webkit-box-shadow: inset 0px -5px 6px #CCC;
   }
   &.footer {
     background-color: white;
   }
 }
 .breadcrumb {
-  margin: 20px 0;
+  margin: 8px 0 15px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EEEEEE;
 }
 /***********
 ~HEADER
@@ -254,23 +259,11 @@ aside.sidebars {
 }
 
 /***********
-~SLIDESHOW
+~CONTENT
 ***********/
 
-.flexslider {
-  background: none repeat scroll 0 0 #FFFFFF;
-  border: 0;
-  border-radius:0;
-  box-shadow:0;
-  margin: 0 0 50px 0;
-  position: relative;
-}
-.flexslider li p {
-  text-align: center;
-  font-size: 110%;
-  background: #DDDDDD;
-  margin: 0;
-  padding: 10px 0;
+#content {
+  padding-top: 8px;
 }
 
 /***********
