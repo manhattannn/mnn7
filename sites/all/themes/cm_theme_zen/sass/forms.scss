@@ -66,7 +66,7 @@
     border: 1px solid #61AEE2;
   }
 }
-.form-submit, a.button  {
+.form-submit, a.button, button, input[type="button"], input[type="reset"], input[type="submit"]  {
   border: 1px solid #CCC;
   margin:0 5px 0 0;
   -moz-box-shadow: none;
@@ -75,10 +75,12 @@
   padding: 6px 15px;
   color: #333;
   font-size: 90%;
+  background: #DDD;
   &:hover {
     border-color: #999;
     background: #AAA;
     color: #FFF;
+    text-decoration: none;
   }
 }
 
@@ -115,7 +117,7 @@ a.button { /* Buttons used by contrib modules like Media */
 
 fieldset {
   margin-bottom: 15px;
-  padding: 0;
+  padding: 20px;
   legend {
     float: left;
     background: #EEEEEE;
@@ -233,30 +235,38 @@ html.js fieldset.collapsed {
  * section of the site.
  */
 
-form {
-  table {
-    width: 100%;
-
-  }
+ table {
+  width: 100%;
+  border: 1px solid #CCC;
   th {
     text-align: left; /* LTR */
     padding-right: 1em; /* LTR */
-    border-bottom: 3px solid #ccc;
+    border-bottom: 1px solid #ccc;
     font-weight: normal;
     padding:5px 10px;
+    background: #EEEEEE;
   }
-
   tbody {
     border-top: 1px solid #ccc;
   }
   td {
     padding: 10px;
+    background: #f9f9f9;
   }
   tr.even {
     background-color: #fff;
   }
   table .item-list ul {
     margin: 0;
+  }
+}
+
+form {
+  label {
+
+  }
+  input, textarea {
+    margin-bottom: 10px;
   }
 }
 

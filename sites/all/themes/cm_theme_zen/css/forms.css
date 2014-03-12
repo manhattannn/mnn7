@@ -75,7 +75,7 @@ OUR CUSTOM MIXINS
   border: 1px solid #61AEE2;
 }
 
-.form-submit, a.button {
+.form-submit, a.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
   border: 1px solid #CCC;
   margin: 0 5px 0 0;
   -moz-box-shadow: none;
@@ -84,11 +84,13 @@ OUR CUSTOM MIXINS
   padding: 6px 15px;
   color: #333;
   font-size: 90%;
+  background: #DDD;
 }
-.form-submit:hover, a.button:hover {
+.form-submit:hover, a.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
   border-color: #999;
   background: #AAA;
   color: #FFF;
+  text-decoration: none;
 }
 
 html.js input.form-autocomplete {
@@ -129,7 +131,7 @@ a.button {
 
 fieldset {
   margin-bottom: 15px;
-  padding: 0;
+  padding: 20px;
 }
 fieldset legend {
   float: left;
@@ -243,29 +245,36 @@ html.js #user-login-form li.openid-link,
  * We overrode these styles in normalize.css, but restore them for the admin
  * section of the site.
  */
-form table {
+table {
   width: 100%;
+  border: 1px solid #CCC;
 }
-form th {
+table th {
   text-align: left;
   /* LTR */
   padding-right: 1em;
   /* LTR */
-  border-bottom: 3px solid #ccc;
+  border-bottom: 1px solid #ccc;
   font-weight: normal;
   padding: 5px 10px;
+  background: #EEEEEE;
 }
-form tbody {
+table tbody {
   border-top: 1px solid #ccc;
 }
-form td {
+table td {
   padding: 10px;
+  background: #f9f9f9;
 }
-form tr.even {
+table tr.even {
   background-color: #fff;
 }
-form table .item-list ul {
+table table .item-list ul {
   margin: 0;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
 }
 
 /*
