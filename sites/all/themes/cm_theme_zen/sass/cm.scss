@@ -135,7 +135,7 @@ h1 {
 .wrapper.header {
   #header {
     clear: both;
-    padding: 25px 0;
+    padding: 25px 20px;
     position: relative;
     #cm-user-menu {
       float: right;
@@ -264,6 +264,7 @@ aside.sidebars {
 
 #content {
   padding-top: 8px;
+
 }
 
 /***********
@@ -276,7 +277,7 @@ aside.sidebars {
     margin-right: auto;
     color: $dark;
     font-size:12px;
-    padding: 30px 0;
+    padding: 30px 20px;
     margin-top: 20px;
     border-top: 1px solid #DDD;
   }

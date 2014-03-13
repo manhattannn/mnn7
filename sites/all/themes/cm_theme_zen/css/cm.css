@@ -176,7 +176,7 @@ h1 {
 
 .wrapper.header #header {
   clear: both;
-  padding: 25px 0;
+  padding: 25px 20px;
   position: relative;
 }
 .wrapper.header #header #cm-user-menu {
@@ -319,7 +319,7 @@ aside.sidebars .sidebar h2 {
   margin-right: auto;
   color: #555555;
   font-size: 12px;
-  padding: 30px 0;
+  padding: 30px 20px;
   margin-top: 20px;
   border-top: 1px solid #DDD;
 }
