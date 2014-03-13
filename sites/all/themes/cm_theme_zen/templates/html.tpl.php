@@ -45,7 +45,7 @@
     <script>
     (function ($, Drupal, window, document, undefined) {
       $(function () {
-        $('.menu-block-wrapper').meanmenu({
+        $('.wrapper.navigation').meanmenu({
           meanScreenWidth: "800",
           meanShowChildren: true,
           meanExpand: "+",

@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
 #page {
   min-width: 300px;
 }
-#navigation ul.menu {
+.navigation ul.menu {
   li {
     text-transform: none;
     @include clear-space;

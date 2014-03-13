@@ -49,10 +49,10 @@ h1, h2, h3, h4, h5 {
   min-width: 300px;
 }
 
-#navigation ul.menu li {
+.navigation ul.menu li {
   text-transform: none;
 }
-#navigation ul.menu li div, #navigation ul.menu li h1, #navigation ul.menu li h2, #navigation ul.menu li h3, #navigation ul.menu li h4, #navigation ul.menu li h5 {
+.navigation ul.menu li div, .navigation ul.menu li h1, .navigation ul.menu li h2, .navigation ul.menu li h3, .navigation ul.menu li h4, .navigation ul.menu li h5 {
   margin: 0;
   padding: 0;
   -webkit-margin-before: 0;
@@ -60,18 +60,18 @@ h1, h2, h3, h4, h5 {
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
 }
-#navigation ul.menu li a {
+.navigation ul.menu li a {
   color: #61aee2;
   text-decoration: none;
 }
-#navigation ul.menu li a:hover {
+.navigation ul.menu li a:hover {
   color: #443C45;
   text-decoration: underline;
 }
-#navigation ul.menu li a:visited {
+.navigation ul.menu li a:visited {
   color: #61aee2;
 }
-#navigation ul.menu li a {
+.navigation ul.menu li a {
   background-color: #eff2f1;
   padding: 7px 15px 6px 15px;
   -webkit-border-radius: 0 0 4px 4px;
@@ -82,25 +82,25 @@ h1, h2, h3, h4, h5 {
   background-clip: padding-box;
   display: block;
 }
-#navigation ul.menu li a:hover, #navigation ul.menu li a.active {
+.navigation ul.menu li a:hover, .navigation ul.menu li a.active {
   color: #ffffff;
   text-decoration: underline;
   background: #d1d3d2;
 }
-#navigation ul.menu li a.active, #navigation ul.menu li a:visited {
+.navigation ul.menu li a.active, .navigation ul.menu li a:visited {
   text-decoration: none;
 }
-#navigation ul.menu ul {
+.navigation ul.menu ul {
   z-index: 100;
 }
-#navigation ul.menu ul:hover {
+.navigation ul.menu ul:hover {
   display: block;
 }
-#navigation ul.menu ul li a:link, #navigation ul.menu ul li a:visited, #navigation ul.menu ul li a:hover {
+.navigation ul.menu ul li a:link, .navigation ul.menu ul li a:visited, .navigation ul.menu ul li a:hover {
   background: transparent;
   color: #61aee2;
 }
-#navigation ul.menu ul li a:hover {
+.navigation ul.menu ul li a:hover {
   text-decoration: underline;
 }
 
