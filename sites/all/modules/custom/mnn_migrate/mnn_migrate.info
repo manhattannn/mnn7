@@ -6,3 +6,5 @@ core = 7.x
 dependencies[] = migrate
 
 files[] = classes/user.inc
+files[] = classes/news.inc
+files[] = utils/MnnMigrateUtil.inc
