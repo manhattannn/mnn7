@@ -77,7 +77,7 @@ class NewsMigration extends Migration {
     $current_row->format = MnnMigrateUtil::getTextFormat($current_row->format);
 
     // Set the terms for the node.
-    // TODO add categories migration.
+    $current_row->field_mnn_news_categories = MnnMigrateUtil::getProperCategories($current_row->vid);
 
     // Set the url alias for the node.
     $current_row->url_alias = MnnMigrateUtil::getUrlAlias($current_row->nid);
@@ -90,7 +90,6 @@ class NewsMigration extends Migration {
     $query->join('files', 'f', 'cfi.field_image_fid = f.fid');
     $query->addField('f', 'filename');
     $query->addField('f', 'filepath');
-    $query->orderBy('a.field_image_fid', 'ASC');
     $result = $query->execute();
 
     foreach ($result as $row) {
@@ -99,7 +98,7 @@ class NewsMigration extends Migration {
         'filepath' => str_replace($row->filename, '', $row->filepath),
       );
       $current_row->image_filename[] = $field['filename'];
-      $current_row->image_filepath[] = OLD_SITE_URL . $field['filepath'];
+      $current_row->image_filepath[] = self::OLD_SITE_URL . $field['filepath'];
     }
 
     return TRUE;

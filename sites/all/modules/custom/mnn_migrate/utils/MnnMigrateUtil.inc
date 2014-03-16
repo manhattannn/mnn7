@@ -39,7 +39,8 @@ class MnnMigrateUtil
    * @return null|string
    *   Alias if one exists otherwise NULL.
    */
-  public static function getUrlAlias($nid) {
+  public static function getUrlAlias($nid)
+  {
     $result = Database::getConnection('default', 'migrate')
       ->select('url_alias', 'ua')
       ->fields('ua', array('dst'))
@@ -48,6 +49,27 @@ class MnnMigrateUtil
       ->fetchObject();
 
     return is_object($result) && !empty($result->dst) ? $result->dst : NULL;
+  }
+
+  /**
+   * Get taxonomy terms by given old nvid.
+   *
+   * @param $nvid Integer
+   *   Vid from mnn6 of node being migrated.
+   * @return null|string
+   *   Returns taxonomy terms names.
+   */
+  public static function getProperCategories($nvid)
+  {
+    $query = Database::getConnection('default', 'migrate')
+      ->select('term_node', 'tn');
+    $query->join('term_data', 'td', 'tn.tid = td.tid');
+    $query->addField('td', 'name');
+    $query->condition('tn.vid', $nvid, '=');
+    $query->orderBy('tn.tid', 'ASC');
+    $result = $query->execute()->fetchCol();
+
+    return is_array($result) && !empty($result) ? implode(',', $result) : NULL;
   }
 
 } 
