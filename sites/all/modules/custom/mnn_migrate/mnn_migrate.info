@@ -7,4 +7,5 @@ dependencies[] = migrate
 
 files[] = classes/user.inc
 files[] = classes/news.inc
+files[] = classes/newstaxonomy.inc
 files[] = utils/MnnMigrateUtil.inc

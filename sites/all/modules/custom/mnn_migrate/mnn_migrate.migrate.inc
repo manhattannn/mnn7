@@ -15,6 +15,7 @@ function mnn_migrate_migrate_api() {
   $api = array(
     'api' => 2,
     'migrations' => array(
+      'NewsCategories' => array('class_name' => 'NewsCategoriesMigration'),
       'User' => array('class_name' => 'UserMigration'),
     ),
   );
