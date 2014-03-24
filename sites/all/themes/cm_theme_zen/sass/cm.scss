@@ -1,0 +1,331 @@
+/**
+ * @file
+ *
+ * CM-specific  Styling
+ *
+ *
+ */
+
+/***********
+~IMPORTS
+***********/
+@import "base";
+@import "compass/css3/border-radius";
+
+
+/***********
+~GENERIC
+***********/
+body {
+  color: $dark;
+  @include m-links;
+}
+html, body, button, input, select, textarea, textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+  @include cmfont-main;
+}
+h1, h2, h3, h4, h5 {
+  @include cmfont-titles;
+  font-weight: 400;
+}
+#page {
+  min-width: 300px;
+}
+.navigation ul.menu {
+  li {
+    text-transform: none;
+    @include clear-space;
+    @include m-links;
+    a {
+      background-color: $grey;
+      padding: 7px 15px 6px 15px;
+      @include bottom-border-radius;
+      display: block;
+      &:hover, &.active {
+        color: #ffffff;
+        text-decoration: underline;
+        background: $greyer;
+      }
+      &.active, &:visited {
+        text-decoration: none;
+      }
+    }
+  }
+  ul {
+    z-index: 100;
+    &:hover {
+      display: block;
+    }
+    li {
+     a:link, a:visited, a:hover {
+      background: transparent;
+      color: $blue;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+ul.primary {
+  padding: 0;
+  border-bottom: 1px solid #D9DBDB;
+  @include breakpoint ($breakpoint-small-width) {
+    border-bottom: none;
+  }
+  li {
+    border: none;
+    margin:0 5px 0 0;
+    text-shadow: 0;
+    a:link, a:visited, a:hover {
+     text-shadow: 0;
+     padding: 5px 15px;
+     border: 1px solid #CCCCCC;
+     border-radius: 0;
+     -moz-border-radius: 0;
+     -webkit-border-radius: 0;
+    }
+    a {
+      color: #333 !important;
+       &.active {
+        background-color: #EEE;
+        color: $blue !important;
+      }
+    }
+  }
+}
+@include breakpoint ($breakpoint-small-width) {
+  ul.primary li, ul.secondary li {
+    float: none;
+    clear: both;
+    margin: 0;
+    a {
+      width: 88%;
+    }
+  }
+}
+/***********
+~STRUCTURE
+***********/
+
+h1 {
+  font-size: 160%;
+}
+.wrapper {
+  &.header {
+    background-color: $greyer;
+    box-shadow: inset 0px -5px 6px #CCC;
+    -moz-box-shadow: inset 0px -5px 6px #CCC;
+    -webkit-box-shadow: inset 0px -5px 6px #CCC;
+  }
+  &.footer {
+    background-color: white;
+  }
+}
+.breadcrumb {
+  margin: 8px 0 15px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #EEEEEE;
+}
+/***********
+~HEADER
+***********/
+.region-header {
+  clear: none;
+}
+.wrapper.header {
+  #header {
+    clear: both;
+    padding: 25px 20px;
+    position: relative;
+    #cm-user-menu {
+      float: right;
+      margin: 0 20px 0 0;
+      @include breakpoint ($breakpoint-medium-width) {
+        float: none;
+        text-align: center;
+        margin: 0;
+      }
+      ul {
+        margin: 20px 0 0 0;
+        padding: 0;
+        li {
+          display: inline;
+          list-style-type: none;
+          margin: 0 0 0 10px;
+          a {
+            border: 1px solid #CCC;
+            margin:0 5px 0 0;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            padding: 6px 15px;
+            color: #333;
+            font-size: 90%;
+            background: #DDD;
+            &:hover {
+              border-color: #999;
+              background: #AAA;
+              color: #FFF;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+h1#site-name {
+ font-size: 2em;
+ line-height: .5em;
+ margin: 70px 0 0 25px;
+  a:link, a:visited {
+      color: #ffffff;
+  }
+}
+#block-search-form {
+  background: #FFFFFF;
+  padding: 0 0 0 10px;
+  float: right;
+  width: 200px;
+  margin: 60px 0 0 0;
+  @include breakpoint ($breakpoint-medium-width) {
+    clear: both;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  input.form-text {
+    border: none;
+    border-right: 1px solid #CCCCCC;
+
+    width: 150px;
+    &:focus {
+      box-shadow: none;
+      moz-box-shadow: none;
+    }
+  }
+  input.form-submit {
+    text-indent: -9999px;
+    background: #FFFFFF url(../images/search.png) no-repeat center center;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    filter: none;
+    padding: 5px 15px;
+    width: 40px;
+    height: 28px;
+    text-shadow: none;
+    margin: 0;
+  }
+}
+@include breakpoint ($breakpoint-medium-width) {
+  .wrapper.header #header {
+    text-align: center;
+    padding: 0;
+    #logo {
+      float: none;
+      clear: both;
+      display: block;
+      padding: 20px 0;
+    }
+    #name-and-slogan {
+      float: none;
+      h1 {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+/***********
+~SIDEBARS
+***********/
+
+aside.sidebars {
+  margin: 10px 0 0 0;
+  .sidebar {
+    padding-bottom: 20px;
+    h2 {
+      background: $grey;
+      text-indent: 10px;
+      margin: 0 0 10px 0;
+      font-size: 110%;
+      }
+    @include breakpoint ($breakpoint-large-width) {
+      padding-left: auto;
+    }
+  }
+}
+
+/***********
+~CONTENT
+***********/
+
+#content {
+  padding-top: 8px;
+
+}
+
+/***********
+~FOOTER
+***********/
+
+.wrapper.footer {
+  #footer {
+    margin-left: auto;
+    margin-right: auto;
+    color: $dark;
+    font-size:12px;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+  }
+}
+ul.social-footer {
+  @include reset-ul;
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 5px 0 0;
+    a {
+     display: block;
+     outline: none;
+     text-decoration: none;
+     i {
+      -o-transition:.5s;
+       -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      color: $dark;
+      font-size: 30px;
+        span {
+          display: none;
+        }
+        &:hover {
+         color: $blue;
+        }
+      }
+    }
+  }
+}
+@include breakpoint ($breakpoint-medium-width) {
+  #footer {
+    text-align: center;
+  }
+  ul.social-footer {
+    margin-top: -10px;
+    li {
+     display: inline-block;
+     float: none;
+    }
+  }
+}
+
+/* HOME */
+
+.front {
+  #main {
+    margin: 0 auto;
+  }
+}
