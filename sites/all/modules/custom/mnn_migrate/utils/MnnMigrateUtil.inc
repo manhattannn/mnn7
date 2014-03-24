@@ -69,7 +69,8 @@ class MnnMigrateUtil
     $query->orderBy('tn.tid', 'ASC');
     $result = $query->execute()->fetchCol();
 
-    return is_array($result) && !empty($result) ? implode(',', $result) : NULL;
+    $categories =  is_array($result) && !empty($result) ? implode(',', $result): 'News';
+    return $categories;
   }
 
 } 

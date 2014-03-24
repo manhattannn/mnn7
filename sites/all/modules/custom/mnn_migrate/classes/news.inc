@@ -61,7 +61,8 @@ class NewsMigration extends Migration {
 
     // Pass values from prepareRow()
     $this->addFieldMapping('path', 'url_alias');
-    $this->addFieldMapping('field_mnn_news_categories', 'categories');
+    $this->addFieldMapping('field_site_section', 'categories')
+      ->separator(',');
     $this->addFieldMapping('field_image', 'image_filename');
     $this->addFieldMapping('field_image:source_dir', 'image_filepath');
 
@@ -77,7 +78,7 @@ class NewsMigration extends Migration {
     $current_row->format = MnnMigrateUtil::getTextFormat($current_row->format);
 
     // Set the terms for the node.
-    $current_row->field_mnn_news_categories = MnnMigrateUtil::getProperCategories($current_row->vid);
+    $current_row->categories = MnnMigrateUtil::getProperCategories($current_row->vid);
 
     // Set the url alias for the node.
     $current_row->url_alias = MnnMigrateUtil::getUrlAlias($current_row->nid);
