@@ -58,14 +58,18 @@ function mnn_wysiwyg_user_default_permissions() {
   // Exported permission: 'create asset with type document'.
   $permissions['create asset with type document'] = array(
     'name' => 'create asset with type document',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
   // Exported permission: 'create asset with type image'.
   $permissions['create asset with type image'] = array(
     'name' => 'create asset with type image',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
@@ -81,28 +85,36 @@ function mnn_wysiwyg_user_default_permissions() {
   // Exported permission: 'delete asset with type document'.
   $permissions['delete asset with type document'] = array(
     'name' => 'delete asset with type document',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
   // Exported permission: 'delete asset with type image'.
   $permissions['delete asset with type image'] = array(
     'name' => 'delete asset with type image',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
   // Exported permission: 'edit asset with type document'.
   $permissions['edit asset with type document'] = array(
     'name' => 'edit asset with type document',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
   // Exported permission: 'edit asset with type image'.
   $permissions['edit asset with type image'] = array(
     'name' => 'edit asset with type image',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'asset',
   );
 
