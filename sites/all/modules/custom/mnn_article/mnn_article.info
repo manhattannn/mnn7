@@ -19,7 +19,6 @@ features[field_base][] = field_image
 features[field_base][] = field_mnn_news_categories
 features[field_instance][] = node-article-body
 features[field_instance][] = node-article-field_image
-features[field_instance][] = node-article-field_mnn_news_categories
 features[node][] = article
 features[variable][] = comment_anonymous_article
 features[variable][] = comment_article
