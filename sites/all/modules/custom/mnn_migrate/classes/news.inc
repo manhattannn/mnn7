@@ -54,7 +54,7 @@ class NewsMigration extends Migration {
     // Define default value for some fields
     $this->addFieldMapping('is_new')->defaultValue(TRUE);
     $this->addFieldMapping('revision')->defaultValue(TRUE);
-    $this->addFieldMapping('revision_uid', 'uid');
+    $this->addFieldMapping('revision_uid', 'uid')->sourceMigration(array('User'));
     // Mapping of the body field
     $body_arguments = MigrateTextFieldHandler::arguments(array('source_field' => 'teaser'), array('source_field' => 'format'));
     $this->addFieldMapping('body', 'body')->arguments($body_arguments);

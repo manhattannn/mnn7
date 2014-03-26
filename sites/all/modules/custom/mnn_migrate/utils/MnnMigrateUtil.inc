@@ -14,15 +14,21 @@ class MnnMigrateUtil
   public static function getTextFormat($oldFormat)
   {
     switch ($oldFormat) {
+      // Was Filtered HTML - HTML corrector - HTML filter - Line break converter - URL Filter
       case 1:
         $newFormat = 'filtered_html';
         break;
+      // Was Full HTML - HTML Corrector - Inline Images - URL Filter  
       case 2:
+      // Was Unfiltered HTML - HTML corrector only.
+      case 4:
+      // Was WYSIWYG - HTML corrector only.
+      case 5:
         $newFormat = 'full_html';
         break;
+      // Was PHP code - Inline images - PHP evaluator;
+      // BAD IDEA TO JUST MIGRATE - SET AS PLAIN TEXT;
       case 3:
-        $newFormat = 'php_code';
-        break;
       default:
         $newFormat = 'plain_text';
     }
