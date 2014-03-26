@@ -50,11 +50,13 @@ class NewsMigration extends Migration {
 
     // Mapping: Assign mappings TO destination fields FROM source fields.
     // Simple Mappings : map the fields with the same name
-    $this->addSimpleMappings(array('title', 'uid', 'created', 'changed', 'status', 'promote', 'sticky'));
+    $this->addSimpleMappings(array('title', 'created', 'changed', 'status', 'promote', 'sticky'));
     // Define default value for some fields
     $this->addFieldMapping('is_new')->defaultValue(TRUE);
     $this->addFieldMapping('revision')->defaultValue(TRUE);
-    $this->addFieldMapping('revision_uid', 'uid')->sourceMigration(array('User'));
+    $this->addFieldMapping('revision_uid', 'uid')->sourceMigration('User');
+    $this->addFieldMapping('uid', 'uid')->sourceMigration('User');
+
     // Mapping of the body field
     $body_arguments = MigrateTextFieldHandler::arguments(array('source_field' => 'teaser'), array('source_field' => 'format'));
     $this->addFieldMapping('body', 'body')->arguments($body_arguments);
