@@ -28,4 +28,5 @@ features[variable][] = apachesolr_watchdog_successes
 features[variable][] = search_active_modules
 features[variable][] = search_cron_limit
 features[variable][] = search_default_module
+features[variable][] = transliteration_search
 project path = sites/all/modules/custom

@@ -1,0 +1,11 @@
+name = "Mnn Migration"
+description = "Migrate content from legacy Mnn system"
+package = "MNN"
+core = 7.x
+
+dependencies[] = migrate
+
+files[] = classes/user.inc
+files[] = classes/news.inc
+files[] = classes/newstaxonomy.inc
+files[] = utils/MnnMigrateUtil.inc

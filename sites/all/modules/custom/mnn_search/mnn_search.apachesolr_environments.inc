@@ -18,9 +18,14 @@ function mnn_search_apachesolr_environments() {
   $environment->service_class = '';
   $environment->conf = array(
     'apachesolr_direct_commit' => 1,
-    'apachesolr_index_last' => array(),
-    'apachesolr_index_updated' => 1395677846,
-    'apachesolr_last_optimize' => 1395677833,
+    'apachesolr_index_last' => array(
+      'node' => array(
+        'last_changed' => '1395762895',
+        'last_entity_id' => '631',
+      ),
+    ),
+    'apachesolr_index_updated' => 1395845654,
+    'apachesolr_last_optimize' => 1395767971,
     'apachesolr_read_only' => '0',
     'apachesolr_soft_commit' => 1,
     'multisitesearch' => 1,

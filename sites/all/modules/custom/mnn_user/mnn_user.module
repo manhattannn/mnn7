@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the MNN User feature.
  */
+
+include_once 'mnn_user.features.inc';

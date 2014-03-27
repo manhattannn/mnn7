@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the MNN WYSIWYG feature.
+ */
+
+include_once 'mnn_wysiwyg.features.inc';
