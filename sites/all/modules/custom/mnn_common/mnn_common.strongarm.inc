@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * mnn_commons.strongarm.inc
+ * mnn_common.strongarm.inc
  */
 
 /**
