@@ -92,13 +92,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'access overlay'.
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
-    'roles' => array(),
-    'module' => 'overlay',
-  );
-
   // Exported permission: 'access own broken links report'.
   $permissions['access own broken links report'] = array(
     'name' => 'access own broken links report',
