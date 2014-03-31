@@ -5,3 +5,29 @@
  */
 
 include_once 'mnn_common.features.inc';
+
+/**
+ * This captures cleanups that need to happen to use a fresh install of cm_starter_kit_easy.
+ */
+function mnn_common_fix_cm_starterkit_easy_profile() {
+
+  // Uninstall unwanted modules.
+  $uninstall_modules = array(
+    'comment',
+    'overlay',
+  );
+
+  foreach($uninstall_modules as $module) {
+    if (module_exists($module)) {
+       module_disable(array($module));
+       drupal_uninstall_modules(array($module));
+    }
+  }
+
+  // TODO: Remove the Tags taxonomy
+
+  // TODO: Turn on all of the MNN modules.
+
+
+
+}

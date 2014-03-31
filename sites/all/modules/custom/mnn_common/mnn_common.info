@@ -1,9 +1,14 @@
 name = MNN Common
 core = 7.x
-package = Features
+package = MNN
 dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
 dependencies[] = strongarm
+dependencies[] = text
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_image
 features[variable][] = site_name
 project path = sites/all/modules/custom

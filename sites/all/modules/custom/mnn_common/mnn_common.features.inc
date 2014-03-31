@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * mnn_commons.features.inc
+ * mnn_common.features.inc
  */
 
 /**
