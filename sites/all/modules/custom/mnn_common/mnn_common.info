@@ -1,6 +1,6 @@
 name = MNN Common
 core = 7.x
-package = Features
+package = MNN
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
