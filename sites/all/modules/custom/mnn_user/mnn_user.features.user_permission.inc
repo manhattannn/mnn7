@@ -25,6 +25,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access all views',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'views',
   );
@@ -34,21 +35,9 @@ function mnn_user_user_default_permissions() {
     'name' => 'access broken links report',
     'roles' => array(
       'administrator' => 'administrator',
-    ),
-    'module' => 'linkchecker',
-  );
-
-  // Exported permission: 'access comments'.
-  $permissions['access comments'] = array(
-    'name' => 'access comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-      'member' => 'member',
       'staff' => 'staff',
     ),
-    'module' => 'comment',
+    'module' => 'linkchecker',
   );
 
   // Exported permission: 'access content'.
@@ -69,6 +58,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -78,6 +68,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'contextual',
   );
@@ -87,6 +78,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access dashboard',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'dashboard',
   );
@@ -103,10 +95,7 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'access overlay'.
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
+    'roles' => array(),
     'module' => 'overlay',
   );
 
@@ -115,6 +104,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access own broken links report',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'linkchecker',
   );
@@ -124,6 +114,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'access site in maintenance mode',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'system',
   );
@@ -182,15 +173,6 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'breakpoints',
-  );
-
-  // Exported permission: 'administer comments'.
-  $permissions['administer comments'] = array(
-    'name' => 'administer comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
   );
 
   // Exported permission: 'administer content types'.
@@ -441,6 +423,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -459,6 +442,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'user',
   );
@@ -466,7 +450,10 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -495,6 +482,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'path',
   );
@@ -511,7 +499,9 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'delete any article content'.
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -530,7 +520,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -538,7 +527,10 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'delete own article content'.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -567,7 +559,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
-      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -575,23 +566,15 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'delete terms in channel'.
   $permissions['delete terms in channel'] = array(
     'name' => 'delete terms in channel',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in sections'.
   $permissions['delete terms in sections'] = array(
     'name' => 'delete terms in sections',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'delete terms in tags'.
-  $permissions['delete terms in tags'] = array(
-    'name' => 'delete terms in tags',
     'roles' => array(
       'administrator' => 'administrator',
     ),
@@ -601,7 +584,10 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -637,7 +623,10 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'edit own article content'.
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -649,15 +638,6 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit own comments'.
-  $permissions['edit own comments'] = array(
-    'name' => 'edit own comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'comment',
   );
 
   // Exported permission: 'edit own page content'.
@@ -673,7 +653,9 @@ function mnn_user_user_default_permissions() {
   // Exported permission: 'edit terms in channel'.
   $permissions['edit terms in channel'] = array(
     'name' => 'edit terms in channel',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -683,15 +665,6 @@ function mnn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'staff' => 'staff',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in tags'.
-  $permissions['edit terms in tags'] = array(
-    'name' => 'edit terms in tags',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -737,20 +710,9 @@ function mnn_user_user_default_permissions() {
     'name' => 'notify of path changes',
     'roles' => array(
       'administrator' => 'administrator',
-    ),
-    'module' => 'pathauto',
-  );
-
-  // Exported permission: 'post comments'.
-  $permissions['post comments'] = array(
-    'name' => 'post comments',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'member' => 'member',
       'staff' => 'staff',
     ),
-    'module' => 'comment',
+    'module' => 'pathauto',
   );
 
   // Exported permission: 'revert revisions'.
@@ -768,6 +730,8 @@ function mnn_user_user_default_permissions() {
     'name' => 'search content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
       'staff' => 'staff',
     ),
     'module' => 'search',
@@ -782,84 +746,12 @@ function mnn_user_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'show format selection for asset'.
-  $permissions['show format selection for asset'] = array(
-    'name' => 'show format selection for asset',
-    'roles' => array(),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for comment'.
-  $permissions['show format selection for comment'] = array(
-    'name' => 'show format selection for comment',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for node'.
-  $permissions['show format selection for node'] = array(
-    'name' => 'show format selection for node',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for taxonomy_term'.
-  $permissions['show format selection for taxonomy_term'] = array(
-    'name' => 'show format selection for taxonomy_term',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format selection for user'.
-  $permissions['show format selection for user'] = array(
-    'name' => 'show format selection for user',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format tips'.
-  $permissions['show format tips'] = array(
-    'name' => 'show format tips',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show more format tips link'.
-  $permissions['show more format tips link'] = array(
-    'name' => 'show more format tips link',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'skip comment approval'.
-  $permissions['skip comment approval'] = array(
-    'name' => 'skip comment approval',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'member' => 'member',
-      'staff' => 'staff',
-    ),
-    'module' => 'comment',
-  );
-
   // Exported permission: 'switch shortcut sets'.
   $permissions['switch shortcut sets'] = array(
     'name' => 'switch shortcut sets',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'shortcut',
   );
@@ -887,6 +779,8 @@ function mnn_user_user_default_permissions() {
     'name' => 'use advanced search',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
       'staff' => 'staff',
     ),
     'module' => 'search',
@@ -897,8 +791,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'use text format filtered_html',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
       'member' => 'member',
       'staff' => 'staff',
     ),
@@ -948,6 +840,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'system',
   );
