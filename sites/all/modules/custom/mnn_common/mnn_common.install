@@ -1,0 +1,44 @@
+<?php
+/**
+ * Implements hook_update_N().
+ *
+ * Enable the admin theme and responsive admin bar, and disable the toolbar module.
+ */
+function mnn_common_update_7000() {
+  module_enable(array('navbar'));
+  theme_enable(array('ember'));
+  variable_set('admin_theme', 'ember');
+  mnn_common_uninstall_modules(array('toolbar'));
+}
+
+/**
+ * This captures cleanups that need to happen to use a fresh install of cm_starter_kit_easy.
+ */
+function mnn_common_fix_cm_starterkit_easy_profile() {
+
+  // Uninstall unwanted modules.
+  $uninstall_modules = array(
+    'comment',
+    'overlay',
+  );
+
+  mnn_common_uninstall_modules($uninstall_modules);
+  // TODO: Remove the Tags taxonomy
+
+  // TODO: Turn on all of the MNN modules.
+
+}
+
+/**
+ * Helper function to disable and then uninstall a module.
+ */
+function mnn_common_uninstall_modules($unistall_modules) {
+  foreach($uninstall_modules as $module) {
+    if (module_exists($module)) {
+       module_disable(array($module));
+       drupal_uninstall_modules(array($module));
+    }
+  }
+}
+
+
