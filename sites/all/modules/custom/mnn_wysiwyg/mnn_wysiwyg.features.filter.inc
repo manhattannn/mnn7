@@ -19,33 +19,28 @@ function mnn_wysiwyg_filter_default_formats() {
     'weight' => 0,
     'filters' => array(
       'filter_url' => array(
-        'weight' => -47,
+        'weight' => -50,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'filter_html' => array(
-        'weight' => -46,
+        'weight' => -49,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd><u><strike><p><br><table><tr><td><th><thead><tbody><h1><h2><h3><h4><h5><h6>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
       ),
-      'filter_autop' => array(
-        'weight' => -45,
-        'status' => 1,
-        'settings' => array(),
-      ),
       'assets_filter' => array(
-        'weight' => -44,
+        'weight' => -48,
         'status' => 1,
         'settings' => array(),
       ),
-      'filter_htmlcorrector' => array(
-        'weight' => -43,
+      'filter_autop' => array(
+        'weight' => -46,
         'status' => 1,
         'settings' => array(),
       ),
@@ -56,7 +51,7 @@ function mnn_wysiwyg_filter_default_formats() {
   $formats['full_html'] = array(
     'format' => 'full_html',
     'name' => 'Full HTML',
-    'cache' => 0,
+    'cache' => 1,
     'status' => 1,
     'weight' => 1,
     'filters' => array(
