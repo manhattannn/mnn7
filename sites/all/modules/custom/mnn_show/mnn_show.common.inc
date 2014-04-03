@@ -5,7 +5,7 @@ ctools_include('cleanstring', 'ctools', 'includes');
 /**
  * Get the channels (tv stations).
  */
-function mnns_how_get_channels(){
+function mnn_show_get_channels(){
   // check for cached channels
   if ($cached = cache_get('mnn_show:channels', 'cache')) {
     return $cached->data;
@@ -13,9 +13,9 @@ function mnns_how_get_channels(){
 
   $channels = array();
 
-  $result = db_query("SELECT nid FROM {node} WHERE type = 'channel_info'");
-  while($row = db_fetch_object($result)) {
-    $channel_info = node_load($row->nid); // drupal content type
+  $channels_results = db_query("SELECT nid FROM {node} WHERE type = 'channel_info'");
+  foreach($channels_results as $channel_result) {
+    $channel_info = node_load($channel_result->nid); // drupal content type
     $tv_ch = array();
     foreach ($channel_info->field_television_channel as $tv_ch_nid){
       $television_channel = node_load($tv_ch_nid['nid']); // drupal content type

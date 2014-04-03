@@ -29,7 +29,7 @@ function mnn_show_menu() {
   );
   $items['shows/past-shows/category'] = array(
     'title' => 'Shows',
-    'page callback' => 'mnns_how_show_redirect_to_schedule_page',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK,
     'file' => 'mnn_show.shows.inc',
@@ -92,29 +92,29 @@ function mnn_show_menu() {
 function mnn_show_block_info() {
   $blocks = array();
 
-  $block['watch_now'] = array(
+  $blocks['watch_now'] = array(
     'info' => t('Watch Now'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
-  $block['schedule_geolocator_and_channel_listing'] = array(
+  $blocks['sch_geolocator_and_ch_listing'] = array(
     'info' => t('Schedule Geolocator and Channel Listing'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
-  $block['channel_listing'] = array(
+  $blocks['channel_listing'] = array(
     'info' => t('Channel Listing'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
-  $block['youth_channel_listing'] = array(
+  $blocks['youth_channel_listing'] = array(
     'info' => t('Youth Channel Listing'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
-  $block['youth_channel_intro'] = array(
+  $blocks['youth_channel_intro'] = array(
     'info' => t('Youth Channel Intro'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
-  $block['youth_channel_playing_now'] = array(
+  $blocks['youth_channel_playing_now'] = array(
     'info' => t('Youth Channel Playing Now?'),
-    'cache' => BLOCK_NO_CACHE
+    'cache' => DRUPAL_NO_CACHE
   );
 
   return $blocks;
@@ -124,13 +124,15 @@ function mnn_show_block_info() {
  * Implements hook_block_view().
  */
 function mnn_show_block_view($delta = '') {
+  ctools_include('mnn_show.blocks', 'mnn_show', '');
+
   $block = array();
 
   switch($delta) {
     case 'watch_now':
       $block['content'] = mnn_show_block_watch_now();
       break;
-    case 'schedule_geolocator_and_channel_listing':
+    case 'sch_geolocator_and_ch_listing':
       $block['subject'] = t('Channel Listing');
       $block['content'] = mnn_show_block_geolocator_and_channel_listing();
       break;
