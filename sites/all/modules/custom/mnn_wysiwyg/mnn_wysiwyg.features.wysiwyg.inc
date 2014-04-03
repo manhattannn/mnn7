@@ -99,6 +99,9 @@ function mnn_wysiwyg_wysiwyg_default_profiles() {
         'picture_ckeditor' => array(
           'picture_ckeditor' => 1,
         ),
+        'drupal' => array(
+          'media' => 1,
+        ),
       ),
       'toolbarLocation' => 'top',
       'resize_enabled' => 1,
