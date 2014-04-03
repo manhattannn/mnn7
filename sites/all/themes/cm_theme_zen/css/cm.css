@@ -200,7 +200,7 @@ h1#site-name a:link, h1#site-name a:visited {
     clear: both;
     float: none;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto 30px auto;
   }
 }
 #block-search-form input.form-text {
@@ -238,7 +238,7 @@ h1#site-name a:link, h1#site-name a:visited {
     float: none;
     clear: both;
     display: block;
-    padding: 20px 0;
+    padding: 20px;
   }
   .wrapper.header #header #name-and-slogan {
     float: none;
