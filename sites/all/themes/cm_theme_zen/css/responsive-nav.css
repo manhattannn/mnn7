@@ -11,9 +11,6 @@ a.meanmenu-reveal {
   display: none;
 }
 
-.mean-container #navigation {
-  padding: 0;
-}
 .mean-container .mean-bar {
   float: left;
   width: 100%;
@@ -84,7 +81,8 @@ a.meanmenu-reveal {
   text-transform: capitalize;
 }
 .mean-container .mean-nav ul li:hover {
-  background: #EEEEEE;
+  background: #252525;
+  background: rgba(255, 255, 255, 0.1);
 }
 .mean-container .mean-nav ul li .mean-expand {
   width: 26px;
