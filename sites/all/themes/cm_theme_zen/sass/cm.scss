@@ -1,8 +1,9 @@
 /**
  * @file
  *
- * CM-specific  Styling
+ * Bear Starter Theme Main Styling
  *
+ * Adds basic bear styles for starter theme.
  *
  */
 
@@ -20,78 +21,23 @@ body {
   color: $dark;
   @include m-links;
 }
-html, body, button, input, select, textarea, textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
-  @include cmfont-main;
+html, body, button, input, select, textarea {
+  @include bearfont-main;
 }
 h1, h2, h3, h4, h5 {
-  @include cmfont-titles;
+  @include bearfont-titles;
   font-weight: 400;
+}
+#main {
+  clear: both;
 }
 #page {
   min-width: 300px;
 }
-.navigation ul.menu {
-  li {
-    text-transform: none;
-    @include clear-space;
-    @include m-links;
-    a {
-      background-color: $grey;
-      padding: 7px 15px 6px 15px;
-      @include bottom-border-radius;
-      display: block;
-      &:hover, &.active {
-        color: #ffffff;
-        text-decoration: underline;
-        background: $greyer;
-      }
-      &.active, &:visited {
-        text-decoration: none;
-      }
-    }
-  }
-  ul {
-    z-index: 100;
-    &:hover {
-      display: block;
-    }
-    li {
-     a:link, a:visited, a:hover {
-      background: transparent;
-      color: $blue;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-ul.primary {
-  padding: 0;
-  border-bottom: 1px solid #D9DBDB;
-  @include breakpoint ($breakpoint-small-width) {
-    border-bottom: none;
-  }
-  li {
-    border: none;
-    margin:0 5px 0 0;
-    text-shadow: 0;
-    a:link, a:visited, a:hover {
-     text-shadow: 0;
-     padding: 5px 15px;
-     border: 1px solid #CCCCCC;
-     border-radius: 0;
-     -moz-border-radius: 0;
-     -webkit-border-radius: 0;
-    }
-    a {
-      color: #333 !important;
-       &.active {
-        background-color: #EEE;
-        color: $blue !important;
-      }
-    }
-  }
+.navigation {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
 }
 @include breakpoint ($breakpoint-small-width) {
   ul.primary li, ul.secondary li {
@@ -112,19 +58,17 @@ h1 {
 }
 .wrapper {
   &.header {
-    background-color: $greyer;
-    box-shadow: inset 0px -5px 6px #CCC;
-    -moz-box-shadow: inset 0px -5px 6px #CCC;
-    -webkit-box-shadow: inset 0px -5px 6px #CCC;
+    background-color: #EEEEEE;
+    box-shadow: inset 0px -3px 6px #CCC;
+    -moz-box-shadow: inset 0px -3px 6px #CCC;
+    -webkit-box-shadow: inset 0px -3px 6px #CCC;
   }
   &.footer {
-    background-color: white;
+    background-color: $grey;
   }
 }
 .breadcrumb {
-  margin: 8px 0 15px 0;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #EEEEEE;
+  margin: 20px 0;
 }
 /***********
 ~HEADER
@@ -134,12 +78,11 @@ h1 {
 }
 .wrapper.header {
   #header {
-    clear: both;
     padding: 25px 20px;
     position: relative;
-    #cm-user-menu {
+    #bear-user-menu {
       float: right;
-      margin: 0 20px 0 0;
+      margin: 0;
       @include breakpoint ($breakpoint-medium-width) {
         float: none;
         text-align: center;
@@ -153,21 +96,10 @@ h1 {
           list-style-type: none;
           margin: 0 0 0 10px;
           a {
-            border: 1px solid #CCC;
-            margin:0 5px 0 0;
+            @include sassy-button("matte", 2px, 90%, #777, #666, #fff, "inset");
             -moz-box-shadow: none;
             -webkit-box-shadow: none;
             box-shadow: none;
-            padding: 6px 15px;
-            color: #333;
-            font-size: 90%;
-            background: #DDD;
-            &:hover {
-              border-color: #999;
-              background: #AAA;
-              color: #FFF;
-              text-decoration: none;
-            }
           }
         }
       }
@@ -263,8 +195,7 @@ aside.sidebars {
 ***********/
 
 #content {
-  padding-top: 8px;
-
+  padding-bottom: 50px;
 }
 
 /***********
@@ -277,9 +208,28 @@ aside.sidebars {
     margin-right: auto;
     color: $dark;
     font-size:12px;
-    padding: 30px 20px;
-    margin-top: 20px;
-    border-top: 1px solid #DDD;
+    ul.social-footer li a {
+      &.drupal {
+        background: url("../images/drupal-grey.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        display: block;
+        height: 40px;
+        position: relative;
+        text-indent: -9999px;
+        top: -7px;
+        width: 40px;
+        &:hover {
+          background-position: left -45px;
+        }
+      }
+      &.mip {
+        @include bearfont-titles;
+        font-size: 22px;
+        color: $dark;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
   }
 }
 ul.social-footer {
@@ -319,13 +269,5 @@ ul.social-footer {
      display: inline-block;
      float: none;
     }
-  }
-}
-
-/* HOME */
-
-.front {
-  #main {
-    margin: 0 auto;
   }
 }
