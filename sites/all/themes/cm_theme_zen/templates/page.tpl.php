@@ -66,7 +66,7 @@
           <?php print $sidebar_second; ?>
         </aside><!-- /.sidebars -->
       <?php endif; ?>
-
+      <div id="layout-footer"></div>
     </div><!-- /#main -->
   </div>
 </div><!-- /#page -->
