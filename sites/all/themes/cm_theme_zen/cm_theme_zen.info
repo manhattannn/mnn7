@@ -149,7 +149,8 @@ settings[sticky_footer]            = 1
 
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: http://drupal.org/node/495654
-;plugins[panels][layouts] = layouts
+
+plugins[panels][layouts] = panels-layouts
 
 ; Setting breakpoints for Picture module
 breakpoints[mobile] = (min-width: 0px)
@@ -163,4 +164,3 @@ version = "7.x-3.0-beta1+3-dev"
 core = "7.x"
 project = "cm_theme"
 datestamp = "1393521511"
-
