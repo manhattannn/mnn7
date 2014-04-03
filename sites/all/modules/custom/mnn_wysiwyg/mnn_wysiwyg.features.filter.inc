@@ -14,7 +14,7 @@ function mnn_wysiwyg_filter_default_formats() {
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
-    'cache' => 0,
+    'cache' => 1,
     'status' => 1,
     'weight' => 0,
     'filters' => array(
