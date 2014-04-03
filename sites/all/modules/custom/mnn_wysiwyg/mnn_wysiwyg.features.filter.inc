@@ -39,6 +39,11 @@ function mnn_wysiwyg_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
+      'media_filter' => array(
+        'weight' => 2,
+        'status' => 1,
+        'settings' => array(),
+      ),
     ),
   );
 
