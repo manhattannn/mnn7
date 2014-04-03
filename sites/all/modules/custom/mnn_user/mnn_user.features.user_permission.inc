@@ -30,16 +30,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'access assets overview'.
-  $permissions['access assets overview'] = array(
-    'name' => 'access assets overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset',
-  );
-
   // Exported permission: 'access broken links report'.
   $permissions['access broken links report'] = array(
     'name' => 'access broken links report',
@@ -112,16 +102,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'linkchecker',
   );
 
-  // Exported permission: 'access search widget'.
-  $permissions['access search widget'] = array(
-    'name' => 'access search widget',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset_widget',
-  );
-
   // Exported permission: 'access site in maintenance mode'.
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
@@ -139,16 +119,6 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: 'access toolbar'.
-  $permissions['access toolbar'] = array(
-    'name' => 'access toolbar',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'toolbar',
   );
 
   // Exported permission: 'access user profiles'.
@@ -170,24 +140,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer asset types'.
-  $permissions['administer asset types'] = array(
-    'name' => 'administer asset types',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'asset',
-  );
-
-  // Exported permission: 'administer assets'.
-  $permissions['administer assets'] = array(
-    'name' => 'administer assets',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'asset',
-  );
-
   // Exported permission: 'administer blocks'.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
@@ -204,15 +156,6 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'breakpoints',
-  );
-
-  // Exported permission: 'administer ckeditor'.
-  $permissions['administer ckeditor'] = array(
-    'name' => 'administer ckeditor',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ckeditor',
   );
 
   // Exported permission: 'administer content types'.
@@ -497,26 +440,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create asset with type document'.
-  $permissions['create asset with type document'] = array(
-    'name' => 'create asset with type document',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset',
-  );
-
-  // Exported permission: 'create asset with type image'.
-  $permissions['create asset with type image'] = array(
-    'name' => 'create asset with type image',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset',
-  );
-
   // Exported permission: 'create cm_slideshow_slide content'.
   $permissions['create cm_slideshow_slide content'] = array(
     'name' => 'create cm_slideshow_slide content',
@@ -545,15 +468,6 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'path',
-  );
-
-  // Exported permission: 'customize ckeditor'.
-  $permissions['customize ckeditor'] = array(
-    'name' => 'customize ckeditor',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ckeditor',
   );
 
   // Exported permission: 'customize shortcut links'.
@@ -591,24 +505,6 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete asset with type document'.
-  $permissions['delete asset with type document'] = array(
-    'name' => 'delete asset with type document',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'asset',
-  );
-
-  // Exported permission: 'delete asset with type image'.
-  $permissions['delete asset with type image'] = array(
-    'name' => 'delete asset with type image',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'asset',
   );
 
   // Exported permission: 'delete own article content'.
@@ -696,26 +592,6 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit asset with type document'.
-  $permissions['edit asset with type document'] = array(
-    'name' => 'edit asset with type document',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset',
-  );
-
-  // Exported permission: 'edit asset with type image'.
-  $permissions['edit asset with type image'] = array(
-    'name' => 'edit asset with type image',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'asset',
   );
 
   // Exported permission: 'edit link settings'.

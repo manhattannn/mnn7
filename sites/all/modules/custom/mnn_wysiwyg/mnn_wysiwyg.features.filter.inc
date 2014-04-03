@@ -34,11 +34,6 @@ function mnn_wysiwyg_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'assets_filter' => array(
-        'weight' => -48,
-        'status' => 1,
-        'settings' => array(),
-      ),
       'filter_autop' => array(
         'weight' => -46,
         'status' => 1,
@@ -55,11 +50,6 @@ function mnn_wysiwyg_filter_default_formats() {
     'status' => 1,
     'weight' => 1,
     'filters' => array(
-      'assets_filter' => array(
-        'weight' => 0,
-        'status' => 1,
-        'settings' => array(),
-      ),
       'filter_url' => array(
         'weight' => 0,
         'status' => 1,
@@ -69,6 +59,11 @@ function mnn_wysiwyg_filter_default_formats() {
       ),
       'filter_autop' => array(
         'weight' => 1,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'media_filter' => array(
+        'weight' => 2,
         'status' => 1,
         'settings' => array(),
       ),
