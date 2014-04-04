@@ -288,6 +288,7 @@ aside.sidebars .sidebar h2 {
   color: #555555;
   font-size: 12px;
   padding: 20px 0;
+  position: relative;
 }
 .wrapper.footer #footer ul.social-footer li a.drupal {
   background: url("../images/drupal-grey.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);

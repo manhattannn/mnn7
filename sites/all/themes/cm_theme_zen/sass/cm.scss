@@ -213,6 +213,7 @@ aside.sidebars {
     color: $dark;
     font-size:12px;
     padding: 20px 0;
+    position: relative;
     ul.social-footer li a {
       &.drupal {
         background: url("../images/drupal-grey.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);

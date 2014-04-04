@@ -13,8 +13,13 @@ html, body {
   height: 100px;
 }
 
-.footer {
+#footer {
   clear: both;
   position: relative;
   height: 100px;
+}
+
+/* Reduce footer height by the height(px) the .wrapper.footer top border */
+#footer {
+  height: 99px;
 }
