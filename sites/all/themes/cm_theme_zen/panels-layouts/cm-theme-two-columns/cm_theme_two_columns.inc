@@ -8,11 +8,12 @@ $plugin = array(
   'title'       => t('Two columns with top and bottom rows'),
   'category'    => t('CM theme layouts'),
   'icon'        => 'icon.png',
-
+  'css' => 'cm_theme_two_columns.css',
   'theme'       => 'cm_theme_two_columns',
 
   'regions'     => array(
-    'top' => t('Top'),
+    'top' => t('Top Row'),
+    'center' => t('Center Row'),
     'left' => t('Left side'),
     'right' => t('Right side'),
     'bottom' => t('Bottom')
