@@ -72,12 +72,14 @@ function mnn_article_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'teaser',
+          'fallback_image_style' => 'teaser',
           'image_link' => 'content',
-          'image_style' => 'thumbnail',
+          'picture_group' => 'teaser',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
     ),

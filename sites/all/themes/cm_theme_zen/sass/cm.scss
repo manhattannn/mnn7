@@ -20,6 +20,9 @@
 body {
   color: $dark;
   @include m-links;
+  p {
+    margin: 0 0 15px 0;
+  }
 }
 html, body, button, input, select, textarea {
   @include bearfont-main;

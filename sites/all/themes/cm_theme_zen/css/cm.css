@@ -35,6 +35,9 @@ body a:hover {
 body a:visited {
   color: #61aee2;
 }
+body p {
+  margin: 0 0 15px 0;
+}
 
 html, body, button, input, select, textarea {
   font-family: Arial, Helvetica, sans-serif;

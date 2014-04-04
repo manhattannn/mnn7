@@ -93,6 +93,113 @@ body {
 /*
  * Content
  */
+#content .node-teaser {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EEEEEE;
+}
+#content .node-teaser:before, #content .node-teaser:after {
+  content: "";
+  display: table;
+}
+#content .node-teaser:after {
+  clear: both;
+}
+#content .node-teaser header .submitted {
+  margin: 0 0 20px 0;
+  font-style: italic;
+}
+#content .node-teaser .field-name-field-image {
+  float: left;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: -25%;
+  padding-left: 0;
+  padding-right: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-right: 20px;
+}
+@media (max-width: 800px) {
+  #content .node-teaser .field-name-field-image {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
+#content .node-teaser .field-name-body {
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 0;
+  padding-right: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-right: 20px;
+}
+@media (max-width: 800px) {
+  #content .node-teaser .field-name-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
+#content .node-teaser ul.links.inline {
+  clear: right;
+  float: right;
+  width: 75%;
+  margin-right: 0%;
+  margin-left: -75%;
+  padding-left: 0;
+  padding-right: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 800px) {
+  #content .node-teaser ul.links.inline {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
+}
+
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }

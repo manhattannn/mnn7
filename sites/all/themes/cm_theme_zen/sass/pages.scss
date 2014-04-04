@@ -100,6 +100,45 @@ body {
  */
 
 #content {
+  .node-teaser {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    $zen-column-count:  8;
+    $zen-gutter-width:  0;
+    @include zen-grid-container();
+    border-bottom: 1px solid #EEEEEE;
+    header {
+      .submitted {
+        margin: 0 0 20px 0;
+        font-style: italic;
+      }
+    }
+    .field-name-field-image {
+      @include zen-grid-item(2, 1);
+      padding-right: 20px;
+      $zen-gutter-side: right;
+      @include breakpoint ($breakpoint-medium-width) {
+        @include zen-grid-item(8, 1);
+        @include zen-clear;
+      }
+    }
+    .field-name-body {
+      @include zen-grid-item(6, 1, right);
+      padding-right: 20px;
+      @include breakpoint ($breakpoint-medium-width) {
+        @include zen-grid-item(8, 1);
+        @include zen-clear;
+      }
+    }
+    ul.links.inline {
+      @include zen-clear(right);
+      @include zen-grid-item(6, 1, right);
+      @include breakpoint ($breakpoint-medium-width) {
+        @include zen-grid-item(8, 1);
+        @include zen-clear;
+      }
+    }
+  }
 }
 
 .region-highlighted {
