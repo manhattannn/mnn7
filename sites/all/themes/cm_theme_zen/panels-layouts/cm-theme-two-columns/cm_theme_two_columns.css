@@ -1,4 +1,10 @@
 
 .row {
   margin-bottom: 10px;
+  clear: both;
+  width: 100%;
+}
+.column {
+  float: left;
+  width: 50%;
 }
