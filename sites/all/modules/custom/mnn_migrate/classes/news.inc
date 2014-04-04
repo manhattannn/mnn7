@@ -79,6 +79,10 @@ class NewsMigration extends Migration {
     // Set the text format for the node.
     $current_row->format = MnnMigrateUtil::getTextFormat($current_row->format);
 
+    // Run the old body text throught check_markup filter to
+    // get properly formatted body text.
+    $current_row->body = check_markup(trim($current_row->body), $current_row->format);
+
     // Set the terms for the node.
     $current_row->categories = MnnMigrateUtil::getProperCategories($current_row->vid);
 
