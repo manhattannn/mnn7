@@ -1,9 +1,8 @@
 /**
  * @file
  *
- * Bear Starter Theme Main Styling
+ * CM Theme General Styling
  *
- * Adds basic bear styles for starter theme.
  *
  */
 
@@ -22,10 +21,10 @@ body {
   @include m-links;
 }
 html, body, button, input, select, textarea {
-  @include bearfont-main;
+  @include cmfont-main;
 }
 h1, h2, h3, h4, h5 {
-  @include bearfont-titles;
+  @include cmfont-titles;
   font-weight: 400;
 }
 #main {
@@ -80,7 +79,7 @@ h1 {
   #header {
     padding: 25px 20px;
     position: relative;
-    #bear-user-menu {
+    #cm-user-menu {
       float: right;
       margin: 0;
       @include breakpoint ($breakpoint-medium-width) {
@@ -228,7 +227,7 @@ aside.sidebars {
         }
       }
       &.mip {
-        @include bearfont-titles;
+        @include cmfont-titles;
         font-size: 22px;
         color: $dark;
         &:hover {

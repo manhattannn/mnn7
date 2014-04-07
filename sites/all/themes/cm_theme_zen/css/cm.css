@@ -1,9 +1,8 @@
 /**
  * @file
  *
- * Bear Starter Theme Main Styling
+ * CM Theme General Styling
  *
- * Adds basic bear styles for starter theme.
  *
  */
 /***********
@@ -102,27 +101,27 @@ h1 {
   padding: 25px 20px;
   position: relative;
 }
-.wrapper.header #header #bear-user-menu {
+.wrapper.header #header #cm-user-menu {
   float: right;
   margin: 0;
 }
 @media (max-width: 800px) {
-  .wrapper.header #header #bear-user-menu {
+  .wrapper.header #header #cm-user-menu {
     float: none;
     text-align: center;
     margin: 0;
   }
 }
-.wrapper.header #header #bear-user-menu ul {
+.wrapper.header #header #cm-user-menu ul {
   margin: 20px 0 0 0;
   padding: 0;
 }
-.wrapper.header #header #bear-user-menu ul li {
+.wrapper.header #header #cm-user-menu ul li {
   display: inline;
   list-style-type: none;
   margin: 0 0 0 10px;
 }
-.wrapper.header #header #bear-user-menu ul li a {
+.wrapper.header #header #cm-user-menu ul li a {
   font-size: 90%;
   padding: 0.2em 1.1em 0.3em 1.2em;
   display: inline-block;
@@ -148,10 +147,10 @@ h1 {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.wrapper.header #header #bear-user-menu ul li a:hover {
+.wrapper.header #header #cm-user-menu ul li a:hover {
   text-decoration: none;
 }
-.wrapper.header #header #bear-user-menu ul li a:hover {
+.wrapper.header #header #cm-user-menu ul li a:hover {
   background-color: #595959;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #6a6a6a), color-stop(75%, #595959));
   background: -webkit-linear-gradient(#6a6a6a 3%, #595959 75%);
@@ -159,12 +158,12 @@ h1 {
   background: -o-linear-gradient(#6a6a6a 3%, #595959 75%);
   background: linear-gradient(#6a6a6a 3%, #595959 75%);
 }
-.wrapper.header #header #bear-user-menu ul li a:active {
+.wrapper.header #header #cm-user-menu ul li a:active {
   -webkit-box-shadow: #525252 0 1px 2px inset;
   -moz-box-shadow: #525252 0 1px 2px inset;
   box-shadow: #525252 0 1px 2px inset;
 }
-.wrapper.header #header #bear-user-menu ul li a.disabled, .wrapper.header #header #bear-user-menu ul li a[disabled] {
+.wrapper.header #header #cm-user-menu ul li a.disabled, .wrapper.header #header #cm-user-menu ul li a[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   background: #666666;
@@ -173,7 +172,7 @@ h1 {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.wrapper.header #header #bear-user-menu ul li a::-moz-focus-inner {
+.wrapper.header #header #cm-user-menu ul li a::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
