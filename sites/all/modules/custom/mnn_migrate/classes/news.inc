@@ -67,7 +67,8 @@ class NewsMigration extends Migration {
       ->separator(',');
     $this->addFieldMapping('field_image', 'image_filename');
     $this->addFieldMapping('field_image:source_dir', 'image_filepath');
-
+     $this->addFieldMapping('field_image:file_replace')->defaultValue(MigrateFile::FILE_EXISTS_REUSE);
+     $this->addFieldMapping('field_image:preserve_files')->defaultValue(TRUE);
     // Unmapped source fields
     $this->addUnmigratedSources(array('vid', 'tnid', 'translate', 'teaser', 'format'));
     // Unmapped destination fields
@@ -79,6 +80,13 @@ class NewsMigration extends Migration {
     // Set the text format for the node.
     $current_row->format = MnnMigrateUtil::getTextFormat($current_row->format);
 
+    // Run the old body text throught check_markup filter to
+    // get the html of the body text. Since the last site's filter
+    // used the linebreak converter, and not wysiwyg editor, the
+    // wysiwyg editor mangled the text because it had no tags.
+    if ($current_row->format == 'filtered_html') {
+      $current_row->body = check_markup(trim($current_row->body), $current_row->format);
+    }
     // Set the terms for the node.
     $current_row->categories = MnnMigrateUtil::getProperCategories($current_row->vid);
 
