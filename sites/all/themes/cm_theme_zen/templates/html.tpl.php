@@ -40,20 +40,5 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-<?php if (theme_get_setting('responsive_nav')): ?>
-    <script src="<?php print $base_path . $path_to_cm_theme_zen; ?>/js/jquery.meanmenu.2.0.min.js"></script>
-    <script>
-    (function ($, Drupal, window, document, undefined) {
-      $(function () {
-        $('.wrapper.navigation').meanmenu({
-          meanScreenWidth: "800",
-          meanShowChildren: true,
-          meanExpand: "+",
-          meanContract: "-",
-        });
-      });
-    })(jQuery, Drupal, this, this.document);
-    </script>
-  <?php endif; ?>
 </body>
 </html>

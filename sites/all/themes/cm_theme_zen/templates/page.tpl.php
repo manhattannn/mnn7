@@ -66,10 +66,12 @@
           <?php print $sidebar_second; ?>
         </aside><!-- /.sidebars -->
       <?php endif; ?>
-
     </div><!-- /#main -->
   </div>
+  <div id="layout-footer"></div>
 </div><!-- /#page -->
 <div class="wrapper footer">
-  <?php print render($page['footer']); ?>
+  <div class="inside">
+    <?php print render($page['footer']); ?>
+  </div>
 </div>

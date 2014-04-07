@@ -8,6 +8,7 @@ dependencies[] = image
 dependencies[] = media
 dependencies[] = mnn_common
 dependencies[] = mnn_site_sections
+dependencies[] = picture
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
