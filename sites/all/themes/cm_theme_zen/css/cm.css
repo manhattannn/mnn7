@@ -1,7 +1,11 @@
 /**
  * @file
  *
+<<<<<<< HEAD
  * Bear Starter Theme Main Styling
+=======
+ * CM Theme General Styling
+>>>>>>> dev-114-cm_theme
  *
  * Adds basic bear styles for starter theme.
  *
@@ -125,7 +129,11 @@ h1 {
   list-style-type: none;
   margin: 0 0 0 10px;
 }
+<<<<<<< HEAD
 .wrapper.header #header #bear-user-menu ul li a {
+=======
+.wrapper.header #header #cm-user-menu ul li a {
+>>>>>>> dev-114-cm_theme
   font-size: 90%;
   padding: 0.2em 1.1em 0.3em 1.2em;
   display: inline-block;
@@ -151,10 +159,17 @@ h1 {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+<<<<<<< HEAD
 .wrapper.header #header #bear-user-menu ul li a:hover {
   text-decoration: none;
 }
 .wrapper.header #header #bear-user-menu ul li a:hover {
+=======
+.wrapper.header #header #cm-user-menu ul li a:hover {
+  text-decoration: none;
+}
+.wrapper.header #header #cm-user-menu ul li a:hover {
+>>>>>>> dev-114-cm_theme
   background-color: #595959;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #6a6a6a), color-stop(75%, #595959));
   background: -webkit-linear-gradient(#6a6a6a 3%, #595959 75%);
@@ -162,12 +177,20 @@ h1 {
   background: -o-linear-gradient(#6a6a6a 3%, #595959 75%);
   background: linear-gradient(#6a6a6a 3%, #595959 75%);
 }
+<<<<<<< HEAD
 .wrapper.header #header #bear-user-menu ul li a:active {
+=======
+.wrapper.header #header #cm-user-menu ul li a:active {
+>>>>>>> dev-114-cm_theme
   -webkit-box-shadow: #525252 0 1px 2px inset;
   -moz-box-shadow: #525252 0 1px 2px inset;
   box-shadow: #525252 0 1px 2px inset;
 }
+<<<<<<< HEAD
 .wrapper.header #header #bear-user-menu ul li a.disabled, .wrapper.header #header #bear-user-menu ul li a[disabled] {
+=======
+.wrapper.header #header #cm-user-menu ul li a.disabled, .wrapper.header #header #cm-user-menu ul li a[disabled] {
+>>>>>>> dev-114-cm_theme
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   background: #666666;
@@ -176,7 +199,11 @@ h1 {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+<<<<<<< HEAD
 .wrapper.header #header #bear-user-menu ul li a::-moz-focus-inner {
+=======
+.wrapper.header #header #cm-user-menu ul li a::-moz-focus-inner {
+>>>>>>> dev-114-cm_theme
   padding: 0 !important;
   margin: -1px !important;
 }
