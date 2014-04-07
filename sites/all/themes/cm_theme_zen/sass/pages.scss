@@ -108,6 +108,7 @@ body {
     @include zen-grid-container();
     border-bottom: 1px solid #EEEEEE;
     header {
+      @include zen-grid-item(6, 1, right);
       .submitted {
         margin: 0 0 20px 0;
         font-style: italic;
@@ -124,6 +125,7 @@ body {
     }
     .field-name-body {
       @include zen-grid-item(6, 1, right);
+      @include zen-clear(right);
       padding-right: 20px;
       @include breakpoint ($breakpoint-medium-width) {
         @include zen-grid-item(8, 1);

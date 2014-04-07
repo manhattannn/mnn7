@@ -17,7 +17,7 @@ function mnn_common_default_picture_mapping() {
   $picture_mapping->breakpoint_group = 'teaser';
   $picture_mapping->mapping = array(
     'breakpoints.theme.cm_theme_zen.narrow' => array(
-      '1x' => 'teaser_breakpoints_theme_cm_theme_zen_narrow_1x',
+      '1x' => '',
     ),
     'breakpoints.theme.cm_theme_zen.medium' => array(
       '1x' => 'teaser_breakpoints_theme_cm_theme_zen_medium_1x',
