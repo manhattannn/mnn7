@@ -80,9 +80,12 @@ class NewsMigration extends Migration {
     $current_row->format = MnnMigrateUtil::getTextFormat($current_row->format);
 
     // Run the old body text throught check_markup filter to
-    // get properly formatted body text.
-    $current_row->body = check_markup(trim($current_row->body), $current_row->format);
-
+    // get the html of the body text. Since the last site's filter
+    // used the linebreak converter, and not wysiwyg editor, the
+    // wysiwyg editor mangled the text because it had no tags.
+    if ($current_row->format == 'filtered_html') {
+      $current_row->body = check_markup(trim($current_row->body), $current_row->format);
+    }
     // Set the terms for the node.
     $current_row->categories = MnnMigrateUtil::getProperCategories($current_row->vid);
 
