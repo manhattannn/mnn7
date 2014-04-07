@@ -3,6 +3,14 @@
 /**
  * Implements hook_update_N().
  *
+ * Enable the googleanalytics module.
+ */
+function mnn_common_update_7002() {
+  module_enable(array('googleanalytics'));
+}
+/**
+ * Implements hook_update_N().
+ *
  * Disable and uninstall the asset module, then install wysiwyg and media modules..
  */
 function mnn_common_update_7001() {
