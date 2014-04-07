@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * Implements hook_update_N().
+ *
+ * Disable and uninstall the asset module, then install wysiwyg and media modules..
+ */
+function mnn_common_update_7001() {
+  mnn_common_uninstall_modules(array('asset', 'ckeditor'));
+  module_enable(array('wysiwyg', 'media', 'media_wysiwyg'));
+}
+
 /**
  * Implements hook_update_N().
  *
@@ -32,13 +43,14 @@ function mnn_common_fix_cm_starterkit_easy_profile() {
 /**
  * Helper function to disable and then uninstall a module.
  */
-function mnn_common_uninstall_modules($unistall_modules) {
-  foreach($uninstall_modules as $module) {
+function mnn_common_uninstall_modules($modules) {
+  foreach ($modules as $module) {
     if (module_exists($module)) {
        module_disable(array($module));
        drupal_uninstall_modules(array($module));
     }
+    else {
+      drupal_set_message(t("The @name modules doens't exist.", array('@name' => $module)));
+    }
   }
 }
-
-
