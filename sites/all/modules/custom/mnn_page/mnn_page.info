@@ -5,6 +5,7 @@ package = MNN
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
+dependencies[] = media
 dependencies[] = mnn_common
 dependencies[] = mnn_site_sections
 dependencies[] = strongarm
