@@ -30,12 +30,23 @@ function mnn_layouts_panelizer_defaults() {
   $panelizer->link_to_entity = TRUE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
+  $display->layout = 'cm_theme_two_columns';
+  $display->layout_settings = array(
+    'top_classes' => '',
+    'center_classes' => '',
+    'left_classes' => '',
+    'right_classes' => '',
+    'bottom_classes' => '',
+  );
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'top' => NULL,
+      'center' => NULL,
+      'left' => NULL,
+      'right' => NULL,
+      'bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -45,7 +56,7 @@ function mnn_layouts_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-24ae844c-e357-4808-a63f-daccd2894ccd';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_image';
     $pane->shown = TRUE;
@@ -72,10 +83,10 @@ function mnn_layouts_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = '24ae844c-e357-4808-a63f-daccd2894ccd';
     $display->content['new-24ae844c-e357-4808-a63f-daccd2894ccd'] = $pane;
-    $display->panels['middle'][0] = 'new-24ae844c-e357-4808-a63f-daccd2894ccd';
+    $display->panels['top'][0] = 'new-24ae844c-e357-4808-a63f-daccd2894ccd';
     $pane = new stdClass();
     $pane->pid = 'new-c9e786f8-a745-41ab-8044-af6fea00b805';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:body';
     $pane->shown = TRUE;
@@ -99,10 +110,10 @@ function mnn_layouts_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = 'c9e786f8-a745-41ab-8044-af6fea00b805';
     $display->content['new-c9e786f8-a745-41ab-8044-af6fea00b805'] = $pane;
-    $display->panels['middle'][1] = 'new-c9e786f8-a745-41ab-8044-af6fea00b805';
+    $display->panels['top'][1] = 'new-c9e786f8-a745-41ab-8044-af6fea00b805';
     $pane = new stdClass();
     $pane->pid = 'new-52454388-9cd5-4a41-91d3-3fbc213232ce';
-    $pane->panel = 'middle';
+    $pane->panel = 'top';
     $pane->type = 'node_links';
     $pane->subtype = 'node_links';
     $pane->shown = TRUE;
@@ -127,7 +138,7 @@ function mnn_layouts_panelizer_defaults() {
     $pane->locks = array();
     $pane->uuid = '52454388-9cd5-4a41-91d3-3fbc213232ce';
     $display->content['new-52454388-9cd5-4a41-91d3-3fbc213232ce'] = $pane;
-    $display->panels['middle'][2] = 'new-52454388-9cd5-4a41-91d3-3fbc213232ce';
+    $display->panels['top'][2] = 'new-52454388-9cd5-4a41-91d3-3fbc213232ce';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-24ae844c-e357-4808-a63f-daccd2894ccd';
   $panelizer->display = $display;
