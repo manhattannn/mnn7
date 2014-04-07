@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the mnn_layouts feature.
+ */
+
+include_once 'mnn_layouts.features.inc';
