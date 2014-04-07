@@ -1,13 +1,8 @@
 /**
  * @file
  *
-<<<<<<< HEAD
- * Bear Starter Theme Main Styling
-=======
  * CM Theme General Styling
->>>>>>> dev-114-cm_theme
  *
- * Adds basic bear styles for starter theme.
  *
  */
 
@@ -29,14 +24,10 @@ body {
   }
 }
 html, body, button, input, select, textarea {
-<<<<<<< HEAD
-  @include bearfont-main;
-=======
   @include cmfont-main;
->>>>>>> dev-114-cm_theme
 }
 h1, h2, h3, h4, h5 {
-  @include bearfont-titles;
+  @include cmfont-titles;
   font-weight: 400;
 }
 #main {
@@ -91,7 +82,7 @@ h1 {
   #header {
     padding: 25px 20px;
     position: relative;
-    #bear-user-menu {
+    #cm-user-menu {
       float: right;
       margin: 0;
       @include breakpoint ($breakpoint-medium-width) {
@@ -146,7 +137,7 @@ h1#site-name {
     line-height: 32px;
     &:focus {
       box-shadow: none;
-      moz-box-shadow: none;
+      -moz-box-shadow: none;
     }
   }
   input.form-submit {
@@ -239,11 +230,7 @@ aside.sidebars {
         }
       }
       &.mip {
-<<<<<<< HEAD
-        @include bearfont-titles;
-=======
         @include cmfont-titles;
->>>>>>> dev-114-cm_theme
         font-size: 22px;
         color: $dark;
         &:hover {
