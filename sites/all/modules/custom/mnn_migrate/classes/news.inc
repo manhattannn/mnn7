@@ -67,7 +67,8 @@ class NewsMigration extends Migration {
       ->separator(',');
     $this->addFieldMapping('field_image', 'image_filename');
     $this->addFieldMapping('field_image:source_dir', 'image_filepath');
-
+     $this->addFieldMapping('field_image:file_replace')->defaultValue(MigrateFile::FILE_EXISTS_REUSE);
+     $this->addFieldMapping('field_image:preserve_files')->defaultValue(TRUE);
     // Unmapped source fields
     $this->addUnmigratedSources(array('vid', 'tnid', 'translate', 'teaser', 'format'));
     // Unmapped destination fields
