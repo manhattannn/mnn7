@@ -1,16 +1,35 @@
 <?php
+/**
+ *
+ * Enable the panels related modules, mnn_layouts and mnn_snippets.
+ */
+function mnn_common_update_7003() {
+  module_enable(array(
+    'mnn_snippets',
+    'mnn_layouts',
+    'views_content',
+    'panels',
+    'panelizer',
+    'page_manager',
+    'fieldable_panels_panes',
+    'uuid_features',
+  ));
+  mnn_common_uninstall_modules(array(
+    'asset_image',
+    'asset_document',
+    'asset',
+    'better_formats',
+    'imce_wysiwyg',
+  ));
+}
 
 /**
- * Implements hook_update_N().
- *
  * Enable the googleanalytics module.
  */
 function mnn_common_update_7002() {
   module_enable(array('googleanalytics'));
 }
 /**
- * Implements hook_update_N().
- *
  * Disable and uninstall the asset module, then install wysiwyg and media modules..
  */
 function mnn_common_update_7001() {
@@ -19,8 +38,6 @@ function mnn_common_update_7001() {
 }
 
 /**
- * Implements hook_update_N().
- *
  * Enable the admin theme and responsive admin bar, and disable the toolbar module.
  */
 function mnn_common_update_7000() {
