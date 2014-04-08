@@ -83,7 +83,7 @@ var scheduleNowPlaying = (function($){
     }
 
     // Update actual time.
-    var timeElement = $('div#block-mnn_show-watch-now div.whats-on-now time');
+    var timeElement = $('div#block-mnn-show-watch-now div.whats-on-now time');
     if (timeElement.length) {
       timeElement.html(actualDateObj.getTimeNowMnnFrontPageFormat());
     }
@@ -91,9 +91,12 @@ var scheduleNowPlaying = (function($){
     // Update html of the frontEnd block.
     for (var i = 1; i <= 4; i++ ) {
       // Get h5 element that holds program title.
-      var titleElement = $('div#block-mnn_show-watch-now ul li#channel' + i + ' div.channel-info h5 a');
+      var titleElement = $('div#block-mnn-show-watch-now ul li#channel' + i + ' div.channel-info h5 a');
       if (titleElement.length) {
         titleElement.html(nowPlayingPrograms[i]);
+      }
+      else {
+        console.log('channel' + i + ' is missing.' );
       }
     }
   }
@@ -124,7 +127,7 @@ Object.size = function(obj) {
 
 (function ($) {
   $(document).ready(function(){
-    if ($('#block-mnn_show-watch-now').length){
+    if ($('#block-mnn-show-watch-now').length){
       scheduleNowPlaying.init();
     }
   });

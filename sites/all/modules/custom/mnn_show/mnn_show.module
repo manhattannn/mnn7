@@ -11,9 +11,6 @@ function mnn_show_init()
     'actualDate' => $date_now->format('m/d/Y'),
   );
   drupal_add_js(array('mnn_show' => $mnn_show_js_settings), 'setting');
-
-  // Add js for playing now block.
-  drupal_add_js(drupal_get_path('module', 'mnn_show').'/mnn_show_homepage.js');
 }
 
 /**

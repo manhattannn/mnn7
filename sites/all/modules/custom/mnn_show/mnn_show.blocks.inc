@@ -7,6 +7,7 @@ ctools_include('mnn_show.ycschedule', 'mnn_show', '');
  * Watch Now block (horizontal bar).
  */
 function mnn_show_block_watch_now(){
+  drupal_add_js(drupal_get_path('module', 'mnn_show') . '/mnn_show_homepage.js');
   $channel_info = mnn_show_get_channels();
 
   $content = "<div class='whats-on-now'>";
@@ -19,8 +20,8 @@ function mnn_show_block_watch_now(){
   for ($i = 1; $i <= 4; $i++){
     $content .= '<li id="channel'.$i.'"><div class="channel-info">';
     $content .= '<h4>'.$channel_info[$i]['name'].'</h4>';
-    $content .= '<h5><a href="/'.$channel_info[$i]['watchLiveUrl'].'"></h5>';
-    $content .= '<p class="watch-now-link"><a href="/'.$channel_info[$i]['watchLiveUrl'].'">Watch Now</a></p>';
+    $content .= '<h5><a href="'.$channel_info[$i]['watchLiveUrl'].'"></h5>';
+    $content .= '<p class="watch-now-link"><a href="'.$channel_info[$i]['watchLiveUrl'].'">Watch Now</a></p>';
     $content .= "<div class='channel-about'>";
     $content .= "<p class='channel-description'>".$channel_info[$i]['description']."</p>";
     $content .= "<ul class='cable-channel-list'>";

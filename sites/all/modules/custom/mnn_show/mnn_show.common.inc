@@ -8,39 +8,31 @@ ctools_include('cleanstring', 'ctools', 'includes');
 function mnn_show_get_channels(){
   // check for cached channels
   if ($cached = cache_get('mnn_show:channels', 'cache')) {
-    return $cached->data;
+   // return $cached->data;
   }
 
   $channels = array();
 
-  $channels_results = db_query("SELECT nid FROM {node} WHERE type = 'channel_info'");
-  foreach($channels_results as $channel_result) {
-    $channel_info = node_load($channel_result->nid); // drupal content type
+  $channel_vocab = taxonomy_vocabulary_machine_name_load("channel");
+  $channel_terms = taxonomy_get_tree($channel_vocab->vid, 0, 1, TRUE);
+  foreach($channel_terms as $channel) {
     $tv_ch = array();
-    foreach ($channel_info->field_television_channel as $tv_ch_nid){
-      $television_channel = node_load($tv_ch_nid['nid']); // drupal content type
-      $television_station = node_load($television_channel->field_television_station[0]['nid']); // drupal content type
+    $ch_wrapper = entity_metadata_wrapper('taxonomy_term', $channel);
+    foreach ($ch_wrapper->field_channel_where_to_watch as $watch){
       $tv_ch[] = array(
-        'tvStationName' => $television_station->title,
-        'tvStationChannel' => $television_channel->field_channel_number[0]['value']
+        'tvStationName' => $watch->first->value(),
+        'tvStationChannel' => $watch->second->value(),
       );
     }
-    // sort the tv stations
-    foreach ($tv_ch as $key => $value){
-      $station_name[$key] = $value['tvStationName'];
-    }
-    array_multisort($station_name, SORT_DESC, $tv_ch);
-
-    $channels[$channel_info->field_number[0]['value']] = array(
-      'name' => $channel_info->title,
-      'description' => $channel_info->body,
-      'watchLiveUrl' => drupal_get_path_alias('node/'.$channel_info->field_watch_live_link[0]['nid']),
+    $channels[$ch_wrapper->field_channel_id->value()] = array(
+      'name' => $ch_wrapper->name->value(),
+      'description' => $ch_wrapper->description->value(),
+      'watchLiveUrl' => $ch_wrapper->url->value(),
       'tvChannels' => $tv_ch
     );
   }
-
   // store in cache with a minimum expiration time of 1 day
-  cache_set('mnn_show:channels', $channels, 'cache', time() + (60 * 60 * 24));
+  // cache_set('mnn_show:channels', $channels, 'cache', time() + (60 * 60 * 24));
   return $channels;
 }
 
