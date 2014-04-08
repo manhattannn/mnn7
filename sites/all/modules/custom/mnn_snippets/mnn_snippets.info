@@ -1,0 +1,13 @@
+name = MNN Snippets
+description = Provides snippets of exportable and reusable content that can be placed in panels.
+core = 7.x
+package = MNN
+version = 7.x-1.0
+project = mnn_snippets
+dependencies[] = features
+dependencies[] = fieldable_panels_panes
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_body
+features[field_instance][] = fieldable_panels_pane-snippets_snippet-field_body
+project path = sites/all/modules/custom
