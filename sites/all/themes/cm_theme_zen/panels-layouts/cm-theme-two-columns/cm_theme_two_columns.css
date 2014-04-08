@@ -9,8 +9,8 @@
   width: 50%;
 }
 .cm-row .column.left .inside {
-  padding-right: 10px;
+  margin-right: 20px;
 }
 .cm-row .column.right .inside {
-  padding-left: 10px;
+  margin-left: 20px;
 }
