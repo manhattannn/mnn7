@@ -57,7 +57,7 @@ function mnn_common_image_default_styles() {
     'name' => 'teaser_breakpoints_theme_cm_theme_zen_medium_1x',
     'label' => 'teaser_breakpoints_theme_cm_theme_zen_medium_1x',
     'effects' => array(
-      4 => array(
+      5 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
