@@ -78,17 +78,17 @@ function mnn_layouts_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-c9282315-b986-452b-8096-fe2c608f76d4';
+    $pane->pid = 'new-a12e95ef-97f8-47d7-8126-8f00135caa8d';
     $pane->panel = 'left';
     $pane->type = 'views_panes';
-    $pane->subtype = 'content_listing-mnn_content_listing';
+    $pane->subtype = 'content_listing-mnn_snippets_recent_content_pane';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'more_link' => 0,
-      'use_pager' => 1,
+      'more_link' => 1,
+      'use_pager' => 0,
       'pager_id' => '0',
-      'items_per_page' => '6',
+      'items_per_page' => '3',
       'exposed' => array(
         'type' => array(
           'article' => 'article',
@@ -105,31 +105,22 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'c9282315-b986-452b-8096-fe2c608f76d4';
-    $display->content['new-c9282315-b986-452b-8096-fe2c608f76d4'] = $pane;
-    $display->panels['left'][0] = 'new-c9282315-b986-452b-8096-fe2c608f76d4';
+    $pane->uuid = 'a12e95ef-97f8-47d7-8126-8f00135caa8d';
+    $display->content['new-a12e95ef-97f8-47d7-8126-8f00135caa8d'] = $pane;
+    $display->panels['left'][0] = 'new-a12e95ef-97f8-47d7-8126-8f00135caa8d';
     $pane = new stdClass();
-    $pane->pid = 'new-3823636f-5df6-4d37-a4ad-88dd9535dbca';
+    $pane->pid = 'new-7d5ce20e-7b9e-4f46-9c81-df0e2f0b0afc';
     $pane->panel = 'right';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'content_listing-mnn_layouts_section_content_pane';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'more_link' => 0,
-      'use_pager' => 1,
-      'pager_id' => '0',
-      'items_per_page' => '10',
-      'exposed' => array(
-        'type' => array(
-          'page' => 'page',
-        ),
-        'field_site_section_tid' => array(
-          18 => '18',
-        ),
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
+      'admin_title' => 'Dummy: Featured Producer',
+      'title' => 'Featured Producer',
+      'body' => '<center><div style="width: 300px; height: 200px; background-color: black;">&nbsp;</div></center><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -139,18 +130,48 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '3823636f-5df6-4d37-a4ad-88dd9535dbca';
-    $display->content['new-3823636f-5df6-4d37-a4ad-88dd9535dbca'] = $pane;
-    $display->panels['right'][0] = 'new-3823636f-5df6-4d37-a4ad-88dd9535dbca';
+    $pane->uuid = '7d5ce20e-7b9e-4f46-9c81-df0e2f0b0afc';
+    $display->content['new-7d5ce20e-7b9e-4f46-9c81-df0e2f0b0afc'] = $pane;
+    $display->panels['right'][0] = 'new-7d5ce20e-7b9e-4f46-9c81-df0e2f0b0afc';
     $pane = new stdClass();
-    $pane->pid = 'new-ee58356a-b622-421c-9289-3ed280f99d96';
-    $pane->panel = 'top';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:e472492a-2e76-4eb3-99aa-3958c48dff91';
+    $pane->pid = 'new-2b76f4e6-a634-4052-9277-68d8a02f97ab';
+    $pane->panel = 'right';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'full',
+      'admin_title' => 'Dummy: Featured Series',
+      'title' => 'Featured Series',
+      'body' => '<center><div style="width: 300px; height: 200px; background-color: black;" >&nbsp</div></center>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '2b76f4e6-a634-4052-9277-68d8a02f97ab';
+    $display->content['new-2b76f4e6-a634-4052-9277-68d8a02f97ab'] = $pane;
+    $display->panels['right'][1] = 'new-2b76f4e6-a634-4052-9277-68d8a02f97ab';
+    $pane = new stdClass();
+    $pane->pid = 'new-efc0e901-707f-427e-b9b0-c9b1a9e73a9a';
+    $pane->panel = 'top';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => 'Dummy Header',
+      'title' => '',
+      'body' => '<center><div style="width: 600px; height: 400px; background-color: black;" >&nbsp</div></center>',
+      'format' => 'full_html',
+      'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
@@ -160,11 +181,11 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'ee58356a-b622-421c-9289-3ed280f99d96';
-    $display->content['new-ee58356a-b622-421c-9289-3ed280f99d96'] = $pane;
-    $display->panels['top'][0] = 'new-ee58356a-b622-421c-9289-3ed280f99d96';
+    $pane->uuid = 'efc0e901-707f-427e-b9b0-c9b1a9e73a9a';
+    $display->content['new-efc0e901-707f-427e-b9b0-c9b1a9e73a9a'] = $pane;
+    $display->panels['top'][0] = 'new-efc0e901-707f-427e-b9b0-c9b1a9e73a9a';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-c9282315-b986-452b-8096-fe2c608f76d4';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['mnn_homepage'] = $page;
