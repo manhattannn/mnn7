@@ -7,7 +7,7 @@ Schedule Styles
 }
 #schedule .col{
   float: left;
-  width: 200px;
+  width: 22%;
   position: relative;
 }
 
@@ -16,7 +16,7 @@ Schedule Styles
   -moz-border-radius: 0 0 0 5px;
   -webkit-border-radius: 0 0 0 5px;
   -o-border-radius: 0 0 0 5px;
-  width: 140px;
+  width: 12%;
 }
 #schedule #cols{
   overflow: hidden;
@@ -26,10 +26,10 @@ Schedule Styles
 }
 #schedule #cols .cell{
   position: absolute;
-  width: 199px;
+  width: 100%;
 }
 #schedule #cols .col-time .cell{
-  width: 139px;
+  width: 100%;
 }
 
 #schedule .cell{
@@ -210,10 +210,11 @@ Schedule Styles
   border-top: medium none;
   color: white;
   font-size: 11px;
-  height: 17px;
+  height: 20px;
   padding: 17px 0 17px 50px;
   text-transform: uppercase;
   border:1px solid #1D2022;
+  line-height: 1.2em;
 }
 
 #schedule .cell.current{
@@ -279,13 +280,11 @@ Schedule Styles
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A2B0B0, endColorstr=#B4C2C2);
   /* For Internet Explorer 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A2B0B0, endColorstr=#B4C2C2)";
-  padding:5px;
   border-radius: 5px 5px 0 0;
-  padding: 5px;
-  width: 930px;
+  width: 100%;
 }
 .calendar-calendar div.date-nav{
-  width: 928px;
+/* width: 50%;*/
 }
 
 .calendar-calendar > ul.links{
@@ -456,13 +455,12 @@ Schedule Styles
   text-transform:uppercase;
   color:white;
   float:left;
-  width:940px;
 }
 
 #schedule-header .inner{
   position: relative;
   top: 0;
-  z-index: 999;
+  z-index: 1;
 }
 
 #schedule-header .channels .ch1 {
