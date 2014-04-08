@@ -20,6 +20,7 @@ features[features_api][] = api:2
 features[field_instance][] = node-article-body
 features[field_instance][] = node-article-field_image
 features[node][] = article
+features[variable][] = additional_settings__active_tab_article
 features[variable][] = field_bundle_settings_node__article
 features[variable][] = menu_options_article
 features[variable][] = menu_parent_article

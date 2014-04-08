@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the MNN Channel feature.
  */
+
+include_once 'mnn_channel.features.inc';
