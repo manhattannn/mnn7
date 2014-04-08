@@ -134,6 +134,10 @@ body {
     margin: 0 0 10px 0;
   }
 }
+#content .cm-row.max-320 .field-name-field-image, #content .cm-row .max-320 .field-name-field-image {
+  max-width: 100%;
+  width: 100%;
+}
 
 .breadcrumb {
   /* The path to the current page in the form of a list of links */

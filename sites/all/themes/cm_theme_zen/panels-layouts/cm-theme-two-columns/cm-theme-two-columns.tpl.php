@@ -14,10 +14,10 @@
 
 /* top row*/
 if ($top_classes) {
-  print '<div class="' . $top_classes . ' row">';
+  print '<div class="' . $top_classes . ' cm-row">';
 }
 else {
-  print '<div class="row">';
+  print '<div class="cm-row">';
 }
     print '<div class="inside">';
       print $content['top'];
@@ -26,19 +26,19 @@ else {
 
 /* center row*/
 if ($center_classes) {
-  print '<div class="' . $center_classes . ' row">';
+  print '<div class="' . $center_classes . ' cm-row">';
 }
 else {
-  print '<div class="row">';
+  print '<div class="cm-row">';
 }
   print '<div class="inside">';
 
     /* left column */
     if ($left_classes) {
-      print '<div class="' . $left_classes . ' column">';
+      print '<div class="' . $left_classes . ' column left">';
     }
     else {
-      print '<div class="column">';
+      print '<div class="column left">';
     }
         print '<div class="inside">';
           print $content['left'];
@@ -47,10 +47,10 @@ else {
 
     /* right column */
     if ($right_classes) {
-      print '<div class="' . $right_classes . ' column">';
+      print '<div class="' . $right_classes . ' column right">';
     }
     else {
-      print '<div class="column">';
+      print '<div class="column right">';
     }
       print '<div class="inside">';
         print $content['right'];
@@ -62,10 +62,10 @@ print '</div>'; /* end row */
 
 /* bottom row*/
 if ($bottom_classes) {
-  print '<div class="' . $bottom_classes . ' row">';
+  print '<div class="' . $bottom_classes . ' cm-row">';
 }
 else {
-  print '<div class="row">';
+  print '<div class="cm-row">';
 }
     print '<div class="inside">';
      print $content['bottom'];

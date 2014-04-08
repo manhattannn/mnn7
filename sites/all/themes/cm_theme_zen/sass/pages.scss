@@ -145,6 +145,12 @@ body {
         }
       }
     }
+    &.max-320, .max-320 {
+      .field-name-field-image {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
   }
 }
 
