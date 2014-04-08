@@ -22,6 +22,8 @@ function machine_name_field_info() {
       'instance_settings' => array(),
       'default_widget' => 'machine_name_default',
       'default_formatter' => 'machine_name_default',
+      // Expose the field as text for the Entity metadata framework.
+      'property_type' => 'text',
     ),
   );
 }
@@ -47,7 +49,7 @@ function machine_name_field_widget_info() {
 function machine_name_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
   // Include #title, #description, #required, and other field and instance
   // properties provided by Field Form API.
-  $element['value'] = $element;
+  $element['value'] = (array) $element;
   $element['value'] += array(
     '#type' => 'machine_name',
     '#default_value' => isset($items[$delta]['value']) ? $items[$delta]['value'] : NULL,
