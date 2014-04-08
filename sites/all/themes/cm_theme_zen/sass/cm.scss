@@ -192,7 +192,8 @@ aside.sidebars {
       margin: 0 0 10px 0;
       font-size: 110%;
       padding: 5px 0;
-      }
+      clear: both;
+    }
     @include breakpoint ($breakpoint-large-width) {
       padding-left: auto;
     }

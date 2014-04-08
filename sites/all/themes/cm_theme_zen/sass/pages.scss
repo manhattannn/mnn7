@@ -131,6 +131,20 @@ body {
       padding: 2px 0 20px 0;
       border-bottom: 1px solid #EEEEEE;
     }
+    &.full {
+      .field-name-field-image {
+        float: left;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 20px 0;
+        @include breakpoint ($breakpoint-small-width) {
+          width: 100%;
+          clear: both;
+          max-width: 100%;
+          margin: 0 0 10px 0;
+        }
+      }
+    }
   }
 }
 

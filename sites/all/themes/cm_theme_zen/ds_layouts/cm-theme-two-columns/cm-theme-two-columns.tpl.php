@@ -14,27 +14,33 @@
 
 /* top row*/
 
-  print '<div class="cm-row top">';
+  print '<div class="cm-row full top">';
     print '<div class="inside">';
-      print $top;
+      if ($top) :
+        print $top;
+      endif;
     print '</div>'; /* end inside */
   print '</div>'; /* end row */
 
 /* center row*/
-  print '<div class="cm-row center">';
+  print '<div class="cm-row full center">';
     print '<div class="inside">';
 
     /* left column */
       print '<div class="cm-column left">';
         print '<div class="inside">';
-          print $left;
+          if ($left) :
+            print $left;
+          endif;
         print '</div>';
       print '</div>';
 
     /* right column */
       print '<div class="cm-column right">';
         print '<div class="inside">';
-          print $right;
+          if ($right) :
+            print $right;
+          endif;
         print '</div>';
       print '</div>'; /* end column */
 
@@ -42,8 +48,10 @@
 print '</div>'; /* end row */
 
 /* bottom row*/
-  print '<div class="cm-row bottom">';
+  print '<div class="cm-row full bottom">';
     print '<div class="inside">';
-     print $bottom;
+     if ($bottom) :
+        print $bottom;
+      endif;
     print '</div>'; /* end inside */
   print '</div>'; /* end row */
