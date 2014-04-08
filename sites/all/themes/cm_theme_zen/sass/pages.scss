@@ -109,10 +109,12 @@ body {
       .field-name-field-image {
         float: left;
         max-width: 25%;
-        margin: 5px 25px 0 10px;
+        margin: 5px 25px 0 0;
         @include breakpoint ($breakpoint-small-width) {
           width: 100%;
           clear: both;
+          max-width: 100%;
+          margin: 0 0 10px 0;
         }
       }
       .field-title {

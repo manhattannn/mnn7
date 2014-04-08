@@ -102,12 +102,14 @@ body {
 #content .cm-row .inside .field-name-field-image {
   float: left;
   max-width: 25%;
-  margin: 5px 25px 0 10px;
+  margin: 5px 25px 0 0;
 }
 @media (max-width: 400px) {
   #content .cm-row .inside .field-name-field-image {
     width: 100%;
     clear: both;
+    max-width: 100%;
+    margin: 0 0 10px 0;
   }
 }
 #content .cm-row .inside .field-name-body {
