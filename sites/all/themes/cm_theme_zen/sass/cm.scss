@@ -22,6 +22,9 @@ body {
   p {
     margin: 10px 0;
   }
+  img {
+    display: block;
+  }
 }
 html, body, button, input, select, textarea {
   @include cmfont-main;
@@ -180,7 +183,7 @@ h1#site-name {
 ***********/
 
 aside.sidebars {
-  margin: 10px 0 0 0;
+  margin: 0;
   .sidebar {
     padding-bottom: 20px;
     h2 {
@@ -188,6 +191,7 @@ aside.sidebars {
       text-indent: 10px;
       margin: 0 0 10px 0;
       font-size: 110%;
+      padding: 5px 0;
       }
     @include breakpoint ($breakpoint-large-width) {
       padding-left: auto;
