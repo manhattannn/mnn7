@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+include_once 'mnn_snippets.features.inc';
+
+/**
+ * Implements hook_panels_panes_entity_into_alter().
+ */
+function mnn_snippets_entity_info_alter(&$entity_info) {
+
+  $bundles = array(
+    'snippet' => array(
+      'label' => t('Snippet'),
+      'pane category' => t('Snippets'),
+    ),
+  );
+
+  foreach ($bundles as $type => $info) {
+
+    $url_name = 'snippets-' .str_replace('_', '-', $type);
+    $entity_info['fieldable_panels_pane']['bundles']['snippets_'.$type] = array(
+      'label' => $info['label'],
+      'pane category' => $info['pane category'],
+      'pane top level' => TRUE, // set to true to make this show as a top level icon
+      'pane icon' => drupal_get_path('module', 'mnn_snippets'). '/snippet-icon.png',
+      'admin' => array(
+        'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+        'bundle argument' => 4,
+        // Note that this has all _ replaced with - from the bundle name.
+        'real path' => "admin/structure/fieldable-panels-panes/manage/$url_name",
+        'access arguments' => array('administer fieldable panels panes'),
+      ),
+    );
+  }
+  if (variable_get('mnn_snippets_disable_fpp_bundle', TRUE)) {
+    unset($entity_info['fieldable_panels_pane']['bundles']['fieldable_panels_pane']);
+  }
+}
