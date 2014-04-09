@@ -24,6 +24,12 @@ function mnn_article_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -68,6 +74,12 @@ function mnn_article_field_default_field_instances() {
           'image_style' => 'large',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
