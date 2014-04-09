@@ -51,7 +51,7 @@
   Drupal.behaviors.cmResponsiveScripts = {
     attach: function (context, settings) {
 
-      $('.row, .column').selectorQuery({
+      $('.cm-row, .column').selectorQuery({
         'widthStops': [320],
         'classPrefix': 'max-'
       });

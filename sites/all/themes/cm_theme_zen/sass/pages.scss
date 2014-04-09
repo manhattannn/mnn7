@@ -106,7 +106,12 @@ body {
       h2 {
         margin: 0 0 10px 0;
       }
-      .field-name-field-image {
+    }
+    &.teaser {
+      margin: 10px 0;
+      padding: 2px 0 20px 0;
+      border-bottom: 1px solid #EEEEEE;
+      .media {
         float: left;
         max-width: 25%;
         margin: 5px 25px 0 0;
@@ -117,19 +122,6 @@ body {
           margin: 0 0 10px 0;
         }
       }
-      .field-title {
-
-      }
-      .field-name-body {
-        padding-right: 20px;
-        @include breakpoint ($breakpoint-medium-width) {
-        }
-      }
-    }
-    &.teaser {
-      margin: 10px 0;
-      padding: 2px 0 20px 0;
-      border-bottom: 1px solid #EEEEEE;
     }
     &.full {
       .field-name-field-image {
@@ -146,10 +138,16 @@ body {
       }
     }
     &.max-320, .max-320 {
-      .field-name-field-image {
+      .media {
         max-width: 100%;
         width: 100%;
+        margin: 0 0 10px 0;
       }
+    }
+  }
+  .view-mode-full {
+    .field-name-field-image {
+      margin: 20px 0;
     }
   }
 }

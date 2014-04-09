@@ -12,10 +12,23 @@
  * - $main_classes: Additional classes for the main region.
  */
 
-/* teaser row*/
+/* media inline */
 
   print '<div class="cm-row teaser">';
-    print '<div class="inside">';
-      print $top;
-    print '</div>'; /* end inside */
+    print '<div class="media">';
+      print '<div class="inside">';
+        if ($media) :
+          print $media;
+        endif;
+      print '</div>'; /* end inside */
+    print '</div>'; /* end row */
+
+  /* content wrapper */
+    print '<div class="wrapper">';
+      print '<div class="inside">';
+       if ($wrapper) :
+          print $wrapper;
+        endif;
+      print '</div>'; /* end inside */
+    print '</div>'; /* end row */
   print '</div>'; /* end row */
