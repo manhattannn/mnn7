@@ -117,19 +117,8 @@ body {
     margin: 0 0 10px 0;
   }
 }
-#content .cm-row.full .field-name-field-image {
-  float: left;
-  max-width: 100%;
-  width: 100%;
-  margin: 0 0 20px 0;
-}
-@media (max-width: 400px) {
-  #content .cm-row.full .field-name-field-image {
-    width: 100%;
-    clear: both;
-    max-width: 100%;
-    margin: 0 0 10px 0;
-  }
+#content .cm-row.teaser .inside {
+  margin: 0;
 }
 #content .cm-row.max-320 .media, #content .cm-row .max-320 .media {
   max-width: 100%;
