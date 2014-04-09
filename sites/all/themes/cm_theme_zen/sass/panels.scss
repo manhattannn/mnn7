@@ -8,4 +8,11 @@
 
 @import "base";
 
-
+.cm-row {
+  .column {
+    .panel-pane {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

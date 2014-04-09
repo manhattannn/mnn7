@@ -72,6 +72,7 @@ stylesheets[all][] = css/cm.css
 
 scripts[] = js/jquery.formalize.min.js
 scripts[] = js/select2.min.js
+scripts[] = js/jquery.selectorquery.min.js
 scripts[] = js/script.js
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

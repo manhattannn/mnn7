@@ -1,10 +1,16 @@
 
-.row {
+.cm-row {
   margin-bottom: 10px;
   clear: both;
   width: 100%;
 }
-.column {
+.cm-row .column {
   float: left;
   width: 50%;
+}
+.cm-row .column.left .inside {
+  margin-right: 20px;
+}
+.cm-row .column.right .inside {
+  margin-left: 20px;
 }

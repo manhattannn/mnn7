@@ -16,7 +16,10 @@ function mnn_layouts_default_page_manager_pages() {
   $page->admin_title = 'Homepage';
   $page->admin_description = '';
   $page->path = 'home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Home',

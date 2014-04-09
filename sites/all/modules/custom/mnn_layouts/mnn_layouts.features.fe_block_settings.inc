@@ -844,32 +844,6 @@ function mnn_layouts_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-cm_slideshow-block'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'cm_slideshow-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'cm_theme_zen' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'cm_theme_zen',
-        'weight' => 0,
-      ),
-      'ember' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ember',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   $export['views-workbench_current_user-block_1'] = array(
     'cache' => -1,
     'custom' => 0,

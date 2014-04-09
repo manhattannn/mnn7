@@ -176,7 +176,7 @@ body {
   border-color: #61aee2;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   #navigation .block-wrapper > ul, #navigation .block-wrapper > ul ul {
     visibility: visible;
     opacity: 1;

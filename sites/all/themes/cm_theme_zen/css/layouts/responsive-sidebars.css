@@ -60,7 +60,7 @@ OUR CUSTOM MIXINS
 /*
  * Navigation bar
  */
-@media all and (min-width: 480px) {
+@media all and (min-width: 768px) {
   #main {
     position: relative;
     clear: both;
@@ -71,7 +71,7 @@ OUR CUSTOM MIXINS
     clear: both;
   }
 }
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 768px) and (max-width: 959px) {
   /*
    * Use 3 grid columns for smaller screens.
    */
