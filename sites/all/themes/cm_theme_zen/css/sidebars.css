@@ -13,4 +13,23 @@ OUR CUSTOM MIXINS
 ~BREAKPOINTS
 ***********/
 /* MAIN NODE SIDEBARS */
+.sidebar h2, .sidebar h3 {
+  margin: .5em 0;
+}
+.sidebar h4, .sidebar h5, .sidebar p {
+  margin: .2em 0;
+}
+.sidebar h2 {
+  font-size: 1.35em;
+}
+.sidebar .block {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+.sidebar .block ul {
+  margin: 1em 0;
+  padding: 0 0 0 20px;
+}
+
 /* PANEL SIDEBARS */
