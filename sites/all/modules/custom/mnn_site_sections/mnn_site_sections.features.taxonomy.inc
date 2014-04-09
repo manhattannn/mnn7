@@ -13,7 +13,7 @@ function mnn_site_sections_taxonomy_default_vocabularies() {
       'name' => 'Sections',
       'machine_name' => 'sections',
       'description' => 'Workbench Access Sections',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(
