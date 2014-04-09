@@ -77,12 +77,14 @@ function mnn_article_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'picture',
         'settings' => array(
+          'colorbox' => 'teaser',
+          'fallback_image_style' => 'cm_full',
           'image_link' => '',
-          'image_style' => 'large',
+          'picture_group' => 'full',
         ),
-        'type' => 'image',
+        'type' => 'picture',
         'weight' => 0,
       ),
       'full' => array(
