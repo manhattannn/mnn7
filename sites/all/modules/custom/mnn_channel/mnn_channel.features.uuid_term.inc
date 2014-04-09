@@ -12,7 +12,7 @@ function mnn_channel_uuid_features_default_terms() {
 
   $terms[] = array(
     'name' => 'Channel 1',
-    'description' => '',
+    'description' => 'A DESCRIPTION',
     'format' => 'filtered_html',
     'weight' => 0,
     'uuid' => '2e0d0324-9e6c-4587-ba50-669fdd924689',
@@ -21,12 +21,19 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_id' => array(
       'und' => array(
         0 => array(
-          'value' => 'channel_1',
+          'value' => 1,
         ),
       ),
     ),
     'field_channel_logo' => array(),
-    'field_channel_where_to_watch' => array(),
+    'field_channel_where_to_watch' => array(
+      'und' => array(
+        0 => array(
+          'first' => 123,
+          'second' => 456,
+        ),
+      ),
+    ),
   );
   $terms[] = array(
     'name' => 'Channel 3',
@@ -39,7 +46,7 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_id' => array(
       'und' => array(
         0 => array(
-          'value' => 'channel_3',
+          'value' => 3,
         ),
       ),
     ),
@@ -57,7 +64,7 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_id' => array(
       'und' => array(
         0 => array(
-          'value' => 'channel_2',
+          'value' => 2,
         ),
       ),
     ),
@@ -75,7 +82,7 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_id' => array(
       'und' => array(
         0 => array(
-          'value' => 'channel_4',
+          'value' => 4,
         ),
       ),
     ),
