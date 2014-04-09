@@ -11,13 +11,22 @@ function mnn_channel_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Channel 1',
-    'description' => 'A DESCRIPTION',
-    'format' => 'filtered_html',
+    'name' => 'Community Channel',
+    'description' => 'Stay up-to-date on local elections, New York politics, and community issues with our Community channel.',
+    'format' => 'plain_text',
     'weight' => 0,
     'uuid' => '2e0d0324-9e6c-4587-ba50-669fdd924689',
     'vocabulary_machine_name' => 'channel',
-    'field_channel_embed' => array(),
+    'field_channel_embed' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>',
+          'format' => 'full_html',
+          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>
+',
+        ),
+      ),
+    ),
     'field_channel_id' => array(
       'und' => array(
         0 => array(
@@ -29,20 +38,37 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_where_to_watch' => array(
       'und' => array(
         0 => array(
-          'first' => 123,
-          'second' => 456,
+          'first' => 'TWC',
+          'second' => 34,
+        ),
+        1 => array(
+          'first' => 'RCN',
+          'second' => 82,
+        ),
+        2 => array(
+          'first' => 'FiOS',
+          'second' => 33,
         ),
       ),
     ),
   );
   $terms[] = array(
-    'name' => 'Channel 3',
-    'description' => '',
-    'format' => 'filtered_html',
+    'name' => 'Spirit Channel',
+    'description' => 'Our Spirit channel broadcasts varied religious and philosophical services, lectures, and discussions for all faiths and worldviews.',
+    'format' => 'plain_text',
     'weight' => 0,
     'uuid' => '37d88f4f-6e0b-4b53-b802-d3ee547d4ca6',
     'vocabulary_machine_name' => 'channel',
-    'field_channel_embed' => array(),
+    'field_channel_embed' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>',
+          'format' => 'full_html',
+          'safe_value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>
+',
+        ),
+      ),
+    ),
     'field_channel_id' => array(
       'und' => array(
         0 => array(
@@ -51,16 +77,40 @@ function mnn_channel_uuid_features_default_terms() {
       ),
     ),
     'field_channel_logo' => array(),
-    'field_channel_where_to_watch' => array(),
+    'field_channel_where_to_watch' => array(
+      'und' => array(
+        0 => array(
+          'first' => 'TWC',
+          'second' => 57,
+        ),
+        1 => array(
+          'first' => 'RCN',
+          'second' => 84,
+        ),
+        2 => array(
+          'first' => 'FiOS',
+          'second' => 35,
+        ),
+      ),
+    ),
   );
   $terms[] = array(
-    'name' => 'Channel 2',
-    'description' => '',
-    'format' => 'filtered_html',
+    'name' => 'Lifestyle Channel',
+    'description' => 'Exercise your mind, body, and palate with entertainment and lifestyle programming for New Yorkers with interests as diverse as our city.',
+    'format' => 'plain_text',
     'weight' => 0,
     'uuid' => '6ef4e31d-7b5a-4dec-9d10-8a47d3a8afd3',
     'vocabulary_machine_name' => 'channel',
-    'field_channel_embed' => array(),
+    'field_channel_embed' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>',
+          'format' => 'full_html',
+          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>
+',
+        ),
+      ),
+    ),
     'field_channel_id' => array(
       'und' => array(
         0 => array(
@@ -69,16 +119,40 @@ function mnn_channel_uuid_features_default_terms() {
       ),
     ),
     'field_channel_logo' => array(),
-    'field_channel_where_to_watch' => array(),
+    'field_channel_where_to_watch' => array(
+      'und' => array(
+        0 => array(
+          'first' => 'TWC',
+          'second' => 56,
+        ),
+        1 => array(
+          'first' => 'RCN',
+          'second' => 83,
+        ),
+        2 => array(
+          'first' => 'FiOS',
+          'second' => 34,
+        ),
+      ),
+    ),
   );
   $terms[] = array(
-    'name' => 'Channel 4',
-    'description' => '',
-    'format' => 'filtered_html',
+    'name' => 'Culture Channel',
+    'description' => 'Multi-lingual programming that covers the arts, politics, and global news for all of Manhattan’s diverse communities.',
+    'format' => 'plain_text',
     'weight' => 0,
     'uuid' => '73911ba6-0a70-4beb-af93-9f420a9af7d7',
     'vocabulary_machine_name' => 'channel',
-    'field_channel_embed' => array(),
+    'field_channel_embed' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>',
+          'format' => 'full_html',
+          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>
+',
+        ),
+      ),
+    ),
     'field_channel_id' => array(
       'und' => array(
         0 => array(
@@ -87,7 +161,22 @@ function mnn_channel_uuid_features_default_terms() {
       ),
     ),
     'field_channel_logo' => array(),
-    'field_channel_where_to_watch' => array(),
+    'field_channel_where_to_watch' => array(
+      'und' => array(
+        0 => array(
+          'first' => 'TWC',
+          'second' => 67,
+        ),
+        1 => array(
+          'first' => 'RCN',
+          'second' => 85,
+        ),
+        2 => array(
+          'first' => 'FiOS',
+          'second' => 36,
+        ),
+      ),
+    ),
   );
   return $terms;
 }
