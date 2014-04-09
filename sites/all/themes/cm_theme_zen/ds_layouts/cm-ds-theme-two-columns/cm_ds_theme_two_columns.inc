@@ -4,7 +4,7 @@
  * Implementation of ds layouts
  */
 
-function ds_cm_theme_two_columns() {
+function ds_cm_ds_theme_two_columns() {
   return array(
     'label' => t('CM theme: Two columns with top and bottom rows'),
     'regions'     => array(
