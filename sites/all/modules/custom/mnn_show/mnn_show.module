@@ -1,0 +1,192 @@
+<?php
+/**
+ * Implementation of hook_init().
+ */
+function mnn_show_init()
+{
+  $date_now = new DateTime();
+
+  $mnn_show_js_settings = array(
+    'reportingUrl' => variable_get('mnn_show_reporting_server_url', ''),
+    'actualDate' => $date_now->format('m/d/Y'),
+  );
+  drupal_add_js(array('mnn_show' => $mnn_show_js_settings), 'setting');
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function mnn_show_menu() {
+  $items['admin/config/media/mnn_show'] = array(
+    'title' => 'Mnn Show Settings',
+    'description' => 'Configure settings for Mnn Show module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('mnn_show_settings'),
+    'access arguments' => array('administer site configuration'),
+  );
+  $items['shows/past-shows/category'] = array(
+    'title' => 'Shows',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'mnn_show.shows.inc',
+  );
+  $items['shows/past-shows'] = array(
+    'title' => 'Shows',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'mnn_show.shows.inc',
+  );
+  $items['shows/category'] = array(
+    'title' => 'Shows',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'mnn_show.shows.inc',
+  );
+  $items['shows'] = array(
+    'title' => 'Shows',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'mnn_show.shows.inc',
+  );
+  $items['show-info/%'] = array(
+    'title' => 'Show Info',
+    'page callback' => 'mnn_show_show_redirect_to_schedule_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+    'file' => 'mnn_show.shows.inc',
+  );
+  $items['schedule'] = array(
+    'title' => 'Schedule',
+    'page callback' => 'mnn_show_schedule',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'mnn_show.schedule.inc',
+  );
+  $items['youth-channel/schedule'] = array(
+    'title' => 'Youth Channel Schedule',
+    'page callback' => 'mnn_show_yc_schedule',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'mnn_show.ycschedule.inc',
+  );
+  // $items['youth-channel/schedule/header'] = array(
+  //   'page callback' => 'mnn_show_yc_schedule_table_header',
+  //   'access arguments' => array('access content'),
+  //   'type' => MENU_CALLBACK,
+  //   'file' => 'mnn_show.schedule.inc',
+  // );
+
+  return $items;
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function mnn_show_block_info() {
+  $blocks = array();
+
+  $blocks['watch_now'] = array(
+    'info' => t('Watch Now'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['sch_geolocator_and_ch_listing'] = array(
+    'info' => t('Schedule Geolocator and Channel Listing'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['channel_listing'] = array(
+    'info' => t('Channel Listing'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['youth_channel_listing'] = array(
+    'info' => t('Youth Channel Listing'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['youth_channel_intro'] = array(
+    'info' => t('Youth Channel Intro'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+  $blocks['youth_channel_playing_now'] = array(
+    'info' => t('Youth Channel Playing Now?'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function mnn_show_block_view($delta = '') {
+  ctools_include('mnn_show.blocks', 'mnn_show', '');
+
+  $block = array();
+
+  switch($delta) {
+    case 'watch_now':
+      $block['content'] = mnn_show_block_watch_now();
+      break;
+    case 'sch_geolocator_and_ch_listing':
+      $block['subject'] = t('Channel Listing');
+      $block['content'] = mnn_show_block_geolocator_and_channel_listing();
+      break;
+    case 'channel_listing':
+      $block['subject'] = t('Channel Listing');
+      $block['content'] = mnn_show_block_channel_listing();
+      break;
+    case 'youth_channel_listing':
+      $block['content'] = mnn_show_block_yc_channel_listing();
+      break;
+    case 'youth_channel_intro':
+      $block['content'] = mnn_show_block_yc_channel_intro();
+      break;
+    case 'youth_channel_playing_now':
+      $block['content'] = mnn_show_block_yc_channel_is_playing_now();
+      break;
+  }
+
+  return $block;
+}
+
+/******************************************************************************
+ * Other Public Functions
+ *****************************************************************************/
+
+/**
+ * Gets information about the current show playing on the specified channel.
+ * @param  string $channelNum The numeric channel (1 - 4)
+ * @return array
+ */
+function mnn_show_current_show_info($channelNum){
+  //TODO Add ajax retrieving and rendering of data.
+  return null;
+}
+
+/**
+ * Admin settings form.
+ */
+function mnn_show_settings() {
+  $form['mnn_show_reporting_server_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Url address of reporting server.'),
+    '#description' => t("Enter url in format '//server.com' ."),
+    '#maxlength' => 256,
+    '#required' => TRUE,
+    '#default_value' => variable_get('mnn_show_reporting_server_url', ''),
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Custom function to include tooltip js library.
+ */
+function mnn_show_include_tooltip() {
+  $tooltip_path = 'sites/all/libraries/tooltip';
+
+  drupal_add_js($tooltip_path . "/tooltip.js");
+  drupal_add_css($tooltip_path . "/tooltip.css");
+}
