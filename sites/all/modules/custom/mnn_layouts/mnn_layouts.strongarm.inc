@@ -63,7 +63,7 @@ function mnn_layouts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ds_extras_region_to_block';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['ds_extras_region_to_block'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -84,8 +84,30 @@ function mnn_layouts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ds_extras_vd';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['ds_extras_vd'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fitvids_customselectors';
+  $strongarm->value = 'http://new.livestream.com';
+  $export['fitvids_customselectors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fitvids_selectors';
+  $strongarm->value = 'body
+field-name-field-channel-embed';
+  $export['fitvids_selectors'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'fitvids_simplifymarkup';
+  $strongarm->value = 1;
+  $export['fitvids_simplifymarkup'] = $strongarm;
 
   return $export;
 }

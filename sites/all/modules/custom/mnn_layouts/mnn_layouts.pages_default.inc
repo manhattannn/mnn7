@@ -16,10 +16,7 @@ function mnn_layouts_default_page_manager_pages() {
   $page->admin_title = 'Homepage';
   $page->admin_description = '';
   $page->path = 'home';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array(
     'type' => 'normal',
     'title' => 'Home',
@@ -121,7 +118,7 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Dummy: Featured Producer',
       'title' => 'Featured Producer',
-      'body' => '<center><div style="width: 300px; height: 200px; background-color: black;">&nbsp;</div></center><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+      'body' => '<center><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></center><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -146,8 +143,7 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Dummy: Featured Series',
       'title' => 'Featured Series',
-      'body' => '<center><div style="width: 300px; height: 200px; background-color: black;" >&nbsp</div></center>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+      'body' => '<center><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></center><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -172,7 +168,7 @@ function mnn_layouts_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Dummy Header',
       'title' => '',
-      'body' => '<center><div style="width: 600px; height: 400px; background-color: black;" >&nbsp</div></center>',
+      'body' => '<iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
