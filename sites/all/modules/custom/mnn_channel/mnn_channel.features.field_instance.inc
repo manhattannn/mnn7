@@ -52,6 +52,11 @@ function mnn_channel_field_default_field_instances() {
           ),
         ),
       ),
+      'linkit' => array(
+        'button_text' => 'Search',
+        'enable' => 0,
+        'profile' => '',
+      ),
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -64,6 +69,7 @@ function mnn_channel_field_default_field_instances() {
       'type' => 'text_textarea',
       'weight' => 4,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'taxonomy_term-channel-field_channel_id'
@@ -77,7 +83,7 @@ function mnn_channel_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'taxonomy_term',
@@ -168,7 +174,7 @@ function mnn_channel_field_default_field_instances() {
           'style' => 'inline',
         ),
         'type' => 'double_field_unformatted_list',
-        'weight' => 4,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'taxonomy_term',

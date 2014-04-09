@@ -14,7 +14,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media Policy',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 6,
     'uuid' => '035846f5-90dc-463f-b85f-d39593e0e225',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -25,7 +25,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Clip of the Week',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 11,
     'uuid' => '0a24ee3f-9e0c-4017-8303-65b19a31f718',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -36,7 +36,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'About Us',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 16,
     'uuid' => '0a84e4a1-4f32-4bdb-95fa-4db1cbc78cf5',
     'vocabulary_machine_name' => 'sections',
   );
@@ -44,7 +44,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Chuck\'s Picks',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 7,
     'uuid' => '187f91b8-9624-4194-8a81-ac93597c0ee6',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -55,7 +55,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'MNN Youth Channel',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 3,
     'uuid' => '2278c906-1251-401e-97ba-b321041499d4',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -66,15 +66,18 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Firehouse',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '3110173b-dc1f-4bdb-b12b-a10b1fc06029',
     'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '686a2262-9043-45b2-9091-ef9e0dc81296',
+    ),
   );
   $terms[] = array(
     'name' => 'Media',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 11,
     'uuid' => '42c001b9-f87a-495a-8c53-4d51d5317983',
     'vocabulary_machine_name' => 'sections',
   );
@@ -82,7 +85,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Classes',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 8,
     'uuid' => '45639bbd-deea-4ee7-97ee-571c143689ae',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -90,10 +93,18 @@ function mnn_site_sections_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Locations',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 12,
+    'uuid' => '686a2262-9043-45b2-9091-ef9e0dc81296',
+    'vocabulary_machine_name' => 'sections',
+  );
+  $terms[] = array(
     'name' => 'MNN Diaries',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 12,
     'uuid' => '6ce75fd3-0927-4c44-b491-f62fa9e3a640',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -104,7 +115,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'News and Views',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 4,
     'uuid' => '7ff57872-5b68-471f-9be0-35e582716c1a',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -115,7 +126,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media Education',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 9,
     'uuid' => '87a044fd-1273-45d8-b072-fc5e4b06693f',
     'vocabulary_machine_name' => 'sections',
   );
@@ -123,7 +134,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'News',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 0,
+    'weight' => 10,
     'uuid' => '89b6bc78-8599-4538-af57-9da1cbd343da',
     'vocabulary_machine_name' => 'sections',
   );
@@ -131,7 +142,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Race2Represent',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '8a3bed6d-3f51-4566-a096-afb08fee5d03',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -142,7 +153,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Events',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 13,
     'uuid' => '8d5ea9f8-b121-4d09-a0ae-4769e0754a6e',
     'vocabulary_machine_name' => 'sections',
   );
@@ -161,7 +172,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'MNN El Barrio Firehouse',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 5,
     'uuid' => '8ffc4fb0-98e6-4c1f-8138-a494721183ce',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -172,7 +183,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Events',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 9,
     'uuid' => 'd77fb1fd-abde-419c-93be-e166adf5ceb5',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -183,7 +194,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Community Media',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 10,
     'uuid' => 'edf7679d-bcc7-40d4-b227-2e190326d7ee',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -194,7 +205,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Program Guide',
     'description' => '',
     'format' => 'plain_text',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => 'fbbf34d5-f286-4f25-8269-aba0b313fdba',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
