@@ -246,6 +246,162 @@ function mnn_layouts_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['mnn_show-channel_listing'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'channel_listing',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '<front>',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'cm_theme_zen',
+        'weight' => 0,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 1,
+  );
+
+  $export['mnn_show-sch_geolocator_and_ch_listing'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'sch_geolocator_and_ch_listing',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'cm_theme_zen',
+        'weight' => 0,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['mnn_show-watch_now'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'watch_now',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => 'sidebar_second',
+        'status' => 1,
+        'theme' => 'cm_theme_zen',
+        'weight' => -16,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['mnn_show-youth_channel_intro'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'youth_channel_intro',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'cm_theme_zen',
+        'weight' => 0,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['mnn_show-youth_channel_listing'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'youth_channel_listing',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'cm_theme_zen',
+        'weight' => 0,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['mnn_show-youth_channel_playing_now'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'youth_channel_playing_now',
+    'module' => 'mnn_show',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'cm_theme_zen' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'cm_theme_zen',
+        'weight' => 0,
+      ),
+      'ember' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ember',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['node-recent'] = array(
     'cache' => 1,
     'custom' => 0,
@@ -304,14 +460,14 @@ function mnn_layouts_default_fe_block_settings() {
     'delta' => 'sidebar',
     'module' => 'panels_mini',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'schedule',
     'roles' => array(),
     'themes' => array(
       'cm_theme_zen' => array(
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'cm_theme_zen',
-        'weight' => 0,
+        'weight' => -17,
       ),
       'ember' => array(
         'region' => '',
@@ -594,10 +750,10 @@ function mnn_layouts_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'cm_theme_zen' => array(
-        'region' => 'sidebar_first',
+        'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'cm_theme_zen',
-        'weight' => 0,
+        'weight' => -18,
       ),
       'ember' => array(
         'region' => '',
