@@ -106,7 +106,7 @@ h1 {
 }
 
 .breadcrumb {
-  margin: 20px 0;
+  margin: 0 0 10px 0;
 }
 
 /***********
@@ -280,9 +280,8 @@ aside.sidebars .sidebar {
 }
 aside.sidebars .sidebar h2 {
   background: #eff2f1;
-  text-indent: 10px;
   margin: 0 0 10px 0;
-  padding: 5px 0;
+  padding: 5px;
   clear: both;
 }
 @media (max-width: 1000px) {

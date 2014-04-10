@@ -83,7 +83,7 @@ h1 {
   }
 }
 .breadcrumb {
-  margin: 20px 0;
+  margin: 0 0 10px 0;
 }
 /***********
 ~HEADER
@@ -201,9 +201,8 @@ aside.sidebars {
     padding-bottom: 20px;
     h2 {
       background: $grey;
-      text-indent: 10px;
       margin: 0 0 10px 0;
-      padding: 5px 0;
+      padding: 5px;
       clear: both;
     }
     @include breakpoint ($breakpoint-large-width) {

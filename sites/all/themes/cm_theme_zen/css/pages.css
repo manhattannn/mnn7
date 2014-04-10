@@ -135,8 +135,19 @@ body {
     margin: 0;
   }
 }
+#content.max-680 .column {
+  clear: both;
+  width: 100%;
+  margin: 0;
+}
+#content.max-680 .column .inside {
+  margin: 0;
+}
 #content .view-mode-full .field-name-field-image {
   margin: 20px 0;
+}
+#content .node-full .cm-row .field-name-field-image img {
+  width: 100%;
 }
 
 .breadcrumb {
@@ -161,6 +172,10 @@ h2.comment-form,
 h3.title {
   /* Comment title */
   margin: 0;
+}
+
+h1.title {
+  margin-bottom: 10px;
 }
 
 tr.even {

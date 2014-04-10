@@ -143,9 +143,28 @@ body {
       }
     }
   }
+  &.max-680 {
+    .column {
+      clear: both;
+      width: 100%;
+      margin: 0;
+      .inside {
+        margin: 0;
+      }
+    }
+  }
   .view-mode-full {
     .field-name-field-image {
       margin: 20px 0;
+    }
+  }
+  .node-full {
+    .cm-row {
+      .field-name-field-image {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -173,6 +192,9 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+}
+h1.title {
+  margin-bottom: 10px;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
