@@ -22,7 +22,7 @@ function mnn_channel_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -94,9 +94,8 @@ function mnn_channel_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'machine_name',
         'settings' => array(),
-        'type' => 'machine_name_default',
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'full' => array(
@@ -144,7 +143,7 @@ function mnn_channel_field_default_field_instances() {
           'image_style' => 'thumbnail',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -262,23 +261,9 @@ function mnn_channel_field_default_field_instances() {
       ),
       'term_teaser' => array(
         'label' => 'hidden',
-        'module' => 'double_field',
-        'settings' => array(
-          'first' => array(
-            'format' => '_none',
-            'hidden' => 0,
-            'prefix' => '',
-            'suffix' => ':&nbsp;',
-          ),
-          'second' => array(
-            'format' => '_none',
-            'hidden' => 0,
-            'prefix' => '',
-            'suffix' => '',
-          ),
-        ),
-        'type' => 'double_field_tabs',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'taxonomy_term',

@@ -21,6 +21,11 @@ function mnn_channel_ds_field_settings_info() {
       'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+      ),
     ),
   );
   $export['taxonomy_term|channel|term_teaser'] = $ds_fieldsetting;
@@ -89,14 +94,12 @@ function mnn_channel_ds_layout_settings_info() {
       'wrapper' => array(
         1 => 'title',
         2 => 'description',
-        3 => 'field_channel_where_to_watch',
       ),
     ),
     'fields' => array(
       'field_channel_logo' => 'media',
       'title' => 'wrapper',
       'description' => 'wrapper',
-      'field_channel_where_to_watch' => 'wrapper',
     ),
     'classes' => array(),
     'wrappers' => array(
