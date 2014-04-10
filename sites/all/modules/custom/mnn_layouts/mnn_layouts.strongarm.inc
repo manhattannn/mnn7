@@ -90,6 +90,166 @@ function mnn_layouts_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_current_filters_default';
+  $strongarm->value = 1;
+  $export['ds_search_apachesolr_current_filters_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_hide_current_filters';
+  $strongarm->value = 1;
+  $export['ds_search_apachesolr_hide_current_filters'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_multisite';
+  $strongarm->value = 1;
+  $export['ds_search_apachesolr_multisite'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_multisite_boost';
+  $strongarm->value = 0;
+  $export['ds_search_apachesolr_multisite_boost'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_multisite_group';
+  $strongarm->value = 0;
+  $export['ds_search_apachesolr_multisite_group'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_apachesolr_multisite_group_config';
+  $strongarm->value = '';
+  $export['ds_search_apachesolr_multisite_group_config'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_file_render';
+  $strongarm->value = 0;
+  $export['ds_search_file_render'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type';
+  $strongarm->value = 0;
+  $export['ds_search_group_by_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_other';
+  $strongarm->value = 'Other';
+  $export['ds_search_group_by_type_other'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_other_wrapper';
+  $strongarm->value = 'fieldset';
+  $export['ds_search_group_by_type_other_wrapper'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_settings';
+  $strongarm->value = array(
+    'article' => array(
+      'status' => 1,
+      'label' => 'Results for article',
+      'wrapper' => 'fieldset',
+      'weight' => '0',
+    ),
+    'page' => array(
+      'status' => 1,
+      'label' => 'Results for basic page',
+      'wrapper' => 'fieldset',
+      'weight' => '0',
+    ),
+  );
+  $export['ds_search_group_by_type_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_highlight';
+  $strongarm->value = 1;
+  $export['ds_search_highlight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_highlight_selector';
+  $strongarm->value = '.view-mode-search_result';
+  $export['ds_search_highlight_selector'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_language';
+  $strongarm->value = 0;
+  $export['ds_search_language'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_node_form_alter';
+  $strongarm->value = 0;
+  $export['ds_search_node_form_alter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_node_limit';
+  $strongarm->value = '10';
+  $export['ds_search_node_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_path';
+  $strongarm->value = 'ds';
+  $export['ds_search_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_show_title';
+  $strongarm->value = 0;
+  $export['ds_search_show_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_type';
+  $strongarm->value = 'apachesolr_search';
+  $export['ds_search_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_variables';
+  $strongarm->value = 'none';
+  $export['ds_search_variables'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_view_mode';
+  $strongarm->value = 'search_result';
+  $export['ds_search_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'fitvids_customselectors';
   $strongarm->value = 'http://new.livestream.com';
   $export['fitvids_customselectors'] = $strongarm;
@@ -581,6 +741,52 @@ field-name-field-channel-embed';
     'other' => 'other',
   );
   $export['panelizer_node:page_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_cm_theme_zen_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 0,
+    'toggle_slogan' => 0,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'zen_breadcrumb' => 'yes',
+    'zen_breadcrumb_separator' => ' › ',
+    'zen_breadcrumb_home' => 1,
+    'zen_breadcrumb_trailing' => 1,
+    'zen_breadcrumb_title' => 0,
+    'zen_skip_link_anchor' => 'main-menu',
+    'zen_skip_link_text' => 'Jump to navigation',
+    'zen_html5_respond_meta' => array(
+      'respond' => 'respond',
+      'html5' => 'html5',
+      'meta' => 'meta',
+    ),
+    'zen_rebuild_registry' => 0,
+    'zen_wireframes' => 0,
+    'user_menu' => 0,
+    'responsive_nav' => 0,
+    'sticky_footer' => 1,
+  );
+  $export['theme_cm_theme_zen_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_default';
+  $strongarm->value = 'cm_theme_zen';
+  $export['theme_default'] = $strongarm;
 
   return $export;
 }
