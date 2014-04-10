@@ -108,7 +108,6 @@ body {
       }
     }
     &.teaser {
-      margin: 10px 0;
       padding: 2px 0 20px 0;
       border-bottom: 1px solid #EEEEEE;
       .media {
@@ -126,11 +125,21 @@ body {
         margin: 0;
       }
     }
-    &.max-320, .max-320 {
+    &.max-340, .max-340 {
       .media {
         max-width: 100%;
         width: 100%;
         margin: 0 0 10px 0;
+      }
+    }
+    .column {
+      @include breakpoint ($breakpoint-med-small-width) {
+        clear: both;
+        width: 100%;
+        margin: 0;
+        .inside {
+          margin: 0;
+        }
       }
     }
   }

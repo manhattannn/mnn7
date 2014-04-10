@@ -78,7 +78,7 @@ h5 {
   padding: 15px 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   ul.primary li, ul.secondary li {
     float: none;
     clear: both;
@@ -124,7 +124,7 @@ h1 {
   float: right;
   margin: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .wrapper.header #header #cm-user-menu {
     float: none;
     text-align: center;
@@ -213,7 +213,7 @@ h1#site-name a:link, h1#site-name a:visited {
   margin: 60px 0 0 0;
   border: 1px solid #CCCCCC;
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #block-search-form {
     clear: both;
     float: none;
@@ -247,7 +247,7 @@ h1#site-name a:link, h1#site-name a:visited {
   margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .wrapper.header #header {
     text-align: center;
     padding: 0;
@@ -257,6 +257,10 @@ h1#site-name a:link, h1#site-name a:visited {
     clear: both;
     display: block;
     padding: 20px;
+    margin: 0 auto;
+  }
+  .wrapper.header #header #logo img {
+    margin: 0 auto;
   }
   .wrapper.header #header #name-and-slogan {
     float: none;
@@ -359,7 +363,7 @@ ul.social-footer li a i:hover {
   color: #61aee2;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   #footer {
     text-align: center;
   }

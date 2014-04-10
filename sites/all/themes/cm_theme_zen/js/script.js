@@ -52,7 +52,7 @@
     attach: function (context, settings) {
 
       $('.cm-row, .column').selectorQuery({
-        'widthStops': [320],
+        'widthStops': [340],
         'classPrefix': 'max-'
       });
 

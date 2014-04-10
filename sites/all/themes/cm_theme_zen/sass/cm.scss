@@ -177,6 +177,10 @@ h1#site-name {
       clear: both;
       display: block;
       padding: 20px;
+      margin: 0 auto;
+      img {
+        margin: 0 auto;
+      }
     }
     #name-and-slogan {
       float: none;

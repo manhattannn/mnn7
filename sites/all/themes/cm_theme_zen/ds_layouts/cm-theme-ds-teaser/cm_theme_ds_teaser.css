@@ -1,12 +1,15 @@
 
 .cm-row {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   clear: both;
   width: 100%;
 }
 .cm-column {
   float: left;
   width: 50%;
+}
+.cm-column .cm-row {
+  margin-bottom: 10px;
 }
 .cm-column.left .inside {
   padding-right: 10px;
