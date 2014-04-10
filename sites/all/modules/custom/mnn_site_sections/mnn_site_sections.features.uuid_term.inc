@@ -82,6 +82,17 @@ function mnn_site_sections_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'sections',
   );
   $terms[] = array(
+    'name' => '59th Street Studios',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '44d03a5d-5683-440e-8b6e-cfb10a4b45de',
+    'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '686a2262-9043-45b2-9091-ef9e0dc81296',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Classes',
     'description' => '',
     'format' => 'plain_text',
