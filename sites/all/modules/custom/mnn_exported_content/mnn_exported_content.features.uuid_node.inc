@@ -26,15 +26,14 @@ function mnn_exported_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => '00366883-f866-41ac-a941-2f41727c0afc',
-  'revision_uid' => 29,
+  'revision_uid' => 1,
   'body' => array(
     'und' => array(
       0 => array(
-        'value' => '<br />
-',
+        'value' => '<p>If you live within Manhattan you can watch MNN on one of the channels listed here. You can always watch MNN online.</p>',
         'summary' => '',
         'format' => 'filtered_html',
-        'safe_value' => '<p></p>
+        'safe_value' => '<p>If you live within Manhattan you can watch MNN on one of the channels listed here. You can always watch MNN online.</p>
 ',
         'safe_summary' => '',
       ),
@@ -104,34 +103,51 @@ function mnn_exported_content_uuid_features_default_content() {
     ),
   ),
   'panelizer' => array(
+    'page_manager' => array(
+      'entity_type' => 'node',
+      'entity_id' => 629,
+      'revision_id' => 630,
+      'name' => 'node:page:default',
+      'no_blocks' => 0,
+      'css_id' => '',
+      'css' => NULL,
+      'pipeline' => 'standard',
+      'contexts' => NULL,
+      'relationships' => NULL,
+      'did' => 0,
+      'view_mode' => 'page_manager',
+      'css_class' => '',
+      'title_element' => 'H2',
+      'link_to_entity' => 1,
+      'extra' => NULL,
+    ),
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
-      'name' => 'node:page:default:default',
-      'title' => 'Default',
-      'panelizer_type' => 'node',
-      'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'entity_type' => 'node',
+      'entity_id' => 629,
+      'revision_id' => 630,
+      'name' => NULL,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
-      'access' => array(),
+      'did' => 8,
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          30 => array(
+            'pid' => 30,
+            'did' => 8,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -155,12 +171,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          31 => array(
+            'pid' => 31,
+            'did' => 8,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -181,12 +198,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          32 => array(
+            'pid' => 32,
+            'did' => 8,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -208,18 +226,44 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '52454388-9cd5-4a41-91d3-3fbc213232ce',
           ),
+          33 => array(
+            'pid' => 33,
+            'did' => 8,
+            'panel' => 'top',
+            'type' => 'views_panes',
+            'subtype' => 'mnn_channel_lists-mnn_channel_list_content_pane',
+            'shown' => 1,
+            'access' => array(),
+            'configuration' => array(
+              'use_pager' => 0,
+              'pager_id' => 0,
+              'items_per_page' => 10,
+              'override_title' => 0,
+              'override_title_text' => '',
+            ),
+            'cache' => array(),
+            'style' => array(
+              'settings' => NULL,
+            ),
+            'css' => array(),
+            'extras' => array(),
+            'position' => 3,
+            'locks' => array(),
+            'uuid' => '56db40d0-0750-462a-9c8b-42ea8221baa5',
+          ),
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 30,
+            1 => 31,
+            2 => 32,
+            3 => 33,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 8,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -242,16 +286,10 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 30,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
-      'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -345,33 +383,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -395,12 +437,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -421,12 +464,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -451,15 +495,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -482,16 +526,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -585,33 +624,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -635,12 +678,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -661,12 +705,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -691,15 +736,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -722,16 +767,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -943,33 +983,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -993,12 +1037,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1019,12 +1064,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -1049,15 +1095,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -1080,16 +1126,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -1194,33 +1235,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1244,12 +1289,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1270,12 +1316,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -1300,15 +1347,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -1331,16 +1378,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'admin',
@@ -1434,33 +1476,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1484,12 +1530,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1510,12 +1557,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -1540,15 +1588,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -1571,16 +1619,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -1607,8 +1650,123 @@ function mnn_exported_content_uuid_features_default_content() {
   'tnid' => 0,
   'translate' => 0,
   'uuid' => 'c65d3750-c3fe-4c95-8d01-701845311985',
-  'revision_uid' => 29,
-  'body' => array(),
+  'revision_uid' => 1,
+  'body' => array(
+    'und' => array(
+      0 => array(
+        'value' => '<div id="title" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);"><h1 class="title" style="margin-top: 30px; margin-bottom: 20px; padding: 0px; border: 0px none; font-family: \'Droid Serif\', Georgia, serif; font-size: 36px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 34px; vertical-align: baseline;">Media Education</h1></div><div id="content-area" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);"><article class="page node node node-mine clearfix node-type-page" id="node-15" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 620px; zoom: 1;"><div class="content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><img align="right" alt="" class="imagecache-inline-image-content-width" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/inline-image-content-width/page-inline-images/1177_MNN_1939_cropped_0.jpg" style="margin-top: 0px; margin-bottom: 20px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" /></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Welcome to media education at MNN.&nbsp; Manhattan residents and non-profit community organizations are invited to participate in our free media education courses. &nbsp;After attending our Orientation, you can take classes and start production on your very own television program to cablecast on MNN&rsquo;s channels.</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Upcoming Orientation Dates</strong></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Come along to our main studios at 537 West 59th St on one of these dates for an Orientation:</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* March 20th 1pm to 3pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* March 20th 7pm to 9pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* May 22nd 1pm to 3pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* May 22nd 7pm to 9pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* July 17th 1pm to 3pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* July 17th 7pm to 9pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* September 25th 1pm to 3pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* September 25th 7pm to 9pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* November 13th 1pm to 3pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* November 13th 7pm to 9pm</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">*NEW* Already have a show on MNN?</strong></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Making a great TV show takes a lot of work and commitment. Check out our new&nbsp;<strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://www.mnn.org/producers/producer-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" target="_blank">Producer Resources page</a></strong>&nbsp;for tons of tips and information on troubleshooting production questions, building your audience and getting support and recognition for your show.&nbsp;<strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://www.mnn.org/producers/producer-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" target="_blank">Click here!</a></strong></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Did you know?</strong></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">We recently outfitted MNN&rsquo;s facilities with state-of-the-art media production equipment. This once-in-a-decade upgrade means our producers now have access to the most up-to-date media production equipment to create their programs. It also means that producers who have previously been certified in both Studio Production and Express Studio Production will need to take recertification classes to produce programs independently.</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">An important note about our workshops</strong></p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">We are excited about our new equipment and to train our current and new producers. As we transition to the new equipment, demand for our workshops is extremely high, and there are waiting lists for our certifications classes and workshops.&nbsp;<a href="http://www.mnn.org/producers/faq" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" title="MNN Producer FAQ">Please visit the FAQ section of our website</a>&nbsp;for more information on our waiting list policy. We look forward to welcoming you to MNN and appreciate your patience!</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Recertification</strong>:</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">These courses aim to upgrade previously certified MNN producers on the new equipment and systems. Upon sucessful completion of the recertification courses, producers can access the equipment to produce programming independently.</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Certification</strong>:</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">In these hands-on courses students learn basic media and production skills. Members that successfully complete these courses can use MNN&rsquo;s facilities to produce their own programming to air on MNN&rsquo;s channels.&nbsp;</p><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">&nbsp;</p><div class="become-producer" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/become-producer" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">How to Become a Producer</a></div><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">&nbsp;</p><div class="submit-show" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/submit-show" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">How to Submit a Show</a></div><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">&nbsp;</p><div class="production-resources" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/manhattan-video-production-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">Equipment &amp; Resources</a></div><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">&nbsp;</p><div class="series-dealines" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/series-deadlines" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">Quarterly Series Deadlines</a></div><p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">&nbsp;</p></div></article></div><div id="content-bottom" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);"><div class="block block-views block-content_bottom block-id-views-b855a929e665c3fde3d084d3e9aa266e clearfix" id="block-views-certification-class-list-block-producers" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; zoom: 1; position: relative;"><div class="top" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">&nbsp;</div><div class="outer" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><div class="inner" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><div class="content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><div class="view view-certification-class-list view-id-certification_class_list view-display-id-block_1 view-dom-id-1" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><div class="view-content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><div class="item-list" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><ul style="margin-top: 0px; margin-bottom: 0px; padding-left: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none outside none;"><li class="views-row views-row-1 views-row-odd views-row-first" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/1177_MNN_1595.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Field Camera Training</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Our Field Production classes teach you how to work on location, plus basic camera and editing skills.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li><li class="views-row views-row-2 views-row-even" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/IMG_0917.JPG" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Studio Production Training</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Interviews, fashion shows, lectures, and more. Learn how to seamlessly edit multi-shot productions for live/live-to-tape productions.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li><li class="views-row views-row-3 views-row-odd" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/IMG_0925.JPG" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Express Studio Training</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">With our Express Studio track, develop the skills you need to produce a show from a single camera, single-handedly.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li><li class="views-row views-row-4 views-row-even" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/1177_MNN_1168.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Advanced Classes</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Our Advanced Classes are ongoing seminars that change from month-to-month. In the past, we have offered coursework ranging from Mac Basics to Final Cut Pro.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li><li class="views-row views-row-5 views-row-odd" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/finalcut7.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Digital Video Editing Training</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Learn the basics of digital video editing.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li><li class="views-row views-row-6 views-row-even views-row-last" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;"><div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/mnn-firehouse_0.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div><h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Community Builders</a></h5><div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;"><p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Community Builders Training is a program for persons interested in producing community programming.</p></div><div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div></li></ul></div></div></div></div></div></div></div></div><p>&nbsp;</p>',
+        'summary' => '',
+        'format' => 'full_html',
+        'safe_value' => '<div id="title" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);">
+<h1 class="title" style="margin-top: 30px; margin-bottom: 20px; padding: 0px; border: 0px none; font-family: \'Droid Serif\', Georgia, serif; font-size: 36px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 34px; vertical-align: baseline;">Media Education</h1>
+</div>
+<div id="content-area" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);"><article class="page node node node-mine clearfix node-type-page" id="node-15" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 620px; zoom: 1;"><br /><div class="content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><img align="right" alt="" class="imagecache-inline-image-content-width" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/inline-image-content-width/page-inline-images/1177_MNN_1939_cropped_0.jpg" style="margin-top: 0px; margin-bottom: 20px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" /></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Welcome to media education at MNN.  Manhattan residents and non-profit community organizations are invited to participate in our free media education courses.  After attending our Orientation, you can take classes and start production on your very own television program to cablecast on MNN’s channels.</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Upcoming Orientation Dates</strong></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Come along to our main studios at 537 West 59th St on one of these dates for an Orientation:</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* March 20th 1pm to 3pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* March 20th 7pm to 9pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* May 22nd 1pm to 3pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* May 22nd 7pm to 9pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* July 17th 1pm to 3pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* July 17th 7pm to 9pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* September 25th 1pm to 3pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* September 25th 7pm to 9pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* November 13th 1pm to 3pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">* November 13th 7pm to 9pm</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">*NEW* Already have a show on MNN?</strong></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">Making a great TV show takes a lot of work and commitment. Check out our new <strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://www.mnn.org/producers/producer-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" target="_blank">Producer Resources page</a></strong> for tons of tips and information on troubleshooting production questions, building your audience and getting support and recognition for your show. <strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://www.mnn.org/producers/producer-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" target="_blank">Click here!</a></strong></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Did you know?</strong></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">We recently outfitted MNN’s facilities with state-of-the-art media production equipment. This once-in-a-decade upgrade means our producers now have access to the most up-to-date media production equipment to create their programs. It also means that producers who have previously been certified in both Studio Production and Express Studio Production will need to take recertification classes to produce programs independently.</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">An important note about our workshops</strong></p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">We are excited about our new equipment and to train our current and new producers. As we transition to the new equipment, demand for our workshops is extremely high, and there are waiting lists for our certifications classes and workshops. <a href="http://www.mnn.org/producers/faq" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);" title="MNN Producer FAQ">Please visit the FAQ section of our website</a> for more information on our waiting list policy. We look forward to welcoming you to MNN and appreciate your patience!</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Recertification</strong>:</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">These courses aim to upgrade previously certified MNN producers on the new equipment and systems. Upon sucessful completion of the recertification courses, producers can access the equipment to produce programming independently.</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"><strong style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Certification</strong>:</p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;">In these hands-on courses students learn basic media and production skills. Members that successfully complete these courses can use MNN’s facilities to produce their own programming to air on MNN’s channels. </p>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"> </p>
+<div class="become-producer" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/become-producer" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">How to Become a Producer</a></div>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"> </p>
+<div class="submit-show" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/submit-show" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">How to Submit a Show</a></div>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"> </p>
+<div class="production-resources" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/manhattan-video-production-resources" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">Equipment &amp; Resources</a></div>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"> </p>
+<div class="series-dealines" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/series-deadlines" style="margin: 0px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153);">Quarterly Series Deadlines</a></div>
+<p style="margin-top: 0px; margin-bottom: 10px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 20px; vertical-align: baseline;"> </p>
+</div>
+<p></p></article></div>
+<div id="content-bottom" style="margin: 0px; padding: 0px; border: 0px none; font-family: Helvetica, Arial, sans-serif; font-stretch: inherit; line-height: 18.200000762939453px; vertical-align: baseline; color: rgb(37, 41, 43);">
+<div class="block block-views block-content_bottom block-id-views-b855a929e665c3fde3d084d3e9aa266e clearfix" id="block-views-certification-class-list-block-producers" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; zoom: 1; position: relative;">
+<div class="top" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;"> </div>
+<div class="outer" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<div class="inner" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<div class="content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<div class="view view-certification-class-list view-id-certification_class_list view-display-id-block_1 view-dom-id-1" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<div class="view-content" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<div class="item-list" style="margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline;">
+<ul style="margin-top: 0px; margin-bottom: 0px; padding-left: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none outside none;"><li class="views-row views-row-1 views-row-odd views-row-first" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/1177_MNN_1595.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Field Camera Training</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Our Field Production classes teach you how to work on location, plus basic camera and editing skills.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/field-camera-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+<li class="views-row views-row-2 views-row-even" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/IMG_0917.JPG" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Studio Production Training</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Interviews, fashion shows, lectures, and more. Learn how to seamlessly edit multi-shot productions for live/live-to-tape productions.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/studio-production-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+<li class="views-row views-row-3 views-row-odd" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/IMG_0925.JPG" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Express Studio Training</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">With our Express Studio track, develop the skills you need to produce a show from a single camera, single-handedly.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/express-studio-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+<li class="views-row views-row-4 views-row-even" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/1177_MNN_1168.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Advanced Classes</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Our Advanced Classes are ongoing seminars that change from month-to-month. In the past, we have offered coursework ranging from Mac Basics to Final Cut Pro.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/advanced-classes" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+<li class="views-row views-row-5 views-row-odd" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/finalcut7.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Digital Video Editing Training</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Learn the basics of digital video editing.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/digital-video-editing-training" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+<li class="views-row views-row-6 views-row-even views-row-last" style="margin-top: 0px; margin-bottom: 30px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; list-style: none; clear: left;">
+<div class="thumb" style="margin: 0px 20px 20px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; float: left;"><a class="imagecache imagecache-certification-class-tracks imagecache-linked imagecache-certification-class-tracks_linked" href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;"><img alt="" class="imagecache imagecache-certification-class-tracks" height="90" src="http://mnn6.dev.zivtech.com/files/mnn/imagecache/certification-class-tracks/certification-class-images/mnn-firehouse_0.jpg" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 4px solid white; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; -webkit-box-shadow: rgb(135, 135, 135) 0px 0px 5px; box-shadow: rgb(135, 135, 135) 0px 0px 5px 0px;" title="" width="139" /></a></div>
+<h5 class="title" style="margin-top: 0px; margin-bottom: 10px; padding: 0px; border: 0px none; font-family: arial; font-size: 16px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;"><a href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(29, 29, 29); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">Community Builders</a></h5>
+<div class="description" style="margin-top: 0px; margin-bottom: 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; width: 540px;">
+<p style="margin-top: 5px; margin-bottom: 0px; border: 0px none; font-family: inherit; font-size: 14px; font-stretch: inherit; font-style: inherit; font-variant: inherit; line-height: 1.3em; vertical-align: baseline;">Community Builders Training is a program for persons interested in producing community programming.</p>
+</div>
+<div class="read-more" style="margin: 5px 0px 0px; padding: 0px; border: 0px none; font-family: inherit; font-size: inherit; font-stretch: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; line-height: 1.3em; vertical-align: baseline; color: rgb(0, 91, 37); float: left;"><a href="http://mnn6.dev.zivtech.com/producers/classes/community-builders" style="margin: 0px 0px 16px; padding: 0px; color: rgb(0, 91, 37); -webkit-tap-highlight-color: rgb(255, 94, 153); list-style: disc outside none;">View Class Information</a></div>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p> </p>
+',
+        'safe_summary' => '',
+      ),
+    ),
+  ),
   'field_image' => array(),
   'field_site_section' => array(
     'und' => array(
@@ -1673,34 +1831,51 @@ function mnn_exported_content_uuid_features_default_content() {
     ),
   ),
   'panelizer' => array(
+    'page_manager' => array(
+      'entity_type' => 'node',
+      'entity_id' => 627,
+      'revision_id' => 628,
+      'name' => 'node:page:default',
+      'no_blocks' => 0,
+      'css_id' => '',
+      'css' => NULL,
+      'pipeline' => 'standard',
+      'contexts' => NULL,
+      'relationships' => NULL,
+      'did' => 0,
+      'view_mode' => 'page_manager',
+      'css_class' => '',
+      'title_element' => 'H2',
+      'link_to_entity' => 1,
+      'extra' => NULL,
+    ),
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'entity_type' => 'node',
+      'entity_id' => 627,
+      'revision_id' => 628,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
-      'panelizer_type' => 'node',
-      'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
       'pipeline' => 'standard',
       'contexts' => array(),
       'relationships' => array(),
-      'access' => array(),
+      'did' => 0,
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 1,
       'extra' => array(),
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1724,12 +1899,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1750,12 +1926,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -1780,15 +1957,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -1811,16 +1988,10 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
-      'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
@@ -1925,33 +2096,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -1975,12 +2150,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -2001,12 +2177,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -2031,15 +2208,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -2062,16 +2239,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'admin',
@@ -2253,33 +2425,37 @@ function mnn_exported_content_uuid_features_default_content() {
   ),
   'panelizer' => array(
     'default' => array(
-      'disabled' => FALSE,
-      'api_version' => 1,
+      'pnid' => 1,
       'name' => 'node:page:default:default',
-      'title' => 'Default',
+      'title' => 'Content',
       'panelizer_type' => 'node',
       'panelizer_key' => 'page',
-      'no_blocks' => FALSE,
+      'no_blocks' => 0,
       'css_id' => '',
       'css' => '',
-      'pipeline' => 'standard',
+      'pipeline' => 'ipe',
       'contexts' => array(),
       'relationships' => array(),
+      'did' => NULL,
       'access' => array(),
       'view_mode' => 'default',
       'css_class' => '',
       'title_element' => 'H2',
-      'link_to_entity' => TRUE,
+      'link_to_entity' => 0,
       'extra' => array(),
+      'table' => 'panelizer_defaults',
+      'type' => 'Overridden',
+      'export_type' => 3,
       'display' => array(
         'args' => array(),
         'content' => array(
-          'new-24ae844c-e357-4808-a63f-daccd2894ccd' => array(
-            'pid' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
+          17 => array(
+            'pid' => 17,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:field_image',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -2303,12 +2479,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => '24ae844c-e357-4808-a63f-daccd2894ccd',
           ),
-          'new-c9e786f8-a745-41ab-8044-af6fea00b805' => array(
-            'pid' => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
+          18 => array(
+            'pid' => 18,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'entity_field',
             'subtype' => 'node:body',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'label' => 'hidden',
@@ -2329,12 +2506,13 @@ function mnn_exported_content_uuid_features_default_content() {
             'locks' => array(),
             'uuid' => 'c9e786f8-a745-41ab-8044-af6fea00b805',
           ),
-          'new-52454388-9cd5-4a41-91d3-3fbc213232ce' => array(
-            'pid' => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+          19 => array(
+            'pid' => 19,
+            'did' => 5,
             'panel' => 'top',
             'type' => 'node_links',
             'subtype' => 'node_links',
-            'shown' => TRUE,
+            'shown' => 1,
             'access' => array(),
             'configuration' => array(
               'override_title' => FALSE,
@@ -2359,15 +2537,15 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'panels' => array(
           'top' => array(
-            0 => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
-            1 => 'new-c9e786f8-a745-41ab-8044-af6fea00b805',
-            2 => 'new-52454388-9cd5-4a41-91d3-3fbc213232ce',
+            0 => 17,
+            1 => 18,
+            2 => 19,
           ),
         ),
         'incoming_content' => NULL,
         'css_id' => NULL,
         'context' => array(),
-        'did' => 'new',
+        'did' => 5,
         'renderer' => 'standard',
         'layout' => 'cm_theme_two_columns',
         'layout_settings' => array(
@@ -2390,16 +2568,11 @@ function mnn_exported_content_uuid_features_default_content() {
         ),
         'cache' => array(),
         'title' => '%node:title',
+        'hide_title' => 1,
+        'title_pane' => 17,
         'uuid' => 'd5cc52cb-866d-488b-b7dc-280c34616e36',
-        'hide_title' => 0,
-        'title_pane' => 'new-24ae844c-e357-4808-a63f-daccd2894ccd',
       ),
       'export_module' => 'mnn_layouts',
-      'type' => 'Default',
-      'export_type' => 2,
-      'in_code_only' => TRUE,
-      'table' => 'panelizer_defaults',
-      'did' => NULL,
     ),
   ),
   'name' => 'Craig',
