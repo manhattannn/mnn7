@@ -34,7 +34,34 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
-    'field_channel_logo' => array(),
+    'field_channel_logo' => array(
+      'und' => array(
+        0 => array(
+          'fid' => NULL,
+          'uid' => 1,
+          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'filemime' => 'image/png',
+          'filesize' => 70255,
+          'status' => 1,
+          'timestamp' => NULL,
+          'type' => 'image',
+          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
+          'field_file_image_alt_text' => array(),
+          'field_file_image_title_text' => array(),
+          'rdf_mapping' => array(),
+          'metadata' => array(
+            'height' => 778,
+            'width' => 848,
+          ),
+          'alt' => '',
+          'title' => '',
+          'width' => 848,
+          'height' => 778,
+          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+        ),
+      ),
+    ),
     'field_channel_where_to_watch' => array(
       'und' => array(
         0 => array(
@@ -76,7 +103,34 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
-    'field_channel_logo' => array(),
+    'field_channel_logo' => array(
+      'und' => array(
+        0 => array(
+          'fid' => NULL,
+          'uid' => 1,
+          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'filemime' => 'image/png',
+          'filesize' => 70255,
+          'status' => 1,
+          'timestamp' => NULL,
+          'type' => 'image',
+          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
+          'field_file_image_alt_text' => array(),
+          'field_file_image_title_text' => array(),
+          'rdf_mapping' => array(),
+          'metadata' => array(
+            'height' => 778,
+            'width' => 848,
+          ),
+          'alt' => NULL,
+          'title' => NULL,
+          'width' => 848,
+          'height' => 778,
+          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+        ),
+      ),
+    ),
     'field_channel_where_to_watch' => array(
       'und' => array(
         0 => array(
@@ -118,7 +172,34 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
-    'field_channel_logo' => array(),
+    'field_channel_logo' => array(
+      'und' => array(
+        0 => array(
+          'fid' => NULL,
+          'uid' => 1,
+          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'filemime' => 'image/png',
+          'filesize' => 70255,
+          'status' => 1,
+          'timestamp' => NULL,
+          'type' => 'image',
+          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
+          'field_file_image_alt_text' => array(),
+          'field_file_image_title_text' => array(),
+          'rdf_mapping' => array(),
+          'metadata' => array(
+            'height' => 778,
+            'width' => 848,
+          ),
+          'alt' => NULL,
+          'title' => NULL,
+          'width' => 848,
+          'height' => 778,
+          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+        ),
+      ),
+    ),
     'field_channel_where_to_watch' => array(
       'und' => array(
         0 => array(
@@ -160,7 +241,34 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
-    'field_channel_logo' => array(),
+    'field_channel_logo' => array(
+      'und' => array(
+        0 => array(
+          'fid' => NULL,
+          'uid' => 1,
+          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'filemime' => 'image/png',
+          'filesize' => 70255,
+          'status' => 1,
+          'timestamp' => NULL,
+          'type' => 'image',
+          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
+          'field_file_image_alt_text' => array(),
+          'field_file_image_title_text' => array(),
+          'rdf_mapping' => array(),
+          'metadata' => array(
+            'height' => 778,
+            'width' => 848,
+          ),
+          'alt' => NULL,
+          'title' => NULL,
+          'width' => 848,
+          'height' => 778,
+          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+        ),
+      ),
+    ),
     'field_channel_where_to_watch' => array(
       'und' => array(
         0 => array(

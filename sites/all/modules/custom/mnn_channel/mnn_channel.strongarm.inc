@@ -17,7 +17,7 @@ function mnn_channel_strongarm() {
   $strongarm->value = array(
     'view_modes' => array(
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'diff_standard' => array(
         'custom_settings' => FALSE,
@@ -25,12 +25,23 @@ function mnn_channel_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'term_teaser' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
       'display' => array(
         'description' => array(
           'default' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
+          'term_teaser' => array(
+            'weight' => '2',
+            'visible' => TRUE,
+          ),
+          'full' => array(
             'weight' => '2',
             'visible' => TRUE,
           ),
