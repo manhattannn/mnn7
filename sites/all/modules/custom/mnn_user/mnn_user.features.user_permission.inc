@@ -63,6 +63,16 @@ function mnn_user_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'access contextual links'.
+  $permissions['access contextual links'] = array(
+    'name' => 'access contextual links',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'contextual',
+  );
+
   // Exported permission: 'access dashboard'.
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
@@ -128,6 +138,42 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'admin_classes'.
+  $permissions['admin_classes'] = array(
+    'name' => 'admin_classes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ds_ui',
+  );
+
+  // Exported permission: 'admin_display_suite'.
+  $permissions['admin_display_suite'] = array(
+    'name' => 'admin_display_suite',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ds',
+  );
+
+  // Exported permission: 'admin_fields'.
+  $permissions['admin_fields'] = array(
+    'name' => 'admin_fields',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ds_ui',
+  );
+
+  // Exported permission: 'admin_view_modes'.
+  $permissions['admin_view_modes'] = array(
+    'name' => 'admin_view_modes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'ds_ui',
   );
 
   // Exported permission: 'administer actions'.
@@ -218,6 +264,15 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
+  );
+
+  // Exported permission: 'administer fitvids'.
+  $permissions['administer fitvids'] = array(
+    'name' => 'administer fitvids',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fitvids',
   );
 
   // Exported permission: 'administer flexslider'.
@@ -355,16 +410,16 @@ function mnn_user_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node article defaults'.
-  $permissions['administer panelizer node article defaults'] = array(
-    'name' => 'administer panelizer node article defaults',
+  // Exported permission: 'administer panelizer fieldable_panels_pane snippets_snippet defaults'.
+  $permissions['administer panelizer fieldable_panels_pane snippets_snippet defaults'] = array(
+    'name' => 'administer panelizer fieldable_panels_pane snippets_snippet defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node cm_slideshow_slide defaults'.
-  $permissions['administer panelizer node cm_slideshow_slide defaults'] = array(
-    'name' => 'administer panelizer node cm_slideshow_slide defaults',
+  // Exported permission: 'administer panelizer node article defaults'.
+  $permissions['administer panelizer node article defaults'] = array(
+    'name' => 'administer panelizer node article defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
@@ -654,16 +709,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create cm_slideshow_slide content'.
-  $permissions['create cm_slideshow_slide content'] = array(
-    'name' => 'create cm_slideshow_slide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create fieldable snippets_snippet'.
   $permissions['create fieldable snippets_snippet'] = array(
     'name' => 'create fieldable snippets_snippet',
@@ -734,16 +779,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'delete any cm_slideshow_slide content'.
-  $permissions['delete any cm_slideshow_slide content'] = array(
-    'name' => 'delete any cm_slideshow_slide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
@@ -796,16 +831,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'delete own audio files',
     'roles' => array(),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own cm_slideshow_slide content'.
-  $permissions['delete own cm_slideshow_slide content'] = array(
-    'name' => 'delete own cm_slideshow_slide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own document files'.
@@ -939,16 +964,6 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any cm_slideshow_slide content'.
-  $permissions['edit any cm_slideshow_slide content'] = array(
-    'name' => 'edit any cm_slideshow_slide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
@@ -1011,16 +1026,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'edit own audio files',
     'roles' => array(),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own cm_slideshow_slide content'.
-  $permissions['edit own cm_slideshow_slide content'] = array(
-    'name' => 'edit own cm_slideshow_slide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'staff' => 'staff',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own document files'.
@@ -1166,6 +1171,65 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'show format selection for fieldable_panels_pane'.
+  $permissions['show format selection for fieldable_panels_pane'] = array(
+    'name' => 'show format selection for fieldable_panels_pane',
+    'roles' => array(),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for file'.
+  $permissions['show format selection for file'] = array(
+    'name' => 'show format selection for file',
+    'roles' => array(),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for node'.
+  $permissions['show format selection for node'] = array(
+    'name' => 'show format selection for node',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for taxonomy_term'.
+  $permissions['show format selection for taxonomy_term'] = array(
+    'name' => 'show format selection for taxonomy_term',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format selection for user'.
+  $permissions['show format selection for user'] = array(
+    'name' => 'show format selection for user',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show format tips'.
+  $permissions['show format tips'] = array(
+    'name' => 'show format tips',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'show more format tips link'.
+  $permissions['show more format tips link'] = array(
+    'name' => 'show more format tips link',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'better_formats',
   );
 
   // Exported permission: 'switch shortcut sets'.
