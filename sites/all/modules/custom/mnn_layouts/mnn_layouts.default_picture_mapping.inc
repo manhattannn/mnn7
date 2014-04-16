@@ -16,11 +16,11 @@ function mnn_layouts_default_picture_mapping() {
   $picture_mapping->machine_name = 'full';
   $picture_mapping->breakpoint_group = 'full';
   $picture_mapping->mapping = array(
-    'breakpoints.theme.cm_theme_zen.narrow' => array(
-      '1x' => 'teaser_breakpoints_theme_cm_theme_zen_medium_1x',
+    'custom.user.mobile_images' => array(
+      '1x' => 'cm_wide_small',
     ),
-    'breakpoints.theme.cm_theme_zen.wide' => array(
-      '1x' => 'cm_full',
+    'custom.user.larger_images' => array(
+      '1x' => 'cm_wide_large',
     ),
   );
   $export['full'] = $picture_mapping;
@@ -32,7 +32,7 @@ function mnn_layouts_default_picture_mapping() {
   $picture_mapping->breakpoint_group = 'teaser';
   $picture_mapping->mapping = array(
     'breakpoints.theme.cm_theme_zen.mobile' => array(
-      '1x' => 'teaser',
+      '1x' => 'cm_teaser',
     ),
   );
   $export['teaser'] = $picture_mapping;

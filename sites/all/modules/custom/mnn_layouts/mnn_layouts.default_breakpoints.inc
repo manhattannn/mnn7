@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * mnn_common.default_breakpoints.inc
+ * mnn_layouts.default_breakpoints.inc
  */
 
 /**
  * Implements hook_default_breakpoints().
  */
-function mnn_common_default_breakpoints() {
+function mnn_layouts_default_breakpoints() {
   $export = array();
 
   $breakpoint = new stdClass();
@@ -84,6 +84,36 @@ function mnn_common_default_breakpoints() {
     '1x' => '1x',
   );
   $export['breakpoints.theme.cm_theme_zen.wide'] = $breakpoint;
+
+  $breakpoint = new stdClass();
+  $breakpoint->disabled = FALSE; /* Edit this to true to make a default breakpoint disabled initially */
+  $breakpoint->api_version = 1;
+  $breakpoint->machine_name = 'custom.user.larger_images';
+  $breakpoint->name = 'larger images';
+  $breakpoint->breakpoint = '(min-width:500px)';
+  $breakpoint->source = 'user';
+  $breakpoint->source_type = 'custom';
+  $breakpoint->status = 1;
+  $breakpoint->weight = 0;
+  $breakpoint->multipliers = array(
+    '1x' => '1x',
+  );
+  $export['custom.user.larger_images'] = $breakpoint;
+
+  $breakpoint = new stdClass();
+  $breakpoint->disabled = FALSE; /* Edit this to true to make a default breakpoint disabled initially */
+  $breakpoint->api_version = 1;
+  $breakpoint->machine_name = 'custom.user.mobile_images';
+  $breakpoint->name = 'mobile images';
+  $breakpoint->breakpoint = '(max-width:500px)';
+  $breakpoint->source = 'user';
+  $breakpoint->source_type = 'custom';
+  $breakpoint->status = 1;
+  $breakpoint->weight = 0;
+  $breakpoint->multipliers = array(
+    '1x' => '1x',
+  );
+  $export['custom.user.mobile_images'] = $breakpoint;
 
   return $export;
 }

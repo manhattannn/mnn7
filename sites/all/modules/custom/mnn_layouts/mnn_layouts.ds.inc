@@ -65,26 +65,25 @@ function mnn_layouts_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'article';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'cm_theme_ds_teaser';
+  $ds_layout->layout = 'panels-cm_theme_two_columns';
   $ds_layout->settings = array(
     'regions' => array(
-      'media' => array(
+      'top' => array(
         0 => 'field_image',
-      ),
-      'wrapper' => array(
-        1 => 'title',
-        2 => 'body',
+        1 => 'body',
       ),
     ),
     'fields' => array(
-      'field_image' => 'media',
-      'title' => 'wrapper',
-      'body' => 'wrapper',
+      'field_image' => 'top',
+      'body' => 'top',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'media' => 'div',
-      'wrapper' => 'div',
+      'top' => 'div',
+      'center' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'bottom' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
