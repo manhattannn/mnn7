@@ -79,8 +79,8 @@ function mnn_page_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'picture',
         'settings' => array(
-          'colorbox' => 'teaser',
-          'fallback_image_style' => 'cm_full',
+          'colorbox' => 'full',
+          'fallback_image_style' => '',
           'image_link' => '',
           'picture_group' => 'full',
         ),
@@ -104,7 +104,7 @@ function mnn_page_field_default_field_instances() {
         'module' => 'picture',
         'settings' => array(
           'colorbox' => 'teaser',
-          'fallback_image_style' => 'teaser',
+          'fallback_image_style' => '',
           'image_link' => 'content',
           'picture_group' => 'teaser',
         ),

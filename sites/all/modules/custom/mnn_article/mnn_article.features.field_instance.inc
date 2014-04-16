@@ -80,7 +80,7 @@ function mnn_article_field_default_field_instances() {
         'module' => 'picture',
         'settings' => array(
           'colorbox' => 'teaser',
-          'fallback_image_style' => 'cm_full',
+          'fallback_image_style' => '',
           'image_link' => '',
           'picture_group' => 'full',
         ),
