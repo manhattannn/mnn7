@@ -63,15 +63,20 @@ function mnn_layouts_panelizer_defaults() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'hidden',
-      'formatter' => 'image',
+      'formatter' => 'picture',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => '',
         'image_style' => 'large',
+        'picture_group' => 'full',
+        'fallback_image_style' => '',
+        'colorbox' => 'full',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(

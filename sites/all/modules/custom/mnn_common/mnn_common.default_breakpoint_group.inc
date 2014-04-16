@@ -31,8 +31,7 @@ function mnn_common_default_breakpoint_group() {
 
   // Breakpoints.
   $breakpoints = array();
-  $breakpoints[] = 'breakpoints.theme.cm_theme_zen.narrow';
-  $breakpoints[] = 'breakpoints.theme.cm_theme_zen.medium';
+  $breakpoints[] = 'breakpoints.theme.cm_theme_zen.mobile';
 
   // Breakpoint group.
   $breakpoint_group = new stdClass();

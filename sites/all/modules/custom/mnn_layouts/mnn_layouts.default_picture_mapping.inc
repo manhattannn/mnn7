@@ -25,5 +25,17 @@ function mnn_layouts_default_picture_mapping() {
   );
   $export['full'] = $picture_mapping;
 
+  $picture_mapping = new stdClass();
+  $picture_mapping->disabled = FALSE; /* Edit this to true to make a default picture_mapping disabled initially */
+  $picture_mapping->api_version = 1;
+  $picture_mapping->machine_name = 'teaser';
+  $picture_mapping->breakpoint_group = 'teaser';
+  $picture_mapping->mapping = array(
+    'breakpoints.theme.cm_theme_zen.mobile' => array(
+      '1x' => 'teaser',
+    ),
+  );
+  $export['teaser'] = $picture_mapping;
+
   return $export;
 }
