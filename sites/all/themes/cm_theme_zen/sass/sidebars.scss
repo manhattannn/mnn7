@@ -16,6 +16,7 @@
   }
   h2 {
     font-size: 1.35em;
+    text-indent: 0;
   }
   .block {
     padding-bottom: 20px;
@@ -24,6 +25,36 @@
     ul {
       margin: 1em 0;
       padding: 0 0 0 20px;
+    }
+  }
+  #block-mnn-show-watch-now {
+    .whats-on-now {
+      padding: 5px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        list-style-image: none;
+        .channel-info {
+          padding: 5px 5px 10px 5px;
+          background: #f9f9f9;
+          margin: 5px 0;
+          border-bottom: 1px solid #eee;
+          border-top: 1px solid #eee;
+          .channel-about {
+            padding: 5px;
+            .channel-description, .cable-channel-list {
+              color: #888;
+            }
+            .watch-now-link a {
+              @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
+              margin: 10px 0;
+            }
+          }
+        }
+      }
     }
   }
 }

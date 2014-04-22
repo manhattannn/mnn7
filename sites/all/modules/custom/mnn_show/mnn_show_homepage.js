@@ -130,6 +130,10 @@ Object.size = function(obj) {
     if ($('#block-mnn-show-watch-now').length){
       scheduleNowPlaying.init();
     }
+    $('#block-mnn-show-watch-now .channel-info h5 a').click(function(e) {
+      e.preventDefault();
+      $(this).parent('h5').parent('.channel-info').children('.channel-about').toggleClass('segment-hidden');
+    });
   });
 }(jQuery));
 
