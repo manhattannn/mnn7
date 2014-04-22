@@ -50,6 +50,10 @@ OUR CUSTOM MIXINS
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
 }
+.sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:hover, .sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:focus {
+  color: #61aee2;
+  outline: 0 !important;
+}
 .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about {
   padding: 5px;
 }

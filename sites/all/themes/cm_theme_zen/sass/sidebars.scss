@@ -43,6 +43,12 @@
           margin: 5px 0;
           border-bottom: 1px solid #eee;
           border-top: 1px solid #eee;
+          h5 a {
+            &:hover, &:focus {
+              color: $blue;
+              outline: 0 !important;
+            }
+          }
           .channel-about {
             padding: 5px;
             .channel-description, .cable-channel-list {
