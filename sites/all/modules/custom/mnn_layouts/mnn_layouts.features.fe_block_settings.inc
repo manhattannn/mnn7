@@ -464,8 +464,8 @@ function mnn_layouts_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'cm_theme_zen' => array(
-        'region' => 'sidebar_second',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'cm_theme_zen',
         'weight' => -17,
       ),
