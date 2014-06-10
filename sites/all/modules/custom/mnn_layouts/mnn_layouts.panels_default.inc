@@ -122,25 +122,13 @@ function mnn_layouts_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-1d54dcab-d539-49e2-9179-e806c5577dcd';
+    $pane->pid = 'new-f95edc23-9e06-489a-82d8-efbb4daf3231';
     $pane->panel = 'main';
-    $pane->type = 'views';
-    $pane->subtype = 'mnn_channel_lists';
+    $pane->type = 'block';
+    $pane->subtype = 'mnn_show-watch_now';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 0,
-      'nodes_per_page' => '0',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 0,
-      'link_to_view' => 0,
-      'args' => '',
-      'url' => '',
-      'display' => 'default',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -152,9 +140,9 @@ function mnn_layouts_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '1d54dcab-d539-49e2-9179-e806c5577dcd';
-    $display->content['new-1d54dcab-d539-49e2-9179-e806c5577dcd'] = $pane;
-    $display->panels['main'][0] = 'new-1d54dcab-d539-49e2-9179-e806c5577dcd';
+    $pane->uuid = 'f95edc23-9e06-489a-82d8-efbb4daf3231';
+    $display->content['new-f95edc23-9e06-489a-82d8-efbb4daf3231'] = $pane;
+    $display->panels['main'][0] = 'new-f95edc23-9e06-489a-82d8-efbb4daf3231';
     $pane = new stdClass();
     $pane->pid = 'new-a27d81ec-b028-406e-869b-499a708f9e12';
     $pane->panel = 'main';
@@ -191,7 +179,7 @@ function mnn_layouts_default_panels_mini() {
     $display->content['new-a27d81ec-b028-406e-869b-499a708f9e12'] = $pane;
     $display->panels['main'][1] = 'new-a27d81ec-b028-406e-869b-499a708f9e12';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-1d54dcab-d539-49e2-9179-e806c5577dcd';
+  $display->title_pane = '0';
   $mini->display = $display;
   $export['sidebar'] = $mini;
 
