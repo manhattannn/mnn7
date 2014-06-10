@@ -95,7 +95,6 @@ features[features_api][] = api:2
 features[image][] = cm_teaser
 features[image][] = cm_wide_large
 features[image][] = cm_wide_small
-features[page_manager_pages][] = mnn_homepage
 features[panelizer_defaults][] = node:page:default:default
 features[panels_mini][] = sidebar
 features[picture_mapping][] = full
