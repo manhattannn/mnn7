@@ -155,6 +155,41 @@ function mnn_layouts_default_panels_mini() {
     $pane->uuid = '1d54dcab-d539-49e2-9179-e806c5577dcd';
     $display->content['new-1d54dcab-d539-49e2-9179-e806c5577dcd'] = $pane;
     $display->panels['main'][0] = 'new-1d54dcab-d539-49e2-9179-e806c5577dcd';
+    $pane = new stdClass();
+    $pane->pid = 'new-a27d81ec-b028-406e-869b-499a708f9e12';
+    $pane->panel = 'main';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => 'Social Media',
+      'body' => '<div class="content">
+	<div class="col">
+		<div class="button youtube"><a href="http://www.youtube.com/user/MNN537">Watch Clips on YouTube</a></div>
+		<div class="button vimeo"><a href="http://vimeo.com/mnn">Watch Clips on Vimeo</a></div>
+	</div>
+	<div class="col">
+		<div class="button facebook"><a href="http://www.facebook.com/pages/MNN/326158948121?sk=wall">Fan us on Facebook</a></div>
+		<div class="button twitter"><a href="http://twitter.com/MNN59">Follow us on Twitter</a></div>
+	</div>
+</div>
+',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'a27d81ec-b028-406e-869b-499a708f9e12';
+    $display->content['new-a27d81ec-b028-406e-869b-499a708f9e12'] = $pane;
+    $display->panels['main'][1] = 'new-a27d81ec-b028-406e-869b-499a708f9e12';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-1d54dcab-d539-49e2-9179-e806c5577dcd';
   $mini->display = $display;
