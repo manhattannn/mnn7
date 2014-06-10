@@ -41,6 +41,12 @@ function mnn_wysiwyg_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'wysiwyg' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'file',
     'field_name' => 'field_file_image_alt_text',
@@ -87,6 +93,12 @@ function mnn_wysiwyg_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'wysiwyg' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
