@@ -20,7 +20,8 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>',
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>
+',
           'format' => 'full_html',
           'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>
 ',
@@ -38,27 +39,43 @@ function mnn_channel_uuid_features_default_terms() {
       'und' => array(
         0 => array(
           'fid' => NULL,
-          'uid' => 1,
-          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
-          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uid' => '428d08e7-3462-4cd4-806f-c636ba71e2ca',
+          'filename' => 'mnn_mini_channel_1.png',
+          'uri' => 'public://mnn_mini_channel_1.png',
           'filemime' => 'image/png',
-          'filesize' => 70255,
+          'filesize' => 7716,
           'status' => 1,
           'timestamp' => NULL,
           'type' => 'image',
-          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
-          'field_file_image_alt_text' => array(),
-          'field_file_image_title_text' => array(),
+          'uuid' => '12f911b6-7454-4f39-b24a-2da4c7366e64',
+          'field_file_image_alt_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 1',
+                'format' => NULL,
+                'safe_value' => 'Channel 1',
+              ),
+            ),
+          ),
+          'field_file_image_title_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 1',
+                'format' => NULL,
+                'safe_value' => 'Channel 1',
+              ),
+            ),
+          ),
           'rdf_mapping' => array(),
           'metadata' => array(
-            'height' => 778,
-            'width' => 848,
+            'height' => 360,
+            'width' => 360,
           ),
-          'alt' => '',
-          'title' => '',
-          'width' => 848,
-          'height' => 778,
-          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'alt' => 'Channel 1',
+          'title' => 'Channel 1',
+          'width' => 360,
+          'height' => 360,
+          'uuid_features_file_path' => 'public://mnn_mini_channel_1.png',
         ),
       ),
     ),
@@ -89,7 +106,8 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>',
+          'value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>
+',
           'format' => 'full_html',
           'safe_value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>
 ',
@@ -107,27 +125,43 @@ function mnn_channel_uuid_features_default_terms() {
       'und' => array(
         0 => array(
           'fid' => NULL,
-          'uid' => 1,
-          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
-          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uid' => '428d08e7-3462-4cd4-806f-c636ba71e2ca',
+          'filename' => 'mnn_mini_channel_3.png',
+          'uri' => 'public://mnn_mini_channel_3.png',
           'filemime' => 'image/png',
-          'filesize' => 70255,
+          'filesize' => 9620,
           'status' => 1,
           'timestamp' => NULL,
           'type' => 'image',
-          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
-          'field_file_image_alt_text' => array(),
-          'field_file_image_title_text' => array(),
+          'uuid' => '54f8b7e9-587b-4fbf-b7c9-40e7ff9d4485',
+          'field_file_image_alt_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 3',
+                'format' => NULL,
+                'safe_value' => 'Channel 3',
+              ),
+            ),
+          ),
+          'field_file_image_title_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 3',
+                'format' => NULL,
+                'safe_value' => 'Channel 3',
+              ),
+            ),
+          ),
           'rdf_mapping' => array(),
           'metadata' => array(
-            'height' => 778,
-            'width' => 848,
+            'height' => 360,
+            'width' => 360,
           ),
-          'alt' => NULL,
-          'title' => NULL,
-          'width' => 848,
-          'height' => 778,
-          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'alt' => 'Channel 3',
+          'title' => 'Channel 3',
+          'width' => 360,
+          'height' => 360,
+          'uuid_features_file_path' => 'public://mnn_mini_channel_3.png',
         ),
       ),
     ),
@@ -135,7 +169,7 @@ function mnn_channel_uuid_features_default_terms() {
       'und' => array(
         0 => array(
           'first' => 'TWC',
-          'second' => 57,
+          'second' => 1997,
         ),
         1 => array(
           'first' => 'RCN',
@@ -158,7 +192,8 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>',
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>
+',
           'format' => 'full_html',
           'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>
 ',
@@ -176,27 +211,43 @@ function mnn_channel_uuid_features_default_terms() {
       'und' => array(
         0 => array(
           'fid' => NULL,
-          'uid' => 1,
-          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
-          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uid' => '428d08e7-3462-4cd4-806f-c636ba71e2ca',
+          'filename' => 'mnn_mini_channel_2.png',
+          'uri' => 'public://mnn_mini_channel_2.png',
           'filemime' => 'image/png',
-          'filesize' => 70255,
+          'filesize' => 8757,
           'status' => 1,
           'timestamp' => NULL,
           'type' => 'image',
-          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
-          'field_file_image_alt_text' => array(),
-          'field_file_image_title_text' => array(),
+          'uuid' => 'cde5e06f-7fd9-4849-8e45-02b73e083de3',
+          'field_file_image_alt_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 2',
+                'format' => NULL,
+                'safe_value' => 'Channel 2',
+              ),
+            ),
+          ),
+          'field_file_image_title_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 2',
+                'format' => NULL,
+                'safe_value' => 'Channel 2',
+              ),
+            ),
+          ),
           'rdf_mapping' => array(),
           'metadata' => array(
-            'height' => 778,
-            'width' => 848,
+            'height' => 360,
+            'width' => 360,
           ),
-          'alt' => NULL,
-          'title' => NULL,
-          'width' => 848,
-          'height' => 778,
-          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'alt' => 'Channel 2',
+          'title' => 'Channel 2',
+          'width' => 360,
+          'height' => 360,
+          'uuid_features_file_path' => 'public://mnn_mini_channel_2.png',
         ),
       ),
     ),
@@ -227,7 +278,8 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>',
+          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>
+',
           'format' => 'full_html',
           'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>
 ',
@@ -245,27 +297,43 @@ function mnn_channel_uuid_features_default_terms() {
       'und' => array(
         0 => array(
           'fid' => NULL,
-          'uid' => 1,
-          'filename' => 'screen_shot_2014-04-09_at_8.14.08_pm.png',
-          'uri' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'uid' => '428d08e7-3462-4cd4-806f-c636ba71e2ca',
+          'filename' => 'mnn_mini_channel_4.png',
+          'uri' => 'public://mnn_mini_channel_4.png',
           'filemime' => 'image/png',
-          'filesize' => 70255,
+          'filesize' => 7720,
           'status' => 1,
           'timestamp' => NULL,
           'type' => 'image',
-          'uuid' => '9921d6ed-a0d5-4640-b683-99dd1505efa0',
-          'field_file_image_alt_text' => array(),
-          'field_file_image_title_text' => array(),
+          'uuid' => '25930a65-b579-4636-82a2-7264566acba2',
+          'field_file_image_alt_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 4',
+                'format' => NULL,
+                'safe_value' => 'Channel 4',
+              ),
+            ),
+          ),
+          'field_file_image_title_text' => array(
+            'und' => array(
+              0 => array(
+                'value' => 'Channel 4',
+                'format' => NULL,
+                'safe_value' => 'Channel 4',
+              ),
+            ),
+          ),
           'rdf_mapping' => array(),
           'metadata' => array(
-            'height' => 778,
-            'width' => 848,
+            'height' => 360,
+            'width' => 360,
           ),
-          'alt' => NULL,
-          'title' => NULL,
-          'width' => 848,
-          'height' => 778,
-          'uuid_features_file_path' => 'public://screen_shot_2014-04-09_at_8.14.08_pm.png',
+          'alt' => 'Channel 4',
+          'title' => 'Channel 4',
+          'width' => 360,
+          'height' => 360,
+          'uuid_features_file_path' => 'public://mnn_mini_channel_4.png',
         ),
       ),
     ),
