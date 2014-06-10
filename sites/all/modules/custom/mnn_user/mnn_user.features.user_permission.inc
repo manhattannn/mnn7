@@ -97,6 +97,9 @@ function mnn_user_user_default_permissions() {
     'name' => 'access navbar',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'member' => 'member',
+      'staff' => 'staff',
     ),
     'module' => 'navbar',
   );
@@ -424,6 +427,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'administer panelizer node page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'panelizer',
   );
@@ -1393,7 +1397,6 @@ function mnn_user_user_default_permissions() {
     'name' => 'use ipe with page manager',
     'roles' => array(
       'administrator' => 'administrator',
-      'staff' => 'staff',
     ),
     'module' => 'panels',
   );
