@@ -1,0 +1,52 @@
+diff --git a/panelizer.module b/panelizer.module
+index af9878c..58c72ec 100644
+--- a/panelizer.module
++++ b/panelizer.module
+@@ -1522,9 +1522,11 @@ function panelizer_form_panels_ipe_edit_control_form_alter(&$form, &$form_state)
+ 
+   $panelizer = $entities[$entity_id]->panelizer[$view_mode];
+ 
+-  // If the entity already has customized panelizer data, add the revert button.
++  // If the entity already has customized panelizer data, add the revert button,
++  // but only if they have permission to delete revisions since all panelizer
++  // revisions are deleted.
+   if (!empty($panelizer->did)) {
+-    if ($handler->has_default_panel($bundle . '.' . $view_mode)) {
++    if ($handler->has_default_panel($bundle . '.' . $view_mode) && user_access('delete content revisions')) {
+       $form['buttons']['revert_default'] = array(
+         '#type' => 'submit',
+         '#value' => t('Revert to @bundle_name default', array('@bundle_name' => $entity_info['bundles'][$bundle]['label'])),
+@@ -1561,18 +1563,21 @@ function panelizer_form_panels_ipe_edit_control_form_alter(&$form, &$form_state)
+   }
+ 
+   // Add another button to save as the default instead:
+-  $form['buttons']['save_default'] = array(
+-    '#type' => 'submit',
+-    '#value' => t('Save as @bundle_name default', array('@bundle_name' => $entity_info['bundles'][$bundle]['label'])),
+-    '#submit' => array('panels_ipe_change_to_default', 'panels_edit_display_form_submit'),
+-    '#save-display' => TRUE,
+-    '#weight' => -1,
+-    // precalculate the cache key so we don't have to unwind a bunch of stuff
+-    // in the submit handler.
+-    '#cache_key' => 'default:' . $handler->entity_type . ':' . $bundle . '.' . $panelizer->view_mode . ':' . $name,
+-    '#attributes' => array('class' => array('panels-ipe-save')),
+-    '#id' => 'panelizer-save-default',
+-  );
++  // but only if they have the permissions to change the defaults.
++  if (user_access(t("administer panelizer @entity @bundle defaults", array('@entity' => $entity, '@bundle' => $bundle)))) {
++    $form['buttons']['save_default'] = array(
++      '#type' => 'submit',
++      '#value' => t('Save as @bundle_name default', array('@bundle_name' => $entity_info['bundles'][$bundle]['label'])),
++      '#submit' => array('panels_ipe_change_to_default', 'panels_edit_display_form_submit'),
++      '#save-display' => TRUE,
++      '#weight' => -1,
++      // precalculate the cache key so we don't have to unwind a bunch of stuff
++      // in the submit handler.
++      '#cache_key' => 'default:' . $handler->entity_type . ':' . $bundle . '.' . $panelizer->view_mode . ':' . $name,
++      '#attributes' => array('class' => array('panels-ipe-save')),
++      '#id' => 'panelizer-save-default',
++    );
++  }
+ }
+ 
+ /**
