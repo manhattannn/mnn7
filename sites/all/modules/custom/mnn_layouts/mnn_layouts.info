@@ -96,6 +96,7 @@ features[image][] = cm_teaser
 features[image][] = cm_wide_large
 features[image][] = cm_wide_small
 features[panelizer_defaults][] = node:page:default:default
+features[panels_mini][] = footer
 features[panels_mini][] = sidebar
 features[picture_mapping][] = full
 features[picture_mapping][] = teaser
