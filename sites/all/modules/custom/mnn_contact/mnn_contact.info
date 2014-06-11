@@ -1,0 +1,16 @@
+name = Mnn Contact
+description = Custom configuration and settings for Contact Module
+core = 7.x
+package = MNN
+version = 7.x-1.0
+project = mnn_contact
+dependencies[] = contact
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_handlers][] = contact_site_panel_context
+features[user_permission][] = access site-wide contact form
+features[user_permission][] = access user contact forms
+features[user_permission][] = administer contact forms

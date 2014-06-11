@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Mnn Contact feature.
+ */
+
+include_once 'mnn_contact.features.inc';
