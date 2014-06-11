@@ -60,7 +60,7 @@ function mnn_layouts_default_panels_mini() {
 			<td>537 West 59th Street</td>
 			<td>175 E 104th Street</td>
 			<td>Phone: 212-757-2670</td>
-			<td>Contact Us</td>
+			<td><a href="/contact">Contact Us</a></td>
 			<td><a href="/node/655">Job Listings</a></td>
 			<td>Producer Portal</td>
 		</tr>
