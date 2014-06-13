@@ -13,7 +13,7 @@ function mnn_site_sections_field_default_field_bases() {
   // Exported field_base: 'field_site_section'
   $field_bases['field_site_section'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_site_section',
