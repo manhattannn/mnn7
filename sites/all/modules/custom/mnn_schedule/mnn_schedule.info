@@ -1,0 +1,6 @@
+name = "MNN Schedule"
+description = "Creates components to list what's on, and the mnn channel schedule."
+dependencies[] = ctools
+version = "7.x-1.0"
+core = "7.x"
+package = "MNN"
