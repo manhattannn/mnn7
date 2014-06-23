@@ -20,10 +20,10 @@ function mnn_show_block_watch_now(){
   for ($i = 1; $i <= 4; $i++){
     $content .= '<li id="channel'.$i.'"><div class="channel-info">';
     $content .= '<h4>'.$channel_info[$i]['name'].'</h4>';
-    $content .= '<h5><a href="'.$channel_info[$i]['watchLiveUrl'].'"></h5>';
+    $content .= '<h5><a href="'.$channel_info[$i]['watchLiveUrl'].'"></a></h5>';
+    $content .= '<div class="channel-about segment-hidden">';
+    $content .= '<div class="channel-description">'.$channel_info[$i]['description'].'</div>';
     $content .= '<p class="watch-now-link"><a href="'.$channel_info[$i]['watchLiveUrl'].'">Watch Now</a></p>';
-    $content .= "<div class='channel-about'>";
-    $content .= "<p class='channel-description'>".$channel_info[$i]['description']."</p>";
     $content .= "<ul class='cable-channel-list'>";
     foreach ($channel_info[$i]['tvChannels'] as $tvStation){
       $content .= '<li>'.$tvStation['tvStationName'].'<span class="cable-number"">'.$tvStation['tvStationChannel'].'</span></li>';

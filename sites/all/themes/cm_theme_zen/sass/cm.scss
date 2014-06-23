@@ -220,6 +220,10 @@ aside.sidebars {
   width: 100%;
 }
 
+.segment-hidden {
+  @include element-invisible;
+}
+
 /***********
 ~FOOTER
 ***********/
