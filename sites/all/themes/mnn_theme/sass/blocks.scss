@@ -103,6 +103,7 @@
     margin: 10px 0;
     .form-text {
      width: 100%;
+     @include border-radius(4px);
     }
   }
   .links {
