@@ -92,7 +92,7 @@ h1 {
 }
 .wrapper.header {
   #header {
-    padding: 25px 20px;
+    // padding: 25px 20px;
     position: relative;
     #cm-user-menu {
       float: right;
@@ -133,8 +133,6 @@ h1#site-name {
   padding: 0 0 0 10px;
   float: right;
   width: 200px;
-  margin: 60px 0 0 0;
-  // border: 1px solid #CCCCCC;
   @include breakpoint ($breakpoint-medium-width) {
     clear: both;
     float: none;
