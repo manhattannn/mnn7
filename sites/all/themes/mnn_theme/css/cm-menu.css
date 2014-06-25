@@ -67,15 +67,11 @@ body {
   padding: 1em 1em;
   text-transform: uppercase;
 }
-#navigation .block-wrapper > ul > li > a.active {
-  color: #FFF;
-}
 #navigation .block-wrapper > ul a {
   color: #474747;
   text-decoration: none;
 }
 #navigation .block-wrapper > ul ul {
-  outline: 3px solid red;
   position: absolute;
   top: 100%;
   left: 0;

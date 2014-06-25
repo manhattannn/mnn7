@@ -25,7 +25,7 @@ OUR CUSTOM MIXINS
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -52,7 +52,7 @@ OUR CUSTOM MIXINS
 }
 
 #main {
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0;
 }

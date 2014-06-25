@@ -116,7 +116,6 @@ h1 {
 }
 
 .wrapper.header #header {
-  padding: 25px 20px;
   position: relative;
 }
 .wrapper.header #header #cm-user-menu {
@@ -209,7 +208,6 @@ h1#site-name a:link, h1#site-name a:visited {
   padding: 0 0 0 10px;
   float: right;
   width: 200px;
-  margin: 60px 0 0 0;
 }
 @media (max-width: 768px) {
   #block-search-form {
