@@ -30,6 +30,20 @@ function mnn_theme_preprocess_page(&$vars) {
  $vars['user_menu'] =  theme('links', array('links' => menu_navigation_links('user-menu'), 'attributes' => array('class '=> array('links', 'site-menu'))));
 }
 
+function mnn_theme_theme(&$existing, $type, $theme, $path) {
+   $hooks['user_login_block'] = array(
+     'template' => 'templates/user-login-block',
+     'render element' => 'form',
+   );
+   return $hooks;
+ }
+function mnn_theme_preprocess_user_login_block(&$vars) {
+  $vars['name'] = render($vars['form']['name']);
+  $vars['pass'] = render($vars['form']['pass']);
+  $vars['submit'] = render($vars['form']['actions']['submit']);
+  $vars['rendered'] = drupal_render_children($vars['form']);
+}
+
 /***********************
 Let's load some CSS on specific targets - uncomment to use
 ************************/
