@@ -99,6 +99,16 @@
 }
 
 #block-user-login { /* "User login form" block */
+  .form-item {
+    margin: 10px 0;
+    .form-text {
+     width: 100%;
+    }
+  }
+  .links {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 #block-user-new { /* "Who's new" block for a list of the newest users */
