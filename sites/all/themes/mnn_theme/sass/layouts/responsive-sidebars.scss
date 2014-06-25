@@ -20,6 +20,9 @@ $site-max-width: 1240px;
   @include zen-grid-item-base();
   max-width: $site-max-width;
   margin: 0 auto;
+  &:focus {
+    outline: none;
+  }
 }
 
 /*
