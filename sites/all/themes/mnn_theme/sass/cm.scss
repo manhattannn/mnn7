@@ -1,0 +1,302 @@
+/**
+ * @file
+ *
+ * CM Theme General Styling
+ *
+ *
+ */
+
+/***********
+~IMPORTS
+***********/
+@import "base";
+@import "compass/css3/border-radius";
+
+
+/***********
+~GENERIC
+***********/
+body {
+  color: $dark;
+  @include m-links;
+  p {
+    margin: 10px 0;
+  }
+  img {
+    display: block;
+  }
+}
+html, body, button, input, select, textarea {
+  @include cmfont-main;
+}
+h1, h2, h3, h4, h5 {
+  @include cmfont-titles;
+  font-weight: 400;
+  line-height: 130%;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1.10em;
+}
+h5 {
+  font-size: 1.05em;
+}
+#main {
+  clear: both;
+}
+#page {
+  min-width: 300px;
+}
+.navigation {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+@include breakpoint ($breakpoint-small-width) {
+  ul.primary li, ul.secondary li {
+    float: none;
+    clear: both;
+    margin: 0;
+    a {
+      width: 88%;
+    }
+  }
+}
+/***********
+~STRUCTURE
+***********/
+
+h1 {
+  font-size: 160%;
+}
+.wrapper {
+  &.header {
+    background-color: #EEEEEE;
+    box-shadow: inset 0px -3px 6px #CCC;
+    -moz-box-shadow: inset 0px -3px 6px #CCC;
+    -webkit-box-shadow: inset 0px -3px 6px #CCC;
+  }
+  &.footer {
+    background-color: $grey;
+  }
+}
+.breadcrumb {
+  margin: 0 0 10px 0;
+}
+/***********
+~HEADER
+***********/
+.region-header {
+  clear: none;
+}
+.wrapper.header {
+  #header {
+    padding: 25px 20px;
+    position: relative;
+    #cm-user-menu {
+      float: right;
+      margin: 0;
+      @include breakpoint ($breakpoint-medium-width) {
+        float: none;
+        text-align: center;
+        margin: 0;
+      }
+      ul {
+        margin: 20px 0 0 0;
+        padding: 0;
+        li {
+          display: inline;
+          list-style-type: none;
+          margin: 0 0 0 10px;
+          a {
+            @include sassy-button("matte", 2px, 90%, #777, #666, #fff, "inset");
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+h1#site-name {
+ font-size: 2em;
+ line-height: .5em;
+ margin: 70px 0 0 25px;
+  a:link, a:visited {
+      color: #ffffff;
+  }
+}
+#block-search-form {
+  background: #FFFFFF;
+  padding: 0 0 0 10px;
+  float: right;
+  width: 200px;
+  margin: 60px 0 0 0;
+  border: 1px solid #CCCCCC;
+  @include breakpoint ($breakpoint-medium-width) {
+    clear: both;
+    float: none;
+    text-align: center;
+    margin: 10px auto 30px auto;
+  }
+  input.form-text {
+    border: none;
+    border-right: 1px solid #CCCCCC;
+    width: 160px;
+    height: 32px;
+    line-height: 32px;
+    &:focus {
+      box-shadow: none;
+      -moz-box-shadow: none;
+    }
+  }
+  input.form-submit {
+    text-indent: -9999px;
+    background: #FFFFFF url(../images/cm-search.png) no-repeat center center;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    filter: none;
+    padding: 5px 15px;
+    width: 30px;
+    height: 32px;
+    text-shadow: none;
+    margin: 0;
+  }
+}
+@include breakpoint ($breakpoint-medium-width) {
+  .wrapper.header #header {
+    text-align: center;
+    padding: 0;
+    #logo {
+      float: none;
+      clear: both;
+      display: block;
+      padding: 20px;
+      margin: 0 auto;
+      img {
+        margin: 0 auto;
+      }
+    }
+    #name-and-slogan {
+      float: none;
+      h1 {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+/***********
+~SIDEBARS
+***********/
+
+aside.sidebars {
+  margin: 0;
+  .sidebar {
+    padding-bottom: 20px;
+    h2 {
+      background: $grey;
+      margin: 0 0 10px 0;
+      padding: 5px;
+      clear: both;
+    }
+    @include breakpoint ($breakpoint-large-width) {
+      padding-left: auto;
+    }
+  }
+}
+
+/***********
+~CONTENT
+***********/
+
+#content {
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.segment-hidden {
+  @include element-invisible;
+}
+
+/***********
+~FOOTER
+***********/
+
+.wrapper.footer {
+  border-top: 1px solid #dddddd;
+  #footer {
+    margin-left: auto;
+    margin-right: auto;
+    color: $dark;
+    font-size:12px;
+    padding: 20px 0;
+    position: relative;
+    ul.social-footer li a {
+      &.drupal {
+        background: url("../images/drupal-grey.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        display: block;
+        height: 40px;
+        position: relative;
+        text-indent: -9999px;
+        top: -7px;
+        width: 40px;
+        &:hover {
+          background-position: left -45px;
+        }
+      }
+      &.mip {
+        @include cmfont-titles;
+        font-size: 22px;
+        color: $dark;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+ul.social-footer {
+  @include reset-ul;
+  li {
+    list-style-type: none;
+    float: left;
+    margin: 0 5px 0 0;
+    a {
+     display: block;
+     outline: none;
+     text-decoration: none;
+     i {
+      -o-transition:.5s;
+       -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      color: $dark;
+      font-size: 30px;
+        span {
+          display: none;
+        }
+        &:hover {
+         color: $blue;
+        }
+      }
+    }
+  }
+}
+@include breakpoint ($breakpoint-medium-width) {
+  #footer {
+    text-align: center;
+  }
+  ul.social-footer {
+    margin-top: -10px;
+    li {
+     display: inline-block;
+     float: none;
+    }
+  }
+}

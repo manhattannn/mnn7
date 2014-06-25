@@ -1,0 +1,323 @@
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~VARIABLES
+***********/
+/***********
+~BREAKPOINTS
+***********/
+#navigation .block-wrapper > ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+}
+
+#navigation .block-wrapper {
+  font: bold 13px Arial, Helvetica;
+}
+#navigation .block-wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#navigation .block-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#navigation .block-wrapper li {
+  position: relative;
+}
+#navigation .block-wrapper li:hover {
+  border-right-color: #666666;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+#navigation .block-wrapper li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+#navigation .block-wrapper li:hover > a {
+  color: white;
+  background: #666666;
+}
+#navigation .block-wrapper input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#navigation .block-wrapper label {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#navigation .block-wrapper > ul {
+  border: 1px solid #9d9d9d;
+  background-color: #aaaaaa;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+}
+#navigation .block-wrapper > ul > li {
+  float: left;
+  border-right: 1px solid #b7b7b7;
+  -webkit-box-shadow: 1px 0 0 #dddddd;
+  -moz-box-shadow: 1px 0 0 #dddddd;
+  box-shadow: 1px 0 0 #dddddd;
+}
+#navigation .block-wrapper > ul > li > a {
+  float: left;
+  padding: 1em 1em;
+  text-transform: uppercase;
+}
+#navigation .block-wrapper > ul > li > a.active {
+  color: #FFF;
+  -moz-box-shadow: inset 0 0 5px #999;
+  -webkit-box-shadow: inset 0 0 5px #999;
+  box-shadow: inset 0 0 10px #999;
+}
+#navigation .block-wrapper > ul a {
+  color: #f1edee;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #777;
+}
+#navigation .block-wrapper > ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 2em 0 0 0;
+  background-color: #d0d0d0;
+  background-image: none;
+  -webkit-transition-property: margin, opacity;
+  -moz-transition-property: margin, opacity;
+  -o-transition-property: margin, opacity;
+  transition-property: margin, opacity;
+  -webkit-transition-duration: .15s;
+  -moz-transition-duration: .15s;
+  -o-transition-duration: .15s;
+  transition-duration: .15s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+#navigation .block-wrapper > ul ul li {
+  display: block;
+  -webkit-box-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #eaeaea;
+  -moz-box-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #eaeaea;
+  box-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #eaeaea;
+}
+#navigation .block-wrapper > ul ul li:first-child > a {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#navigation .block-wrapper > ul ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 4em;
+  top: -12px;
+  border: 6px solid transparent;
+  border-bottom-color: inherit;
+}
+#navigation .block-wrapper > ul ul li:last-child {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#navigation .block-wrapper > ul ul li:last-child > a {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+#navigation .block-wrapper > ul ul a {
+  padding: 1em;
+  width: 100px;
+  display: block;
+  border-color: #d0d0d0;
+}
+#navigation .block-wrapper > ul ul a:hover {
+  background-color: #61aee2;
+  border-color: #61aee2;
+}
+
+@media screen and (max-width: 768px) {
+  #navigation .block-wrapper > ul, #navigation .block-wrapper > ul ul {
+    visibility: visible;
+    opacity: 1;
+    display: none;
+  }
+
+  #navigation .block-wrapper input[type=checkbox]:checked ~ label,
+  #navigation .block-wrapper input[type=checkbox] ~ label:hover {
+    color: white;
+  }
+  #navigation .block-wrapper label {
+    border: 1px solid #9d9d9d;
+    background-color: #aaaaaa;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    color: #f1edee;
+    text-shadow: 0 1px 0 #aaaaaa;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding: 1em 3em;
+  }
+  #navigation .block-wrapper label:before {
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em;
+    content: "\2261";
+    font-size: 2em;
+  }
+  #navigation .block-wrapper > ul {
+    position: relative;
+    border-color: #aaaaaa;
+    margin: 0.5em 0 !important;
+    padding: 0.25em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #aaaaaa;
+    background-image: none;
+  }
+  #navigation .block-wrapper > ul:after {
+    content: '';
+    position: absolute;
+    left: 2em;
+    top: -12px;
+    border: 6px solid transparent;
+    border-bottom-color: inherit;
+  }
+  #navigation .block-wrapper > ul li {
+    display: block;
+    clear: both;
+  }
+  #navigation .block-wrapper > ul li.expanded.active {
+    background: #666;
+    float: left;
+    width: 100%;
+  }
+  #navigation .block-wrapper > ul li li {
+    clear: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  #navigation .block-wrapper > ul li li:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  #navigation .block-wrapper > ul li li a {
+    color: #CCC;
+  }
+  #navigation .block-wrapper > ul li li a:hover {
+    background: transparent;
+    color: white;
+  }
+  #navigation .block-wrapper > ul > li {
+    float: none;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #aaaaaa;
+    background-image: none;
+  }
+  #navigation .block-wrapper > ul > li > a {
+    float: none;
+    display: block;
+    padding: 1em;
+  }
+  #navigation .block-wrapper > ul ul {
+    position: static;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-color: #c3c3c3;
+    background-image: none;
+    margin: 0;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+  }
+  #navigation .block-wrapper > ul ul li:first-child > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  #navigation .block-wrapper > ul ul li:first-child > a:after {
+    content: none;
+  }
+  #navigation .block-wrapper > ul ul li:last-child > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  #navigation .block-wrapper > ul ul a {
+    padding-left: 2em;
+    display: block;
+    width: auto;
+  }
+  #navigation .block-wrapper input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  #navigation .block-wrapper input[type=checkbox]:checked ~ ul ul {
+    display: block;
+  }
+}
