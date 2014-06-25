@@ -146,9 +146,6 @@ body {
 #content .view-mode-full .field-name-field-image {
   margin: 20px 0;
 }
-#content .node-full .cm-row .field-name-field-image img {
-  width: 100%;
-}
 
 .breadcrumb {
   /* The path to the current page in the form of a list of links */

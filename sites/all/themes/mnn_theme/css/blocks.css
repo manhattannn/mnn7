@@ -134,6 +134,11 @@ OUR CUSTOM MIXINS
 }
 #block-user-login .form-item .form-text {
   width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 #block-user-login .links {
   font-size: 12px;
