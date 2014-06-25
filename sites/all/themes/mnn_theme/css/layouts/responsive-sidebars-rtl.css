@@ -32,6 +32,15 @@ OUR CUSTOM MIXINS
   max-width: 1240px;
   margin: 0 auto;
 }
+#header:focus,
+#content:focus,
+#navigation:focus,
+#highlighted:focus,
+.region-sidebar-first:focus,
+.region-sidebar-second:focus,
+#footer:focus {
+  outline: none;
+}
 
 /*
  * Containers for grid items and flow items.
