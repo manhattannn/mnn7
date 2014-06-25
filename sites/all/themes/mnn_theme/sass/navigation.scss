@@ -46,9 +46,14 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
-  outline: 0;
+  // outline: 0;
+  @include clearfix;
   .block {
     margin-bottom: 0;
+  }
+  #block-system-main-menu {
+    @include clearfix;
+    float: left;
   }
 
   .block-menu .block-title,
@@ -73,6 +78,7 @@ li a.active {
 
 
 .region-navigation {
+  @include clearfix;
 }
 
 /*
