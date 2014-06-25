@@ -62,4 +62,13 @@
 
 $(document).ready(function() { $('#content select.form-select').select2(); });
 
+
+// Replace text input labels with html5 placeholders
+Drupal.behaviors.html5placeholders = {
+  attach: function (context, settings) {
+    $('#block-user-login').html5placeholders();
+  }
+};
+
+
 })(jQuery, Drupal, this, this.document);
