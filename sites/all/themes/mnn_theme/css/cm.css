@@ -275,9 +275,10 @@ aside.sidebars .sidebar {
   padding-bottom: 20px;
 }
 aside.sidebars .sidebar h2 {
-  background: #eff2f1;
-  margin: 0 0 10px 0;
-  padding: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #949494;
+  margin: 0;
   clear: both;
 }
 @media (max-width: 1000px) {

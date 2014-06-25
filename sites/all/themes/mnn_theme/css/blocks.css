@@ -129,6 +129,16 @@ OUR CUSTOM MIXINS
 #block-user-login {
   /* "User login form" block */
 }
+#block-user-login .form-item {
+  margin: 10px 0;
+}
+#block-user-login .form-item .form-text {
+  width: 100%;
+}
+#block-user-login .links {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
 
 #block-user-new {
   /* "Who's new" block for a list of the newest users */

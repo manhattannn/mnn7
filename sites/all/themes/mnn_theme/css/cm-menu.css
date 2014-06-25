@@ -49,7 +49,7 @@ body {
   margin: 0;
 }
 #navigation .block-wrapper li:hover > a {
-  color: #d1d3d2;
+  color: #949494;
 }
 #navigation .block-wrapper input[type=checkbox] {
   position: absolute;

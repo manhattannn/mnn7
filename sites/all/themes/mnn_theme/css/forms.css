@@ -65,7 +65,6 @@ OUR CUSTOM MIXINS
 
 .form-item {
   /* Wrapper for a form element (or group of form elements) and its label */
-  margin: 1.5em 0;
 }
 .form-item input {
   max-width: 99%;
