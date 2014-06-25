@@ -118,12 +118,14 @@ OUR CUSTOM MIXINS
  padding: 0;
  margin: 0;
 }
-@mixin cmfont-main {
+@mixin mnnfont-main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  line-height: 150%;
 }
-@mixin cmfont-titles {
-  font-family: Georgia, Times, sans-serif;
+@mixin mnnfont-titles {
+  // font-family: Georgia, Times, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 @mixin bottom-border-radius ( $value:0 0 4px 4px ) {
   -webkit-border-radius: $value;

@@ -11,7 +11,7 @@
 ***********/
 @import "base";
 @import "compass/css3/border-radius";
-
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
 /***********
 ~GENERIC
@@ -27,10 +27,10 @@ body {
   }
 }
 html, body, button, input, select, textarea {
-  @include cmfont-main;
+  @include mnnfont-main;
 }
 h1, h2, h3, h4, h5 {
-  @include cmfont-titles;
+  @include mnnfont-titles;
   font-weight: 400;
   line-height: 130%;
 }
@@ -70,13 +70,12 @@ h5 {
 
 h1 {
   font-size: 160%;
+  color: #949494;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .wrapper {
   &.header {
-    background-color: #EEEEEE;
-    box-shadow: inset 0px -3px 6px #CCC;
-    -moz-box-shadow: inset 0px -3px 6px #CCC;
-    -webkit-box-shadow: inset 0px -3px 6px #CCC;
   }
   &.footer {
     background-color: $grey;
@@ -251,7 +250,7 @@ aside.sidebars {
         }
       }
       &.mip {
-        @include cmfont-titles;
+        @include mnnfont-titles;
         font-size: 22px;
         color: $dark;
         &:hover {
