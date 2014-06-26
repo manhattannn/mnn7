@@ -11,7 +11,7 @@
 ***********/
 @import "base";
 @import "compass/css3/border-radius";
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 
 /***********
 ~GENERIC
@@ -71,7 +71,6 @@ h5 {
 h1 {
   font-size: 160%;
   color: #949494;
-  font-weight: 700;
   text-transform: uppercase;
 }
 .wrapper {
