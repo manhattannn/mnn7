@@ -25,15 +25,15 @@ body {
   color: #474747;
 }
 body a {
-  color: #474747;
+  color: #000;
   text-decoration: none;
 }
 body a:hover {
-  color: #443C45;
+  color: #000;
   text-decoration: underline;
 }
 body a:visited {
-  color: #61aee2;
+  color: #000;
 }
 body p {
   margin: 10px 0;
