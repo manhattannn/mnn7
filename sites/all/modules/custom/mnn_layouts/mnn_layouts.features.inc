@@ -53,7 +53,7 @@ function mnn_layouts_image_default_styles() {
   // Exported image style: cm_teaser.
   $styles['cm_teaser'] = array(
     'name' => 'cm_teaser',
-    'label' => 'Teaser (239x138)',
+    'label' => 'Teaser (238x129)',
     'effects' => array(
       11 => array(
         'label' => 'Scale and crop',
@@ -65,8 +65,8 @@ function mnn_layouts_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 239,
-          'height' => 138,
+          'width' => 238,
+          'height' => 129,
         ),
         'weight' => 2,
       ),
