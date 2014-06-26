@@ -17,7 +17,7 @@
 ~GENERIC
 ***********/
 body {
-  color: $dark;
+  color: $greyer;
   @include m-links;
   p {
     margin: 10px 0;
@@ -224,6 +224,75 @@ aside.sidebars {
 .segment-hidden {
   @include element-invisible;
 }
+
+
+#content {
+  .column.left {
+    width: 70%;
+    @include breakpoint($breakpoint-medium-width) {
+      width: 100%;
+    }
+    .views-row {
+      padding: 12px 0 12px 260px;
+      position: relative;
+      @include clearfix;
+      .views-field-field-image {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        @include breakpoint($breakpoint-large-width) {
+          position: static;
+        }
+        @include breakpoint($breakpoint-medium-width) {
+          position: absolute;
+        }
+        @include breakpoint($breakpoint-med-small-width) {
+          position: static;
+        }
+
+      }
+      @include breakpoint($breakpoint-large-width) {
+        padding: 12px 0;
+      }
+      @include breakpoint($breakpoint-medium-width) {
+        padding: 12px 0 12px 260px;
+      }
+      @include breakpoint($breakpoint-med-small-width) {
+        padding: 12px 0;
+      }
+
+    }
+  }
+  // end left column
+  .column.right {
+    width: 30%;
+    max-width: 258px;
+    float: right;
+    @include breakpoint($breakpoint-medium-width) {
+      width: 100%;
+      float: left;
+      max-width: 100%;
+      .views-row {
+        padding: 12px 0 12px 260px;
+        position: relative;
+        @include clearfix;
+        @include breakpoint($breakpoint-med-small-width) {
+          padding: 12px 0;
+        }
+        .views-field-field-image {
+          position: absolute;
+          top: 12px;
+          left: 0;
+          @include breakpoint($breakpoint-med-small-width) {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+  // end right column
+}
+
 
 /***********
 ~FOOTER
