@@ -102,8 +102,10 @@
   .form-item {
     margin: 10px 0;
     .form-text {
-     width: 100%;
-     @include border-radius(4px);
+      font-size: 12px;
+      width: 100%;
+      padding-left: 10px;
+      @include border-radius(4px);
     }
   }
   .links {
