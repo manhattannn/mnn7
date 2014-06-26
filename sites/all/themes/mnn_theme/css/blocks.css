@@ -133,7 +133,9 @@ OUR CUSTOM MIXINS
   margin: 10px 0;
 }
 #block-user-login .form-item .form-text {
+  font-size: 12px;
   width: 100%;
+  padding-left: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
