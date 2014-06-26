@@ -32,6 +32,24 @@ OUR CUSTOM MIXINS
   margin: 1em 0;
   padding: 0 0 0 20px;
 }
+.sidebar .whats-on-now {
+  background: #474747;
+  padding: 12px;
+  color: #949494;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidebar .whats-on-now h3 {
+  font-size: 24px;
+  color: #949494;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sidebar .whats-on-now .view-sched a {
+  font-size: 14px;
+  color: white;
+}
 .sidebar #block-mnn-show-watch-now .whats-on-now {
   padding: 5px;
 }

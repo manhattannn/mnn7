@@ -27,6 +27,22 @@
       padding: 0 0 0 20px;
     }
   }
+  .whats-on-now {
+    background: $dark;
+    padding: 12px;
+    color: $greyer;
+    @include box-sizing(border-box);
+    h3 {
+      font-size: 24px;
+      color: $greyer;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .view-sched a {
+      font-size: 14px;
+      color: white;
+    }
+  }
   #block-mnn-show-watch-now {
     .whats-on-now {
       padding: 5px;
