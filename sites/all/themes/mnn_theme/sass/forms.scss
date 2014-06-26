@@ -148,9 +148,15 @@
   }
 }
 .form-submit, button, input[type="button"], input[type="reset"], input[type="submit"] {
-  @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
+  @include sassy-button("flat", 0px, 90%, #000, #000, #fff, "inset");
+  @include box-shadow(3px 3px 5px #ccc);
+  @include border-radius(4px);
   margin:0 5px 0 0;
   padding: 0.4em 1.1em 0.5em 1.2em;
+  &:focus {
+    outline: none;
+    border: 0;
+  }
 }
 
 a.button {
