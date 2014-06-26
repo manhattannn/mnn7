@@ -22,7 +22,7 @@ OUR CUSTOM MIXINS
 ~GENERIC
 ***********/
 body {
-  color: #474747;
+  color: #949494;
 }
 body a {
   color: #000;
@@ -306,6 +306,87 @@ aside.sidebars .sidebar h2 {
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+#content .column.left {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  #content .column.left {
+    width: 100%;
+  }
+}
+#content .column.left .views-row {
+  padding: 12px 0 12px 260px;
+  position: relative;
+  overflow: hidden;
+}
+#content .column.left .views-row .views-field-field-image {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+@media (max-width: 1000px) {
+  #content .column.left .views-row .views-field-field-image {
+    position: static;
+  }
+}
+@media (max-width: 768px) {
+  #content .column.left .views-row .views-field-field-image {
+    position: absolute;
+  }
+}
+@media (max-width: 460px) {
+  #content .column.left .views-row .views-field-field-image {
+    position: static;
+  }
+}
+@media (max-width: 1000px) {
+  #content .column.left .views-row {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 768px) {
+  #content .column.left .views-row {
+    padding: 12px 0 12px 260px;
+  }
+}
+@media (max-width: 460px) {
+  #content .column.left .views-row {
+    padding: 12px 0;
+  }
+}
+#content .column.right {
+  width: 30%;
+  max-width: 258px;
+  float: right;
+}
+@media (max-width: 768px) {
+  #content .column.right {
+    width: 100%;
+    float: left;
+    max-width: 100%;
+  }
+  #content .column.right .views-row {
+    padding: 12px 0 12px 260px;
+    position: relative;
+    overflow: hidden;
+  }
+  #content .column.right .views-row .views-field-field-image {
+    position: absolute;
+    top: 12px;
+    left: 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 460px) {
+  #content .column.right .views-row {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 768px) and (max-width: 460px) {
+  #content .column.right .views-row .views-field-field-image {
+    position: static;
+  }
 }
 
 /***********
