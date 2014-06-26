@@ -44,6 +44,17 @@ function mnn_theme_preprocess_user_login_block(&$vars) {
   $vars['rendered'] = drupal_render_children($vars['form']);
 }
 
+// function mnn_theme_form_alter(&$form, &$form_state, $form_id) {
+//   debug($form_id);
+// }
+
+function mnn_theme_form_user_login_block_alter(&$form, &$form_state, $form_id) {
+  // debug($form_id);
+  // debug($form);
+  $form['name']['#required'] = FALSE;
+  $form['pass']['#required'] = FALSE;
+}
+
 /***********************
 Let's load some CSS on specific targets - uncomment to use
 ************************/
