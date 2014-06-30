@@ -293,6 +293,36 @@ aside.sidebars {
   // end right column
 }
 
+#block-panels-mini-sidebar {
+  @include clearfix;
+}
+/***********
+~SOCIAL
+***********/
+%social {
+  height: 24px;
+  width: 24px;
+  display: block;
+  text-indent: -9999px;
+  float: left;
+  margin: 4px;
+}
+.youtube a{
+  @include social-sprite(youtube);
+  @extend %social;
+}
+.vimeo a{
+  @include social-sprite(vimeo);
+  @extend %social;
+}
+.facebook a{
+  @include social-sprite(facebook);
+  @extend %social;
+}
+.twitter a{
+  @include social-sprite(twitter);
+  @extend %social;
+}
 
 /***********
 ~FOOTER

@@ -205,7 +205,11 @@ OUR CUSTOM MIXINS
     }
   }
 }
-
+/***********
+~SPRITES
+***********/
+@import "social/*.png";
+@include all-social-sprites;
 //
 // Partials to be shared with all .scss files.
 //
