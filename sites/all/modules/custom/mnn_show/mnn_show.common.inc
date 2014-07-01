@@ -24,13 +24,19 @@ function mnn_show_get_channels(){
         'tvStationChannel' => $watch->second->value(),
       );
     }
+
+    $image_data = $ch_wrapper->field_channel_logo->value();
+    $image_data['style_name'] = 'media_thumbnail';
+
     $channels[$ch_wrapper->field_channel_id->value()] = array(
       'name' => $ch_wrapper->name->value(),
       'description' => $ch_wrapper->description->value(),
       'watchLiveUrl' => $ch_wrapper->url->value(),
-      'tvChannels' => $tv_ch
+      'tvChannels' => $tv_ch,
+      'logoHtml' => theme('image_style', $image_data)
     );
   }
+  ksort($channels);
   // store in cache with a minimum expiration time of 1 day
   // cache_set('mnn_show:channels', $channels, 'cache', time() + (60 * 60 * 24));
   return $channels;

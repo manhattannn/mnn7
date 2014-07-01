@@ -8,7 +8,6 @@ ctools_include('mnn_show.ycschedule', 'mnn_show', '');
  */
 function mnn_show_block_watch_now(){
   drupal_add_js(drupal_get_path('module', 'mnn_show') . '/mnn_show_homepage.js');
-  $channel_info = mnn_show_get_channels();
 
   $content = "<div class='whats-on-now'>";
   $content .= "<h3>What's on Now</h3>";
@@ -16,16 +15,18 @@ function mnn_show_block_watch_now(){
   $content .= "<p class='view-sched'><a href='/schedule'>View Schedule</a></p>";
   $content .= "</div>";
 
+  $channel_info = mnn_show_get_channels();
   $content .= "<ul>";
-  for ($i = 1; $i <= 4; $i++){
-    $content .= '<li id="channel'.$i.'"><div class="channel-info">';
-    $content .= '<h4>'.$channel_info[$i]['name'].'</h4>';
-    $content .= '<h5><a href="'.$channel_info[$i]['watchLiveUrl'].'"></a></h5>';
-    $content .= '<div class="channel-about segment-hidden">';
-    $content .= '<div class="channel-description">'.$channel_info[$i]['description'].'</div>';
-    $content .= '<p class="watch-now-link"><a href="'.$channel_info[$i]['watchLiveUrl'].'">Watch Now</a></p>';
+  foreach($channel_info as $channel_id => $channel_data)
+    $content .= '<li id="channel'.$channel_id.'"><div class="channel-info">';
+    $content .= '<div class="channel-logo">' . $channel_data['logoHtml'] . '</div>';
+    $content .= '<h4>'.$channel_data['name'].'</h4>';
+    $content .= '<h5><a href="'.$channel_data['watchLiveUrl'].'"></h5>';
+    $content .= '<p class="watch-now-link"><a href="'.$channel_data['watchLiveUrl'].'">Watch Now</a></p>';
+    $content .= "<div class='channel-about'>";
+    $content .= "<p class='channel-description'>".$channel_data['description']."</p>";
     $content .= "<ul class='cable-channel-list'>";
-    foreach ($channel_info[$i]['tvChannels'] as $tvStation){
+    foreach ($channel_data['tvChannels'] as $tvStation){
       $content .= '<li>'.$tvStation['tvStationName'].'<span class="cable-number"">'.$tvStation['tvStationChannel'].'</span></li>';
     }
     $content .= "</ul>";
@@ -54,20 +55,21 @@ function mnn_show_block_geolocator_and_channel_listing(){
  */
 function mnn_show_block_channel_listing(){
   $channel_info = mnn_show_get_channels();
-
   $content = '<table class="channel-grid">';
   // heading row
   $content .= '<tr><th></th>'; // first col is blank
-  for ($i = 0; $i < count($channel_info[1]['tvChannels']); $i++){
-    $content .= '<th>'.$channel_info[1]['tvChannels'][$i]['tvStationName'].'</th>';
+  $firstRow = current($channel_info);
+  for ($i = 0; $i < count($firstRow['tvChannels']); $i++){
+    $content .= '<th>'.$firstRow['tvChannels'][$i]['tvStationName'].'</th>';
   }
   $content .= '</tr>';
   // channels
+  foreach($channel_info as $channel_id => $channel_data)
   for ($i = 1; $i <= count($channel_info); $i++){
     $content .= '<tr>';
-    $content .= '<th>'.$i.' '.$channel_info[$i]['name'].'</th>';
-    for ($j = 0; $j < count($channel_info[1]['tvChannels']); $j++){
-      $content .= '<td>'.$channel_info[$i]['tvChannels'][$j]['tvStationChannel'].'</td>';
+    $content .= '<th>'.$channel_id.' '.$channel_data['name'].'</th>';
+    for ($j = 0; $j < count($channel_data['tvChannels']); $j++){
+      $content .= '<td>'.$channel_data['tvChannels'][$j]['tvStationChannel'].'</td>';
     }
     $content .= '</tr>';
   }
