@@ -1,0 +1,308 @@
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~SPRITES
+***********/
+.social-sprite, .social-facebook, .social-linkedin, .social-rss, .social-twitter, .social-vimeo, .social-youtube {
+  background: url('../images/social-s9392f6df42.png') no-repeat;
+}
+
+.social-facebook {
+  background-position: 0 -240px;
+}
+.social-facebook:hover, .social-facebook.facebook_hover, .social-facebook.facebook-hover {
+  background-position: 0 -264px;
+}
+
+.social-linkedin {
+  background-position: 0 -144px;
+}
+.social-linkedin:hover, .social-linkedin.linkedin_hover, .social-linkedin.linkedin-hover {
+  background-position: 0 -168px;
+}
+
+.social-rss {
+  background-position: 0 -24px;
+}
+.social-rss:hover, .social-rss.rss_hover, .social-rss.rss-hover {
+  background-position: 0 0;
+}
+
+.social-twitter {
+  background-position: 0 -120px;
+}
+.social-twitter:hover, .social-twitter.twitter_hover, .social-twitter.twitter-hover {
+  background-position: 0 -72px;
+}
+
+.social-vimeo {
+  background-position: 0 -96px;
+}
+.social-vimeo:hover, .social-vimeo.vimeo_hover, .social-vimeo.vimeo-hover {
+  background-position: 0 -48px;
+}
+
+.social-youtube {
+  background-position: 0 -216px;
+}
+.social-youtube:hover, .social-youtube.youtube_hover, .social-youtube.youtube-hover {
+  background-position: 0 -192px;
+}
+
+.channel-icons-sprite, .channel-icons-ch1, .channel-icons-ch2, .channel-icons-ch3, .channel-icons-ch4 {
+  background: url('../images/channel-icons-s9c93aa75ec.png') no-repeat;
+}
+
+.channel-icons-ch1 {
+  background-position: 0 -90px;
+}
+
+.channel-icons-ch2 {
+  background-position: 0 -30px;
+}
+
+.channel-icons-ch3 {
+  background-position: 0 0;
+}
+
+.channel-icons-ch4 {
+  background-position: 0 -60px;
+}
+
+/***********
+~VARIABLES
+***********/
+/***********
+~BREAKPOINTS
+***********/
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+}
+
+#navigation .block-wrapper {
+  font: bold 13px Arial, Helvetica;
+}
+#navigation .block-wrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#navigation .block-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.0;
+}
+#navigation .block-wrapper li {
+  position: relative;
+}
+#navigation .block-wrapper li:hover {
+  border-right-color: #666666;
+}
+#navigation .block-wrapper li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+#navigation .block-wrapper li:hover > a {
+  color: #949494;
+}
+#navigation .block-wrapper input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+#navigation .block-wrapper label {
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+#navigation .block-wrapper > ul > li {
+  float: left;
+}
+#navigation .block-wrapper > ul > li > a {
+  float: left;
+  padding: 1em 1em;
+  text-transform: uppercase;
+}
+#navigation .block-wrapper > ul a {
+  color: #474747;
+  text-decoration: none;
+}
+#navigation .block-wrapper > ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 2em 0 0 0;
+}
+#navigation .block-wrapper > ul ul li {
+  display: block;
+}
+#navigation .block-wrapper > ul ul a {
+  padding: 1em;
+  width: 100px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #navigation .block-wrapper > ul, #navigation .block-wrapper > ul ul {
+    visibility: visible;
+    opacity: 1;
+    display: none;
+  }
+
+  #navigation .block-wrapper input[type=checkbox]:checked ~ label,
+  #navigation .block-wrapper input[type=checkbox] ~ label:hover {
+    color: white;
+  }
+  #navigation .block-wrapper label {
+    border: 1px solid #f2f2f2;
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+    color: #474747;
+    text-shadow: 0 1px 0 white;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding: 1em 3em;
+  }
+  #navigation .block-wrapper label:before {
+    position: absolute;
+    left: 0.5em;
+    top: 0.2em;
+    content: "\2261";
+    font-size: 2em;
+  }
+  #navigation .block-wrapper > ul {
+    position: relative;
+    border-color: white;
+    margin: 0.5em 0 !important;
+    padding: 0.25em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: white;
+    background-image: none;
+  }
+  #navigation .block-wrapper > ul:after {
+    content: '';
+    position: absolute;
+    left: 2em;
+    top: -12px;
+    border: 6px solid transparent;
+    border-bottom-color: inherit;
+  }
+  #navigation .block-wrapper > ul li {
+    display: block;
+    clear: both;
+  }
+  #navigation .block-wrapper > ul li.expanded.active {
+    background: #666;
+    float: left;
+    width: 100%;
+  }
+  #navigation .block-wrapper > ul li li {
+    clear: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  #navigation .block-wrapper > ul li li:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  #navigation .block-wrapper > ul li li a {
+    color: #CCC;
+  }
+  #navigation .block-wrapper > ul li li a:hover {
+    background: transparent;
+    color: white;
+  }
+  #navigation .block-wrapper > ul > li {
+    float: none;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: white;
+    background-image: none;
+  }
+  #navigation .block-wrapper > ul > li > a {
+    float: none;
+    display: block;
+    padding: 1em;
+  }
+  #navigation .block-wrapper > ul ul {
+    position: static;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-color: white;
+    background-image: none;
+    margin: 0;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+  }
+  #navigation .block-wrapper > ul ul li:first-child > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  #navigation .block-wrapper > ul ul li:first-child > a:after {
+    content: none;
+  }
+  #navigation .block-wrapper > ul ul li:last-child > a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+  #navigation .block-wrapper > ul ul a {
+    padding-left: 2em;
+    display: block;
+    width: auto;
+  }
+  #navigation .block-wrapper input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  #navigation .block-wrapper input[type=checkbox]:checked ~ ul ul {
+    display: block;
+  }
+}

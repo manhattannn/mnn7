@@ -1,0 +1,87 @@
+/**
+ * @file
+ * Sidebars Styling
+ *
+ */
+
+@import "base";
+
+/* MAIN NODE SIDEBARS */
+.sidebar {
+  h2, h3{
+    margin: .5em 0;
+  }
+  h4, h5, p {
+    margin: .2em 0;
+  }
+  h2 {
+    font-size: 1.35em;
+    text-indent: 0;
+  }
+  .block {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EEEEEE;
+    ul {
+      margin: 1em 0;
+      padding: 0 0 0 20px;
+    }
+  }
+  .whats-on-now {
+    background: $dark;
+    padding: 12px;
+    color: $greyer;
+    @include box-sizing(border-box);
+    h3 {
+      font-size: 24px;
+      color: $greyer;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .view-sched a {
+      font-size: 14px;
+      color: white;
+    }
+  }
+  #block-mnn-show-watch-now {
+    .whats-on-now {
+      padding: 5px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        list-style-image: none;
+        .channel-info {
+          padding: 5px 5px 10px 5px;
+          background: #f9f9f9;
+          margin: 5px 0;
+          border-bottom: 1px solid #eee;
+          border-top: 1px solid #eee;
+          h5 a {
+            &:hover, &:focus {
+              color: $blue;
+              outline: 0 !important;
+            }
+          }
+          .channel-about {
+            padding: 5px;
+            .channel-description, .cable-channel-list {
+              color: #888;
+            }
+            .watch-now-link a {
+              @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* PANEL SIDEBARS */
+.panel-flexible .sidebar {
+
+}

@@ -1,0 +1,71 @@
+/**
+ * @file
+ * Panels Styling
+ * Will handle panel pages, panelizer etc
+ * Do not put views code in here, unless they need to be overridden specifically as views-panes
+ *
+ */
+
+@import "base";
+
+.cm-row {
+  .column {
+    .panel-pane {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+// Home page community channel buttons
+%community-channel-button {
+  font-size: 14px;
+  list-style: none;
+  padding: 20px 12px;
+  border: 1px solid #EDEDED;
+  border-bottom: 1px solid #CFCFCF;
+  @include background-image(linear-gradient(#FFFFFF, #F5F5F5));
+  &:hover {
+    @include background-image(linear-gradient(#F5F5F5, #FFFFFF));
+    border-bottom: 1px solid #F5F5F5;
+  }
+}
+%channel-info {
+  height: 30px;
+  padding-left: 40px;
+}
+
+.pane-mnn-show-watch-now {
+  @include clearfix;
+  ul {
+    padding-left: 0 !important;
+    #channel1 {
+      @extend %community-channel-button;
+      .channel-info {
+        @include channel-icons-sprite(ch1);
+        @extend %channel-info;
+      }
+    }
+    #channel2 {
+      @extend %community-channel-button;
+      .channel-info {
+        @include channel-icons-sprite(ch2);
+        @extend %channel-info;
+      }
+    }
+    #channel3 {
+      @extend %community-channel-button;
+      .channel-info {
+        @include channel-icons-sprite(ch3);
+        @extend %channel-info;
+      }
+    }
+    #channel4 {
+      @extend %community-channel-button;
+      .channel-info {
+        @include channel-icons-sprite(ch4);
+        @extend %channel-info;
+      }
+    }
+  }
+}

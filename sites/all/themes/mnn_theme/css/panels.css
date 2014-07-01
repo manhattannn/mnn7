@@ -1,0 +1,134 @@
+/**
+ * @file
+ * Panels Styling
+ * Will handle panel pages, panelizer etc
+ * Do not put views code in here, unless they need to be overridden specifically as views-panes
+ *
+ */
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~SPRITES
+***********/
+.social-sprite, .social-facebook, .social-linkedin, .social-rss, .social-twitter, .social-vimeo, .social-youtube {
+  background: url('../images/social-s9392f6df42.png') no-repeat;
+}
+
+.social-facebook {
+  background-position: 0 -240px;
+}
+.social-facebook:hover, .social-facebook.facebook_hover, .social-facebook.facebook-hover {
+  background-position: 0 -264px;
+}
+
+.social-linkedin {
+  background-position: 0 -144px;
+}
+.social-linkedin:hover, .social-linkedin.linkedin_hover, .social-linkedin.linkedin-hover {
+  background-position: 0 -168px;
+}
+
+.social-rss {
+  background-position: 0 -24px;
+}
+.social-rss:hover, .social-rss.rss_hover, .social-rss.rss-hover {
+  background-position: 0 0;
+}
+
+.social-twitter {
+  background-position: 0 -120px;
+}
+.social-twitter:hover, .social-twitter.twitter_hover, .social-twitter.twitter-hover {
+  background-position: 0 -72px;
+}
+
+.social-vimeo {
+  background-position: 0 -96px;
+}
+.social-vimeo:hover, .social-vimeo.vimeo_hover, .social-vimeo.vimeo-hover {
+  background-position: 0 -48px;
+}
+
+.social-youtube {
+  background-position: 0 -216px;
+}
+.social-youtube:hover, .social-youtube.youtube_hover, .social-youtube.youtube-hover {
+  background-position: 0 -192px;
+}
+
+.channel-icons-sprite, .channel-icons-ch1, .channel-icons-ch2, .channel-icons-ch3, .channel-icons-ch4, .pane-mnn-show-watch-now ul #channel1 .channel-info, .pane-mnn-show-watch-now ul #channel2 .channel-info, .pane-mnn-show-watch-now ul #channel3 .channel-info, .pane-mnn-show-watch-now ul #channel4 .channel-info {
+  background: url('../images/channel-icons-s9c93aa75ec.png') no-repeat;
+}
+
+.channel-icons-ch1 {
+  background-position: 0 -90px;
+}
+
+.channel-icons-ch2 {
+  background-position: 0 -30px;
+}
+
+.channel-icons-ch3 {
+  background-position: 0 0;
+}
+
+.channel-icons-ch4 {
+  background-position: 0 -60px;
+}
+
+/***********
+~VARIABLES
+***********/
+/***********
+~BREAKPOINTS
+***********/
+.cm-row .column .panel-pane {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.pane-mnn-show-watch-now ul #channel1, .pane-mnn-show-watch-now ul #channel2, .pane-mnn-show-watch-now ul #channel3, .pane-mnn-show-watch-now ul #channel4 {
+  font-size: 14px;
+  list-style: none;
+  padding: 20px 12px;
+  border: 1px solid #EDEDED;
+  border-bottom: 1px solid #CFCFCF;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+  background-image: -webkit-linear-gradient(#ffffff, #f5f5f5);
+  background-image: -moz-linear-gradient(#ffffff, #f5f5f5);
+  background-image: -o-linear-gradient(#ffffff, #f5f5f5);
+  background-image: linear-gradient(#ffffff, #f5f5f5);
+}
+.pane-mnn-show-watch-now ul #channel1:hover, .pane-mnn-show-watch-now ul #channel2:hover, .pane-mnn-show-watch-now ul #channel3:hover, .pane-mnn-show-watch-now ul #channel4:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5f5f5), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f5f5f5, #ffffff);
+  background-image: -moz-linear-gradient(#f5f5f5, #ffffff);
+  background-image: -o-linear-gradient(#f5f5f5, #ffffff);
+  background-image: linear-gradient(#f5f5f5, #ffffff);
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.pane-mnn-show-watch-now ul #channel1 .channel-info, .pane-mnn-show-watch-now ul #channel2 .channel-info, .pane-mnn-show-watch-now ul #channel3 .channel-info, .pane-mnn-show-watch-now ul #channel4 .channel-info {
+  height: 30px;
+  padding-left: 40px;
+}
+
+.pane-mnn-show-watch-now {
+  overflow: hidden;
+}
+.pane-mnn-show-watch-now ul {
+  padding-left: 0 !important;
+}
+.pane-mnn-show-watch-now ul #channel1 .channel-info {
+  background-position: 0 -90px;
+}
+.pane-mnn-show-watch-now ul #channel2 .channel-info {
+  background-position: 0 -30px;
+}
+.pane-mnn-show-watch-now ul #channel3 .channel-info {
+  background-position: 0 0;
+}
+.pane-mnn-show-watch-now ul #channel4 .channel-info {
+  background-position: 0 -60px;
+}

@@ -1,0 +1,319 @@
+/**
+ * @file
+ * RTL companion for the responsive-sidebars.css file.
+ */
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~SPRITES
+***********/
+.social-sprite, .social-facebook, .social-linkedin, .social-rss, .social-twitter, .social-vimeo, .social-youtube {
+  background: url('../../images/social-s9392f6df42.png') no-repeat;
+}
+
+.social-facebook {
+  background-position: 0 -240px;
+}
+.social-facebook:hover, .social-facebook.facebook_hover, .social-facebook.facebook-hover {
+  background-position: 0 -264px;
+}
+
+.social-linkedin {
+  background-position: 0 -144px;
+}
+.social-linkedin:hover, .social-linkedin.linkedin_hover, .social-linkedin.linkedin-hover {
+  background-position: 0 -168px;
+}
+
+.social-rss {
+  background-position: 0 -24px;
+}
+.social-rss:hover, .social-rss.rss_hover, .social-rss.rss-hover {
+  background-position: 0 0;
+}
+
+.social-twitter {
+  background-position: 0 -120px;
+}
+.social-twitter:hover, .social-twitter.twitter_hover, .social-twitter.twitter-hover {
+  background-position: 0 -72px;
+}
+
+.social-vimeo {
+  background-position: 0 -96px;
+}
+.social-vimeo:hover, .social-vimeo.vimeo_hover, .social-vimeo.vimeo-hover {
+  background-position: 0 -48px;
+}
+
+.social-youtube {
+  background-position: 0 -216px;
+}
+.social-youtube:hover, .social-youtube.youtube_hover, .social-youtube.youtube-hover {
+  background-position: 0 -192px;
+}
+
+.channel-icons-sprite, .channel-icons-ch1, .channel-icons-ch2, .channel-icons-ch3, .channel-icons-ch4 {
+  background: url('../../images/channel-icons-s9c93aa75ec.png') no-repeat;
+}
+
+.channel-icons-ch1 {
+  background-position: 0 -90px;
+}
+
+.channel-icons-ch2 {
+  background-position: 0 -30px;
+}
+
+.channel-icons-ch3 {
+  background-position: 0 0;
+}
+
+.channel-icons-ch4 {
+  background-position: 0 -60px;
+}
+
+/***********
+~VARIABLES
+***********/
+/***********
+~BREAKPOINTS
+***********/
+#page {
+  width: 100%;
+}
+
+#header,
+#content,
+#navigation,
+#highlighted,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+#header:focus,
+#content:focus,
+#navigation:focus,
+#highlighted:focus,
+.region-sidebar-first:focus,
+.region-sidebar-second:focus,
+#footer:focus {
+  outline: none;
+}
+
+/*
+ * Containers for grid items and flow items.
+ */
+#header,
+#main,
+#footer {
+  width: 100%;
+}
+#header:before, #header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+#main {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+ * Navigation bar
+ */
+@media all and (min-width: 768px) {
+  #main {
+    position: relative;
+    clear: both;
+  }
+
+  #navigation {
+    width: 100%;
+    clear: both;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 959px) {
+  /*
+   * Use 3 grid columns for smaller screens.
+   */
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+  .sidebar-first #content {
+    /* Span 2 columns, starting in 2nd column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
+  }
+  .sidebar-first .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second #content {
+    /* Span 2 columns, starting in 1st column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+  }
+  .sidebar-second .region-sidebar-second {
+    /* Span 1 column, starting in 3rd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+  .two-sidebars #content {
+    /* Span 2 columns, starting in 2nd column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
+  }
+  .two-sidebars .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+  }
+  .two-sidebars .region-sidebar-second {
+    /* Start a new row and span all 3 columns. */
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: right;
+  }
+  .two-sidebars .region-sidebar-second .block {
+    padding-left: 20px;
+    padding-right: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
+    /* Span 1 column, starting in the 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    clear: right;
+  }
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
+    /* Span 1 column, starting in the 2nd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 33.33333%;
+    margin-left: -66.66667%;
+  }
+  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
+    /* Span 1 column, starting in the 3rd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
+}
+@media all and (min-width: 960px) {
+  /*
+   * Use 4 grid columns for larger screens.
+   */
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+  .sidebar-first #content {
+    /* Span 3 columns, starting in 2nd column from left. */
+    float: right;
+    width: 75%;
+    margin-right: 25%;
+    margin-left: -100%;
+  }
+  .sidebar-first .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sidebar-second #content {
+    /* Span 3 columns, starting in 1st column from left. */
+    float: right;
+    width: 75%;
+    margin-right: 0%;
+    margin-left: -75%;
+  }
+  .sidebar-second .region-sidebar-second {
+    /* Span 1 column, starting in 5th column from left. */
+    float: right;
+    width: 25%;
+    margin-right: 75%;
+    margin-left: -100%;
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+  .two-sidebars #content {
+    /* Span 2 columns, starting in 2nd column from left. */
+    float: right;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: -75%;
+  }
+  .two-sidebars .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+  }
+  .two-sidebars .region-sidebar-second {
+    /* Span 1 column, starting in 5th column from left. */
+    float: right;
+    width: 25%;
+    margin-right: 75%;
+    margin-left: -100%;
+  }
+}

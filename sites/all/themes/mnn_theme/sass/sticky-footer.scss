@@ -1,0 +1,15 @@
+@import "compass/layout.scss";
+
+@include sticky-footer(100px, "#page", "#layout-footer", "#footer");
+
+/* Reduce footer height by the height(px) the .wrapper.footer top border */
+#footer {
+  height: 99px;
+}
+
+.wrapper.footer {
+  background: #474747;
+  a {
+    color: #CFCFCF;
+  }
+}

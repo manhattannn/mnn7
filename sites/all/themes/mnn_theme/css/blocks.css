@@ -1,0 +1,225 @@
+/**
+ * @file
+ * Block Styling
+ */
+/****************
+OUR CUSTOM MIXINS
+*****************/
+/***********
+~SPRITES
+***********/
+.social-sprite, .social-facebook, .social-linkedin, .social-rss, .social-twitter, .social-vimeo, .social-youtube {
+  background: url('../images/social-s9392f6df42.png') no-repeat;
+}
+
+.social-facebook {
+  background-position: 0 -240px;
+}
+.social-facebook:hover, .social-facebook.facebook_hover, .social-facebook.facebook-hover {
+  background-position: 0 -264px;
+}
+
+.social-linkedin {
+  background-position: 0 -144px;
+}
+.social-linkedin:hover, .social-linkedin.linkedin_hover, .social-linkedin.linkedin-hover {
+  background-position: 0 -168px;
+}
+
+.social-rss {
+  background-position: 0 -24px;
+}
+.social-rss:hover, .social-rss.rss_hover, .social-rss.rss-hover {
+  background-position: 0 0;
+}
+
+.social-twitter {
+  background-position: 0 -120px;
+}
+.social-twitter:hover, .social-twitter.twitter_hover, .social-twitter.twitter-hover {
+  background-position: 0 -72px;
+}
+
+.social-vimeo {
+  background-position: 0 -96px;
+}
+.social-vimeo:hover, .social-vimeo.vimeo_hover, .social-vimeo.vimeo-hover {
+  background-position: 0 -48px;
+}
+
+.social-youtube {
+  background-position: 0 -216px;
+}
+.social-youtube:hover, .social-youtube.youtube_hover, .social-youtube.youtube-hover {
+  background-position: 0 -192px;
+}
+
+.channel-icons-sprite, .channel-icons-ch1, .channel-icons-ch2, .channel-icons-ch3, .channel-icons-ch4 {
+  background: url('../images/channel-icons-s9c93aa75ec.png') no-repeat;
+}
+
+.channel-icons-ch1 {
+  background-position: 0 -90px;
+}
+
+.channel-icons-ch2 {
+  background-position: 0 -30px;
+}
+
+.channel-icons-ch3 {
+  background-position: 0 0;
+}
+
+.channel-icons-ch4 {
+  background-position: 0 -60px;
+}
+
+/***********
+~VARIABLES
+***********/
+/***********
+~BREAKPOINTS
+***********/
+.block {
+  /* Block wrapper */
+}
+.block.first {
+  /* The first block in the region */
+}
+.block.last {
+  /* The last block in the region */
+}
+.block.odd {
+  /* Zebra striping for each block in the region */
+}
+.block.even {
+  /* Zebra striping for each block in the region */
+}
+.block h2.block-title {
+  /* Block title */
+}
+
+#block-aggregator-category-1 {
+  /* Block for the latest news items in the first category */
+}
+
+#block-aggregator-feed-1 {
+  /* Block for the latest news items in the first feed */
+}
+
+#block-block-1 {
+  /* First block created with "Add block" link */
+}
+
+#block-blog-recent {
+  /* "Recent blog posts" block */
+}
+
+#block-book-navigation {
+  /* "Book navigation" block for the current book's table of contents */
+}
+
+#block-comment-recent {
+  /* "Recent comments" block */
+}
+
+#block-forum-active {
+  /* "Active forum topics" block */
+}
+
+#block-forum-new {
+  /* "New forum topics" block */
+}
+
+#block-locale-language {
+  /* Language switcher block */
+}
+
+#block-menu-menu-NAME {
+  /* Custom menu block */
+}
+
+#block-node-recent {
+  /* "Recent content" block */
+}
+
+#block-node-syndicate {
+  /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+#block-poll-recent {
+  /* "Most recent poll" block */
+}
+
+#block-profile-author-information {
+  /* "Author information" block for the profile of the page's author */
+}
+
+#block-search-form {
+  /* "Search form" block */
+}
+
+#block-shortcut-shortcuts {
+  /* "Shortcuts" block */
+}
+
+#block-statistics-popular {
+  /* "Popular content" block */
+}
+
+#block-system-main-menu {
+  /* "Main menu" block */
+}
+
+#block-system-management {
+  /* "Management" block for Drupal management menu */
+}
+
+#block-system-navigation {
+  /* "Navigation" block for Drupal navigation menu */
+}
+
+#block-system-user-menu {
+  /* "User menu" block for Drupal user menu */
+}
+
+#block-system-help {
+  /* "System help" block */
+}
+
+#block-system-main {
+  /* "Main page content" block */
+}
+
+#block-system-powered-by {
+  /* "Powered by Drupal" block */
+}
+
+#block-user-login {
+  /* "User login form" block */
+}
+#block-user-login .form-item {
+  margin: 10px 0;
+}
+#block-user-login .form-item .form-text {
+  font-size: 12px;
+  width: 100%;
+  padding-left: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+#block-user-login .links {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+#block-user-new {
+  /* "Who's new" block for a list of the newest users */
+}
+
+#block-user-online {
+  /* "Who's online" block for a list of the online users */
+}

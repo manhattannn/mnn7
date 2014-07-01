@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+}
+
+#page {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+#page #layout-footer {
+  height: 100px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+}
+
+/* Reduce footer height by the height(px) the .wrapper.footer top border */
+#footer {
+  height: 99px;
+}
+
+.wrapper.footer {
+  background: #474747;
+}
+.wrapper.footer a {
+  color: #CFCFCF;
+}
