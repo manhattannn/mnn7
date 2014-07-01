@@ -143,6 +143,38 @@ function mnn_user_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'access workbench'.
+  $permissions['access workbench'] = array(
+    'name' => 'access workbench',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'member' => 'member',
+      'staff' => 'staff',
+    ),
+    'module' => 'workbench',
+  );
+
+  // Exported permission: 'access workbench access by role'.
+  $permissions['access workbench access by role'] = array(
+    'name' => 'access workbench access by role',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'member' => 'member',
+      'staff' => 'staff',
+    ),
+    'module' => 'workbench_access',
+  );
+
+  // Exported permission: 'add media from remote sources'.
+  $permissions['add media from remote sources'] = array(
+    'name' => 'add media from remote sources',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'media_internet',
+  );
+
   // Exported permission: 'admin_classes'.
   $permissions['admin_classes'] = array(
     'name' => 'admin_classes',
@@ -231,6 +263,15 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'administer feeds'.
+  $permissions['administer feeds'] = array(
+    'name' => 'administer feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
   );
 
   // Exported permission: 'administer fieldable panels panes'.
@@ -332,6 +373,15 @@ function mnn_user_user_default_permissions() {
     'module' => 'media',
   );
 
+  // Exported permission: 'administer media wysiwyg view mode'.
+  $permissions['administer media wysiwyg view mode'] = array(
+    'name' => 'administer media wysiwyg view mode',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'media_wysiwyg_view_mode',
+  );
+
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -419,6 +469,20 @@ function mnn_user_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
     ),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node mnn_video defaults'.
+  $permissions['administer panelizer node mnn_video defaults'] = array(
+    'name' => 'administer panelizer node mnn_video defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panelizer node mnn_video_feed defaults'.
+  $permissions['administer panelizer node mnn_video_feed defaults'] = array(
+    'name' => 'administer panelizer node mnn_video_feed defaults',
+    'roles' => array(),
     'module' => 'panelizer',
   );
 
@@ -648,6 +712,42 @@ function mnn_user_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'administer workbench'.
+  $permissions['administer workbench'] = array(
+    'name' => 'administer workbench',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'workbench',
+  );
+
+  // Exported permission: 'administer workbench access'.
+  $permissions['administer workbench access'] = array(
+    'name' => 'administer workbench access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'workbench_access',
+  );
+
+  // Exported permission: 'assign workbench access'.
+  $permissions['assign workbench access'] = array(
+    'name' => 'assign workbench access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'workbench_access',
+  );
+
+  // Exported permission: 'batch update workbench access'.
+  $permissions['batch update workbench access'] = array(
+    'name' => 'batch update workbench access',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'workbench_access',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
@@ -704,6 +804,15 @@ function mnn_user_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'clear mnn_rss_video feeds'.
+  $permissions['clear mnn_rss_video feeds'] = array(
+    'name' => 'clear mnn_rss_video feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
+  );
+
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
@@ -742,6 +851,25 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels_mini',
+  );
+
+  // Exported permission: 'create mnn_video content'.
+  $permissions['create mnn_video content'] = array(
+    'name' => 'create mnn_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create mnn_video_feed content'.
+  $permissions['create mnn_video_feed content'] = array(
+    'name' => 'create mnn_video_feed content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'create page content'.
@@ -812,11 +940,30 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any mnn_video content'.
+  $permissions['delete any mnn_video content'] = array(
+    'name' => 'delete any mnn_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any mnn_video_feed content'.
+  $permissions['delete any mnn_video_feed content'] = array(
+    'name' => 'delete any mnn_video_feed content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page content'.
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'node',
   );
@@ -881,6 +1028,25 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own mnn_video content'.
+  $permissions['delete own mnn_video content'] = array(
+    'name' => 'delete own mnn_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own mnn_video_feed content'.
+  $permissions['delete own mnn_video_feed content'] = array(
+    'name' => 'delete own mnn_video_feed content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own page content'.
@@ -1055,6 +1221,25 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any mnn_video content'.
+  $permissions['edit any mnn_video content'] = array(
+    'name' => 'edit any mnn_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any mnn_video_feed content'.
+  $permissions['edit any mnn_video_feed content'] = array(
+    'name' => 'edit any mnn_video_feed content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page content'.
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
@@ -1137,6 +1322,25 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit own mnn_video content'.
+  $permissions['edit own mnn_video content'] = array(
+    'name' => 'edit own mnn_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own mnn_video_feed content'.
+  $permissions['edit own mnn_video_feed content'] = array(
+    'name' => 'edit own mnn_video_feed content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own page content'.
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
@@ -1202,6 +1406,15 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'media',
+  );
+
+  // Exported permission: 'import mnn_rss_video feeds'.
+  $permissions['import mnn_rss_video feeds'] = array(
+    'name' => 'import mnn_rss_video feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
   );
 
   // Exported permission: 'manage features'.
@@ -1360,6 +1573,15 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'devel',
+  );
+
+  // Exported permission: 'unlock mnn_rss_video feeds'.
+  $permissions['unlock mnn_rss_video feeds'] = array(
+    'name' => 'unlock mnn_rss_video feeds',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'feeds',
   );
 
   // Exported permission: 'update any fullcalendar event'.
@@ -1557,6 +1779,27 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'view workbench access information'.
+  $permissions['view workbench access information'] = array(
+    'name' => 'view workbench access information',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'workbench_access',
+  );
+
+  // Exported permission: 'view workbench taxonomy pages'.
+  $permissions['view workbench taxonomy pages'] = array(
+    'name' => 'view workbench taxonomy pages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'member' => 'member',
+      'staff' => 'staff',
+    ),
+    'module' => 'workbench_access',
   );
 
   return $permissions;
