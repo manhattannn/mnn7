@@ -23,3 +23,10 @@ html, body {
 #footer {
   height: 99px;
 }
+
+.wrapper.footer {
+  background: #474747;
+}
+.wrapper.footer a {
+  color: #CFCFCF;
+}
