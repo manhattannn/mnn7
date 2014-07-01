@@ -210,6 +210,9 @@ OUR CUSTOM MIXINS
 ***********/
 @import "social/*.png";
 @include all-social-sprites;
+@import "channel-icons/*.png";
+@include all-channel-icons-sprites;
+
 //
 // Partials to be shared with all .scss files.
 //
