@@ -17,7 +17,7 @@ function mnn_show_block_watch_now(){
 
   $channel_info = mnn_show_get_channels();
   $content .= "<ul>";
-  foreach($channel_info as $channel_id => $channel_data)
+  foreach($channel_info as $channel_id => $channel_data) {
     $content .= '<li id="channel'.$channel_id.'"><div class="channel-info">';
     $content .= '<div class="channel-logo">' . $channel_data['logoHtml'] . '</div>';
     $content .= '<h4>'.$channel_data['name'].'</h4>';
