@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * @file
  * Sidebars Styling
@@ -129,25 +130,53 @@ OUR CUSTOM MIXINS
 .sidebar #block-mnn-show-watch-now ul li {
   list-style-type: none;
   list-style-image: none;
+  clear: both;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 5px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info {
   padding: 5px 5px 10px 5px;
   background: #f9f9f9;
-  margin: 5px 0;
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info h4 {
+  cursor: pointer;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info h4.collapsed:after {
+  content: "▶";
+  font-size: 12px;
+  position: relative;
+  left: 5px;
+  color: #474747;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info h4.collapsed.down:after {
+  content: "▼";
+  font-size: 13px;
+  position: relative;
+  left: 5px;
+  color: #474747;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:hover, .sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:focus {
   color: #61aee2;
   outline: 0 !important;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about {
-  padding: 5px;
+  padding: 5px 0;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .channel-description, .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .cable-channel-list {
   color: #888;
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link {
+  float: left;
+  width: 100%;
+  margin: 5px 0 0 0;
+  border-top: 1px solid #eee;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a {
   font-size: 90%;
   padding: 0.2em 1.1em 0.3em 1.2em;
   display: inline-block;
@@ -171,10 +200,10 @@ OUR CUSTOM MIXINS
   text-shadow: #585858 0 -1px 0;
   margin: 10px 0;
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a:hover {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a:hover {
   text-decoration: none;
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a:hover {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a:hover {
   background-color: #7b7b7b;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #8c8c8c), color-stop(75%, #7b7b7b));
   background: -webkit-linear-gradient(#8c8c8c 3%, #7b7b7b 75%);
@@ -182,12 +211,12 @@ OUR CUSTOM MIXINS
   background: -o-linear-gradient(#8c8c8c 3%, #7b7b7b 75%);
   background: linear-gradient(#8c8c8c 3%, #7b7b7b 75%);
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a:active {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a:active {
   -webkit-box-shadow: #747474 0 1px 2px inset;
   -moz-box-shadow: #747474 0 1px 2px inset;
   box-shadow: #747474 0 1px 2px inset;
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a.disabled, .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a[disabled] {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a.disabled, .sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   background: #888888;
@@ -196,7 +225,7 @@ OUR CUSTOM MIXINS
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .watch-now-link a::-moz-focus-inner {
+.sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }

@@ -109,11 +109,6 @@ OUR CUSTOM MIXINS
   border-bottom: 1px solid #F5F5F5;
 }
 
-.pane-mnn-show-watch-now ul #channel1 .channel-info, .pane-mnn-show-watch-now ul #channel2 .channel-info, .pane-mnn-show-watch-now ul #channel3 .channel-info, .pane-mnn-show-watch-now ul #channel4 .channel-info {
-  height: 30px;
-  padding-left: 40px;
-}
-
 .pane-mnn-show-watch-now {
   overflow: hidden;
 }

@@ -53,12 +53,36 @@
       li {
         list-style-type: none;
         list-style-image: none;
+        clear: both;
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 5px 0;
+        @include box-sizing(border-box);
         .channel-info {
           padding: 5px 5px 10px 5px;
           background: #f9f9f9;
-          margin: 5px 0;
-          border-bottom: 1px solid #eee;
-          border-top: 1px solid #eee;
+          h4 {
+            cursor: pointer;
+            &.collapsed {
+              &:after {
+                content: "▶";
+                font-size: 12px;
+                position: relative;
+                left: 5px;
+                color: #474747;
+              }
+              &.down {
+                &:after {
+                  content: "▼";
+                  font-size: 13px;
+                  position: relative;
+                  left: 5px;
+                  color: #474747;
+                }
+              }
+            }
+          }
           h5 a {
             &:hover, &:focus {
               color: $blue;
@@ -66,15 +90,21 @@
             }
           }
           .channel-about {
-            padding: 5px;
+            padding: 5px 0;
             .channel-description, .cable-channel-list {
               color: #888;
             }
-            .watch-now-link a {
-              @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
-              margin: 10px 0;
-            }
           }
+          .watch-now-link {
+              float: left;
+              width: 100%;
+              margin: 5px 0 0 0;
+              border-top: 1px solid #eee;
+              a {
+                @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
+                margin: 10px 0;
+              }
+            }
         }
       }
     }
