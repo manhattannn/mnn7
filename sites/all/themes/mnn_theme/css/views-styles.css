@@ -138,11 +138,6 @@ OUR CUSTOM MIXINS
   border-radius: 0 0 7px 7px;
 }
 
-.view-content-listing .views-row {
-  border-bottom: 1px solid rgba(148, 148, 148, 0.6);
-  padding: 12px 0;
-}
-
 .views-field-created {
   color: #c8c8c8;
   font-size: 14px;

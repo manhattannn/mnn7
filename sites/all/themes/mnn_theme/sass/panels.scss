@@ -84,7 +84,7 @@
 /* Video Display */
 
 .node-mnn-video {
-  .node-teaser {
-
+  &.node-teaser {
+    @include col(1/4, $gutter: 0, $cycle: 3);
   }
 }

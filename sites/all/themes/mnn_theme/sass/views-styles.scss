@@ -44,12 +44,13 @@
   }
 }
 
-.view-content-listing {
-  .views-row {
-    border-bottom: 1px solid rgba($greyer, 0.6);
-    padding: 12px 0;
-  }
-}
+// Commenting this as we may need to theme each views content separately
+// .view-content-listing {
+//   .views-row {
+//     border-bottom: 1px solid rgba($greyer, 0.6);
+//     padding: 12px 0;
+//   }
+// }
 
 .views-field-created {
   color: $lightgrey;

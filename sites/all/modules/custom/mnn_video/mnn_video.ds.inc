@@ -105,21 +105,21 @@ function mnn_video_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'mnn_video';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'mnn_theme_ds_teaser_one_column';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'wrapper' => array(
         0 => 'field_video',
         1 => 'title',
       ),
     ),
     'fields' => array(
-      'field_video' => 'ds_content',
-      'title' => 'ds_content',
+      'field_video' => 'wrapper',
+      'title' => 'wrapper',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'wrapper' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
