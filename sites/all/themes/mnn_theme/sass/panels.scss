@@ -21,47 +21,62 @@
 %community-channel-button {
   font-size: 14px;
   list-style: none;
-  padding: 20px 12px;
   border: 1px solid #EDEDED;
   border-bottom: 1px solid #CFCFCF;
+  margin: 0 !important;
   @include background-image(linear-gradient(#FFFFFF, #F5F5F5));
-  &:hover {
-    @include background-image(linear-gradient(#F5F5F5, #FFFFFF));
-    border-bottom: 1px solid #F5F5F5;
-  }
+}
+%channel-info {
+  height: 30px;
+  padding: 0 !important;
+}
+%channel-icon {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin: 12px 6px;
+}
+
+.channel-about {
+  background: #EBEBEB;
+  clear: left;
+  padding: 12px !important;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .pane-mnn-show-watch-now {
-  @include clearfix;
   ul {
     padding-left: 0 !important;
-    #channel1 {
+    margin: 24px 0 !important;
+    @include clearfix;
+    li {
       @extend %community-channel-button;
-      .channel-info {
+      @include clearfix;
+      a{
+        display: block;
+        float: left;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+    }
+
+    #channel1 .channel-icon {
         @include channel-icons-sprite(ch1);
-        @extend %channel-info;
-      }
+        @extend %channel-icon;
     }
-    #channel2 {
-      @extend %community-channel-button;
-      .channel-info {
+    #channel2 .channel-icon {
         @include channel-icons-sprite(ch2);
-        @extend %channel-info;
-      }
+        @extend %channel-icon;
     }
-    #channel3 {
-      @extend %community-channel-button;
-      .channel-info {
+    #channel3 .channel-icon {
         @include channel-icons-sprite(ch3);
-        @extend %channel-info;
-      }
+        @extend %channel-icon;
     }
-    #channel4 {
-      @extend %community-channel-button;
-      .channel-info {
+    #channel4 .channel-icon {
         @include channel-icons-sprite(ch4);
-        @extend %channel-info;
-      }
+        @extend %channel-icon;
     }
+
   }
 }
