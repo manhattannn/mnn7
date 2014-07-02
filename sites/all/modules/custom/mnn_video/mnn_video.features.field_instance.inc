@@ -20,7 +20,19 @@ function mnn_video_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -28,6 +40,17 @@ function mnn_video_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -75,7 +98,7 @@ function mnn_video_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'node',
@@ -106,6 +129,17 @@ function mnn_video_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'default',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'file_rendered',
         'weight' => 0,
@@ -115,6 +149,17 @@ function mnn_video_field_default_field_instances() {
         'module' => 'file_entity',
         'settings' => array(
           'file_view_mode' => 'teaser',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => 'node/[node:nid]',
+            'linked' => 1,
+          ),
         ),
         'type' => 'file_rendered',
         'weight' => 0,
