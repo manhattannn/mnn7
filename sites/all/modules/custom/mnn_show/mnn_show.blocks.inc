@@ -18,10 +18,10 @@ function mnn_show_block_watch_now(){
   $channel_info = mnn_show_get_channels();
   $content .= "<ul>";
   foreach($channel_info as $channel_id => $channel_data) {
-    $content .= '<li id="channel'.$channel_id.'"><div class="channel-info">';
-    $content .= '<div class="channel-logo">' . $channel_data['logoHtml'] . '</div>';
+    $content .= '<li id="channel'.$channel_id.'"><div class="channel-icon"></div><div class="channel-info">';
     $content .= '<h4 class="collapsed">'.$channel_data['name'].'</h4>';
     $content .= '<h5><a href="'.$channel_data['watchLiveUrl'].'"></a></h5>';
+    $content .= '<p><a href="'.$channel_data['watchLiveUrl'].'">Watch Now</a></p>';
     $content .= "<div class='channel-about'>";
     $content .= "<p class='channel-description'>".$channel_data['description']."</p>";
     $content .= "<ul class='cable-channel-list'>";
@@ -30,7 +30,6 @@ function mnn_show_block_watch_now(){
     }
     $content .= "</ul>";
     $content .= "</div>";
-    $content .= '<p class="watch-now-link"><a href="'.$channel_data['watchLiveUrl'].'">Watch Now</a></p>';
     $content .= "</div>";
     $content .= "</li>";
   }
