@@ -111,13 +111,11 @@ function mnn_video_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'field_video',
         1 => 'title',
-        2 => 'body',
       ),
     ),
     'fields' => array(
       'field_video' => 'ds_content',
       'title' => 'ds_content',
-      'body' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
