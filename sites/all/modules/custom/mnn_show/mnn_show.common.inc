@@ -27,6 +27,7 @@ function mnn_show_get_channels(){
 
     $image_data = $ch_wrapper->field_channel_logo->value();
     $image_data['style_name'] = 'media_thumbnail';
+    $image_data['path'] = $image_data['uri'];
 
     $channels[$ch_wrapper->field_channel_id->value()] = array(
       'name' => $ch_wrapper->name->value(),
