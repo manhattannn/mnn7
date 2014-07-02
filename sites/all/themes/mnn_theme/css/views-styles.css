@@ -138,6 +138,10 @@ OUR CUSTOM MIXINS
   border-radius: 0 0 7px 7px;
 }
 
+.view-content-listing .view-content {
+  clear: both;
+}
+
 .views-field-created {
   color: #c8c8c8;
   font-size: 14px;

@@ -8,6 +8,10 @@
 
 @import "base";
 
+.panel-pane {
+  clear: both;
+}
+
 .cm-row {
   .column {
     .panel-pane {
@@ -81,10 +85,12 @@
   }
 }
 
-/* Video Display */
+/* Our Video Styles */
 
-.node-mnn-video {
-  &.node-teaser {
-    @include col(1/4, $gutter: 0, $cycle: 3);
+#content .cm-row.teaser.grid-item {
+  .field-name-field-video {
+    img {
+      width: 100%;
+    }
   }
 }

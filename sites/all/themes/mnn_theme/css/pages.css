@@ -202,6 +202,33 @@ body {
 #content .cm-row.teaser .inside {
   margin: 0;
 }
+#content .cm-row.teaser.grid-item {
+  border: 0;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 32.0%;
+  margin-left: 0%;
+  margin-right: 2%;
+}
+#content .cm-row.teaser.grid-item:before, #content .cm-row.teaser.grid-item:after {
+  content: '';
+  display: table;
+}
+#content .cm-row.teaser.grid-item:after {
+  clear: both;
+}
+#content .cm-row.teaser.grid-item:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+#content .cm-row.teaser.grid-item:nth-child(3n + 1) {
+  clear: both;
+}
 #content .cm-row.max-340 .media, #content .cm-row .max-340 .media {
   max-width: 100%;
   width: 100%;

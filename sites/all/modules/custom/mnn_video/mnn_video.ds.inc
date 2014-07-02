@@ -105,7 +105,7 @@ function mnn_video_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'mnn_video';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'mnn_theme_ds_teaser_one_column';
+  $ds_layout->layout = 'mnn_theme_ds_teaser_grid';
   $ds_layout->settings = array(
     'regions' => array(
       'wrapper' => array(

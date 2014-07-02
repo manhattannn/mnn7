@@ -40,7 +40,7 @@ function mnn_video_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'node',

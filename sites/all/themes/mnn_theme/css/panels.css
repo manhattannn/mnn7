@@ -96,6 +96,10 @@ OUR CUSTOM MIXINS
   align($direction: both)
   cf()
 */
+.panel-pane {
+  clear: both;
+}
+
 .cm-row .column .panel-pane {
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -144,30 +148,7 @@ OUR CUSTOM MIXINS
   margin-bottom: 12px;
 }
 
-/* Video Display */
-.node-mnn-video.node-teaser {
-  *zoom: 1;
-  float: left;
-  display: inline;
-  clear: none;
-  text-align: inherit;
-  padding-left: 0;
-  padding-right: 0;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.node-mnn-video.node-teaser:before, .node-mnn-video.node-teaser:after {
-  content: '';
-  display: table;
-}
-.node-mnn-video.node-teaser:after {
-  clear: both;
-}
-.node-mnn-video.node-teaser:nth-child(3n) {
-  margin-right: 0%;
-  float: right;
-}
-.node-mnn-video.node-teaser:nth-child(3n + 1) {
-  clear: both;
+/* Our Video Styles */
+#content .cm-row.teaser.grid-item .field-name-field-video img {
+  width: 100%;
 }
