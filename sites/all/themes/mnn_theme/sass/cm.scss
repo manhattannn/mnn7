@@ -225,6 +225,8 @@ aside.sidebars {
 }
 
 
+
+
 #content {
   .column.left {
     width: 70%;
@@ -290,6 +292,40 @@ aside.sidebars {
     }
   }
   // end right column
+}
+.section-news {
+.view-content-listing {
+  .views-row {
+    padding: 12px 0 12px 260px;
+    position: relative;
+    @include clearfix;
+    .views-field-field-image {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      @include breakpoint($breakpoint-large-width) {
+        position: static;
+      }
+      @include breakpoint($breakpoint-medium-width) {
+        position: absolute;
+      }
+      @include breakpoint($breakpoint-med-small-width) {
+        position: static;
+      }
+
+    }
+    @include breakpoint($breakpoint-large-width) {
+      padding: 12px 0;
+    }
+    @include breakpoint($breakpoint-medium-width) {
+      padding: 12px 0 12px 260px;
+    }
+    @include breakpoint($breakpoint-med-small-width) {
+      padding: 12px 0;
+    }
+  }
+}
+
 }
 
 #block-panels-mini-sidebar {

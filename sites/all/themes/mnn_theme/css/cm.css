@@ -457,6 +457,47 @@ aside.sidebars .sidebar h2 {
   }
 }
 
+.section-news .view-content-listing .views-row {
+  padding: 12px 0 12px 260px;
+  position: relative;
+  overflow: hidden;
+}
+.section-news .view-content-listing .views-row .views-field-field-image {
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+@media (max-width: 1000px) {
+  .section-news .view-content-listing .views-row .views-field-field-image {
+    position: static;
+  }
+}
+@media (max-width: 768px) {
+  .section-news .view-content-listing .views-row .views-field-field-image {
+    position: absolute;
+  }
+}
+@media (max-width: 460px) {
+  .section-news .view-content-listing .views-row .views-field-field-image {
+    position: static;
+  }
+}
+@media (max-width: 1000px) {
+  .section-news .view-content-listing .views-row {
+    padding: 12px 0;
+  }
+}
+@media (max-width: 768px) {
+  .section-news .view-content-listing .views-row {
+    padding: 12px 0 12px 260px;
+  }
+}
+@media (max-width: 460px) {
+  .section-news .view-content-listing .views-row {
+    padding: 12px 0;
+  }
+}
+
 #block-panels-mini-sidebar {
   overflow: hidden;
 }
