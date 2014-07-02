@@ -62,19 +62,19 @@
     }
 
     #channel1 .channel-icon {
-        @include channel-icons-sprite(ch1);
+        //@include channel-icons-sprite(ch1);
         @extend %channel-icon;
     }
     #channel2 .channel-icon {
-        @include channel-icons-sprite(ch2);
+        //@include channel-icons-sprite(ch2);
         @extend %channel-icon;
     }
     #channel3 .channel-icon {
-        @include channel-icons-sprite(ch3);
+        //@include channel-icons-sprite(ch3);
         @extend %channel-icon;
     }
     #channel4 .channel-icon {
-        @include channel-icons-sprite(ch4);
+        //@include channel-icons-sprite(ch4);
         @extend %channel-icon;
     }
 
