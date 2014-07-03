@@ -236,3 +236,67 @@ OUR CUSTOM MIXINS
 #block-user-online {
   /* "Who's online" block for a list of the online users */
 }
+
+/* Block Producers Login */
+#block-block-1 {
+  font-size: 12px;
+}
+#block-block-1 a {
+  font-size: 90%;
+  padding: 0.2em 1.1em 0.3em 1.2em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF000000', endColorstr='#FF000000');
+  background-color: black;
+  border: 0;
+  color: white;
+  text-shadow: black 0 -1px 0;
+  -webkit-box-shadow: 3px 3px 5px #cccccc;
+  -moz-box-shadow: 3px 3px 5px #cccccc;
+  box-shadow: 3px 3px 5px #cccccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0.4em 1.1em 0.5em 1.2em;
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+#block-block-1 a:hover {
+  text-decoration: none;
+}
+#block-block-1 a:hover {
+  background-color: black;
+}
+#block-block-1 a:active {
+  background-color: black;
+}
+#block-block-1 a.disabled, #block-block-1 a[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: false;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#block-block-1 a::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+#block-block-1 a:focus {
+  outline: none;
+  border: 0;
+}
