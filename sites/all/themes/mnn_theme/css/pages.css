@@ -188,7 +188,7 @@ body {
 }
 #content .cm-row.teaser .media {
   float: left;
-  max-width: 25%;
+  max-width: 35%;
   margin: 5px 25px 0 0;
 }
 @media (max-width: 320px) {

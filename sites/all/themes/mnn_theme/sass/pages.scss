@@ -112,7 +112,7 @@ body {
       border-bottom: 1px solid #EEEEEE;
       .media {
         float: left;
-        max-width: 25%;
+        max-width: 35%;
         margin: 5px 25px 0 0;
         @include breakpoint ($breakpoint-small-width) {
           width: 100%;
