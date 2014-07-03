@@ -37,11 +37,12 @@ function cm_slideshow_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
+  $handler->display->display_options['style_options']['flexslider_views_slideshow']['optionset'] = 'cm_slideshow';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
     'class' => 'default',
-    'name' => 'Förvald',
+    'name' => 'Default',
     'module' => 'views_slideshow',
     'path' => '',
     'stylesheets' => array(),
@@ -49,10 +50,11 @@ function cm_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
-    'title' => 0,
-    'uri' => 0,
-    'field_cm_sub_head' => 0,
+    'field_cm_slideshow_link' => 0,
     'field_cm_slideshow_image' => 0,
+    'title' => 0,
+    'field_cm_slideshow_sub_header' => 0,
+    'nothing' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
@@ -60,10 +62,11 @@ function cm_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
-    'title' => 0,
-    'uri' => 0,
-    'field_cm_sub_head' => 0,
+    'field_cm_slideshow_link' => 0,
     'field_cm_slideshow_image' => 0,
+    'title' => 0,
+    'field_cm_slideshow_sub_header' => 0,
+    'nothing' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';

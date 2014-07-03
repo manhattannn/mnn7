@@ -83,20 +83,30 @@
           @include box-sizing(border-box);
           .title {
             width: 70%;
+            color: #fff;
+            font-family: 'Roboto Condensed',sans-serif;
+            font-size: 30px;
+            line-height: 30px;
+            padding: 5px 0;
           }
           .sub-title {
             width: 70%;
+            color: #fff;
+            a {
+              color: #ffd;
+            }
           }
         }
       }
     }
     .flex-control-nav {
-      bottom: 0;
-      right: 0;
+      bottom: 10px;
+      right: 5px;
       width: 30%;
-      text-align: center;
+      text-align: right;
       margin: 0;
       padding: 0;
+      z-index: 5;
       li {
         a {
           text-indent: -9999px;
@@ -104,6 +114,10 @@
           width: 20px;
           height: 20px;
           color: #ebebeb;
+          font-size: 0;
+          &.flex-active {
+            background: #757575;
+          }
         }
       }
     }
