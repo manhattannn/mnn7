@@ -11,6 +11,9 @@ function cm_slideshow_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "flexslider" && $api == "flexslider_default_preset") {
     return array("version" => "1");
   }
+  if ($module == "linkit" && $api == "linkit_profiles") {
+    return array("version" => "1");
+  }
   if ($module == "resp_img" && $api == "default_resp_img_suffixs") {
     return array("version" => "1");
   }
