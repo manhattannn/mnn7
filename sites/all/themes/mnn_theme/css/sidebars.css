@@ -146,7 +146,7 @@ OUR CUSTOM MIXINS
   clear: both;
   float: left;
   width: 100%;
-  padding: 0;
+  padding: 2px 5px;
   margin: 5px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
