@@ -172,7 +172,6 @@ OUR CUSTOM MIXINS
   box-sizing: border-box;
 }
 .view-cm-slideshow .flexslider ul li .views-field-nothing .title {
-  width: 70%;
   color: #fff;
   font-family: 'Roboto Condensed',sans-serif;
   font-size: 30px;
@@ -180,20 +179,22 @@ OUR CUSTOM MIXINS
   padding: 5px 0;
 }
 .view-cm-slideshow .flexslider ul li .views-field-nothing .sub-title {
-  width: 70%;
   color: #fff;
 }
 .view-cm-slideshow .flexslider ul li .views-field-nothing .sub-title a {
   color: #ffd;
 }
 .view-cm-slideshow .flexslider .flex-control-nav {
-  bottom: 10px;
-  right: 5px;
-  width: 30%;
+  bottom: -30px;
+  background: #000;
   text-align: right;
   margin: 0;
   padding: 0;
   z-index: 5;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .view-cm-slideshow .flexslider .flex-control-nav li a {
   text-indent: -9999px;
