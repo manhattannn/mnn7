@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Code for the Slideshow feature.
+ */
+
+include_once('cm_slideshow.features.inc');
+
+/**
+ * Implements hook_init().
+ */
+function cm_slideshow_init() {
+  drupal_add_css(drupal_get_path('module', 'cm_slideshow') . '/cm_slideshow.css');
+  //drupal_add_js(drupal_get_path('module', 'cm_slideshow') . '/cm_slideshow.js');
+}
+
+// SEE http://www.metachunk.com/blog/adding-module-path-drupal-7-theme-registry
+// These function essentially trick Drupal into thinking this module is also a theme
+// where tpls can be found
+
+/**
+* Implementation of hook_registry_alter
+*/
+function cm_slideshow_theme_registry_alter(&$theme_registry) {
+  $mod_path = drupal_get_path('module', 'cm_slideshow');
+  $theme_registry_copy = $theme_registry;       // munge on a copy
+  _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', 'pow', $mod_path);
+  $theme_registry += array_diff_key($theme_registry_copy, $theme_registry);
+  $hooks = array('node');
+  foreach ($hooks as $h) {
+    _cm_slideshow_insert_after_first_element($theme_registry[$h]['theme paths'], $mod_path);
+  }          
+}
+
+/**
+ * Helper function for re-ordering arrays (needed by theme_registry_alter)
+*/
+function _cm_slideshow_insert_after_first_element(&$a, $element) {
+  if(is_array($a)) {
+    $first_element = array_shift($a);
+    array_unshift($a, $first_element, $element);
+  }
+}

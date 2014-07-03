@@ -1,0 +1,115 @@
+  .front #zone-branding-wrapper {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(3, 3, 3);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .front #zone-menu-wrapper {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(3, 3, 3);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .front #zone-header-wrapper {
+    top: -6em;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .front #zone-header {
+    margin-top: 0px;
+    margin: 0 auto;
+    background: #0E0E0E;
+    width: 100%;
+	top: 0;
+  }
+  
+  .front #region-header-first {
+    width: 100%;
+  }
+  
+  .front #zone-menu-wrapper {
+    bottom: 3em; 
+	height: 3em;
+  }
+
+  .front #zone-menu {
+    bottom: 3em; 
+	height: 3em;
+  }
+  
+  .flex-nav-container {
+    height: 23em;
+  }
+  
+  .flexslider {
+    width: 960px;
+	height: 25em;
+    margin: 0 auto;
+  }  
+
+  .flexslider .slides > li {
+    height: 25em;
+  }
+  
+  .front #section-header {
+    height: 25em;
+	overflow: hidden;
+  }
+
+ .front #zone-header-wrapper {
+	height: 19em;
+  }
+  
+  .front #zone-header {
+    height: 25em;
+  }
+
+  .front #block-views-cm-slideshow-block {
+    height: 19em;
+  }  
+
+  .view-id-cm_slideshow .image {
+ 	width: 960px;
+  }
+
+  .view-id-cm_slideshow .image img{
+	width: 960px;
+  }
+  
+ 
+  .view-id-cm_slideshow .pinch {
+    position: absolute;
+    bottom: 3.8em;
+    left: 0;
+	width: 26em;
+	font-size: 1em;
+  }
+  
+  .view-id-cm_slideshow .primary-headline {
+	font-size: 2.3em;
+	line-height: 1;
+	padding-bottom: 0.2em;
+  }
+  
+  .view-id-cm_slideshow .secondary-headline{
+    font-size: 0.875em;
+  }
+  
+  .flex-direction-nav li a {
+    width: 25px;
+    height: 51px;
+    background: url(images/slideshow-arrows.png) no-repeat;
+  }
+
+  .flex-direction-nav li .prev {
+    background-position: 0 -51px;
+  }
+
+  .flex-direction-nav li .next {
+    background-position: 0 0;
+  }
