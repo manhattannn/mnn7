@@ -143,8 +143,8 @@ function cm_slideshow_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-cm_slideshow_slide-field_cm_sub_head'
-  $field_instances['node-cm_slideshow_slide-field_cm_sub_head'] = array(
+  // Exported field_instance: 'node-cm_slideshow_slide-field_cm_slideshow_sub_header'
+  $field_instances['node-cm_slideshow_slide-field_cm_slideshow_sub_header'] = array(
     'bundle' => 'cm_slideshow_slide',
     'default_value' => NULL,
     'deleted' => 0,
@@ -167,7 +167,7 @@ function cm_slideshow_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -177,17 +177,17 @@ function cm_slideshow_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_cm_sub_head',
-    'label' => 'Sub Head',
+    'field_name' => 'field_cm_slideshow_sub_header',
+    'label' => 'Sub Header',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
           'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
+          'full_html' => 0,
+          'plain_text' => 0,
         ),
-        'allowed_formats_toggle' => 0,
+        'allowed_formats_toggle' => 1,
         'default_order_toggle' => 0,
         'default_order_wrapper' => array(
           'formats' => array(
@@ -205,19 +205,19 @@ function cm_slideshow_field_default_field_instances() {
       ),
       'linkit' => array(
         'button_text' => 'Search',
-        'enable' => 0,
-        'profile' => '',
+        'enable' => 1,
+        'profile' => 'clone_of_mnn_linkit_profile_default',
       ),
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
       ),
-      'type' => 'text_textfield',
+      'type' => 'text_textarea',
       'weight' => 1,
     ),
     'workbench_access_field' => 0,
@@ -268,7 +268,7 @@ function cm_slideshow_field_default_field_instances() {
   t('Heavier weights appear lower in the list and thus later in the slideshow.');
   t('Image');
   t('Link');
-  t('Sub Head');
+  t('Sub Header');
   t('Weight');
   t('Will be resized to 1200x516');
 

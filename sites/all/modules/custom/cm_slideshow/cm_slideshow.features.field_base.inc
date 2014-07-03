@@ -70,13 +70,13 @@ function cm_slideshow_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_cm_sub_head'
-  $field_bases['field_cm_sub_head'] = array(
+  // Exported field_base: 'field_cm_slideshow_sub_header'
+  $field_bases['field_cm_slideshow_sub_header'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_cm_sub_head',
+    'field_name' => 'field_cm_slideshow_sub_header',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -92,11 +92,9 @@ function cm_slideshow_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_cm_weight'

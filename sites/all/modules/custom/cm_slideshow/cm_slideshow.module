@@ -10,7 +10,7 @@ include_once('cm_slideshow.features.inc');
  * Implements hook_init().
  */
 function cm_slideshow_init() {
-  drupal_add_css(drupal_get_path('module', 'cm_slideshow') . '/cm_slideshow.css');
+  //drupal_add_css(drupal_get_path('module', 'cm_slideshow') . '/cm_slideshow.css');
   //drupal_add_js(drupal_get_path('module', 'cm_slideshow') . '/cm_slideshow.js');
 }
 
@@ -29,7 +29,7 @@ function cm_slideshow_theme_registry_alter(&$theme_registry) {
   $hooks = array('node');
   foreach ($hooks as $h) {
     _cm_slideshow_insert_after_first_element($theme_registry[$h]['theme paths'], $mod_path);
-  }          
+  }
 }
 
 /**

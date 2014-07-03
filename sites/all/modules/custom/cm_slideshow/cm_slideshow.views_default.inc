@@ -125,18 +125,41 @@ function cm_slideshow_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Sub Head */
-  $handler->display->display_options['fields']['field_cm_sub_head']['id'] = 'field_cm_sub_head';
-  $handler->display->display_options['fields']['field_cm_sub_head']['table'] = 'field_data_field_cm_sub_head';
-  $handler->display->display_options['fields']['field_cm_sub_head']['field'] = 'field_cm_sub_head';
-  $handler->display->display_options['fields']['field_cm_sub_head']['label'] = '';
-  $handler->display->display_options['fields']['field_cm_sub_head']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_cm_sub_head']['alter']['text'] = '<div class="pinch"><div class="primary-headline">[title]</div><div class="secondary-headline">[field_cm_sub_head]</div></div>';
-  $handler->display->display_options['fields']['field_cm_sub_head']['element_label_colon'] = FALSE;
+  /* Field: Content: Sub Header */
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['id'] = 'field_cm_slideshow_sub_header';
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['table'] = 'field_data_field_cm_slideshow_sub_header';
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['field'] = 'field_cm_slideshow_sub_header';
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['label'] = '';
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['alter']['preserve_tags'] = '<a>';
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_cm_slideshow_sub_header']['settings'] = array(
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'advanced' => array(
+        'title' => '',
+        'target' => '',
+        'class' => '',
+        'rel' => '',
+        'text' => '',
+      ),
+    ),
+  );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="title">[title]</div>
+<div class="sub-title">[field_cm_slideshow_sub_header]</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Weight (field_cm_weight) */
   $handler->display->display_options['sorts']['field_cm_weight_value']['id'] = 'field_cm_weight_value';
   $handler->display->display_options['sorts']['field_cm_weight_value']['table'] = 'field_data_field_cm_weight';
