@@ -149,6 +149,24 @@ OUR CUSTOM MIXINS
 }
 
 /* Our Video Styles */
-#content .cm-row.teaser.grid-item .field-name-field-video img {
+#content .cm-col.teaser.grid-item .field-name-field-video a {
+  position: relative;
+  float: left;
   width: 100%;
+}
+#content .cm-col.teaser.grid-item .field-name-field-video a:after {
+  content: "";
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  z-index: 100;
+  background: transparent url(../images/video-play.png) no-repeat center;
+}
+#content .cm-col.teaser.grid-item .field-name-field-video img {
+  width: 100%;
+  position: relative;
+  z-index: 4;
 }

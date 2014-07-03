@@ -1,5 +1,5 @@
 
-.cm-row {
+.cm-col {
   margin-bottom: 20px;
   clear: both;
   width: 100%;
@@ -8,7 +8,7 @@
   float: left;
   width: 50%;
 }
-.cm-column .cm-row {
+.cm-column .cm-col {
   margin-bottom: 10px;
 }
 .cm-column.left .inside {

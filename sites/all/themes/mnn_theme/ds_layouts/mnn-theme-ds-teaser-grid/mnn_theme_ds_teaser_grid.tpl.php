@@ -13,7 +13,7 @@
  */
 
   /* content wrapper */
-  print '<div class="cm-row teaser grid-item">';
+  print '<div class="cm-col teaser grid-item">';
     print '<div class="wrapper">';
       print '<div class="inside">';
        if ($wrapper) :
