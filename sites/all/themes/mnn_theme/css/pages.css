@@ -448,10 +448,10 @@ body {
 #content .cm-row .wrapper .field-name-post-date {
   font-size: 13px;
   color: #aaa;
-  margin-bottom: 10px;
 }
 #content .cm-row .wrapper .field-name-body {
   color: #555;
+  margin-top: 10px;
 }
 #content.max-680 .column {
   clear: both;

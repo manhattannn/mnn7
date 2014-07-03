@@ -27,6 +27,11 @@ function mnn_layouts_ds_field_settings_info() {
         'class' => '',
       ),
     ),
+    'post_date' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'ds_post_date_mnn_article',
+    ),
   );
   $export['node|article|teaser'] = $ds_fieldsetting;
 
@@ -134,7 +139,7 @@ function mnn_layouts_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'article';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'cm_theme_ds_teaser';
+  $ds_layout->layout = 'mnn_theme_ds_teaser';
   $ds_layout->settings = array(
     'regions' => array(
       'media' => array(
@@ -142,12 +147,14 @@ function mnn_layouts_ds_layout_settings_info() {
       ),
       'wrapper' => array(
         1 => 'title',
-        2 => 'body',
+        2 => 'post_date',
+        3 => 'body',
       ),
     ),
     'fields' => array(
       'field_image' => 'media',
       'title' => 'wrapper',
+      'post_date' => 'wrapper',
       'body' => 'wrapper',
     ),
     'classes' => array(),
@@ -231,21 +238,21 @@ function mnn_layouts_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'page';
   $ds_layout->view_mode = 'teaser';
-  $ds_layout->layout = 'cm_theme_ds_teaser';
+  $ds_layout->layout = 'mnn_theme_ds_teaser';
   $ds_layout->settings = array(
     'regions' => array(
       'media' => array(
         0 => 'field_image',
       ),
       'wrapper' => array(
-        1 => 'title',
-        2 => 'body',
+        1 => 'body',
+        2 => 'title',
       ),
     ),
     'fields' => array(
       'field_image' => 'media',
-      'title' => 'wrapper',
       'body' => 'wrapper',
+      'title' => 'wrapper',
     ),
     'classes' => array(),
     'wrappers' => array(
