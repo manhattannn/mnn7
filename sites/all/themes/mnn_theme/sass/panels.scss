@@ -57,11 +57,11 @@
     li {
       @extend %community-channel-button;
       @include clearfix;
-      a{
+      a.watch-now {
         display: block;
         float: left;
         font-weight: bold;
-        margin-bottom: 12px;
+        margin: 5px 0 12px 0;
       }
     }
 
