@@ -238,10 +238,10 @@ OUR CUSTOM MIXINS
 }
 
 /* Block Producers Login */
-#block-block-1 {
+.block.producer-login {
   font-size: 12px;
 }
-#block-block-1 a {
+.block.producer-login a {
   font-size: 90%;
   padding: 0.2em 1.1em 0.3em 1.2em;
   display: inline-block;
@@ -274,16 +274,16 @@ OUR CUSTOM MIXINS
   margin: 0 0 10px 0;
   font-family: 'Roboto Condensed',sans-serif;
 }
-#block-block-1 a:hover {
+.block.producer-login a:hover {
   text-decoration: none;
 }
-#block-block-1 a:hover {
+.block.producer-login a:hover {
   background-color: black;
 }
-#block-block-1 a:active {
+.block.producer-login a:active {
   background-color: black;
 }
-#block-block-1 a.disabled, #block-block-1 a[disabled] {
+.block.producer-login a.disabled, .block.producer-login a[disabled] {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
   background: false;
@@ -292,11 +292,11 @@ OUR CUSTOM MIXINS
   -moz-box-shadow: none;
   box-shadow: none;
 }
-#block-block-1 a::-moz-focus-inner {
+.block.producer-login a::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
 }
-#block-block-1 a:focus {
+.block.producer-login a:focus {
   outline: none;
   border: 0;
 }

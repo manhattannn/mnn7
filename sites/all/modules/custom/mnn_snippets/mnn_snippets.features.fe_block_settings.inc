@@ -14,6 +14,7 @@ function mnn_snippets_default_fe_block_settings() {
 
   $export['block-producer_login'] = array(
     'cache' => -1,
+    'css_class' => 'producer-login',
     'custom' => 0,
     'machine_name' => 'producer_login',
     'module' => 'block',
@@ -46,6 +47,7 @@ function mnn_snippets_default_fe_block_settings() {
 
   $export['views-cm_slideshow-block'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'cm_slideshow-block',
     'module' => 'views',

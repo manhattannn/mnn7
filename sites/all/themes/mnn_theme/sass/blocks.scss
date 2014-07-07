@@ -122,7 +122,7 @@
 
 /* Block Producers Login */
 
-#block-block-1 {
+.block.producer-login {
   font-size: 12px;
   a {
     @include sassy-button("flat", 0px, 90%, #000, #000, #fff, "inset");
