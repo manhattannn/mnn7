@@ -2,6 +2,7 @@ name = MNN Common
 description = Contains common system settings such as Site Name and Google Analytics settings.
 core = 7.x
 package = MNN
+dependencies[] = block_class
 dependencies[] = breakpoints
 dependencies[] = cm_slideshow
 dependencies[] = ctools
