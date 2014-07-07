@@ -47,21 +47,19 @@ li a.active {
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
   // outline: 0;
-  @include clearfix;
   .block {
     margin-bottom: 0;
   }
   #block-system-main-menu {
-    @include clearfix;
     float: left;
-    @include breakpoint ($breakpoint-menu) {
-      float: none;
-
+    @include breakpoint ($breakpoint-resp-menu-large) {
+      float: right;
       .block-wrapper {
-
-          ul {
+        position: relative;
+        ul {
           position: absolute !important;
           z-index: 500000;
+          width: 100%;
         }
       }
     }
@@ -89,10 +87,10 @@ li a.active {
 
 
 .region-navigation {
-  @include clearfix;
-  @include breakpoint ($breakpoint-menu) {
+  @include breakpoint ($breakpoint-resp-menu) {
     height: 85px;
-    overflow: visible;
+    float: right;
+    width: 65%;
   }
 }
 

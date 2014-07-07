@@ -325,3 +325,13 @@ body {
     text-align: center;
   }
 }
+@media screen and (max-width: 850px) and (max-width: 850px) {
+  #navigation #block-system-main-menu .block-wrapper > ul {
+    border: 1px solid #eee;
+  }
+}
+@media screen and (max-width: 850px) and (max-width: 850px) {
+  #navigation #block-system-main-menu .block-wrapper > ul > li > a {
+    padding: .5em;
+  }
+}

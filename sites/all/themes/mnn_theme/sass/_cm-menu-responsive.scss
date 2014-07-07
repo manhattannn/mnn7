@@ -22,7 +22,7 @@
       position:relative;
       display:block;
       padding: $gutter 3 * $gutter;
-      @include breakpoint ($breakpoint-menu) {
+      @include breakpoint ($breakpoint-resp-menu) {
         width: 100%;
         text-align: center;
       }
@@ -47,6 +47,9 @@
       @include menu-background($baseMenuBackground, false);
       @include pseudo-triangle(6px, 2);
       @extend %revert-list;
+      @include breakpoint ($breakpoint-resp-menu-large) {
+        border: 1px solid #eee;
+      }
       li {
         display: block;
         clear: both;
@@ -83,6 +86,9 @@
           float: none;
           display: block;
           padding: $gutter;
+          @include breakpoint ($breakpoint-resp-menu-large) {
+            padding: .5em;
+          }
         }
       }
       // Second level

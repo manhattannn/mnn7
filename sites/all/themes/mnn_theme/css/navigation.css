@@ -125,22 +125,24 @@ li a.active {
 #navigation {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
-  overflow: hidden;
 }
 #navigation .block {
   margin-bottom: 0;
 }
 #navigation #block-system-main-menu {
-  overflow: hidden;
   float: left;
 }
-@media (max-width: 550px) {
+@media (max-width: 850px) {
   #navigation #block-system-main-menu {
-    float: none;
+    float: right;
+  }
+  #navigation #block-system-main-menu .block-wrapper {
+    position: relative;
   }
   #navigation #block-system-main-menu .block-wrapper ul {
     position: absolute !important;
     z-index: 500000;
+    width: 100%;
   }
 }
 #navigation .block-menu .block-title,
@@ -168,13 +170,11 @@ li a.active {
   list-style-image: none;
 }
 
-.region-navigation {
-  overflow: hidden;
-}
 @media (max-width: 550px) {
   .region-navigation {
     height: 85px;
-    overflow: visible;
+    float: right;
+    width: 65%;
   }
 }
 

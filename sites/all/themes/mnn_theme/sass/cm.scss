@@ -131,12 +131,12 @@ h1#site-name {
   padding: 0 0 0 10px;
   float: right;
   width: 200px;
-  @include breakpoint ($breakpoint-medium-width) {
+  @include breakpoint ($breakpoint-resp-menu-large) {
     clear: none;
     float: right;
     text-align: center;
-    margin: 10px auto 30px auto;
-    @include breakpoint ($breakpoint-menu) {
+    margin: 5px auto 30px auto;
+    @include breakpoint ($breakpoint-resp-menu) {
       clear: both;
       position: absolute;
       left: 10px;
@@ -193,6 +193,17 @@ h1#site-name {
       h1 {
         margin: 10px 0;
       }
+    }
+  }
+}
+
+@include breakpoint ($breakpoint-resp-menu) {
+  #logo {
+    width: 30%;
+    @include box-sizing(border-box);
+    margin-right: 5%;
+    img {
+      min-width: 136px;
     }
   }
 }
