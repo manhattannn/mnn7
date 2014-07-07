@@ -291,10 +291,25 @@ h1#site-name a:link, h1#site-name a:visited {
 }
 @media (max-width: 768px) {
   #block-search-form {
-    clear: both;
-    float: none;
+    clear: none;
+    float: right;
     text-align: center;
     margin: 10px auto 30px auto;
+  }
+}
+@media (max-width: 768px) and (max-width: 550px) {
+  #block-search-form {
+    clear: both;
+    position: absolute;
+    left: 10px;
+    width: 340px;
+    float: left;
+    text-align: left;
+    margin: 10px auto 30px auto;
+    top: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 #block-search-form input.form-text {

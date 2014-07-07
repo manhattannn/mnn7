@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 
   %revert-list {
     visibility: visible;
@@ -9,7 +9,7 @@
   #{$selector} {
     #{$input}:checked ~ label,
     #{$input} ~ label:hover, {
-      color: lighten($baseMenuColor, 80%);
+      color: #307D21;
     }
     label {
       border: 1px solid darken($baseMenuBackground, 5%);
@@ -22,6 +22,10 @@
       position:relative;
       display:block;
       padding: $gutter 3 * $gutter;
+      @include breakpoint ($breakpoint-menu) {
+        width: 100%;
+        text-align: center;
+      }
       &:before {
         position: absolute;
         left: $gutter / 2;

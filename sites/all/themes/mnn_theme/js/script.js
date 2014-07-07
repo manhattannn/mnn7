@@ -36,11 +36,11 @@
   Drupal.behaviors.cmScripts = {
     attach: function (context, settings) {
 
-      if ($('#navigation .block-wrapper').length) {
-        $('#navigation .block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
+      if ($('#navigation #block-system-main-menu .block-wrapper').length) {
+        $('#navigation #block-system-main-menu .block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
       }
-      if ($('#navigation .menu-block-wrapper').length) {
-        $('#navigation .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
+      if ($('#navigation #block-system-main-menu .menu-block-wrapper').length) {
+        $('#navigation #block-system-main-menu .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
       }
 
     }

@@ -54,6 +54,17 @@ li a.active {
   #block-system-main-menu {
     @include clearfix;
     float: left;
+    @include breakpoint ($breakpoint-menu) {
+      float: none;
+
+      .block-wrapper {
+
+          ul {
+          position: absolute !important;
+          z-index: 500000;
+        }
+      }
+    }
   }
 
   .block-menu .block-title,
@@ -79,6 +90,10 @@ li a.active {
 
 .region-navigation {
   @include clearfix;
+  @include breakpoint ($breakpoint-menu) {
+    height: 85px;
+    overflow: visible;
+  }
 }
 
 /*

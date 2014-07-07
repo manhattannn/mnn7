@@ -134,6 +134,15 @@ li a.active {
   overflow: hidden;
   float: left;
 }
+@media (max-width: 550px) {
+  #navigation #block-system-main-menu {
+    float: none;
+  }
+  #navigation #block-system-main-menu .block-wrapper ul {
+    position: absolute !important;
+    z-index: 500000;
+  }
+}
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -161,6 +170,12 @@ li a.active {
 
 .region-navigation {
   overflow: hidden;
+}
+@media (max-width: 550px) {
+  .region-navigation {
+    height: 85px;
+    overflow: visible;
+  }
 }
 
 /*
