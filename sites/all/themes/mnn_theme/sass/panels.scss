@@ -116,3 +116,47 @@
     }
   }
 }
+
+/* FOOTER MINI PANEL */
+
+#footer {
+  .footer-mp {
+    padding: 5px 75px;
+    .wrap {
+      font-size: 15px;
+      color: #ccc;
+      h5 {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: 'Roboto Condensed',sans-serif;
+        margin: 0 0 10px 0;
+        color: #fff;
+      }
+      p {
+        margin: 0;
+      }
+      &.left {
+        @include col(1/4);
+      }
+      &.center {
+        @include col(2/4);
+        .c-left, .c-right {
+          @include col(1/2);
+        }
+      }
+      &.right {
+        @include col(1/4);
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            list-style-type: none;
+            a {
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
