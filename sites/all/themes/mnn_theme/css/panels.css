@@ -119,7 +119,7 @@ OUR CUSTOM MIXINS
 }
 
 .pane-mnn-show-watch-now ul #channel1 .channel-icon, .pane-mnn-show-watch-now ul #channel2 .channel-icon, .pane-mnn-show-watch-now ul #channel3 .channel-icon, .pane-mnn-show-watch-now ul #channel4 .channel-icon {
-  height: 30px;
+  height: 50px;
   width: 30px;
   float: left;
   margin: 12px 6px;
@@ -149,7 +149,6 @@ OUR CUSTOM MIXINS
   float: left;
   font-weight: bold;
   margin-bottom: 12px;
-  padding-left: 38px;
 }
 
 /* Our Video Styles */
