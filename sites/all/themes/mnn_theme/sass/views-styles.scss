@@ -67,7 +67,8 @@
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
+    padding-bottom: 40px;
     position: relative;
     ul {
       li {
@@ -98,7 +99,7 @@
       }
     }
     .flex-control-nav {
-      bottom: -30px;
+      bottom: 0px;
       background: #000;
       text-align: right;
       margin: 0;
