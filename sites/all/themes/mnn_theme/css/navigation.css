@@ -200,7 +200,7 @@ ul.primary {
   padding: 0;
   border-bottom: none;
 }
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   ul.primary {
     border-bottom: none;
   }

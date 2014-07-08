@@ -162,7 +162,7 @@ h5 {
   padding: 15px 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   ul.primary li, ul.secondary li {
     float: none;
     clear: both;

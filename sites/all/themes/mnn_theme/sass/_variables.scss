@@ -21,7 +21,7 @@ $sb-padding: 0.2em 1.1em 0.3em 1.2em;  // Button padding
 // create $breakpoint variables like so
 // assume min-width (by default) if only a number
 
-$breakpoint-small-width: max-width 320px;
+$breakpoint-small-width: max-width 400px;
 $breakpoint-med-small-width: max-width  460px;
 $breakpoint-resp-menu: max-width  550px;
 $breakpoint-resp-menu-large: max-width  850px;

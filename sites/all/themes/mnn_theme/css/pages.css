@@ -208,12 +208,19 @@ body {
 #content .cm-row.teaser .media:last-child {
   margin-right: 0%;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   #content .cm-row.teaser .media {
     width: 100%;
     clear: both;
     max-width: 100%;
     margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  #content .cm-row.teaser .media img {
+    display: none;
+    visibility: hidden;
+    height: 0;
   }
 }
 #content .cm-row.teaser .wrapper {
@@ -237,6 +244,11 @@ body {
 }
 #content .cm-row.teaser .wrapper:last-child {
   margin-right: 0%;
+}
+@media (max-width: 768px) {
+  #content .cm-row.teaser .wrapper {
+    width: 100%;
+  }
 }
 #content .cm-row.teaser .inside {
   margin: 0;

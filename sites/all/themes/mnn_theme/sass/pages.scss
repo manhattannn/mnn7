@@ -112,15 +112,25 @@ body {
       border-bottom: 1px solid #EEEEEE;
       .media {
         @include col(1/3);
-        @include breakpoint ($breakpoint-small-width) {
+        @include breakpoint ($breakpoint-medium-width) {
           width: 100%;
           clear: both;
           max-width: 100%;
           margin: 0 0 10px 0;
         }
+        @include breakpoint ($breakpoint-small-width) {
+          img {
+            display: none;
+            visibility: hidden;
+            height: 0;
+          }
+        }
       }
       .wrapper {
         @include col(2/3);
+        @include breakpoint ($breakpoint-medium-width) {
+          width: 100%;
+        }
       }
       .inside {
         margin: 0;
