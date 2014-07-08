@@ -455,15 +455,10 @@ OUR CUSTOM MIXINS
 }
 #footer .drupal-credit {
   clear: both;
-  padding: 30px 0 0 0;
+  padding: 10px 0 0 0;
   text-align: center;
   color: #ccc;
   font-size: 13px;
-}
-@media (max-width: 768px) {
-  #footer .drupal-credit {
-    padding-top: 15px;
-  }
 }
 #footer .drupal-credit a {
   color: #ccc;
