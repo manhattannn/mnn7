@@ -350,10 +350,12 @@ aside.sidebars {
 
 .wrapper.footer {
   border-top: 1px solid #dddddd;
+  background: $dark;
+  @include clearfix;
   #footer {
     margin-left: auto;
     margin-right: auto;
-    color: $dark;
+    color: white;
     font-size:12px;
     padding: 20px 0;
     position: relative;
