@@ -158,8 +158,14 @@ OUR CUSTOM MIXINS
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 0;
   position: relative;
+  float: left;
+  width: 100%;
+}
+.view-cm-slideshow .flexslider ul {
+  margin: 0;
+  padding: 0;
 }
 .view-cm-slideshow .flexslider ul li .views-field-field-cm-slideshow-image img {
   display: block;
@@ -190,6 +196,8 @@ OUR CUSTOM MIXINS
   background: #000;
   text-align: right;
   position: relative;
+  float: left;
+  width: 100%;
   margin: 0;
   padding: 0;
   z-index: 5;

@@ -68,9 +68,13 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     position: relative;
+    float: left;
+    width: 100%;
     ul {
+      margin: 0;
+      padding: 0;
       li {
         .views-field-field-cm-slideshow-image {
           img {
@@ -103,6 +107,8 @@
       background: #000;
       text-align: right;
       position: relative;
+      float: left;
+      width: 100%;
       margin: 0;
       padding: 0;
       z-index: 5;

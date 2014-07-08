@@ -24,7 +24,7 @@ function cm_slideshow_flexslider_default_presets() {
     'easing' => 'swing',
     'direction' => 'horizontal',
     'reverse' => 0,
-    'smoothHeight' => 1,
+    'smoothHeight' => 0,
     'startAt' => '0',
     'animationSpeed' => '600',
     'initDelay' => '0',
