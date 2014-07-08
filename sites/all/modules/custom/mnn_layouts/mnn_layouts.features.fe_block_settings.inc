@@ -113,7 +113,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['cm_starterkit_easy-cmdrupal_credit'] = array(
     'cache' => 1,
-    'css_class' => '',
+    'css_class' => 'drupal-credit',
     'custom' => 0,
     'delta' => 'cmdrupal_credit',
     'module' => 'cm_starterkit_easy',
