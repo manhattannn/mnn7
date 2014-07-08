@@ -137,7 +137,7 @@ function mnn_layouts_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'mnn_theme',
-        'weight' => -9,
+        'weight' => -18,
       ),
     ),
     'title' => '',

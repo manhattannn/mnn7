@@ -46,37 +46,25 @@ function mnn_layouts_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
-	<tbody>
-		<tr>
-			<td><strong>Midtown</strong></td>
-			<td><strong>El Barrio Firehouse Community Center</strong></td>
-			<td>&nbsp;</td>
-			<td><strong>Resources</strong></td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>537 West 59th Street</td>
-			<td>175 E 104th Street</td>
-			<td>Phone: 212-757-2670</td>
-			<td><a href="/contact">Contact Us</a></td>
-			<td><a href="/node/655">Job Listings</a></td>
-			<td>Producer Portal</td>
-		</tr>
-		<tr>
-			<td>New York, NY 10019</td>
-			<td>New York, NY 10029</td>
-			<td>Fax: 212-757-1603</td>
-			<td><a href="/node/713">Schedule</a></td>
-			<td>Upload Media</td>
-			<td>&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
-<p>&nbsp;</p>
+      'body' => '<div class="left"><strong>Midtown</strong><br /> 537 West 59th Street<br />
+	New York, NY 10019</div>
+<div class="center">
+	<div class="c-left"><strong>El Barrio Firehouse Community Center</strong><br /> 175 E 104th Street<br />
+		New York, NY 10029</div>
+	<div class="c-right">Phone: 212-757-2670<br />
+		Fax: 212-757-1603</div>
+</div>
+<div class="right"><strong>Resources</strong>
+	<ul>
+		<li><a href="/contact">Contact Us</a></li>
+		<li><a href="/node/655">Job Listings</a></li>
+		<li><a href="/node/713">Schedule</a></li>
+		<li><a href="#">Upload Media</a></li>
+		<li><a href="#">Producer Portal</a></li>
+	</ul>
+</div>
 ',
-      'format' => 'filtered_html',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
