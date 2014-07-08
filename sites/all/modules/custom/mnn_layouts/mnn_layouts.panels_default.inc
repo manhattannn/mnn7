@@ -155,7 +155,7 @@ function mnn_layouts_default_panels_mini() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Social Media',
+      'title' => '',
       'body' => '<div class="content">
 	<div class="col">
 		<div class="button youtube"><a href="http://www.youtube.com/user/MNN537">Watch Clips on YouTube</a></div>

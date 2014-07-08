@@ -14,6 +14,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['apachesolr_search-mlt-001'] = array(
     'cache' => 4,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'mlt-001',
     'module' => 'apachesolr_search',
@@ -46,6 +47,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['apachesolr_search-sort'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'sort',
     'module' => 'apachesolr_search',
@@ -78,6 +80,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['cm_starterkit_easy-cm_theme_logo'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'cm_theme_logo',
     'module' => 'cm_starterkit_easy',
@@ -110,6 +113,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['cm_starterkit_easy-cmdrupal_credit'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'cmdrupal_credit',
     'module' => 'cm_starterkit_easy',
@@ -142,6 +146,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['devel-execute_php'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'execute_php',
     'module' => 'devel',
@@ -174,6 +179,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['devel-switch_user'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'switch_user',
     'module' => 'devel',
@@ -206,6 +212,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['diff-inline'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'inline',
     'module' => 'diff',
@@ -238,6 +245,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['menu-devel'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'devel',
     'module' => 'menu',
@@ -270,6 +278,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['menu-features'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'features',
     'module' => 'menu',
@@ -302,6 +311,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-channel_listing'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'channel_listing',
     'module' => 'mnn_show',
@@ -334,6 +344,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-sch_geolocator_and_ch_listing'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'sch_geolocator_and_ch_listing',
     'module' => 'mnn_show',
@@ -366,6 +377,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-watch_now'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'watch_now',
     'module' => 'mnn_show',
@@ -398,6 +410,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-youth_channel_intro'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'youth_channel_intro',
     'module' => 'mnn_show',
@@ -430,6 +443,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-youth_channel_listing'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'youth_channel_listing',
     'module' => 'mnn_show',
@@ -462,6 +476,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['mnn_show-youth_channel_playing_now'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'youth_channel_playing_now',
     'module' => 'mnn_show',
@@ -494,6 +509,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['node-recent'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'recent',
     'module' => 'node',
@@ -526,6 +542,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['node-syndicate'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'syndicate',
     'module' => 'node',
@@ -558,6 +575,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['panels_mini-sidebar'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'sidebar',
     'module' => 'panels_mini',
@@ -590,6 +608,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['search-form'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'form',
     'module' => 'search',
@@ -622,6 +641,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['shortcut-shortcuts'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'shortcuts',
     'module' => 'shortcut',
@@ -654,6 +674,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['solr_devel-query_debug'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'query_debug',
     'module' => 'solr_devel',
@@ -686,6 +707,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-help'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'help',
     'module' => 'system',
@@ -718,6 +740,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-main'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'main',
     'module' => 'system',
@@ -750,6 +773,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-main-menu'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'main-menu',
     'module' => 'system',
@@ -782,6 +806,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-management'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'management',
     'module' => 'system',
@@ -814,6 +839,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-navigation'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'navigation',
     'module' => 'system',
@@ -846,6 +872,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-powered-by'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'powered-by',
     'module' => 'system',
@@ -878,6 +905,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['system-user-menu'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'user-menu',
     'module' => 'system',
@@ -910,6 +938,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['user-login'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'login',
     'module' => 'user',
@@ -942,6 +971,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['user-new'] = array(
     'cache' => 1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'new',
     'module' => 'user',
@@ -974,6 +1004,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['user-online'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'online',
     'module' => 'user',
@@ -1006,6 +1037,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['views-9cf22433e0efbd8b206c8e4c2edb177c'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => '9cf22433e0efbd8b206c8e4c2edb177c',
     'module' => 'views',
@@ -1038,6 +1070,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['views-workbench_current_user-block_1'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'workbench_current_user-block_1',
     'module' => 'views',
@@ -1070,6 +1103,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['views-workbench_edited-block_1'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'workbench_edited-block_1',
     'module' => 'views',
@@ -1102,6 +1136,7 @@ function mnn_layouts_default_fe_block_settings() {
 
   $export['workbench-block'] = array(
     'cache' => -1,
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'block',
     'module' => 'workbench',
