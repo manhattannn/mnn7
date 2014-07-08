@@ -212,7 +212,7 @@ body {
   width: 100%;
   height: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 520px) {
   #content .cm-row.teaser .media {
     width: 100%;
     clear: both;
@@ -249,7 +249,7 @@ body {
 #content .cm-row.teaser .wrapper:last-child {
   margin-right: 0%;
 }
-@media (max-width: 768px) {
+@media (max-width: 520px) {
   #content .cm-row.teaser .wrapper {
     width: 100%;
   }
