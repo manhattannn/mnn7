@@ -153,7 +153,7 @@ OUR CUSTOM MIXINS
   box-sizing: border-box;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info {
-  padding: 5px 5px 10px 42px;
+  padding: 5px 5px 10px 5px;
   background: #f9f9f9;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info h4 {

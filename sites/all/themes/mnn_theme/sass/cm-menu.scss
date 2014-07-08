@@ -146,6 +146,7 @@ body {
     opacity: 0;
     visibility: hidden;
     margin: 2 * $gutter 0 0 0;
+    @include element-invisible;
     // @include menu-background(lighten($baseMenuBackground, 15%), false);
     // @include transition-property("margin, opacity");
     // @include transition-duration(".15s");
