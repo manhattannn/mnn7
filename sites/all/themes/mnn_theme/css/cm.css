@@ -608,10 +608,6 @@ ul.social-footer li a i:hover {
 }
 
 @media (max-width: 768px) {
-  #footer {
-    text-align: center;
-  }
-
   ul.social-footer {
     margin-top: -10px;
   }

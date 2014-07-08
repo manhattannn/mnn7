@@ -121,7 +121,13 @@
 
 #footer {
   .footer-mp {
-    padding: 5px 75px;
+    padding: 5px 10%;
+    @include breakpoint ($breakpoint-large-width) {
+      padding: 5px 5%;
+    }
+    @include breakpoint ($breakpoint-medium-width) {
+      padding: 5px 20px;
+    }
     .wrap {
       font-size: 15px;
       color: #ccc;
@@ -131,21 +137,43 @@
         font-family: 'Roboto Condensed',sans-serif;
         margin: 0 0 10px 0;
         color: #fff;
+        @include breakpoint ($breakpoint-medium-width) {
+          margin-bottom: 5px;
+        }
       }
       p {
         margin: 0;
       }
       &.left {
         @include col(1/4);
+        @include breakpoint ($breakpoint-medium-width) {
+          @include col();
+          @include stack();
+          margin-bottom: 30px;
+        }
       }
       &.center {
         @include col(2/4);
+        @include breakpoint ($breakpoint-medium-width) {
+          @include col();
+          @include stack();
+          margin-bottom: 30px;
+        }
         .c-left, .c-right {
           @include col(1/2);
+          @include breakpoint ($breakpoint-small-width) {
+            @include col();
+            @include stack();
+          }
         }
       }
       &.right {
         @include col(1/4);
+        margin-bottom: 30px;
+        @include breakpoint ($breakpoint-medium-width) {
+          @include col();
+          @include stack();
+        }
         ul {
           margin: 0;
           padding: 0;
@@ -157,6 +185,19 @@
           }
         }
       }
+    }
+  }
+  .drupal-credit {
+    clear: both;
+    padding: 30px 0 0 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 13px;
+    @include breakpoint ($breakpoint-medium-width) {
+      padding-top: 15px;
+    }
+    a {
+      color: #ccc;
     }
   }
 }

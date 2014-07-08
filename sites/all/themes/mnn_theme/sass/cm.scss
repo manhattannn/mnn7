@@ -411,9 +411,6 @@ ul.social-footer {
   }
 }
 @include breakpoint ($breakpoint-medium-width) {
-  #footer {
-    text-align: center;
-  }
   ul.social-footer {
     margin-top: -10px;
     li {
