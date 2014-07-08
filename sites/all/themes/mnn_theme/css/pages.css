@@ -194,7 +194,7 @@ body {
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 31.33333%;
+  width: 39.40167%;
   margin-left: 0%;
   margin-right: 3%;
 }
@@ -207,6 +207,10 @@ body {
 }
 #content .cm-row.teaser .media:last-child {
   margin-right: 0%;
+}
+#content .cm-row.teaser .media img {
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 768px) {
   #content .cm-row.teaser .media {
@@ -231,7 +235,7 @@ body {
   text-align: inherit;
   padding-left: 0;
   padding-right: 0;
-  width: 65.66667%;
+  width: 57.59833%;
   margin-left: 0%;
   margin-right: 3%;
 }
