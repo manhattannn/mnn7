@@ -227,7 +227,7 @@ OUR CUSTOM MIXINS
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  margin: 0;
+  margin: 0 0 25px 0;
   padding-bottom: 0;
   position: relative;
   width: 100%;
@@ -310,9 +310,10 @@ OUR CUSTOM MIXINS
   padding: 0 0 20px 0;
 }
 .view-content-listing.view-display-id-panel_pane_1 .flexslider .flex-control-nav {
-  bottom: 50px;
+  bottom: 5px;
+  right: 5px;
   text-align: right;
-  position: relative;
+  position: absolute;
   float: left;
   width: 100%;
   margin: 0;
