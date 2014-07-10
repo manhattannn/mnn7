@@ -268,6 +268,49 @@ OUR CUSTOM MIXINS
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:last-child {
   margin-right: 0%;
 }
+@media (max-width: 520px) {
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:before, .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:after,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:before,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:after {
+    content: '';
+    display: table;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:after,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:after {
+    clear: both;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:last-child,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:last-child {
+    margin-right: 0%;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:first-child,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:first-child {
+    margin-left: auto;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video:last-child,
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a:last-child {
+    margin-right: auto;
+  }
+}
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-video .file-video img,
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-field-image .field-content a img {
   display: block;
@@ -298,6 +341,43 @@ OUR CUSTOM MIXINS
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:last-child {
   margin-right: 0%;
 }
+@media (max-width: 520px) {
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:before, .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:after {
+    content: '';
+    display: table;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:after {
+    clear: both;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:last-child {
+    margin-right: 0%;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:first-child {
+    margin-left: auto;
+  }
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing:last-child {
+    margin-right: auto;
+  }
+}
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing .title a {
   color: #fff;
   font-family: 'Roboto Condensed',sans-serif;
@@ -308,6 +388,17 @@ OUR CUSTOM MIXINS
 .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing .section {
   font-size: 12px;
   padding: 0 0 20px 0;
+}
+@media (max-width: 1000px) {
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing .section {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider ul li .views-field-nothing .body {
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
 }
 .view-content-listing.view-display-id-panel_pane_1 .flexslider .flex-control-nav {
   bottom: 5px;
@@ -323,6 +414,12 @@ OUR CUSTOM MIXINS
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+@media (max-width: 520px) {
+  .view-content-listing.view-display-id-panel_pane_1 .flexslider .flex-control-nav {
+    bottom: 0;
+    right: 0;
+  }
 }
 .view-content-listing.view-display-id-panel_pane_1 .flexslider .flex-control-nav li a {
   text-indent: -9999px;
