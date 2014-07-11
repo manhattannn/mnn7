@@ -268,7 +268,7 @@ OUR CUSTOM MIXINS
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 0 10px 0;
+  margin: 10px 0;
   font-family: 'Roboto Condensed',sans-serif;
 }
 .block.producer-login .prod-login a:hover {
@@ -355,4 +355,29 @@ OUR CUSTOM MIXINS
 .block.producer-login .prod-link a:focus {
   outline: none;
   border: 0;
+}
+
+/* MAILCHIMP SIGNUP FORM */
+.block.mailchimp-signup p {
+  font-family: 'Roboto Condensed',sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.block.mailchimp-signup input.email {
+  width: 100%;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 10px 5px;
+  height: 36px;
+  line-height: 36px;
+  color: #888;
+}
+.block.mailchimp-signup input.email:focus {
+  outline: 0;
+  background: #f8f8f8;
+  border-color: #ccc;
+  color: #333;
 }

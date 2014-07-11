@@ -132,7 +132,7 @@
     font-size: 16px;
     width: 100%;
     @include box-sizing(border-box);
-    margin: 0 0 10px 0;
+    margin: 10px 0;
     font-family: 'Roboto Condensed',sans-serif;
     &:focus {
       outline: none;
@@ -153,6 +153,34 @@
     &:focus {
       outline: none;
       border: 0;
+    }
+  }
+}
+
+/* MAILCHIMP SIGNUP FORM */
+
+.block.mailchimp-signup {
+  p {
+    font-family: 'Roboto Condensed',sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  input.email {
+    width: 100%;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 10px 5px;
+    height: 36px;
+    line-height: 36px;
+    color: #888;
+    &:focus {
+      outline: 0;
+      background: #f8f8f8;
+      border-color: #ccc;
+      color: #333;
     }
   }
 }

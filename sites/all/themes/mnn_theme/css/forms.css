@@ -145,6 +145,12 @@ OUR CUSTOM MIXINS
   }
 }
 
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 .form-item {
   /* Wrapper for a form element (or group of form elements) and its label */
 }

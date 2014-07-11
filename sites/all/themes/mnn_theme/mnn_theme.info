@@ -35,6 +35,7 @@ stylesheets[all][] = system.menus.css
 
 ; Then we add our own stylesheets.
 stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/formalize.css
 stylesheets[all][] = css/wireframes.css
 stylesheets[all][] = css/layouts/responsive-sidebars.css
 stylesheets[all][] = css/page-backgrounds.css
@@ -49,7 +50,6 @@ stylesheets[all][] = css/forms.css
 stylesheets[all][] = css/panels.css
 stylesheets[all][] = css/sidebars.css
 stylesheets[all][] = css/print.css
-stylesheets[all][] = css/formalize.css
 stylesheets[all][] = css/select2.css
 stylesheets[all][] = css/social_foundicons.css
 stylesheets[all][] = css/social_foundicons_ie7.css
