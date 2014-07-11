@@ -16,21 +16,21 @@ OUR CUSTOM MIXINS
 ***********/
 @import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 .social-sprite, .social-facebook, .social-linkedin, .social-rss, .social-twitter, .social-vimeo, .social-youtube, .youtube a, .vimeo a, .facebook a, .twitter a {
-  background: url('../images/social-s9392f6df42.png') no-repeat;
+  background: url('../images/social-se471aa993b.png') no-repeat;
 }
 
 .social-facebook {
-  background-position: 0 -240px;
+  background-position: 0 -264px;
 }
 .social-facebook:hover, .social-facebook.facebook_hover, .social-facebook.facebook-hover {
-  background-position: 0 -264px;
+  background-position: 0 -240px;
 }
 
 .social-linkedin {
-  background-position: 0 -144px;
+  background-position: 0 -168px;
 }
 .social-linkedin:hover, .social-linkedin.linkedin_hover, .social-linkedin.linkedin-hover {
-  background-position: 0 -168px;
+  background-position: 0 -144px;
 }
 
 .social-rss {
@@ -41,24 +41,24 @@ OUR CUSTOM MIXINS
 }
 
 .social-twitter {
-  background-position: 0 -120px;
+  background-position: 0 -96px;
 }
 .social-twitter:hover, .social-twitter.twitter_hover, .social-twitter.twitter-hover {
   background-position: 0 -72px;
 }
 
 .social-vimeo {
-  background-position: 0 -96px;
+  background-position: 0 -120px;
 }
 .social-vimeo:hover, .social-vimeo.vimeo_hover, .social-vimeo.vimeo-hover {
   background-position: 0 -48px;
 }
 
 .social-youtube {
-  background-position: 0 -216px;
+  background-position: 0 -192px;
 }
 .social-youtube:hover, .social-youtube.youtube_hover, .social-youtube.youtube-hover {
-  background-position: 0 -192px;
+  background-position: 0 -216px;
 }
 
 .channel-icons-sprite, .channel-icons-ch1, .channel-icons-ch2, .channel-icons-ch3, .channel-icons-ch4 {
@@ -474,28 +474,28 @@ aside.sidebars .sidebar h2 {
 }
 
 .youtube a {
-  background-position: 0 -216px;
+  background-position: 0 -192px;
 }
 .youtube a:hover, .youtube a.youtube_hover, .youtube a.youtube-hover {
-  background-position: 0 -192px;
+  background-position: 0 -216px;
 }
 
 .vimeo a {
-  background-position: 0 -96px;
+  background-position: 0 -120px;
 }
 .vimeo a:hover, .vimeo a.vimeo_hover, .vimeo a.vimeo-hover {
   background-position: 0 -48px;
 }
 
 .facebook a {
-  background-position: 0 -240px;
+  background-position: 0 -264px;
 }
 .facebook a:hover, .facebook a.facebook_hover, .facebook a.facebook-hover {
-  background-position: 0 -264px;
+  background-position: 0 -240px;
 }
 
 .twitter a {
-  background-position: 0 -120px;
+  background-position: 0 -96px;
 }
 .twitter a:hover, .twitter a.twitter_hover, .twitter a.twitter-hover {
   background-position: 0 -72px;
