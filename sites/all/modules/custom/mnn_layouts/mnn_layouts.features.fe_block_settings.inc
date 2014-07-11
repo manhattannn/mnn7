@@ -599,7 +599,7 @@ function mnn_layouts_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'mnn_theme',
-        'weight' => -18,
+        'weight' => -19,
       ),
     ),
     'title' => '',

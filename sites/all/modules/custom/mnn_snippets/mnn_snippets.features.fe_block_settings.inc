@@ -38,7 +38,7 @@ function mnn_snippets_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'mnn_theme',
-        'weight' => -19,
+        'weight' => -20,
       ),
     ),
     'title' => '<none>',
