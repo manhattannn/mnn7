@@ -123,9 +123,8 @@
 /* Block Producers Login */
 
 .block.producer-login {
-  font-size: 12px;
-  a {
-    @include sassy-button("flat", 0px, 90%, #000, #000, #fff, "inset");
+  .prod-login a {
+    @include sassy-button("flat", 0px, 90%, #222, #000, #fff, "inset");
     @include box-shadow(3px 3px 5px #ccc);
     @include border-radius(4px);
     margin: 0;
@@ -135,10 +134,25 @@
     @include box-sizing(border-box);
     margin: 0 0 10px 0;
     font-family: 'Roboto Condensed',sans-serif;
-
-  &:focus {
-    outline: none;
-    border: 0;
+    &:focus {
+      outline: none;
+      border: 0;
+    }
   }
+  .prod-link a {
+    @include sassy-button("flat", 0px, 90%, #888, #777, #fff, "inset");
+    @include box-shadow(3px 3px 5px #ccc);
+    @include border-radius(4px);
+    margin: 0;
+    padding: 0.4em 1.1em 0.5em 1.2em;
+    font-size: 16px;
+    width: 100%;
+    @include box-sizing(border-box);
+    margin: 0;
+    font-family: 'Roboto Condensed',sans-serif;
+    &:focus {
+      outline: none;
+      border: 0;
+    }
   }
 }

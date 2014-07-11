@@ -178,7 +178,7 @@ function mnn_snippets_views_default_views() {
     5 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Section (field_site_section) */
+  /* Filter criterion: Content: Site Section (field_site_section) */
   $handler->display->display_options['filters']['field_site_section_tid']['id'] = 'field_site_section_tid';
   $handler->display->display_options['filters']['field_site_section_tid']['table'] = 'field_data_field_site_section';
   $handler->display->display_options['filters']['field_site_section_tid']['field'] = 'field_site_section_tid';

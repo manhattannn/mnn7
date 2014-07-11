@@ -12,10 +12,10 @@ function mnn_snippets_default_fe_block_boxes() {
 
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Producer login';
-  $fe_block_boxes->format = 'filtered_html';
+  $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'producer_login';
-  $fe_block_boxes->body = '<p><a href="http://cm.mnn.org/user" target="_blank">Producer login</a></p>
-<div class="description">Click here to access your producer profile and upload media</div>
+  $fe_block_boxes->body = '<div class="prod-login"><a href="http://cm.mnn.org/user" target="_blank" title="Producer Login">Producer Login</a></div>
+<div class="prod-link"><a href="/user/login" title="Upload Media">Upload Media</a></div>
 ';
 
   $export['producer_login'] = $fe_block_boxes;
