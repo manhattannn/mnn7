@@ -137,6 +137,17 @@ function mnn_site_sections_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'Holiday Hours',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 2,
+    'uuid' => '47c933b3-7860-4e3f-84d8-e19bf466fcdd',
+    'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '99f7650d-1283-495d-8c71-3459bcc1c4d6',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Producers',
     'description' => '',
     'format' => 'filtered_html',
@@ -183,6 +194,17 @@ function mnn_site_sections_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
       0 => '8a3bed6d-3f51-4566-a096-afb08fee5d03',
+    ),
+  );
+  $terms[] = array(
+    'name' => '59th St Hours',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 0,
+    'uuid' => '775764f2-cc0d-4ea6-b09d-11ff0e749192',
+    'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '99f7650d-1283-495d-8c71-3459bcc1c4d6',
     ),
   );
   $terms[] = array(
@@ -246,6 +268,17 @@ function mnn_site_sections_uuid_features_default_terms() {
     ),
   );
   $terms[] = array(
+    'name' => 'FH Hours',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 1,
+    'uuid' => '8b98490a-4c51-4eee-af24-99cf2e49c27e',
+    'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '99f7650d-1283-495d-8c71-3459bcc1c4d6',
+    ),
+  );
+  $terms[] = array(
     'name' => 'Events',
     'description' => '',
     'format' => 'filtered_html',
@@ -273,6 +306,17 @@ function mnn_site_sections_uuid_features_default_terms() {
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
       0 => '686a2262-9043-45b2-9091-ef9e0dc81296',
+    ),
+  );
+  $terms[] = array(
+    'name' => 'Hours',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 1,
+    'uuid' => '99f7650d-1283-495d-8c71-3459bcc1c4d6',
+    'vocabulary_machine_name' => 'sections',
+    'parent' => array(
+      0 => '0a84e4a1-4f32-4bdb-95fa-4db1cbc78cf5',
     ),
   );
   $terms[] = array(
@@ -371,6 +415,14 @@ function mnn_site_sections_uuid_features_default_terms() {
     'parent' => array(
       0 => '89b6bc78-8599-4538-af57-9da1cbd343da',
     ),
+  );
+  $terms[] = array(
+    'name' => 'What\'s on',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 1,
+    'uuid' => 'd85ce8d3-a0a6-4fab-bedf-a5755c2e5e22',
+    'vocabulary_machine_name' => 'sections',
   );
   $terms[] = array(
     'name' => 'City Council Districts',
