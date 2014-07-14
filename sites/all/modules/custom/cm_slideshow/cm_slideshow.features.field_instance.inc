@@ -50,8 +50,8 @@ function cm_slideshow_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '',
-            'linked' => 0,
+            'destination' => '[node:nid]',
+            'linked' => 1,
           ),
         ),
         'type' => 'file_rendered',
@@ -237,78 +237,6 @@ function cm_slideshow_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-cm_slideshow_slide-field_cm_sub_head'
-  $field_instances['node-cm_slideshow_slide-field_cm_sub_head'] = array(
-    'bundle' => 'cm_slideshow_slide',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'smart_trim',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-          'more_link' => FALSE,
-          'more_text' => 'Read more',
-          'summary_handler' => 'full',
-          'trim_length' => 300,
-          'trim_options' => array(),
-          'trim_suffix' => '...',
-          'trim_type' => 'chars',
-        ),
-        'type' => 'smart_trim_format',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_cm_sub_head',
-    'label' => 'Sub Head',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-cm_slideshow_slide-field_cm_weight'
   $field_instances['node-cm_slideshow_slide-field_cm_weight'] = array(
     'bundle' => 'cm_slideshow_slide',
@@ -418,7 +346,6 @@ function cm_slideshow_field_default_field_instances() {
   t('Image');
   t('Link');
   t('Section');
-  t('Sub Head');
   t('Sub Header');
   t('Weight');
   t('Will be resized to 1200x516');
