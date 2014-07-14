@@ -20,14 +20,38 @@ function mnn_channel_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -141,6 +165,17 @@ function mnn_channel_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => 'thumbnail',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'image',
         'weight' => 1,
@@ -151,6 +186,17 @@ function mnn_channel_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => 'medium',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'image',
         'weight' => 1,
@@ -161,6 +207,17 @@ function mnn_channel_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => 'teaser',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'image',
         'weight' => 0,
@@ -218,6 +275,17 @@ function mnn_channel_field_default_field_instances() {
             'prefix' => '',
             'suffix' => ':&nbsp;',
           ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
           'second' => array(
             'format' => '_none',
             'hidden' => 0,
@@ -247,6 +315,17 @@ function mnn_channel_field_default_field_instances() {
             'hidden' => 0,
             'prefix' => '',
             'suffix' => ':&nbsp;',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
           ),
           'second' => array(
             'format' => '_none',

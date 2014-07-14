@@ -49,6 +49,32 @@ function mnn_channel_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'channel' => 'channel',
   );
+  /* Filter criterion: Taxonomy term: Term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    20 => '20',
+    23 => '23',
+    22 => '22',
+    21 => '21',
+  );
+  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Channel';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'channel';
 
   /* Display: Channel List */
   $handler = $view->new_display('panel_pane', 'Channel List', 'mnn_channel_list_content_pane');
@@ -66,6 +92,16 @@ function mnn_channel_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
   $handler->display->display_options['allow']['fields_override'] = 'fields_override';
+  $handler->display->display_options['argument_input'] = array(
+    'name' => array(
+      'type' => 'user',
+      'context' => 'entity:file.field_file_image_alt_text',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Channel',
+    ),
+  );
   $export['mnn_channel_lists'] = $view;
 
   return $export;
