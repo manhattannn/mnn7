@@ -25,7 +25,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Community Standards',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '03c766e3-7394-4627-9959-102c711543ca',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -47,7 +47,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'About Us',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 26,
+    'weight' => 10,
     'uuid' => '0a84e4a1-4f32-4bdb-95fa-4db1cbc78cf5',
     'vocabulary_machine_name' => 'sections',
   );
@@ -88,7 +88,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Firehouse Videos',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '2700e2e6-4ea3-4eef-b638-2011ab0150a1',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -110,7 +110,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 25,
+    'weight' => 9,
     'uuid' => '42c001b9-f87a-495a-8c53-4d51d5317983',
     'vocabulary_machine_name' => 'sections',
   );
@@ -140,7 +140,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Producers',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 2,
     'uuid' => '5ad93f81-c5d3-42fa-af57-0c9bfe0570a8',
     'vocabulary_machine_name' => 'sections',
   );
@@ -148,7 +148,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Locations',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 13,
+    'weight' => 4,
     'uuid' => '686a2262-9043-45b2-9091-ef9e0dc81296',
     'vocabulary_machine_name' => 'sections',
   );
@@ -156,7 +156,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Programming Policies',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '6c63d64a-57f3-40c0-b065-2d5e9b691758',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -178,7 +178,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Manhattan Borough President',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => '74ae1e13-543b-4d99-97b1-f0415ab287a8',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -211,7 +211,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media Education',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 23,
+    'weight' => 8,
     'uuid' => '87a044fd-1273-45d8-b072-fc5e4b06693f',
     'vocabulary_machine_name' => 'sections',
   );
@@ -219,7 +219,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'News',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 22,
+    'weight' => 7,
     'uuid' => '89b6bc78-8599-4538-af57-9da1cbd343da',
     'vocabulary_machine_name' => 'sections',
   );
@@ -249,7 +249,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Events',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 16,
+    'weight' => 5,
     'uuid' => '8d5ea9f8-b121-4d09-a0ae-4769e0754a6e',
     'vocabulary_machine_name' => 'sections',
   );
@@ -290,7 +290,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'MNN Productions Video',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 3,
     'uuid' => 'ac0fba0b-093d-43af-86a4-05f2c46505cd',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -334,7 +334,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Producer Videos',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 1,
     'uuid' => 'bf1ae404-1a05-4c4b-85aa-7d3be9ea4b4a',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -387,7 +387,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Get Involved',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 17,
+    'weight' => 6,
     'uuid' => 'eb0f8d0d-0c1a-4de3-adde-0344b2de4fa0',
     'vocabulary_machine_name' => 'sections',
   );
@@ -439,7 +439,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Youth Channel Videos',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 4,
     'uuid' => 'fdc6f833-60fa-46e2-939c-c0f0c02d381d',
     'vocabulary_machine_name' => 'sections',
     'parent' => array(
@@ -450,7 +450,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Programming',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 9,
+    'weight' => 3,
     'uuid' => 'ffe1cd71-fc63-402c-bfdd-6c085acfe3ff',
     'vocabulary_machine_name' => 'sections',
   );
