@@ -47,7 +47,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'About Us',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 10,
+    'weight' => 45,
     'uuid' => '0a84e4a1-4f32-4bdb-95fa-4db1cbc78cf5',
     'vocabulary_machine_name' => 'sections',
   );
@@ -110,7 +110,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 9,
+    'weight' => 43,
     'uuid' => '42c001b9-f87a-495a-8c53-4d51d5317983',
     'vocabulary_machine_name' => 'sections',
   );
@@ -140,7 +140,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Producers',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 2,
+    'weight' => 28,
     'uuid' => '5ad93f81-c5d3-42fa-af57-0c9bfe0570a8',
     'vocabulary_machine_name' => 'sections',
   );
@@ -148,7 +148,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Locations',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 4,
+    'weight' => 34,
     'uuid' => '686a2262-9043-45b2-9091-ef9e0dc81296',
     'vocabulary_machine_name' => 'sections',
   );
@@ -211,7 +211,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Media Education',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 8,
+    'weight' => 42,
     'uuid' => '87a044fd-1273-45d8-b072-fc5e4b06693f',
     'vocabulary_machine_name' => 'sections',
   );
@@ -219,7 +219,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'News',
     'description' => NULL,
     'format' => NULL,
-    'weight' => 7,
+    'weight' => 40,
     'uuid' => '89b6bc78-8599-4538-af57-9da1cbd343da',
     'vocabulary_machine_name' => 'sections',
   );
@@ -249,7 +249,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Events',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 5,
+    'weight' => 35,
     'uuid' => '8d5ea9f8-b121-4d09-a0ae-4769e0754a6e',
     'vocabulary_machine_name' => 'sections',
   );
@@ -346,7 +346,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'description' => '<p>For New Homepage</p>
 ',
     'format' => 'filtered_html',
-    'weight' => 0,
+    'weight' => 5,
     'uuid' => 'c4a3ed43-817a-419b-a56b-22c92f6f8f8f',
     'vocabulary_machine_name' => 'sections',
   );
@@ -387,7 +387,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Get Involved',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 6,
+    'weight' => 37,
     'uuid' => 'eb0f8d0d-0c1a-4de3-adde-0344b2de4fa0',
     'vocabulary_machine_name' => 'sections',
   );
@@ -450,7 +450,7 @@ function mnn_site_sections_uuid_features_default_terms() {
     'name' => 'Programming',
     'description' => '',
     'format' => 'filtered_html',
-    'weight' => 3,
+    'weight' => 31,
     'uuid' => 'ffe1cd71-fc63-402c-bfdd-6c085acfe3ff',
     'vocabulary_machine_name' => 'sections',
   );
