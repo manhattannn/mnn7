@@ -85,26 +85,23 @@ function mnn_channel_ds_layout_settings_info() {
   $ds_layout->entity_type = 'taxonomy_term';
   $ds_layout->bundle = 'channel';
   $ds_layout->view_mode = 'term_teaser';
-  $ds_layout->layout = 'cm_theme_ds_teaser';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
     'regions' => array(
-      'media' => array(
+      'ds_content' => array(
         0 => 'field_channel_logo',
-      ),
-      'wrapper' => array(
         1 => 'title',
         2 => 'description',
       ),
     ),
     'fields' => array(
-      'field_channel_logo' => 'media',
-      'title' => 'wrapper',
-      'description' => 'wrapper',
+      'field_channel_logo' => 'ds_content',
+      'title' => 'ds_content',
+      'description' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'media' => 'div',
-      'wrapper' => 'div',
+      'ds_content' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',

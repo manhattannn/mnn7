@@ -34,7 +34,7 @@ function mnn_channel_strongarm() {
       'display' => array(
         'description' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => TRUE,
           ),
           'term_teaser' => array(
