@@ -18,7 +18,7 @@ function cm_slideshow_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -44,14 +44,16 @@ function cm_slideshow_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'media' => array(
-        0 => 'field_cm_slideshow_image',
+        0 => 'field_cm_slideshow_link',
+        1 => 'field_cm_slideshow_image',
       ),
       'wrapper' => array(
-        1 => 'title',
-        2 => 'field_cm_slideshow_sub_header',
+        2 => 'title',
+        3 => 'field_cm_slideshow_sub_header',
       ),
     ),
     'fields' => array(
+      'field_cm_slideshow_link' => 'media',
       'field_cm_slideshow_image' => 'media',
       'title' => 'wrapper',
       'field_cm_slideshow_sub_header' => 'wrapper',

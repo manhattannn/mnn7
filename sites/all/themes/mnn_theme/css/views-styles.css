@@ -194,10 +194,21 @@ OUR CUSTOM MIXINS
   display: block !important;
   visibility: visible !important;
   height: auto !important;
+  position: relative;
+  z-index: 9;
+}
+#content .view-content-listing.view-display-id-panel_pane_2 .flexslider ul li .media .field-name-field-cm-slideshow-link a {
+  text-indent: -9999px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 #content .view-content-listing.view-display-id-panel_pane_2 .flexslider ul li .wrapper {
   width: 100%;
   padding: 10px !important;
+  position: relative;
+  z-index: 11;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
