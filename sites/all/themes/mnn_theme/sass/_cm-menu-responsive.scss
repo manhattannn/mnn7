@@ -22,16 +22,21 @@
       position:relative;
       display:block;
       padding: $gutter 3 * $gutter;
+      min-width: 120px;
+      height: 40px;
       @include breakpoint ($breakpoint-resp-menu) {
         width: 100%;
         text-align: center;
       }
-      &:before {
-        position: absolute;
-        left: $gutter / 2;
-        top: $gutter / 5;
-        content: "\2261";
-        font-size: 2em;
+      // &:before {
+      //   position: absolute;
+      //   left: $gutter / 2;
+      //   top: $gutter / 5;
+      //   content: "\2261";
+      //   font-size: 2em;
+      // }
+      &.resp-button {
+        background: url(../images/responsive-menu.png) no-repeat center center;
       }
     }
     // First level -> main menu items

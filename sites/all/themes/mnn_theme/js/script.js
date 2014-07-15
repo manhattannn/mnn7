@@ -37,7 +37,7 @@
     attach: function (context, settings) {
 
       if ($('#navigation #block-system-main-menu .block-wrapper').length) {
-        $('#navigation #block-system-main-menu .block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');
+        $('#navigation #block-system-main-menu .block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" class="resp-button" onclick></label>');
       }
       if ($('#navigation #block-system-main-menu .menu-block-wrapper').length) {
         $('#navigation #block-system-main-menu .menu-block-wrapper').prepend('<input type="checkbox" id="button"><label for="button" onclick>Menu</label>');

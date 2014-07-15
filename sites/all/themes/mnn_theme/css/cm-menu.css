@@ -212,13 +212,11 @@ body {
     position: relative;
     display: block;
     padding: 1em 3em;
+    min-width: 120px;
+    height: 40px;
   }
-  #navigation #block-system-main-menu .block-wrapper label:before {
-    position: absolute;
-    left: 0.5em;
-    top: 0.2em;
-    content: "\2261";
-    font-size: 2em;
+  #navigation #block-system-main-menu .block-wrapper label.resp-button {
+    background: url(../images/responsive-menu.png) no-repeat center center;
   }
   #navigation #block-system-main-menu .block-wrapper > ul {
     position: relative;
