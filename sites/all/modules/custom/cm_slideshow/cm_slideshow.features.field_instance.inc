@@ -39,9 +39,10 @@ function cm_slideshow_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'image_link' => '',
+          'image_style' => 'cm_slideshow_normal',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -50,11 +51,11 @@ function cm_slideshow_field_default_field_instances() {
               'text' => '',
               'title' => '',
             ),
-            'destination' => '[node:nid]',
+            'destination' => 'node/[node:nid]',
             'linked' => 1,
           ),
         ),
-        'type' => 'file_rendered',
+        'type' => 'image',
         'weight' => 0,
       ),
     ),
@@ -198,9 +199,8 @@ function cm_slideshow_field_default_field_instances() {
             'destination' => '',
             'linked' => 0,
           ),
-          'trim_length' => 200,
         ),
-        'type' => 'text_trimmed',
+        'type' => 'text_default',
         'weight' => 2,
       ),
     ),
