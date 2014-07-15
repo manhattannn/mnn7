@@ -157,7 +157,7 @@ OUR CUSTOM MIXINS
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
   padding-bottom: 0;
   position: relative;
   float: left;
@@ -237,4 +237,167 @@ OUR CUSTOM MIXINS
 }
 #content .view-content-listing.view-display-id-panel_pane_2 .flexslider .flex-control-nav li a.flex-active {
   background: #757575;
+}
+
+/* Channels Featured Videos */
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row {
+  padding: 0;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 6.66667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo:before, .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo:after {
+  content: '';
+  display: table;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo:after {
+  clear: both;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo:last-child {
+  margin-right: 0%;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-field-channel-logo img {
+  width: 40px;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 26.66667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 5px 0 5px;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:before, .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:after {
+  content: '';
+  display: table;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:after {
+  clear: both;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:last-child {
+  margin-right: 0%;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title h2 {
+  clear: none;
+  margin: 0;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title h2 a {
+  color: #999;
+}
+@media (max-width: 768px) {
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 93.33333%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:before, .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:after {
+    content: '';
+    display: table;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:after {
+    clear: both;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .field-name-title:last-child {
+    margin-right: 0%;
+  }
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description {
+  font-size: 14px;
+  line-height: 14px;
+  padding: 5px 0 0 10px;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 66.66667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:before, .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:after {
+  content: '';
+  display: table;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:after {
+  clear: both;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:last-child {
+  margin-right: 0%;
+}
+.cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description p {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:before, .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:after {
+    content: '';
+    display: table;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:after {
+    clear: both;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:last-child {
+    margin-right: 0%;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:first-child {
+    margin-left: auto;
+  }
+  .cm-row .pane-views-panes .view-mnn-channel-lists .views-row .taxonomy-term-description:last-child {
+    margin-right: auto;
+  }
+}
+.cm-row .pane-content-listing-panel-pane-1 {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
 }

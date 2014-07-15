@@ -30,7 +30,20 @@ function mnn_channel_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '30',
+        ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+        'name' => array(
+          'weight' => '-5',
+        ),
+        'description' => array(
+          'weight' => '0',
+        ),
+      ),
       'display' => array(
         'description' => array(
           'default' => array(
