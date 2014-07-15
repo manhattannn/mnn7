@@ -51,7 +51,7 @@ function mnn_channel_strongarm() {
             'visible' => TRUE,
           ),
           'term_teaser' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => TRUE,
           ),
           'full' => array(
