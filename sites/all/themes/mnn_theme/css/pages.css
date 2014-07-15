@@ -575,6 +575,20 @@ body {
   margin-right: auto;
 }
 
+.page-schedule #schedule {
+  float: none;
+}
+.page-schedule #schedule p {
+  margin: 0;
+}
+.page-schedule #schedule a.prev, .page-schedule #schedule a.next {
+  margin: 5px;
+  text-align: center;
+}
+.page-schedule #schedule a.prev span, .page-schedule #schedule a.next span {
+  height: auto;
+}
+
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }

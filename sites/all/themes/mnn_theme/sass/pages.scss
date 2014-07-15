@@ -262,6 +262,21 @@ body {
 
 .region-highlighted {
 }
+.page-schedule {
+  #schedule {
+    float: none;
+    p {
+      margin: 0;
+    }
+    a.prev, a.next {
+      margin: 5px;
+      text-align: center;
+      span {
+        height: auto;
+      }
+    }
+  }
+}
 
 .breadcrumb { /* The path to the current page in the form of a list of links */
   ol {
