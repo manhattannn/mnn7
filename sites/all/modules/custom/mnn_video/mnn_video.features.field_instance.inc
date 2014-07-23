@@ -63,6 +63,56 @@ function mnn_video_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-mnn_video-field_channel_category'
+  $field_instances['node-mnn_video-field_channel_category'] = array(
+    'bundle' => 'mnn_video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select one or more channels to display this video on.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_channel_category',
+    'label' => 'Channel',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-mnn_video-field_site_section'
   $field_instances['node-mnn_video-field_site_section'] = array(
     'bundle' => 'mnn_video',
@@ -195,7 +245,9 @@ function mnn_video_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Channel');
   t('Section');
+  t('Select one or more channels to display this video on.');
   t('Video');
 
   return $field_instances;
