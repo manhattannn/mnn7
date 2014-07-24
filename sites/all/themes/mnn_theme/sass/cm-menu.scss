@@ -49,9 +49,9 @@ $selector: "#navigation #block-system-main-menu .block-wrapper";
 
 // Fix for Android
 // http://timpietrusky.com/advanced-checkbox-hack
-body {
-  -webkit-animation: bugfix infinite 1s;
-}
+// body {
+//   -webkit-animation: bugfix infinite 1s;
+// }
 
 @-webkit-keyframes bugfix {
   from { padding: 0; }

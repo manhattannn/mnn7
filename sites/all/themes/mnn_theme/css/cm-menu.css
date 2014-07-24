@@ -89,10 +89,6 @@ OUR CUSTOM MIXINS
   align($direction: both)
   cf()
 */
-body {
-  -webkit-animation: bugfix infinite 1s;
-}
-
 @-webkit-keyframes bugfix {
   from {
     padding: 0;
