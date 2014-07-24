@@ -589,6 +589,151 @@ body {
   height: auto;
 }
 
+#content .term-listing-heading .field-name-field-channel-embed {
+  clear: both;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds {
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .video {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 67.4%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:before, #content .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:after {
+  content: '';
+  display: table;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:after {
+  clear: both;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:last-child {
+  margin-right: 0%;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 32.6%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:before, #content .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:after {
+  content: '';
+  display: table;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:after {
+  clear: both;
+}
+#content .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:last-child {
+  margin-right: 0%;
+}
+#content .term-listing-heading .field-name-field-channel-logo {
+  clear: both;
+  padding-top: 20px;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:before, #content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:after {
+  content: '';
+  display: table;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:after {
+  clear: both;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:last-child {
+  margin-right: 0%;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:first-child {
+  margin-left: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .video:last-child {
+  margin-right: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:before, #content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:after {
+  content: '';
+  display: table;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:after {
+  clear: both;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:last-child {
+  margin-right: 0%;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:first-child {
+  margin-left: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat:last-child {
+  margin-right: auto;
+}
+#content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat .fluid-width-video-wrapper {
+  padding-top: 55% !important;
+}
+@media (max-width: 520px) {
+  #content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat .fluid-width-video-wrapper {
+    padding-top: 65% !important;
+  }
+}
+@media (max-width: 400px) {
+  #content.max-680 .term-listing-heading .field-name-field-channel-embed .channel-embeds .chat .fluid-width-video-wrapper {
+    padding-top: 95% !important;
+  }
+}
+
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }
@@ -638,50 +783,6 @@ div.messages ul {
   margin-bottom: 0;
 }
 
-div.status {
-  /* Normal priority messages */
-}
-
-div.warning,
-tr.warning {
-  /* Medium priority messages */
-  /* border: 1px solid #f0c020; */
-  /* Drupal core uses: 1px solid #f0c020 */
-}
-
-div.error,
-tr.error {
-  /* High priority messages. See also the .error declaration below. */
-}
-
-.error {
-  /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */
-  /* Drupal core uses a #e55 background */
-}
-
-.warning {
-  /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */
-  /* Drupal core uses a #e09010 background */
-}
-
-.tabs {
-  /* See also the tabs.css file. */
-}
-
-.region-help {
-  /* Help text on a page */
-}
-
-.more-help-link {
-  /* Link to more help */
-}
-
-.region-content {
-  /* Wrapper for the actual page content */
-}
-
 ul.inline {
   /* List of links generated by theme_links() */
   display: inline;
@@ -707,34 +808,4 @@ span.field-label {
 .item-list .pager li {
   /* Each page number in the pager list */
   padding: 0 0.5em;
-}
-
-.feed-icon {
-  /* The link to the RSS or Atom feed for the current list of content */
-}
-
-.more-link {
-  /* Aggregator, blog, and forum more link */
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-/*
- * Footer
- */
-/*
- * Page bottom
- */
-.region-bottom {
-  /* Wrapper for any blocks placed in the page bottom region */
 }
