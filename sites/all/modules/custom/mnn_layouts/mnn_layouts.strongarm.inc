@@ -251,7 +251,8 @@ function mnn_layouts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fitvids_customselectors';
-  $strongarm->value = 'http://new.livestream.com';
+  $strongarm->value = 'http://new.livestream.com
+http://chatroll.com';
   $export['fitvids_customselectors'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -259,7 +260,8 @@ function mnn_layouts_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fitvids_selectors';
   $strongarm->value = 'body
-field-name-field-channel-embed';
+.channel-embeds .video
+.channel-embeds .chat';
   $export['fitvids_selectors'] = $strongarm;
 
   $strongarm = new stdClass();
