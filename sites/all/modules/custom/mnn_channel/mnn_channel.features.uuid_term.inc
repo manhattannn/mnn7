@@ -20,10 +20,15 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>
+          'value' => '<div class="channel-embeds"><div class="video"><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></div><div class="chat"><iframe allowtransparency="true" frameborder="0" height="450" marginheight="0" marginwidth="0" scrolling="no" src="http://chatroll.com/embed/chat/mnn1?id=EdZB_sVoFr-&amp;platform=html&amp;w=$0" width="300"></iframe></div></div>
 ',
           'format' => 'full_html',
-          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></p>
+          'safe_value' => '<div class="channel-embeds">
+<div class="video">
+<iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6480540/events/2616259/player?width=620&amp;height=450&amp;autoPlay=true&amp;mute=false" width="620"></iframe></div>
+<div class="chat">
+<iframe allowtransparency="true" frameborder="0" height="450" marginheight="0" marginwidth="0" scrolling="no" src="http://chatroll.com/embed/chat/mnn1?id=EdZB_sVoFr-&amp;platform=html&amp;w=$0" width="300"></iframe></div>
+</div>
 ',
         ),
       ),
@@ -106,10 +111,18 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>
+          'value' => '<div class="channel-embeds">
+	<div class="video"><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="620"></iframe></div>
+	<div class="chat"><iframe allowtransparency="true" frameborder="0" height="450" marginheight="0" marginwidth="0" scrolling="no" src="http://chatroll.com/embed/chat/mnn3?id=y_fEp0ciCe8&amp;platform=html&amp;w=$0" width="300"></iframe></div>
+</div>
 ',
           'format' => 'full_html',
-          'safe_value' => '<p><iframe frameborder="0" height="360" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="640"></iframe></p>
+          'safe_value' => '<div class="channel-embeds">
+<div class="video">
+<iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6312590/events/2611503/player?width=640&amp;height=360&amp;autoPlay=false&amp;mute=false" width="620"></iframe></div>
+<div class="chat">
+<iframe allowtransparency="true" frameborder="0" height="450" marginheight="0" marginwidth="0" scrolling="no" src="http://chatroll.com/embed/chat/mnn3?id=y_fEp0ciCe8&amp;platform=html&amp;w=$0" width="300"></iframe></div>
+</div>
 ',
         ),
       ),
@@ -192,10 +205,17 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>
-',
+          'value' => '<div class="channel-embeds">
+	<div class="video"><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></div>
+	<div class="chat"><iframe width="300" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://chatroll.com/embed/chat/mnn-2?id=QFx8fVXzmXk&amp;platform=html&amp;w=$0"></iframe></div>
+</div>',
           'format' => 'full_html',
-          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></p>
+          'safe_value' => '<div class="channel-embeds">
+<div class="video">
+<iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478976/events/2616018/player?width=620&amp;height=450&amp;autoPlay=false&amp;mute=false" width="620"></iframe></div>
+<div class="chat">
+<iframe width="300" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://chatroll.com/embed/chat/mnn-2?id=QFx8fVXzmXk&amp;platform=html&amp;w=$0"></iframe></div>
+</div>
 ',
         ),
       ),
@@ -278,10 +298,19 @@ function mnn_channel_uuid_features_default_terms() {
     'field_channel_embed' => array(
       'und' => array(
         0 => array(
-          'value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>
+          'value' => '<div class="channel-embeds">
+	<div class="video"><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></div>
+	<div class="chat"><iframe width="300" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://chatroll.com/embed/chat/mnn4?id=wJgqo7IsMoQ&amp;platform=html&amp;w=$0"></iframe>
+</div>
+</div>
 ',
           'format' => 'full_html',
-          'safe_value' => '<p><iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></p>
+          'safe_value' => '<div class="channel-embeds">
+<div class="video">
+<iframe frameborder="0" height="450" scrolling="no" src="http://new.livestream.com/accounts/6478935/events/2616010/player?width=620&amp;height=450&amp;autoPlay=fase&amp;mute=false" width="620"></iframe></div>
+<div class="chat">
+<iframe width="300" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="http://chatroll.com/embed/chat/mnn4?id=wJgqo7IsMoQ&amp;platform=html&amp;w=$0"></iframe></div>
+</div>
 ',
         ),
       ),
