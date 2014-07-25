@@ -126,6 +126,16 @@ $selector: "#navigation #block-system-main-menu .block-wrapper";
         // box-shadow: inset 0 0 10px #999;
       }
     }
+    &.first {
+      a {
+        padding-left: 0;
+      }
+    }
+    @include breakpoint($breakpoint-full-width) {
+      a {
+        padding-right: 0;
+      }
+    }
   }
   a {
     color: $baseMenuColor;

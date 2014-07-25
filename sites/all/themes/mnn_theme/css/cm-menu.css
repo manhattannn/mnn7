@@ -148,6 +148,14 @@ OUR CUSTOM MIXINS
   padding: 1em 1em;
   text-transform: uppercase;
 }
+#navigation #block-system-main-menu .block-wrapper > ul > li.first a {
+  padding-left: 0;
+}
+@media (max-width: 1200px) {
+  #navigation #block-system-main-menu .block-wrapper > ul > li a {
+    padding-right: 0;
+  }
+}
 #navigation #block-system-main-menu .block-wrapper > ul a {
   color: #474747;
   text-decoration: none;
@@ -273,6 +281,9 @@ OUR CUSTOM MIXINS
     float: none;
     display: block;
     padding: 1em;
+  }
+  #navigation #block-system-main-menu .block-wrapper > ul > li.first a {
+    padding-left: .5em;
   }
   #navigation #block-system-main-menu .block-wrapper > ul ul {
     position: static;
