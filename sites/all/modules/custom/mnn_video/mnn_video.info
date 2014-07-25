@@ -27,6 +27,7 @@ dependencies[] = tweetbutton
 features[ctools][] = ds:ds:1
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = strongarm:strongarm:1
+features[ds_field_settings][] = node|mnn_video|default
 features[ds_field_settings][] = node|mnn_video|teaser
 features[ds_layout_settings][] = file|video|default
 features[ds_layout_settings][] = node|mnn_video|default
