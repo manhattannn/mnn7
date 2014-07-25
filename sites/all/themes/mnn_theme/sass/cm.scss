@@ -297,20 +297,28 @@ aside.sidebars {
   float: left;
   margin: 4px;
 }
-.youtube a{
+.youtube a {
   @include social-sprite(youtube);
   @extend %social;
 }
-.vimeo a{
+.vimeo a {
   @include social-sprite(vimeo);
   @extend %social;
 }
-.facebook a{
+.facebook a {
   @include social-sprite(facebook);
   @extend %social;
 }
-.twitter a{
+.twitter a {
   @include social-sprite(twitter);
+  @extend %social;
+}
+.instagram a {
+  @include social-sprite(instagram);
+  @extend %social;
+}
+.linkedin a {
+  @include social-sprite(linkedin);
   @extend %social;
 }
 
