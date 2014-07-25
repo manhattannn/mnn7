@@ -34,7 +34,7 @@ function mnn_video_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -63,17 +63,19 @@ function mnn_video_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-mnn_video-field_channel_category'
-  $field_instances['node-mnn_video-field_channel_category'] = array(
+  // Exported field_instance: 'node-mnn_video-field_addthis'
+  $field_instances['node-mnn_video-field_addthis'] = array(
     'bundle' => 'mnn_video',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Select one or more channels to display this video on.',
+    'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
+        'label' => 'hidden',
+        'module' => 'addthis_displays',
         'settings' => array(
+          'button_size' => 'big',
+          'extra_css' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -86,8 +88,45 @@ function mnn_video_field_default_field_instances() {
             'linked' => 0,
           ),
         ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
+        'type' => 'addthis_basic_button',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(),
+      'type' => 'addthis_button_widget',
+      'weight' => 7,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-mnn_video-field_channel_category'
+  $field_instances['node-mnn_video-field_channel_category'] = array(
+    'bundle' => 'mnn_video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select one or more channels to display this video on.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -108,7 +147,7 @@ function mnn_video_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -128,7 +167,7 @@ function mnn_video_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -149,9 +188,67 @@ function mnn_video_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 5,
     ),
     'workbench_access_field' => 1,
+  );
+
+  // Exported field_instance: 'node-mnn_video-field_tweetbutton'
+  $field_instances['node-mnn_video-field_tweetbutton'] = array(
+    'bundle' => 'mnn_video',
+    'default_value' => array(
+      0 => array(
+        'account' => '',
+        'text' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'tweetbutton',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'size' => 'medium',
+        ),
+        'type' => 'tweetbutton_formatter_button_horizontal',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tweetbutton',
+    'label' => 'Tweetbutton',
+    'required' => 0,
+    'settings' => array(
+      'author_twitter' => '',
+      'tweet_text' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'tweetbutton',
+      'settings' => array(),
+      'type' => 'tweetbutton',
+      'weight' => 8,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-mnn_video-field_video'
@@ -244,10 +341,12 @@ function mnn_video_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('AddThis');
   t('Body');
   t('Channel');
   t('Section');
   t('Select one or more channels to display this video on.');
+  t('Tweetbutton');
   t('Video');
 
   return $field_instances;

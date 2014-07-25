@@ -78,12 +78,22 @@ function mnn_video_ds_layout_settings_info() {
     'regions' => array(
       'top' => array(
         0 => 'field_video',
-        1 => 'body',
+        1 => 'title',
+        2 => 'post_date',
+        3 => 'body',
+        4 => 'field_addthis',
+        5 => 'fblikebutton_ds_field',
+        6 => 'field_tweetbutton',
       ),
     ),
     'fields' => array(
       'field_video' => 'top',
+      'title' => 'top',
+      'post_date' => 'top',
       'body' => 'top',
+      'field_addthis' => 'top',
+      'fblikebutton_ds_field' => 'top',
+      'field_tweetbutton' => 'top',
     ),
     'classes' => array(),
     'wrappers' => array(
