@@ -154,12 +154,16 @@ function mnn_layouts_default_panels_mini() {
       'title' => '',
       'body' => '<div class="content">
 	<div class="col">
-		<div class="button youtube"><a href="http://www.youtube.com/user/MNN537">Watch Clips on YouTube</a></div>
-		<div class="button vimeo"><a href="http://vimeo.com/mnn">Watch Clips on Vimeo</a></div>
+		<div class="button youtube"><a href="http://www.youtube.com/user/MNN537" target="_blank">Watch Clips on YouTube</a></div>
+		<div class="button vimeo"><a href="http://vimeo.com/mnn" target="_blank">Watch Clips on Vimeo</a></div>
 	</div>
 	<div class="col">
-		<div class="button facebook"><a href="http://www.facebook.com/pages/MNN/326158948121?sk=wall">Fan us on Facebook</a></div>
-		<div class="button twitter"><a href="http://twitter.com/MNN59">Follow us on Twitter</a></div>
+		<div class="button facebook"><a href="http://www.facebook.com/pages/MNN/326158948121?sk=wall" target="_blank">Fan us on Facebook</a></div>
+		<div class="button twitter"><a href="http://twitter.com/MNN59" target="_blank">Follow us on Twitter</a></div>
+	</div>
+	<div class="col">
+		<div class="button instagram"><a href="http://instagram.com/mnnnyc" target="_blank">Instagram</a></div>
+		<div class="button linkedin"><a href="https://www.linkedin.com/company/manhattan-neighborhood-network" target="_blank">LinkedIn</a></div>
 	</div>
 </div>
 ',
