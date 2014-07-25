@@ -1,0 +1,44 @@
+
+<h1 class="text-center">Schedule</h1>
+
+<div class="table-responsive" ng-controller="cmScheduleCtrl">
+<table class="table table-bordered table-hover">
+  <thead>
+    <div class="row">
+      <div class="col-xs-2">
+      <button type="button" class="btn btn-default form-control" ng-click="move(-1)"><i class="glyphicon glyphicon-chevron-left"></i></button>
+    </div>
+    <div class="col-xs-8">
+      <input ng-model="date" ng-show="false">
+      <span class="btn btn-default form-control">{{date | date : ShortDate }}</span>
+      </div>
+    <div class="col-xs-2">
+    <button type="button" class="btn btn-default form-control" ng-click="move(1)"><i class="glyphicon glyphicon-chevron-right"></i></button>
+  </div>
+  <th style="width: 8%">Time</th>
+  <th style="width: 22%">Channel 1</th>
+  <th style="width: 22%">Channel 2</th>
+  <th style="width: 22%">Channel 3</th>
+  <th style="width: 22%">Channel 4</th>
+</thead>
+  <tr ng-repeat="slot in timeslots">
+    <td>{{slot.time.display}}</td>
+    <td ng-repeat="ch in channels"
+    ng-if="slot[ch]"
+    rowspan="{{slot[ch].span ? slot[ch].span : 1}}"
+    tooltip="{{slot[ch].description}}"
+    tooltip-append-to-body = "true"
+    tooltip-placement = "bottom"
+    tooltip-toggle=>
+      <div class="placeholder" ng-if="slot[ch] == 'placeholder'">
+        <h5>TBD</h5>
+        <p> No show scheduled, check back later.</p>
+      </div>
+      <div class="show" ng-if="slot[ch].title">
+        <h5>{{slot[ch].title}}</h5>
+        <p><em>{{slot[ch].category}}</em><p>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>
