@@ -1,3 +1,44 @@
 <?php
 
+/**
+ * Implements hook_menu().
+ */
+function mnn_schedule_menu() {
+  $items = array();
+  $items['schedule'] = array(
+    'title' => 'Schedule',
+    'description' => t('Daily program schedule'),
+    'page callback' => 'mnn_schedule_page',
+    'access arguments' => array('access content'),
+    'file' => 'mnn_schedule.pages.inc'
+  );
+  return $items;
+}
 
+/**
+ * Implementation of hook_init().
+ */
+function mnn_schedule_init()
+{
+  $date_now = new DateTime();
+
+  $mnn_schedule_js_settings = array(
+    'scheduleDataUrl' => variable_get('mnn_show_reporting_server_url', ''),
+    'serverDate' => $date_now->format('m/d/Y'),
+  );
+  drupal_add_js(array('mnn_schedule' => $mnn_schedule_js_settings), 'setting');
+}
+
+/* @todo If we end up doing more angular stuff, then we should take the time to add it with Library integration."
+ * This was a start on pulling directly from bower.json.
+function mnn_schedule_library() {
+  $dependency_file = file_get_contents(drupal_get_path('module', 'mnn_schedule') . '/app/bower.json');
+  if ($dependency_file !== FALSE) {
+    $dependencies = drupal_json_decode($dependency_file);
+    if (isset($dependencies['dependencies'])) {
+      foreach ($dependencies['dependencies'] as $name => $version) {
+        dpm($version, $name);
+      }
+    }
+  }
+}*/

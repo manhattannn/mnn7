@@ -59,13 +59,14 @@ function mnn_show_menu() {
     'type' => MENU_CALLBACK,
     'file' => 'mnn_show.shows.inc',
   );
-  $items['schedule'] = array(
+/*  $items['schedule'] = array(
     'title' => 'Schedule',
     'page callback' => 'mnn_show_schedule',
     'access arguments' => array('access content'),
     'type' => MENU_NORMAL_ITEM,
     'file' => 'mnn_show.schedule.inc',
   );
+*/
   $items['youth-channel/schedule'] = array(
     'title' => 'Youth Channel Schedule',
     'page callback' => 'mnn_show_yc_schedule',
