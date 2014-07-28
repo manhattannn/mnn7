@@ -816,3 +816,36 @@ span.field-label {
   /* Each page number in the pager list */
   padding: 0 0.5em;
 }
+
+/* Schedule table */
+#content .table-responsive.ng-scope .schedule-controls {
+  clear: both;
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
+#content .table-responsive.ng-scope .schedule-controls .col-xs-2 {
+  padding: 0;
+}
+#content .table-responsive.ng-scope .table {
+  clear: both;
+  margin: 0;
+}
+#content .table-responsive.ng-scope .table thead th {
+  color: #B9DE0F;
+  background: #f5f5f5;
+  border-bottom-width: 1px;
+}
+#content .table-responsive.ng-scope .table tbody td h5 {
+  margin: 0;
+}
+#content .table-responsive.ng-scope .table tbody td.time {
+  font-size: 12px;
+  background: #f8f8f8;
+}
+#content .table-responsive.ng-scope .table tbody td p.sc, #content .table-responsive.ng-scope .table tbody td p.empty {
+  font-size: 14px;
+}
+#content .table-responsive.ng-scope .table tbody td.ng-scope {
+  cursor: help;
+}

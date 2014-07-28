@@ -21,7 +21,7 @@
       <th style="width: 22%">Channel 4</th>
     </thead>
     <tr ng-repeat="slot in timeslots" >
-      <td>{{slot.time.display}}</td>
+      <td class="time">{{slot.time.display}}</td>
       <td ng-repeat="ch in channels"
       ng-if="slot[ch]"
       rowspan="{{slot[ch].span ? slot[ch].span : 1}}"
@@ -31,11 +31,11 @@
       tooltip-toggle=>
         <div class="placeholder" ng-if="slot[ch] == 'placeholder'">
           <h5>TBD</h5>
-          <p> No show scheduled, check back later.</p>
+          <p class="empty"> No show scheduled, check back later.</p>
         </div>
         <div class="show" ng-if="slot[ch].title">
           <h5>{{slot[ch].title}}</h5>
-          <p><em>{{slot[ch].category}}</em><p>
+          <p class="sc"><em>{{slot[ch].category}}</em><p>
         </div>
       </td>
     </tr>
