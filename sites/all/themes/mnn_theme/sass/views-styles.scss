@@ -224,68 +224,38 @@
     .left {
       .pane-views-panes {
         .view-content-listing {
-          .views-row {
-            padding: 0;
+          .cm-col.grid-item {
             @include col(1/2, $gutter: 0, $cycle: 2);
             @include box-sizing(border-box);
-            .cm-col.grid-item {
-              width: 100%;
-              @include box-sizing(border-box);
-              .field-name-title {
-                padding: 5px 5px 0 5px;
-                float: left;
-                h2 {
-                  clear: none;
-                  margin: 0 !important;
-                  a {
-                    color: #000;
-                    text-decoration: none;
-                  }
-                }
-              }
-              .field-name-more-link {
-                float: left;
-                padding: 13px 10px 13px 7px;
-                font-size: 14px;
-                font-weight: bold;
+            .inside {
+              margin-right: 20px;
+              @include breakpoint ($breakpoint-large-width) {
+                margin-right: 20px;
               }
             }
-          }
-        }
-      }
-    }
-    &.max-680 {
-      .left {
-        .pane-views-panes {
-          .view-content-listing {
-            .views-row {
-              padding: 0;
-              @include col(1/2, $gutter: 0, $cycle: 2);
-              @include box-sizing(border-box);
-              @include breakpoint ($breakpoint-small-width) {
-                @include col();
-                @include stack();
+            .field-name-title {
+              padding: 5px 5px 0 5px;
+              float: left;
+              h2 {
+                clear: none;
+                margin: 0 !important;
+                a {
+                  color: #000;
+                  text-decoration: none;
+                }
               }
-              .cm-col.grid-item {
-                width: 97%;
-                .field-name-title {
-                  padding: 5px 5px 0 5px;
-                  float: left;
-                  h2 {
-                    clear: none;
-                    margin: 0 !important;
-                    a {
-                      color: #000;
-                      text-decoration: none;
-                    }
-                  }
-                }
-                .field-name-more-link {
-                  float: left;
-                  padding: 13px 10px 13px 7px;
-                  font-size: 14px;
-                  font-weight: bold;
-                }
+            }
+            .field-name-more-link {
+              float: left;
+              padding: 13px 10px 13px 7px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+            @include breakpoint ($breakpoint-small-width) {
+              @include col();
+              @include stack();
+              .inside {
+                margin: 0;
               }
             }
           }
