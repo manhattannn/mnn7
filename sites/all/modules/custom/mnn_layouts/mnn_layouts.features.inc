@@ -76,9 +76,9 @@ function mnn_layouts_image_default_styles() {
   // Exported image style: cm_wide_large.
   $styles['cm_wide_large'] = array(
     'name' => 'cm_wide_large',
-    'label' => 'Wide Large (1000x500)',
+    'label' => 'Wide Large (900x569)',
     'effects' => array(
-      2 => array(
+      12 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -88,13 +88,13 @@ function mnn_layouts_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
-          'width' => 1000,
+          'width' => 900,
           'height' => '',
           'upscale' => 1,
         ),
         'weight' => -10,
       ),
-      1 => array(
+      13 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -104,8 +104,8 @@ function mnn_layouts_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 1000,
-          'height' => 500,
+          'width' => 900,
+          'height' => 569,
         ),
         'weight' => -9,
       ),
@@ -115,9 +115,9 @@ function mnn_layouts_image_default_styles() {
   // Exported image style: cm_wide_small.
   $styles['cm_wide_small'] = array(
     'name' => 'cm_wide_small',
-    'label' => 'Wide Small (400x200)',
+    'label' => 'Wide Small (400x253)',
     'effects' => array(
-      6 => array(
+      14 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -133,7 +133,7 @@ function mnn_layouts_image_default_styles() {
         ),
         'weight' => -10,
       ),
-      7 => array(
+      15 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -144,7 +144,7 @@ function mnn_layouts_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 400,
-          'height' => 200,
+          'height' => 253,
         ),
         'weight' => 2,
       ),
