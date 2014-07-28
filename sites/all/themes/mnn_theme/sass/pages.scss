@@ -434,3 +434,40 @@ span.field-label { /* The inline field label used by the Fences module */
     }
   }
 }
+
+/* Channel pages */
+
+.term-listing-heading {
+  .cm-row {
+    margin: 0;
+  }
+  .field-name-field-channel-logo {
+    float: left;
+  }
+  .taxonomy-term-description {
+    float: left;
+    padding: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: #000;
+  }
+  .field-name-field-channel-where-to-watch {
+    clear: both;
+    margin: 20px 0;
+    padding: 15px 20px 20px 20px;
+    background: #f9f9f9;
+    .field-label {
+      clear: both;
+    }
+    .field-items {
+      clear: both;
+      width: 100%;
+      table {
+        margin: 0;
+        width: 100%;
+        td {
+          float: left;
+        }
+      }
+    }
+  }
+}
