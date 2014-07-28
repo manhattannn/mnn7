@@ -53,9 +53,9 @@ function mnn_layouts_image_default_styles() {
   // Exported image style: cm_teaser.
   $styles['cm_teaser'] = array(
     'name' => 'cm_teaser',
-    'label' => 'Teaser (300x160)',
+    'label' => 'Teaser (400x253)',
     'effects' => array(
-      8 => array(
+      12 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -65,8 +65,8 @@ function mnn_layouts_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 300,
-          'height' => 160,
+          'width' => 400,
+          'height' => 253,
         ),
         'weight' => 2,
       ),
