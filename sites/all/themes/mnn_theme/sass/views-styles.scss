@@ -216,3 +216,81 @@
     width: 100%;
   }
 }
+
+/* Producer's Videos */
+
+#content {
+  .cm-row {
+    .left {
+      .pane-views-panes {
+        .view-content-listing {
+          .views-row {
+            padding: 0;
+            @include col(1/2, $gutter: 0, $cycle: 2);
+            @include box-sizing(border-box);
+            .cm-col.grid-item {
+              width: 100%;
+              @include box-sizing(border-box);
+              .field-name-title {
+                padding: 5px 5px 0 5px;
+                float: left;
+                h2 {
+                  clear: none;
+                  margin: 0 !important;
+                  a {
+                    color: #000;
+                    text-decoration: none;
+                  }
+                }
+              }
+              .field-name-more-link {
+                float: left;
+                padding: 13px 10px 13px 7px;
+                font-size: 14px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.max-680 {
+      .left {
+        .pane-views-panes {
+          .view-content-listing {
+            .views-row {
+              padding: 0;
+              @include col(1/2, $gutter: 0, $cycle: 2);
+              @include box-sizing(border-box);
+              @include breakpoint ($breakpoint-small-width) {
+                @include col();
+                @include stack();
+              }
+              .cm-col.grid-item {
+                width: 97%;
+                .field-name-title {
+                  padding: 5px 5px 0 5px;
+                  float: left;
+                  h2 {
+                    clear: none;
+                    margin: 0 !important;
+                    a {
+                      color: #000;
+                      text-decoration: none;
+                    }
+                  }
+                }
+                .field-name-more-link {
+                  float: left;
+                  padding: 13px 10px 13px 7px;
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
