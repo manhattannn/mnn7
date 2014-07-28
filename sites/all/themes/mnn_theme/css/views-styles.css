@@ -213,7 +213,7 @@ OUR CUSTOM MIXINS
 }
 #content .view-content-listing.view-display-id-panel_pane_2 .flexslider ul li .wrapper {
   width: 100%;
-  padding: 10px !important;
+  padding: 10px 10px 0 10px !important;
   position: relative;
   z-index: 11;
   -webkit-box-sizing: border-box;
@@ -240,7 +240,7 @@ OUR CUSTOM MIXINS
   margin: 0;
   padding: 0;
   z-index: 5;
-  padding: 10px 5px;
+  padding: 0px 5px 10px 5px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
