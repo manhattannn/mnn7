@@ -92,6 +92,15 @@ function mnn_user_user_default_permissions() {
     'module' => 'devel',
   );
 
+  // Exported permission: 'access linked field list'.
+  $permissions['access linked field list'] = array(
+    'name' => 'access linked field list',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'linked_field',
+  );
+
   // Exported permission: 'access navbar'.
   $permissions['access navbar'] = array(
     'name' => 'access navbar',
@@ -227,6 +236,15 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: 'administer block classes'.
+  $permissions['administer block classes'] = array(
+    'name' => 'administer block classes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'block_class',
   );
 
   // Exported permission: 'administer blocks'.
@@ -418,6 +436,15 @@ function mnn_user_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'administer nodequeue'.
+  $permissions['administer nodequeue'] = array(
+    'name' => 'administer nodequeue',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'nodequeue',
+  );
+
   // Exported permission: 'administer nodes'.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
@@ -472,17 +499,12 @@ function mnn_user_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node mnn_video defaults'.
-  $permissions['administer panelizer node mnn_video defaults'] = array(
-    'name' => 'administer panelizer node mnn_video defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node mnn_video_feed defaults'.
-  $permissions['administer panelizer node mnn_video_feed defaults'] = array(
-    'name' => 'administer panelizer node mnn_video_feed defaults',
-    'roles' => array(),
+  // Exported permission: 'administer panelizer node cm_slideshow_slide defaults'.
+  $permissions['administer panelizer node cm_slideshow_slide defaults'] = array(
+    'name' => 'administer panelizer node cm_slideshow_slide defaults',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'panelizer',
   );
 
@@ -823,6 +845,16 @@ function mnn_user_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create cm_slideshow_slide content'.
+  $permissions['create cm_slideshow_slide content'] = array(
+    'name' => 'create cm_slideshow_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create fieldable snippets_snippet'.
   $permissions['create fieldable snippets_snippet'] = array(
     'name' => 'create fieldable snippets_snippet',
@@ -920,6 +952,16 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any cm_slideshow_slide content'.
+  $permissions['delete any cm_slideshow_slide content'] = array(
+    'name' => 'delete any cm_slideshow_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
@@ -1006,6 +1048,16 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own cm_slideshow_slide content'.
+  $permissions['delete own cm_slideshow_slide content'] = array(
+    'name' => 'delete own cm_slideshow_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own document files'.
@@ -1201,6 +1253,16 @@ function mnn_user_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any cm_slideshow_slide content'.
+  $permissions['edit any cm_slideshow_slide content'] = array(
+    'name' => 'edit any cm_slideshow_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
@@ -1298,6 +1360,16 @@ function mnn_user_user_default_permissions() {
       'staff' => 'staff',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own cm_slideshow_slide content'.
+  $permissions['edit own cm_slideshow_slide content'] = array(
+    'name' => 'edit own cm_slideshow_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'staff' => 'staff',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own document files'.
@@ -1424,6 +1496,24 @@ function mnn_user_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'manipulate all queues'.
+  $permissions['manipulate all queues'] = array(
+    'name' => 'manipulate all queues',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'nodequeue',
+  );
+
+  // Exported permission: 'manipulate queues'.
+  $permissions['manipulate queues'] = array(
+    'name' => 'manipulate queues',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'nodequeue',
   );
 
   // Exported permission: 'migration information'.
