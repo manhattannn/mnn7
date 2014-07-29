@@ -43,7 +43,7 @@ function cm_slideshow_image_default_styles() {
     'name' => 'cm_slideshow_mobile',
     'label' => 'cm_slideshow_mobile',
     'effects' => array(
-      10 => array(
+      19 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -54,7 +54,7 @@ function cm_slideshow_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 400,
-          'height' => 253,
+          'height' => 167,
         ),
         'weight' => 1,
       ),
@@ -66,7 +66,7 @@ function cm_slideshow_image_default_styles() {
     'name' => 'cm_slideshow_narrow',
     'label' => 'cm_slideshow_narrow',
     'effects' => array(
-      9 => array(
+      18 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -77,7 +77,7 @@ function cm_slideshow_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 712,
-          'height' => 450,
+          'height' => 297,
         ),
         'weight' => 1,
       ),
@@ -89,7 +89,7 @@ function cm_slideshow_image_default_styles() {
     'name' => 'cm_slideshow_normal',
     'label' => 'cm_slideshow_normal',
     'effects' => array(
-      8 => array(
+      16 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -100,7 +100,7 @@ function cm_slideshow_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 900,
-          'height' => 569,
+          'height' => 375,
         ),
         'weight' => 1,
       ),
@@ -112,7 +112,7 @@ function cm_slideshow_image_default_styles() {
     'name' => 'cm_slideshow_wide',
     'label' => 'cm_slideshow_wide',
     'effects' => array(
-      11 => array(
+      17 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -123,7 +123,7 @@ function cm_slideshow_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 1200,
-          'height' => 758,
+          'height' => 500,
         ),
         'weight' => 1,
       ),
