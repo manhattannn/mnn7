@@ -1,0 +1,67 @@
+<?php
+
+function mnn_contact_install() {
+  mnn_contact_enable_contact_page_add_contact_categories();
+}
+
+/**
+ * Enables contact panel page. Adds categories to
+ * contact form.
+ */
+function mnn_contact_update_7000() {
+  mnn_contact_enable_contact_page_add_contact_categories();
+}
+
+/**
+ * Enables contact panel page. Adds categories to
+ * contact form.
+ */
+function mnn_contact_enable_contact_page_add_contact_categories() {
+  // Enables contact panel page.
+  $page = page_manager_cache_load('contact_site');
+  if ($function = ctools_plugin_get_function($page->subtask, 'enable callback')) {
+    $result = $function($page, FALSE);
+    menu_rebuild();
+
+    // We want to re-cache this if it's changed so that status is properly
+    // updated on the changed form.
+    if (!empty($page->changed)) {
+      page_manager_set_page_cache($page);
+    }
+  }
+
+  //Adds not added yet categories to contact form.
+  $categories_data = array(
+    'Broadcast Operations' => 'program@mnn.org',
+    'Community Media' => 'community@mnn.org',
+    'Firehouse' => 'firehouse@mnn.org',
+    'General' =>  'info@mnn.org',
+    'Programming' => 'program@mnn.org',
+    'Training & Facilitation' => 'workshops@mnn.org',
+    'Youth Channel' => 'youthchannel@mnn.org'
+  );
+
+  foreach ($categories_data as $category_name => $category_contact_email) {
+    $result = db_select('contact', 'c')
+      ->fields('c', array('cid'))
+      ->condition('category', $category_name, '=')
+      ->execute()
+      ->fetchAssoc();
+    if (empty($result)) {
+      db_insert('contact')
+        ->fields(array(
+          'category' => $category_name,
+          'recipients' => $category_contact_email,
+          'reply' => '',
+          'selected' => ($category_name == 'Broadcast Operations' ? '1' : '0')
+        ))
+        ->execute();
+    }
+  }
+
+  // Remove the Frank's default category.
+  db_delete('contact')
+    ->condition('category', 'Website feedback')
+    ->condition('recipients', 'frank@zivech.com')
+    ->execute();
+}
