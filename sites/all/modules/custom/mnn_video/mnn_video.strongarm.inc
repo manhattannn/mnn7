@@ -61,9 +61,22 @@ function mnn_video_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'raw_image' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'filename' => array(
+          'weight' => '-10',
+        ),
+        'preview' => array(
+          'weight' => '-5',
+        ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+      ),
       'display' => array(
         'file' => array(
           'default' => array(
