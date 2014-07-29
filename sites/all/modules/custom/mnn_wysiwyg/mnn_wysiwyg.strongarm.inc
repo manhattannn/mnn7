@@ -314,9 +314,187 @@ example.org';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'media_icon_base_directory';
+  $strongarm->value = 'public://media-icons';
+  $export['media_icon_base_directory'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_audio_file_wysiwyg_view_mode';
+  $strongarm->value = 'wysiwyg';
+  $export['media_wysiwyg_view_mode_audio_file_wysiwyg_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_audio_file_wysiwyg_view_mode_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_audio_file_wysiwyg_view_mode_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_audio_wysiwyg_restricted_view_modes';
+  $strongarm->value = array(
+    'default' => 0,
+    'teaser' => 0,
+    'full' => 0,
+    'preview' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'wysiwyg' => 0,
+    'token' => 0,
+  );
+  $export['media_wysiwyg_view_mode_audio_wysiwyg_restricted_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_audio_wysiwyg_restricted_view_modes_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_audio_wysiwyg_restricted_view_modes_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_document_file_wysiwyg_view_mode';
+  $strongarm->value = 'wysiwyg';
+  $export['media_wysiwyg_view_mode_document_file_wysiwyg_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_document_file_wysiwyg_view_mode_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_document_file_wysiwyg_view_mode_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_document_wysiwyg_restricted_view_modes';
+  $strongarm->value = array(
+    'default' => 0,
+    'teaser' => 0,
+    'full' => 0,
+    'preview' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'wysiwyg' => 0,
+    'token' => 0,
+  );
+  $export['media_wysiwyg_view_mode_document_wysiwyg_restricted_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_document_wysiwyg_restricted_view_modes_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_document_wysiwyg_restricted_view_modes_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_image_file_wysiwyg_view_mode';
+  $strongarm->value = 'teaser';
+  $export['media_wysiwyg_view_mode_image_file_wysiwyg_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_image_file_wysiwyg_view_mode_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_image_file_wysiwyg_view_mode_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_image_wysiwyg_restricted_view_modes';
+  $strongarm->value = array(
+    'full' => 'full',
+    'preview' => 'preview',
+    'rss' => 'rss',
+    'search_index' => 'search_index',
+    'search_result' => 'search_result',
+    'wysiwyg' => 'wysiwyg',
+    'token' => 'token',
+    'default' => 0,
+    'teaser' => 0,
+  );
+  $export['media_wysiwyg_view_mode_image_wysiwyg_restricted_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_image_wysiwyg_restricted_view_modes_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_image_wysiwyg_restricted_view_modes_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_video_file_wysiwyg_view_mode';
+  $strongarm->value = 'wysiwyg';
+  $export['media_wysiwyg_view_mode_video_file_wysiwyg_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_video_file_wysiwyg_view_mode_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_video_file_wysiwyg_view_mode_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_video_wysiwyg_restricted_view_modes';
+  $strongarm->value = array(
+    'default' => 0,
+    'teaser' => 0,
+    'full' => 0,
+    'preview' => 0,
+    'rss' => 0,
+    'search_index' => 0,
+    'search_result' => 0,
+    'wysiwyg' => 0,
+    'token' => 0,
+  );
+  $export['media_wysiwyg_view_mode_video_wysiwyg_restricted_view_modes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media_wysiwyg_view_mode_video_wysiwyg_restricted_view_modes_status';
+  $strongarm->value = 0;
+  $export['media_wysiwyg_view_mode_video_wysiwyg_restricted_view_modes_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'media__icon_base_directory';
   $strongarm->value = 'public://media-icons';
   $export['media__icon_base_directory'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media__wysiwyg_allowed_types';
+  $strongarm->value = array(
+    0 => 'image',
+    1 => 'video',
+    2 => 'audio',
+    3 => 'document',
+  );
+  $export['media__wysiwyg_allowed_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'media__wysiwyg_upload_directory';
+  $strongarm->value = '';
+  $export['media__wysiwyg_upload_directory'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
