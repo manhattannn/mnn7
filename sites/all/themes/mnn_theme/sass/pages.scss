@@ -403,6 +403,18 @@ span.field-label { /* The inline field label used by the Fences module */
       .col-xs-2 {
         padding: 0;
       }
+      .col-xs-8  {
+        position: relative;
+        .icon {
+          background: url(../images/cal.png) no-repeat center center;
+          width: 30px;
+          height: 30px;
+          display: block;
+          position: absolute;
+          top: 2px;
+          left: 20px;
+        }
+      }
     }
     .table {
       clear: both;
