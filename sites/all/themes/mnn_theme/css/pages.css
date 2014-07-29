@@ -858,9 +858,6 @@ span.field-label {
 #content .table-responsive.ng-scope .table tbody td p.sc, #content .table-responsive.ng-scope .table tbody td p.empty {
   font-size: 14px;
 }
-#content .table-responsive.ng-scope .table tbody td.ng-scope {
-  cursor: help;
-}
 
 /* Channel pages */
 .term-listing-heading .cm-row {
