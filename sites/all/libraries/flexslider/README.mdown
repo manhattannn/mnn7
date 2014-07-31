@@ -1,9 +1,29 @@
-# FlexSlider 2
-http://www.woothemes.com/flexslider/ - Copyright (c) 2012 WooThemes
+[![Gitter chat](https://badges.gitter.im/woothemes/FlexSlider.png)](https://gitter.im/woothemes/FlexSlider)
+
+# FlexSlider 2.3.0-bleeding
+http://www.woothemes.com/flexslider/ - Copyright (c) 2014 WooThemes
+
+## Releases
+
+The `master` branch of this repository is always the latest development version of FlexSlider. Please view the [Releases](https://github.com/woothemes/FlexSlider/releases) section for a list of official FlexSlider builds.
+
+### Contributing
+
+We encourage contributions to FlexSlider and will review all pull requests submitted.
+
+Before contributing, please see our [Contributing Guide](https://github.com/woothemes/FlexSlider/blob/master/CONTRIBUTING.md).
+
+### Roadmap
+
+To keep up to date with how FlexSlider's development roadmap looks, please see our [development roadmap](https://github.com/woothemes/FlexSlider/wiki/Roadmap).
 
 ## Updates
 
-** Version 2.2.0**
+** Version 2.2.2 **
+
+** Fixes minified JavaScript file to remove merge conflicts. **
+
+** Version 2.2.0 **
 
 - Fixed event handler conflicts with devices that are both click and touch enabled. e.g., Windows 8.
 - Made all slider variables public, stored in `slider.vars`. This allows manipulation of `slider.vars.minItems` and `slider.vars.maxItems` on the fly to create different fluid grids at certain breakpoints. [Check out this example demonstrating a basic technique](http://flexslider.woothemes.com/dynamic-carousel-min-max.html)
