@@ -9,10 +9,10 @@ function mnn_schedule_page() {
   //@todo put css into a drupal specific file instead of loading like this.
   foreach ($files as $file) {
     $file_parts = pathinfo($css_dir . $file);
-    if(isset($file_parts['extension']) && $file_parts['extension'] == 'css') {
-      dpm($file_parts, "Here is some css we're loading from the angular app, you might want to pick and choose what to keep and then create a specific css for this module or the theme, Alban.");
-      drupal_add_css($css_dir ."/". $file);
-    }
+    // if(isset($file_parts['extension']) && $file_parts['extension'] == 'css') {
+    //   dpm($file_parts, "Here is some css we're loading from the angular app, you might want to pick and choose what to keep and then create a specific css for this module or the theme, Alban.");
+    //   drupal_add_css($css_dir ."/". $file);
+    // }
   }
 
   $app_dir = $module_dir .'/app/app/';
