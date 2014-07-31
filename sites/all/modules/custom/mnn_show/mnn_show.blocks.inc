@@ -24,6 +24,7 @@ function mnn_show_block_watch_now(){
     $content .= '<h4 class="collapsed">'.$channel_data['name'].'</h4>';
     $content .= '<h5><a href="'.$channel_data['watchLiveUrl'].'"></a></h5>';
     $content .= '<p><a class="watch-now" href="'.$channel_data['watchLiveUrl'].'">Watch Now</a></p>';
+    $content .= "</div>";
     $content .= "<div class='channel-about'>";
     $content .= "<p class='channel-description'>".$channel_data['description']."</p>";
     $content .= "<ul class='cable-channel-list'>";
@@ -31,7 +32,6 @@ function mnn_show_block_watch_now(){
       $content .= '<li>'.$tvStation['tvStationName'].'<span class="cable-number"">'.$tvStation['tvStationChannel'].'</span></li>';
     }
     $content .= "</ul>";
-    $content .= "</div>";
     $content .= "</div>";
     $content .= "</li>";
   }

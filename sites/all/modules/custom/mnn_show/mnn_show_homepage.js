@@ -130,11 +130,11 @@ Object.size = function(obj) {
     if ($('#block-mnn-show-watch-now').length){
       scheduleNowPlaying.init();
     }
-    $('#block-mnn-show-watch-now .channel-info .channel-about').addClass('segment-hidden');
+    $('#block-mnn-show-watch-now .channel-about').addClass('segment-hidden');
     $('#block-mnn-show-watch-now .channel-info h4').click(function(e) {
       e.preventDefault();
       $(this).toggleClass('down');
-      $(this).parent('.channel-info').children('.channel-about').toggleClass('segment-hidden');
+      $(this).parent('.channel-info').parent('li').children('.channel-about').toggleClass('segment-hidden');
     });
   });
 }(jQuery));

@@ -58,12 +58,23 @@
         width: 100%;
         padding: 2px 5px;
         margin: 5px 0;
+        background: #f9f9f9;
         @include box-sizing(border-box);
+        .channel-icon {
+          @include box-sizing(border-box);
+          @include col(1/5, $gutter: 0);
+          img {
+            width: 100%;
+          }
+        }
         .channel-info {
-          padding: 5px 5px 10px 5px;
-          background: #f9f9f9;
+          @include box-sizing(border-box);
+          @include col(4/5, $gutter: 0);
+          padding-left: 8px;
           h4 {
             cursor: pointer;
+            padding: 5px 0;
+            height: 20px;
             &.collapsed {
               &:after {
                 content: "▶";
@@ -83,28 +94,35 @@
               }
             }
           }
-          h5 a {
-            &:hover, &:focus {
-              color: $blue;
-              outline: 0 !important;
-            }
-          }
-          .channel-about {
-            padding: 5px 0;
-            .channel-description, .cable-channel-list {
-              color: #888;
+          h5 {
+            clear: both;
+            a {
+              &:hover, &:focus {
+                color: $blue;
+                outline: 0 !important;
+              }
             }
           }
           .watch-now-link {
-              float: left;
-              width: 100%;
-              margin: 5px 0 0 0;
-              border-top: 1px solid #eee;
-              a {
-                @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
-                margin: 10px 0;
-              }
+            float: left;
+            width: 100%;
+            margin: 5px 0 0 0;
+            border-top: 1px solid #eee;
+            a {
+              @include sassy-button("matte", 0px, 90%, #999, #888, #fff, "inset");
+              margin: 10px 0;
             }
+          }
+        }
+        .channel-about {
+          padding: 5px 0;
+          margin-bottom: 3px;
+          float: left;
+          width: 100%;
+          @include box-sizing(border-box);
+          .channel-description, .cable-channel-list {
+            color: #888;
+          }
         }
       }
     }

@@ -155,16 +155,69 @@ OUR CUSTOM MIXINS
   width: 100%;
   padding: 2px 5px;
   margin: 5px 0;
+  background: #f9f9f9;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.sidebar #block-mnn-show-watch-now ul li .channel-icon {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-icon:before, .sidebar #block-mnn-show-watch-now ul li .channel-icon:after {
+  content: '';
+  display: table;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-icon:after {
+  clear: both;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-icon:last-child {
+  margin-right: 0%;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-icon img {
+  width: 100%;
+}
 .sidebar #block-mnn-show-watch-now ul li .channel-info {
-  padding: 5px 5px 10px 5px;
-  background: #f9f9f9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 8px;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info:before, .sidebar #block-mnn-show-watch-now ul li .channel-info:after {
+  content: '';
+  display: table;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info:after {
+  clear: both;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-info:last-child {
+  margin-right: 0%;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info h4 {
   cursor: pointer;
+  padding: 5px 0;
+  height: 20px;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info h4.collapsed:after {
   content: "▶";
@@ -180,15 +233,12 @@ OUR CUSTOM MIXINS
   left: 5px;
   color: #474747;
 }
+.sidebar #block-mnn-show-watch-now ul li .channel-info h5 {
+  clear: both;
+}
 .sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:hover, .sidebar #block-mnn-show-watch-now ul li .channel-info h5 a:focus {
   color: #61aee2;
   outline: 0 !important;
-}
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about {
-  padding: 5px 0;
-}
-.sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .channel-description, .sidebar #block-mnn-show-watch-now ul li .channel-info .channel-about .cable-channel-list {
-  color: #888;
 }
 .sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link {
   float: left;
@@ -248,6 +298,18 @@ OUR CUSTOM MIXINS
 .sidebar #block-mnn-show-watch-now ul li .channel-info .watch-now-link a::-moz-focus-inner {
   padding: 0 !important;
   margin: -1px !important;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-about {
+  padding: 5px 0;
+  margin-bottom: 3px;
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidebar #block-mnn-show-watch-now ul li .channel-about .channel-description, .sidebar #block-mnn-show-watch-now ul li .channel-about .cable-channel-list {
+  color: #888;
 }
 
 /* PANEL SIDEBARS */
