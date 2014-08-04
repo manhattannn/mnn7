@@ -130,6 +130,8 @@ function mnn_snippets_views_default_views() {
   /* Display: Recent Content Pane */
   $handler = $view->new_display('panel_pane', 'Recent Content Pane', 'mnn_snippets_recent_content_pane');
   $handler->display->display_options['display_description'] = 'Provides a listing of node teasers sorted by most recent and can be filtered by content type.';
+  $handler->display->display_options['pane_title'] = 'Recent Content';
+  $handler->display->display_options['pane_description'] = 'Show a list of content ordered by posted date. Can be filtered by content type.';
   $handler->display->display_options['pane_category']['name'] = 'Lists';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
@@ -141,6 +143,7 @@ function mnn_snippets_views_default_views() {
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
   $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['link_to_view'] = '0';
 
   /* Display: Section Content Pane */
   $handler = $view->new_display('panel_pane', 'Section Content Pane', 'mnn_snippets_section_content_pane');
@@ -199,6 +202,7 @@ function mnn_snippets_views_default_views() {
   $handler->display->display_options['filters']['field_site_section_tid']['vocabulary'] = 'sections';
   $handler->display->display_options['filters']['field_site_section_tid']['hierarchy'] = 1;
   $handler->display->display_options['pane_title'] = 'Section Content';
+  $handler->display->display_options['pane_description'] = 'Content can be filtered on Site Section and Node Type. Order is by Created Date.';
   $handler->display->display_options['pane_category']['name'] = 'Lists';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
@@ -328,6 +332,12 @@ function mnn_snippets_views_default_views() {
 <div class="section">[name]</div>
 <div class="body">[body]</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -338,12 +348,6 @@ function mnn_snippets_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Nodequeue: In queue */
-  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
-  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
-  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
-  $handler->display->display_options['filters']['in_queue']['value'] = '1';
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
@@ -367,6 +371,27 @@ function mnn_snippets_views_default_views() {
     3 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = TRUE;
+  /* Filter criterion: Nodequeue: Queue title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'nodequeue_queue';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Featured Queue';
+  $handler->display->display_options['filters']['title']['expose']['description'] = 'The Node Queue that you want to pull featured content from. It uses the order set in the queue.';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'queue-title';
+  $handler->display->display_options['filters']['title']['expose']['required'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    5 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['pane_title'] = 'Featured Content';
+  $handler->display->display_options['pane_description'] = 'Featured content is placed within a nodequeue, and has a configurable order.';
   $handler->display->display_options['pane_category']['name'] = 'Lists';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
@@ -509,6 +534,8 @@ function mnn_snippets_views_default_views() {
   $handler->display->display_options['filters']['field_site_section_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_site_section_tid']['vocabulary'] = 'sections';
   $handler->display->display_options['filters']['field_site_section_tid']['hierarchy'] = 1;
+  $handler->display->display_options['pane_title'] = 'Slideshow';
+  $handler->display->display_options['pane_description'] = 'Content is featured as a slideshow of images and text.';
   $handler->display->display_options['pane_category']['name'] = 'Lists';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
