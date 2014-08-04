@@ -34,12 +34,6 @@ function mnn_channel_default_fe_block_settings() {
         'theme' => 'ember',
         'weight' => 0,
       ),
-      'mnn_theme' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'mnn_theme',
-        'weight' => -21,
-      ),
     ),
     'title' => '',
     'visibility' => 1,
