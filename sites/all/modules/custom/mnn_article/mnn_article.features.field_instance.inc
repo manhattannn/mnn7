@@ -112,7 +112,7 @@ function mnn_article_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'addthis_displays',
         'settings' => array(
           'button_size' => 'big',
@@ -281,7 +281,7 @@ function mnn_article_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'tweetbutton',
         'settings' => array(
           'linked_field' => array(
