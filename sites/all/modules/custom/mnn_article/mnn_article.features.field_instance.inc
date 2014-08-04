@@ -113,8 +113,10 @@ function mnn_article_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'addthis',
+        'module' => 'addthis_displays',
         'settings' => array(
+          'button_size' => 'big',
+          'extra_css' => '',
           'linked_field' => array(
             'advanced' => array(
               'class' => '',
@@ -127,7 +129,7 @@ function mnn_article_field_default_field_instances() {
             'linked' => 0,
           ),
         ),
-        'type' => 'addthis_disabled',
+        'type' => 'addthis_basic_button',
         'weight' => 2,
       ),
       'teaser' => array(
