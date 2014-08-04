@@ -76,11 +76,17 @@ function mnn_layouts_ds_layout_settings_info() {
       'top' => array(
         0 => 'field_image',
         1 => 'body',
+        2 => 'field_addthis',
+        3 => 'field_tweetbutton',
+        4 => 'fblikebutton_ds_field',
       ),
     ),
     'fields' => array(
       'field_image' => 'top',
       'body' => 'top',
+      'field_addthis' => 'top',
+      'field_tweetbutton' => 'top',
+      'fblikebutton_ds_field' => 'top',
     ),
     'classes' => array(),
     'wrappers' => array(
