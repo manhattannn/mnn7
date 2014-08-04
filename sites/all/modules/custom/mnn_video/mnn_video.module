@@ -5,3 +5,9 @@
  */
 
 include_once 'mnn_video.features.inc';
+
+function mnn_video_update_7001() {
+  module_enable(array('addthis'));
+  module_enable(array('tweetbutton'));
+  module_enable(array('fblikebutton'));
+}
