@@ -47,6 +47,7 @@ function mnn_common_fe_nodequeue_export_fields() {
     'types' => array(
       0 => 'article',
       1 => 'mnn_video',
+      2 => 'page',
     ),
     'roles' => array(),
     'count' => 0,
