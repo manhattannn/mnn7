@@ -34,7 +34,7 @@ function mnn_article_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -102,6 +102,56 @@ function mnn_article_field_default_field_instances() {
       'type' => 'text_textarea_with_summary',
       'weight' => 2,
     ),
+  );
+
+  // Exported field_instance: 'node-article-field_addthis'
+  $field_instances['node-article-field_addthis'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addthis',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'addthis_disabled',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(),
+      'type' => 'addthis_button_widget',
+      'weight' => 32,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-article-field_image'
@@ -216,11 +266,71 @@ function mnn_article_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-article-field_tweetbutton'
+  $field_instances['node-article-field_tweetbutton'] = array(
+    'bundle' => 'article',
+    'default_value' => array(
+      0 => array(
+        'account' => '',
+        'text' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'tweetbutton',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'size' => 'medium',
+        ),
+        'type' => 'tweetbutton_formatter_button_horizontal',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_tweetbutton',
+    'label' => 'Tweetbutton',
+    'required' => 0,
+    'settings' => array(
+      'author_twitter' => '',
+      'tweet_text' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'tweetbutton',
+      'settings' => array(),
+      'type' => 'tweetbutton',
+      'weight' => 34,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Add an image for this article.');
+  t('AddThis');
   t('Body');
   t('Image');
+  t('Tweetbutton');
 
   return $field_instances;
 }

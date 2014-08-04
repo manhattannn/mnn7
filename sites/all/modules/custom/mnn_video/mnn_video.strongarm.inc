@@ -870,6 +870,7 @@ function mnn_video_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fblikebutton_node_types';
   $strongarm->value = array(
+    'article' => 'article',
     'mnn_video' => 'mnn_video',
     'page' => 0,
     'cm_slideshow_slide' => 0,

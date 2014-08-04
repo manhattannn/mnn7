@@ -66,6 +66,9 @@ function mnn_article_strongarm() {
         'workbench_access' => array(
           'weight' => '3',
         ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
