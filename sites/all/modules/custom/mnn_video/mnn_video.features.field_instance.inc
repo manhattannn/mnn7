@@ -223,7 +223,7 @@ function mnn_video_field_default_field_instances() {
           'size' => 'medium',
         ),
         'type' => 'tweetbutton_formatter_button_horizontal',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',

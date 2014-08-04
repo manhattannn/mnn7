@@ -870,8 +870,8 @@ function mnn_video_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'fblikebutton_node_types';
   $strongarm->value = array(
+    'article' => 'article',
     'mnn_video' => 'mnn_video',
-    'article' => 0,
     'page' => 0,
     'cm_slideshow_slide' => 0,
     'mnn_video_feed' => 0,
@@ -929,22 +929,9 @@ function mnn_video_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
-      'raw_image' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
-      'form' => array(
-        'filename' => array(
-          'weight' => '-10',
-        ),
-        'preview' => array(
-          'weight' => '-5',
-        ),
-        'redirect' => array(
-          'weight' => '30',
-        ),
-      ),
+      'form' => array(),
       'display' => array(
         'file' => array(
           'default' => array(

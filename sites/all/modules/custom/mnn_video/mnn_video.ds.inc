@@ -28,7 +28,7 @@ function mnn_video_ds_field_settings_info() {
       'format' => 'ds_post_date_long',
     ),
     'fblikebutton_ds_field' => array(
-      'weight' => '5',
+      'weight' => '6',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -107,8 +107,8 @@ function mnn_video_ds_layout_settings_info() {
         2 => 'post_date',
         3 => 'body',
         4 => 'field_addthis',
-        5 => 'fblikebutton_ds_field',
-        6 => 'field_tweetbutton',
+        5 => 'field_tweetbutton',
+        6 => 'fblikebutton_ds_field',
       ),
     ),
     'fields' => array(
@@ -117,8 +117,8 @@ function mnn_video_ds_layout_settings_info() {
       'post_date' => 'top',
       'body' => 'top',
       'field_addthis' => 'top',
-      'fblikebutton_ds_field' => 'top',
       'field_tweetbutton' => 'top',
+      'fblikebutton_ds_field' => 'top',
     ),
     'classes' => array(),
     'wrappers' => array(
