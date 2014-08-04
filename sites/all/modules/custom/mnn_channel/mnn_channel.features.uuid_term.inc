@@ -100,6 +100,8 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
+    'field_addthis' => array(),
+    'field_tweetbutton' => array(),
   );
   $terms[] = array(
     'name' => 'Spirit Channel',
@@ -194,6 +196,8 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
+    'field_addthis' => array(),
+    'field_tweetbutton' => array(),
   );
   $terms[] = array(
     'name' => 'Lifestyle Channel',
@@ -287,6 +291,8 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
+    'field_addthis' => array(),
+    'field_tweetbutton' => array(),
   );
   $terms[] = array(
     'name' => 'Culture Channel',
@@ -382,6 +388,8 @@ function mnn_channel_uuid_features_default_terms() {
         ),
       ),
     ),
+    'field_addthis' => array(),
+    'field_tweetbutton' => array(),
   );
   return $terms;
 }

@@ -10,6 +10,58 @@
 function mnn_channel_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'taxonomy_term-channel-field_addthis'
+  $field_instances['taxonomy_term-channel-field_addthis'] = array(
+    'bundle' => 'channel',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'button_size' => 'big',
+          'extra_css' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'addthis_basic_button',
+        'weight' => 7,
+      ),
+      'term_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_addthis',
+    'label' => 'AddThis',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(),
+      'type' => 'addthis_button_widget',
+      'weight' => 32,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'taxonomy_term-channel-field_channel_embed'
   $field_instances['taxonomy_term-channel-field_channel_embed'] = array(
     'bundle' => 'channel',
@@ -385,8 +437,67 @@ function mnn_channel_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-channel-field_tweetbutton'
+  $field_instances['taxonomy_term-channel-field_tweetbutton'] = array(
+    'bundle' => 'channel',
+    'default_value' => array(
+      0 => array(
+        'account' => '',
+        'text' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'tweetbutton',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'size' => 'medium',
+        ),
+        'type' => 'tweetbutton_formatter_button_horizontal',
+        'weight' => 8,
+      ),
+      'term_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_tweetbutton',
+    'label' => 'Tweetbutton',
+    'required' => 0,
+    'settings' => array(
+      'author_twitter' => '',
+      'tweet_text' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'tweetbutton',
+      'settings' => array(),
+      'type' => 'tweetbutton',
+      'weight' => 34,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('AddThis');
   t('Channel Embed');
   t('Channel ID');
   t('Channel Logo');
@@ -394,6 +505,7 @@ function mnn_channel_field_default_field_instances() {
   t('The HTML embed code for viewing the channel\'s live feed or perhaps just a promotional video.');
   t('This is the channel logo, this image will be resized to fit.');
   t('This should be the short, unique id of the channel (perhaps it\'s call-sign). This is used for api calls as well so it shouldn\'t be changed once it\'s set.');
+  t('Tweetbutton');
   t('Where to watch');
 
   return $field_instances;
