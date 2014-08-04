@@ -287,6 +287,8 @@ function mnn_layouts_ds_layout_settings_info() {
         1 => 'field_channel_logo',
         2 => 'description',
         3 => 'field_channel_where_to_watch',
+        4 => 'field_addthis',
+        5 => 'field_tweetbutton',
       ),
     ),
     'fields' => array(
@@ -294,6 +296,8 @@ function mnn_layouts_ds_layout_settings_info() {
       'field_channel_logo' => 'top',
       'description' => 'top',
       'field_channel_where_to_watch' => 'top',
+      'field_addthis' => 'top',
+      'field_tweetbutton' => 'top',
     ),
     'classes' => array(),
     'wrappers' => array(
