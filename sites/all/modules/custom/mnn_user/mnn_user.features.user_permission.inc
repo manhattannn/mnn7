@@ -1503,6 +1503,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'manipulate all queues',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'nodequeue',
   );
@@ -1512,6 +1513,7 @@ function mnn_user_user_default_permissions() {
     'name' => 'manipulate queues',
     'roles' => array(
       'administrator' => 'administrator',
+      'staff' => 'staff',
     ),
     'module' => 'nodequeue',
   );
