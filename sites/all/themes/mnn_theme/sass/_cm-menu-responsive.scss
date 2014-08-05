@@ -106,6 +106,7 @@
       //    </ul>
       //  </nav>
       ul {
+        @include element-invisible;
         position: static;
         @include border-radius(0);
         @include menu-background(lighten($baseMenuBackground, 10%), false);
