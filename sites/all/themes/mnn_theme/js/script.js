@@ -56,6 +56,12 @@
         'classPrefix': 'max-'
       });
 
+      $('.view-content-listing .view-content .cm-row').each(function(){
+        if ($(this).find('.media .inside').is(':empty')) {
+          $(this).find('.wrapper').css('width', '100%');
+        }
+      });
+
     }
   }
 }(jQuery));
