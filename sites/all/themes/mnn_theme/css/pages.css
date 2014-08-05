@@ -1263,3 +1263,24 @@ table td[class*=col-], table th[class*=col-] {
 .term-listing-heading .field-name-field-channel-where-to-watch .field-items table td {
   float: left;
 }
+
+/* SHARE this */
+#content .field-name-field-addthis,
+#content .field-name-field-tweetbutton,
+#content .field-name-fblikebutton-ds-field {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+#content .field-name-field-addthis {
+  width: 50px;
+  height: 20px;
+}
+#content .field-name-field-addthis a {
+  width: 50px;
+  height: 20px;
+  display: block;
+  background: url(../images/share.png) center center no-repeat;
+}
+#content .field-name-field-addthis a img {
+  visibility: hidden;
+}

@@ -578,3 +578,27 @@ table td[class*=col-],table th[class*=col-]{position:static;float:none;display:t
     }
   }
 }
+
+/* SHARE this */
+
+#content {
+  .field-name-field-addthis,
+  .field-name-field-tweetbutton,
+  .field-name-fblikebutton-ds-field {
+    float: left;
+    margin: 10px 10px 10px 0;
+  }
+  .field-name-field-addthis {
+    width: 50px;
+    height: 20px;
+    a {
+      width: 50px;
+      height: 20px;
+      display: block;
+      background: url(../images/share.png) center center no-repeat;
+      img {
+        visibility: hidden;
+      }
+    }
+  }
+}
